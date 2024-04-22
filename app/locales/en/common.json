@@ -1,0 +1,9 @@
+{
+    "header": {
+        "service": "Service",
+        "expertise": "Expertise",
+        "cases": "Cases",
+        "contacts": "Contacts",
+        "theme": "Theme"
+    }
+}
