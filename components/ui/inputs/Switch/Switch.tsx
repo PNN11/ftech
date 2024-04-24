@@ -1,9 +1,6 @@
 import { DetailedHTMLProps, FC, InputHTMLAttributes } from 'react'
 
-export type DefaultInputPropsType = DetailedHTMLProps<
-    InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement
->
+export type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
 
 type SwitchProps = DefaultInputPropsType & { label?: string }
 
@@ -14,12 +11,12 @@ const Switch: FC<SwitchProps> = ({ className, name, label = '', checked, ...prop
                 {label}
             </label>
             <div
-                className={`relative inline-block h-5.25 w-10 cursor-pointer rounded-xl border 
-                transition-all duration-300 content-[''] after:absolute after:top-0.5 after:inline-block after:h-3.75 after:w-3.75 after:rounded-full
+                className={`relative inline-block h-4 w-8.5 cursor-pointer rounded-xl 
+                transition-all duration-300 content-[''] after:absolute after:top-0.5 after:inline-block after:h-3 after:w-3 after:rounded-full
                 after:transition-all after:duration-300 ${
                     checked
-                        ? 'border-link after:left-5.25 after:bg-link'
-                        : 'border-base-300 after:left-0.5 after:bg-base-300'
+                        ? 'after:bg-primary-blue bg-blue-100 after:left-5'
+                        : 'after:bg-primary-gray bg-gray-300 after:left-0.5'
                 } ${className}`}
             >
                 <input

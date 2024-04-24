@@ -2,11 +2,14 @@
 import Logo from '@/components/svg/Logo'
 import Container from '@/components/ui/wrappers/container'
 import React, { FC } from 'react'
-import ServiceSubmenu from './ServiceSubmenu'
-import ExpertiseSubmenu from './ExpertiseSubmenu'
+import ServiceSubmenu from './service/ServiceSubmenu'
+import ExpertiseSubmenu from './expertise/ExpertiseSubmenu'
 import Link from 'next/link'
 import Heading from '@/components/ui/typography/heading'
 import { useTranslation } from 'react-i18next'
+import MenuItem from './MenuItem'
+import ThemeSwitch from './ThemeSwitch'
+import Button from '@/components/ui/buttons/defaultButton/button'
 
 type MenuItem = { title: string; href: string } & (
     | {
@@ -21,35 +24,35 @@ type MenuItem = { title: string; href: string } & (
 const menuItems: MenuItem[] = [
     { title: 'common:header.service', type: 'dropdown', Component: ServiceSubmenu, href: 'service' },
     { title: 'common:header.expertise', type: 'dropdown', Component: ExpertiseSubmenu, href: 'expertise' },
-    { title: 'common:header.cases', type: 'link', href: 'cases' },
-    { title: 'common:header.contacts', type: 'link', href: 'contacts' },
+    { title: 'common:header.cases', type: 'link', href: '/cases' },
+    { title: 'common:header.contacts', type: 'link', href: '/contacts' },
 ]
 
 const Header: FC = () => {
     const { t } = useTranslation()
 
     return (
-        <header className="pb-1.5 pt-4">
+        <header className="h-fit pb-1.5 pt-4">
             <Container>
-                <div className="flex items-center justify-between p-4">
-                    <Logo />
-                    <div>
+                <div className="shadow-header relative flex items-center justify-between rounded-2xl border border-gray-100 bg-white-300 p-3 lg:p-3.5 xl:p-4">
+                    <Link href="/">
+                        <Logo />
+                    </Link>
+                    <div className="flex items-center gap-1 bg-white-300">
                         <ul className="flex items-center gap-1">
-                            {menuItems.map(item => {
-                                if (item.type === 'link') {
-                                    return (
-                                        <li key={item.href}>
-                                            <Link href={item.href} className="text-base leading-none text-gray-900">
-                                                {t(item.title)}
-                                            </Link>
-                                        </li>
-                                    )
-                                }
-
-                                return <item.Component key={item.href} />
-                            })}
+                            {menuItems.map(item => (
+                                <li key={item.href} className="">
+                                    {item.type === 'link' ? (
+                                        <MenuItem href={item.href}>{t(item.title)}</MenuItem>
+                                    ) : (
+                                        <item.Component />
+                                    )}
+                                </li>
+                            ))}
                         </ul>
+                        <ThemeSwitch />
                     </div>
+                    <Button size="s">{t('common:header.contact-us')} </Button>
                 </div>
             </Container>
         </header>

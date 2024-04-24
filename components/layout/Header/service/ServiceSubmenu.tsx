@@ -1,11 +1,15 @@
 'use client'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
-import MenuItem from './MenuItem'
+import MenuItemDropdown from '../MenuItemDropdown'
 
 const ServiceSubmenu: FC = () => {
     const { t } = useTranslation()
-    return <MenuItem href="/service">{t('common:header.service')}</MenuItem>
+    return (
+        <MenuItemDropdown title={t('common:header.service')} href="/service">
+            q
+        </MenuItemDropdown>
+    )
 }
 
 export default ServiceSubmenu

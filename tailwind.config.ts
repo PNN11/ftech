@@ -6,6 +6,7 @@ const config: Config = {
         './components/**/*.{js,ts,jsx,tsx,mdx}',
         './app/**/*.{js,ts,jsx,tsx,mdx}',
     ],
+    darkMode: 'selector',
     theme: {
         screens: {
             sm: '420px',
@@ -18,15 +19,21 @@ const config: Config = {
         extend: {
             backgroundImage: {
                 gradient: 'linear-gradient(180.28deg, #FFFFFF -3.64%, #F4F4F4 99.62%)',
+                'primary-blue': 'linear-gradient(180.28deg, #10A9FF -3.64%, #1D87E9 80.56%)',
+                'primary-gray': 'linear-gradient(180.28deg, #606060 -3.64%, #373737 99.62%)',
+                'primary-black': 'linear-gradient(180.28deg, #303030 -3.64%, #1E1E1E 86.01%)',
             },
             boxShadow: {
                 heading: 'box-shadow: 0px 5px 3.4px 0px rgba(246, 246, 246, 1)',
+                button: '0px 1px 8px 1px #BCBCBC12',
+                header: '0px 1px 16.8px 1px #BCBCBC12',
             },
             spacing: {
                 0.75: '0.1875rem', // 3px
                 1.5: '0.375rem', // 6px
                 2.25: '0.5625rem', // 9px
                 2.375: '0.5938rem', // 9.5px
+                2.5: '0.625rem', // 10px
                 3.25: '0.8125rem', // 13px
                 3.625: '0.9063rem', // 14.5px
                 3.75: '0.9375rem', // 15px
@@ -315,6 +322,9 @@ const config: Config = {
                 15.5: '3.875rem', // 62px
                 16.2: '4.05rem', // 64.8px
                 24.3: '6.075rem', // 97.2px
+            },
+            borderRadius: {
+                2.5: '0.625rem', // 10px
             },
         },
     },

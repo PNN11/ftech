@@ -4,6 +4,48 @@
         "expertise": "Expertise",
         "cases": "Cases",
         "contacts": "Contacts",
-        "theme": "Theme"
+        "theme": "Theme",
+        "contact-us": "Contact us"
+    },
+    "expertise": {
+        "our-expertise": "Our Expertise",
+        "items": {
+            "real-estate": {
+                "title": "Real Estate",
+                "description": "Let the pixels made they magic"
+            },
+            "e-commerce": {
+                "title": "E-commerce",
+                "description": "Data and models"
+            },
+            "edtech": {
+                "title": "EdTech",
+                "description": "Data and models"
+            },
+            "web3": {
+                "title": "Web 3.0",
+                "description": "Let the pixels made they magic"
+            },
+            "healthcare": {
+                "title": "Healthcare",
+                "description": "Data and models"
+            },
+            "fintech": {
+                "title": "Fintech",
+                "description": "Data and models"
+            },
+            "travel": {
+                "title": "Travel",
+                "description": "Let the pixels made they magic"
+            },
+            "logistics": {
+                "title": "Logistics",
+                "description": "Data and models"
+            },
+            "energetics": {
+                "title": "Energetics",
+                "description": "Data and models"
+            }
+        }
     }
 }
