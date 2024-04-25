@@ -21,7 +21,7 @@ const MenuItem: FC<MenuItemProps> = ({
         <Link
             href={href}
             className={cn(
-                'inline-block rounded-2.5 px-4 py-2 text-base leading-none text-gray-900',
+                'inline-block w-full rounded-2.5 px-4 py-2 text-base leading-none text-gray-900 hover:bg-gray-50 lg:w-auto',
                 { 'bg-gray-50': isActive(pathname, typeof href === 'string' ? href : (href.pathname as string)) },
                 className
             )}

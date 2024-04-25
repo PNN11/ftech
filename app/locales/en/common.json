@@ -47,5 +47,42 @@
                 "description": "Data and models"
             }
         }
+    },
+    "service": {
+        "software-development": "Software development",
+        "product-development": {
+            "title": "Product development",
+            "description": ["Web development", "Mobile development"]
+        },
+        "software-testing": "Software testing & QA",
+        "qa": {
+            "title": "QA",
+            "description": ["Manual testing", "Software testing"]
+        },
+        "design": {
+            "title": "Digital design and product design",
+            "description": "Let the pixels made they magic"
+        },
+        "ai-development": {
+            "title": "AI / ML and data science",
+            "description": "Data and models"
+        },
+        "cloud-infrastructure": {
+            "title": "Cloud infrastructure",
+            "description": ["DevOps", "Cloud and platform"]
+        },
+        "cooperations": "Cooperations",
+        "staff-augmentation": {
+            "title": "Staff augmentation",
+            "description": "Lorem ipsum dolor sit amet consectetur."
+        },
+        "outsourcing": {
+            "title": "Outsourcing",
+            "description": "Lorem ipsum dolor sit amet consectetur."
+        },
+        "dedicated-teams": {
+            "title": "Dedicated teams",
+            "description": "Lorem ipsum dolor sit amet consectetur."
+        }
     }
 }
