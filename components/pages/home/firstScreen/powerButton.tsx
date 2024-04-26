@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { ComponentProps, FC } from 'react'
 
-const PowerButton = () => {
+const PowerButton: FC<ComponentProps<'svg'>> = props => {
     return (
-        <svg width="139" height="140" viewBox="0 0 139 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+            width="139"
+            height="140"
+            viewBox="0 0 139 140"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-gray-600 dark:text-blue-900"
+            {...props}
+        >
             <g filter="url(#filter0_d_269_3806)">
                 <circle cx="69.4388" cy="53.4388" r="40.2083" fill="url(#paint0_linear_269_3806)" />
                 <circle
@@ -37,7 +45,7 @@ const PowerButton = () => {
                 />
                 <path
                     d="M69.439 32.3999V53.4391M84.3093 38.5714C87.251 41.5141 89.2541 45.263 90.0653 49.344C90.8766 53.425 90.4595 57.655 88.8669 61.499C87.2743 65.343 84.5776 68.6285 81.1179 70.94C77.6582 73.2515 73.5907 74.4853 69.4298 74.4853C65.269 74.4853 61.2015 73.2515 57.7418 70.94C54.282 68.6285 51.5854 65.343 49.9928 61.499C48.4001 57.655 47.9831 53.425 48.7943 49.344C49.6056 45.263 51.6087 41.5141 54.5504 38.5714"
-                    stroke="#0099FF"
+                    stroke="currentColor"
                     strokeWidth="6.73256"
                     strokeLinecap="round"
                     strokeLinejoin="round"

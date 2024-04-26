@@ -1,18 +1,17 @@
 'use client'
+import Burger from '@/components/svg/Burger'
+import BurgerOpened from '@/components/svg/BurgerOpened'
 import Logo from '@/components/svg/Logo'
+import Button from '@/components/ui/buttons/defaultButton/button'
 import Container from '@/components/ui/wrappers/container'
-import React, { FC, useState } from 'react'
-import ServiceSubmenu from './service/ServiceSubmenu'
-import ExpertiseSubmenu from './expertise/ExpertiseSubmenu'
+import { cn } from '@/lib/classNames'
 import Link from 'next/link'
-import Heading from '@/components/ui/typography/heading'
+import React, { FC, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import MenuItem from './MenuItem'
 import ThemeSwitch from './ThemeSwitch'
-import Button from '@/components/ui/buttons/defaultButton/button'
-import Burger from '@/components/svg/Burger'
-import BurgerOpened from '@/components/svg/BurgerOpened'
-import { cn } from '@/lib/classNames'
+import ExpertiseSubmenu from './expertise/ExpertiseSubmenu'
+import ServiceSubmenu from './service/ServiceSubmenu'
 
 type MenuItem = { title: string; href: string } & (
     | {
@@ -35,19 +34,44 @@ const Header: FC = () => {
     const { t } = useTranslation()
     const [isMenuOpened, setIsMenuOpened] = useState(false)
 
-    const toggleMenu = () => setIsMenuOpened(prev => !prev)
+    const menuRef = useRef<HTMLDivElement>(null)
+
+    const handleOpenMenu = () => setIsMenuOpened(true)
+
+    const handleCloseMenu = () => {
+        const animation = menuRef.current?.animate(
+            [
+                { height: '16.875rem', opacity: 1 },
+                { opacity: 0, height: 0, paddingTop: 0, paddingBottom: 0 },
+            ],
+            {
+                duration: 500,
+                easing: 'linear',
+            }
+        )
+
+        animation?.addEventListener(
+            'finish',
+            () => {
+                menuRef.current?.classList.add('hidden')
+                setIsMenuOpened(false)
+            },
+            { once: true }
+        )
+    }
 
     return (
-        <header className="h-fit pb-1.5 pt-4">
+        <header className="translate-z-1 relative z-10 h-fit pb-1.5 pt-4">
             <Container>
                 <div className="relative flex items-center justify-between rounded-2xl border border-gray-100 bg-white-300 p-3 shadow-header lg:p-3.5 xl:p-4">
                     <Link href="/">
                         <Logo />
                     </Link>
-                    <div
-                        className={cn(`absolute left-0 top-[calc(100%+2.5rem)] flex w-full flex-col-reverse items-center gap-3 rounded-2xl border border-gray-200
-                            bg-white-300 px-5 py-4 lg:static lg:w-auto lg:flex-row
-                            lg:gap-1 lg:border-none lg:px-0 lg:py-0`)}
+                    <nav
+                        ref={menuRef}
+                        className={cn(`absolute left-0 top-[calc(100%+2.5rem)] w-full animate-mobile-menu flex-col-reverse items-center gap-3 overflow-hidden rounded-2xl border border-gray-200 bg-white-300 px-5
+                            py-4 lg:static lg:flex lg:w-auto lg:animate-none lg:flex-row
+                            lg:gap-1 lg:border-none lg:px-0 lg:py-0 ${isMenuOpened ? 'flex' : 'hidden'}`)}
                     >
                         <ul className="flex w-full flex-col items-start gap-3 lg:w-auto lg:flex-row lg:items-center lg:gap-1">
                             {menuItems.map(item => (
@@ -64,12 +88,16 @@ const Header: FC = () => {
                             </Button>
                         </ul>
                         <ThemeSwitch className="w-full lg:w-auto" />
-                    </div>
+                    </nav>
                     <div>
                         <Button size="s" className="hidden lg:block">
                             {t('common:header.contact-us')}
                         </Button>
-                        <Button onClick={toggleMenu} size="s" className="lg:hidden">
+                        <Button
+                            onClick={() => (isMenuOpened ? handleCloseMenu() : handleOpenMenu())}
+                            size="s"
+                            className="lg:hidden"
+                        >
                             {isMenuOpened ? <BurgerOpened /> : <Burger />}
                         </Button>
                     </div>

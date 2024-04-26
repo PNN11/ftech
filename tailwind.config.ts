@@ -151,6 +151,7 @@ const config: Config = {
                 78.5: '19.625rem', // 314px
                 79: '19.75rem', // 316px
                 80: '20rem', // 320px
+                81: '20.25rem', // 324px
                 82: '20.5rem', // 328px
                 83.5: '20.875rem', // 334px
                 84.5: '21.125rem', // 338px
@@ -197,12 +198,14 @@ const config: Config = {
                 156.75: '39.1875rem', // 627px
                 157: '39.25rem', // 628px
                 158: '39.5rem', // 632px
+                159: '39.5rem', // 636px
                 160: '40rem', // 640px
                 162: '40.5rem', // 648px
                 165: '41.25rem', // 660px
                 165.5: '41.375rem', // 662px
                 169.5: '42.375rem', // 678px
                 170.5: '42.625rem', // 682px
+                171: '42.75rem', // 684px
                 173.75: '43.4375rem', // 695px
                 175.75: '43.9375rem', // 703px
                 183.75: '45.9375rem', // 735px
@@ -324,7 +327,22 @@ const config: Config = {
                 24.3: '6.075rem', // 97.2px
             },
             borderRadius: {
+                2.25: '0.5625rem', // 9px
                 2.5: '0.625rem', // 10px
+            },
+            keyframes: {
+                'fade-in': {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' },
+                },
+                'mobile-menu': {
+                    '0%': { height: '0', opacity: '0', paddingTop: '0', paddingBottom: '0' },
+                    '100%': { height: '16.875rem', opacity: '1' },
+                },
+            },
+            animation: {
+                'fade-in': 'fade-in 0.3s linear',
+                'mobile-menu': 'mobile-menu 0.5s linear',
             },
         },
     },
