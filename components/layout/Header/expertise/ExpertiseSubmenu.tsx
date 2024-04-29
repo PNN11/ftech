@@ -1,16 +1,12 @@
-import Link from 'next/link'
-import React, { FC, useRef } from 'react'
-import { useTranslation } from 'react-i18next'
-import MenuItem from '../MenuItem'
-import ChevronUp from '@/components/svg/ChevronUp'
-import MenuItemDropdown from '../MenuItemDropdown'
 import Heading from '@/components/ui/typography/heading'
 import Image from 'next/image'
-import SubMenuItem from '../subMenu/SubMenuItem'
-import Container from '@/components/ui/wrappers/container'
+import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
+import MenuItemDropdown from '../MenuItemDropdown'
 import VerticalDashedLine from '../VerticalDashedLine'
+import SubMenuItem from '../subMenu/SubMenuItem'
 
-const expertise = [
+export const expertise = [
     {
         title: 'common:expertise.items.real-estate.title',
         description: 'common:expertise.items.real-estate.description',

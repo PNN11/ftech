@@ -22,11 +22,14 @@ const config: Config = {
                 'primary-blue': 'linear-gradient(180.28deg, #10A9FF -3.64%, #1D87E9 80.56%)',
                 'primary-gray': 'linear-gradient(180.28deg, #606060 -3.64%, #373737 99.62%)',
                 'primary-black': 'linear-gradient(180.28deg, #303030 -3.64%, #1E1E1E 86.01%)',
+                'primary-white': 'linear-gradient(180.28deg, #FFFFFF -3.64%, #F4F4F4 99.62%)',
             },
             boxShadow: {
-                heading: 'box-shadow: 0px 5px 3.4px 0px rgba(246, 246, 246, 1)',
+                heading: '0px 5px 3.4px 0px rgba(246, 246, 246, 1)',
                 button: '0px 1px 8px 1px #BCBCBC12',
                 header: '0px 1px 16.8px 1px #BCBCBC12',
+                'about-us-card': '0px 1px 8px 1px #BCBCBC12',
+                'about-us-card-blue': '0px 1px 8px 1px #BCBCBC12, 0px 12px 26.7px -1px #36A2EE85',
             },
             spacing: {
                 0.75: '0.1875rem', // 3px
@@ -154,6 +157,7 @@ const config: Config = {
                 81: '20.25rem', // 324px
                 82: '20.5rem', // 328px
                 83.5: '20.875rem', // 334px
+                84: '21rem', // 336px
                 84.5: '21.125rem', // 338px
                 85: '21.25rem', // 340px
                 86.5: '21.625rem', // 346px
@@ -221,6 +225,7 @@ const config: Config = {
                 231: '57.75rem', // 924px
                 232: '58rem', // 928px
                 237.5: '59.375rem', // 950px
+                248: '62rem', // 992px
                 248.25: '62.0625rem', // 993px
                 250: '62.5rem', // 1000px
                 273.75: '68.4375rem', // 1095px
@@ -247,6 +252,7 @@ const config: Config = {
                 'gray-600': '#8A8A8A',
                 'gray-700': '#5F5F5F',
                 'gray-750': '#767676',
+                'gray-800': '#E9E9E9',
                 'gray-900': '#313131',
                 'gray-1000': '#1E1E1E',
 
@@ -329,6 +335,7 @@ const config: Config = {
             borderRadius: {
                 2.25: '0.5625rem', // 9px
                 2.5: '0.625rem', // 10px
+                8: '2rem', // 32px
             },
             keyframes: {
                 'fade-in': {

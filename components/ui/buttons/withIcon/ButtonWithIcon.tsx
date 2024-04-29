@@ -21,7 +21,7 @@ const ButtonWithIcon: FC<ButtonWithIconProps> = ({
             size={size}
             {...props}
             className={cn(
-                '',
+                'justify-between',
                 {
                     'gap-6 pr-7.5': size === 'l',
                     'gap-5 pr-5.5': size === 'm',

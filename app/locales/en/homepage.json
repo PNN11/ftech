@@ -8,6 +8,107 @@
     },
     "about-us": {
         "title": "We provide tailored IT solutions for business growth",
-        "description": "From software development to tech support, we are dedicated to providing reliable and efficient services that help your company thrive in the digital age"
+        "description": "From software development to tech support, we are dedicated to providing reliable and efficient services that help your company thrive in the digital age",
+        "items": {
+            "experience": {
+                "title": "{{count}} years",
+                "description": "Establishing a solid foundation, we've honed our skills over half a decade"
+            },
+            "returning-customers": {
+                "title": "Returning customers",
+                "description": "Our service quality keeps clients coming back for more"
+            },
+            "referral": {
+                "description": "Clients come as Referral"
+            },
+            "foundation": {
+                "title": "Since {{year}}",
+                "description": "We've been on this journey since 2019, committed to excellence and growth."
+            },
+            "completed-projects": {
+                "description": "Projects Completed",
+                "button": "Explore cases"
+            }
+        }
+    },
+    "our-service": {
+        "subtitle": "Our service",
+        "title": "Cost-Effective Solutions",
+        "items": [
+            {
+                "category": "Explore cases",
+                "services": [
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" }
+                ]
+            },
+            {
+                "category": "Explore cases",
+                "services": [
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" }
+                ]
+            },
+            {
+                "category": "Explore cases",
+                "services": [
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" }
+                ]
+            },
+            {
+                "category": "Explore cases",
+                "services": [
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" }
+                ]
+            },
+            {
+                "category": "Explore cases",
+                "services": [
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" },
+                    { "title": "Service title", "href": "/" }
+                ]
+            }
+        ]
+    },
+    "our-expertise": {
+        "subtitle": "Our expertise",
+        "title": "It's crucial to have a experts in software developing",
+        "description": "Having experts in software development is crucial. Their knowledge and experience can lead to more efficient coding practices. Experts can offer innovative solutions to complex problems, ultimately improving the overall performance of the software.",
+        "items": [
+            { "title": "Web 3.0", "description": "Clients come as Referral", "href": "/web3" },
+            { "title": "Web 3.0", "description": "Clients come as Referral", "href": "/web3" }
+        ]
     }
 }
