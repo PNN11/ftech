@@ -123,13 +123,16 @@ const config: Config = {
                 42.125: '10.5313rem', // 168.5px
                 45: '11.25rem', // 180px
                 45.25: '11.3125rem', // 181px
+                46.5: '11.625rem', // 186px
                 46.75: '11.6875rem', // 187px
                 47.5: '11.875rem', // 190px
                 47.75: '11.9375rem', // 191px
+                48: '12rem', // 192px
                 49: '12.25rem', // 196px
                 49.5: '12.375rem', // 198px
                 50: '12.5rem', // 200px
                 51.25: '12.8125rem', // 205px
+                51.5: '12.875rem', // 206px
                 52.5: '13.125rem', // 210px
                 53.75: '13.4375rem', // 215px
                 54.75: '13.6875rem', // 219px
@@ -342,6 +345,10 @@ const config: Config = {
                     '0%': { opacity: '0' },
                     '100%': { opacity: '1' },
                 },
+                'fade-in-up': {
+                    '0%': { opacity: '0', transform: 'translateY(50%)' },
+                    '100%': { opacity: '1', transform: 'translateY(0%)' },
+                },
                 'mobile-menu': {
                     '0%': { height: '0', opacity: '0', paddingTop: '0', paddingBottom: '0' },
                     '100%': { height: '16.875rem', opacity: '1' },
@@ -349,6 +356,7 @@ const config: Config = {
             },
             animation: {
                 'fade-in': 'fade-in 0.3s linear',
+                'fade-in-up': 'fade-in-up 0.3s linear',
                 'mobile-menu': 'mobile-menu 0.5s linear',
             },
         },

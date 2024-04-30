@@ -11,46 +11,55 @@ export const expertise = [
         title: 'common:expertise.items.real-estate.title',
         description: 'common:expertise.items.real-estate.description',
         href: '/real-estate',
+        number: 1,
     },
     {
         title: 'common:expertise.items.web3.title',
         description: 'common:expertise.items.web3.description',
         href: '/web3',
+        number: 2,
     },
     {
         title: 'common:expertise.items.travel.title',
         description: 'common:expertise.items.travel.description',
         href: '/travel',
+        number: 3,
     },
     {
         title: 'common:expertise.items.e-commerce.title',
         description: 'common:expertise.items.e-commerce.description',
         href: '/e-commerce',
+        number: 4,
     },
     {
         title: 'common:expertise.items.healthcare.title',
         description: 'common:expertise.items.healthcare.description',
         href: '/healthcare',
+        number: 5,
     },
     {
         title: 'common:expertise.items.logistics.title',
         description: 'common:expertise.items.logistics.description',
         href: '/logistics',
+        number: 6,
     },
     {
         title: 'common:expertise.items.edtech.title',
         description: 'common:expertise.items.edtech.description',
         href: '/edtech',
+        number: 7,
     },
     {
         title: 'common:expertise.items.fintech.title',
         description: 'common:expertise.items.fintech.description',
         href: '/fintech',
+        number: 8,
     },
     {
         title: 'common:expertise.items.energetics.title',
         description: 'common:expertise.items.energetics.description',
         href: '/energetics',
+        number: 9,
     },
 ]
 
@@ -79,7 +88,7 @@ const ExpertiseSubmenu: FC = () => {
                     <ul className="grid gap-x-15 gap-y-3 md:grid-cols-2 xl:grid-cols-3">
                         {expertise.map(({ description, href, title }) => (
                             <li key={href}>
-                                <SubMenuItem title={title} href={href} description={description} />
+                                <SubMenuItem title={title} href={`/expertise${href}`} description={description} />
                             </li>
                         ))}
                     </ul>

@@ -26,7 +26,7 @@ const Button: FC<ButtonProps> = ({
         <button
             type={type}
             className={cn(
-                `shadow-button inline-flex items-center whitespace-nowrap leading-none tracking-h2`,
+                `inline-flex items-center justify-center whitespace-nowrap leading-none tracking-h2 shadow-button`,
                 {
                     'h-8 rounded-2.5 px-3.25 text-base': size === 's',
                     'h-12 rounded-xl px-6.5 text-1xl': size === 'm',

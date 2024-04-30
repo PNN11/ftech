@@ -1,26 +1,107 @@
 'use client'
 import { expertise } from '@/components/layout/Header/expertise/ExpertiseSubmenu'
 import TitleWithDescription from '@/components/ui/TitleWithDescription'
+import Button from '@/components/ui/buttons/defaultButton/button'
 import Heading from '@/components/ui/typography/heading'
 import Paragraph from '@/components/ui/typography/paragraph'
 import Container from '@/components/ui/wrappers/container'
 import SectionWrapper from '@/components/ui/wrappers/sectionWrapper'
+import { cn } from '@/lib/classNames'
 import { formatNumber } from '@/lib/formatNumber'
+import { ScreenWidths } from '@/types/common'
+import Image from 'next/image'
 
-import { FC } from 'react'
+import { FC, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import ExpertiseCard from './ExpertiseCard'
 
 type ExpertiseData = {
     title: string
     description: string
     subtitle: string
-    items: { title: string; href: string; description: string }[]
+}
+
+const EXPERTISE_CARD_HEIGHT = 400
+
+const getCardStyles = (index: number, activeIndex: number) => {
+    if (index === activeIndex) return { height: EXPERTISE_CARD_HEIGHT }
+    if (activeIndex - 1 === index || index === activeIndex + 1) return { height: EXPERTISE_CARD_HEIGHT * 0.95 }
+    if (activeIndex - 2 === index || index === activeIndex + 2) return { height: EXPERTISE_CARD_HEIGHT * 0.95 }
+    if (activeIndex - 3 === index || index === activeIndex + 3)
+        return { height: EXPERTISE_CARD_HEIGHT * 0.9, opacity: 0.66 }
+    if (activeIndex - 4 === index || index === activeIndex + 4)
+        return { height: EXPERTISE_CARD_HEIGHT * 0.7, opacity: 0.33 }
+    if (activeIndex - 5 === index || index === activeIndex + 5)
+        return { height: EXPERTISE_CARD_HEIGHT * 0.5, opacity: 0.33 }
+    if (activeIndex - 6 === index || index === activeIndex + 6)
+        return { height: EXPERTISE_CARD_HEIGHT * 0.5, opacity: 0.2 }
+    if (activeIndex - 7 === index || index === activeIndex + 7)
+        return { height: EXPERTISE_CARD_HEIGHT * 0.5, opacity: 0.15 }
+    if (activeIndex - 8 === index || index === activeIndex + 8)
+        return { height: EXPERTISE_CARD_HEIGHT * 0.5, opacity: 0.1 }
+
+    return { height: EXPERTISE_CARD_HEIGHT * 0.5, opacity: 0 }
+}
+
+const getPositionOffset = (width: number, position: number) => {
+    if (width <= 0) return 0
+
+    if (position > 0.5) return width / 2 - width * position - 80
+    if (position < 0.5) return width / 2 - width * position + 80
+    return width / 2 - width * position
 }
 
 const OurExpertise: FC = () => {
     const { t } = useTranslation()
+    const [mousePosition, setMousePosition] = useState(0.5)
+    const [activeCard, setActiveCard] = useState<number>(13)
+    const [widthDifference, setWidthDifference] = useState({ difference: 0, differenceBetweenOneSection: 0 })
 
-    const { description, items, subtitle, title } = t('our-expertise', { returnObjects: true }) as ExpertiseData
+    const ref = useRef<HTMLDivElement>(null)
+    const expertiseWrapperRef = useRef<HTMLDivElement>(null)
+
+    const { description, subtitle, title } = t('our-expertise', { returnObjects: true }) as ExpertiseData
+
+    useEffect(() => {
+        if (!ref.current) return
+
+        const element = ref.current
+
+        const mouseMoveHandler = (e: MouseEvent) => {
+            const value = +formatNumber(e.clientX / element.clientWidth, { maximumFractionDigits: 1 })
+
+            setMousePosition(value)
+        }
+
+        element.addEventListener('mousemove', mouseMoveHandler)
+
+        return () => {
+            element.removeEventListener('mousemove', mouseMoveHandler)
+        }
+    }, [])
+
+    useEffect(() => {
+        if (!expertiseWrapperRef.current) return
+        const element = expertiseWrapperRef.current
+
+        const handler = () => {
+            if (window.innerWidth < ScreenWidths.lg) return
+
+            setWidthDifference({
+                difference: element.clientWidth - window.innerWidth,
+                differenceBetweenOneSection: element.clientWidth / 3 - window.innerWidth,
+            })
+        }
+
+        handler()
+
+        window.addEventListener('resize', handler)
+
+        return () => {
+            window.removeEventListener('resize', handler)
+        }
+    }, [])
 
     return (
         <SectionWrapper>
@@ -31,16 +112,47 @@ const OurExpertise: FC = () => {
                     description={description}
                     subtitle={subtitle}
                 />
-                <div>
-                    {expertise.map(({ description, href, title }, i) => (
-                        <div className="rounded-8 border border-gray-300 p-5.5 shadow-button" key={href}>
-                            <Paragraph variant="subt">{formatNumber(i + 1, { minimumIntegerDigits: 2 })}</Paragraph>
-                            <Heading variant="h5">{title}</Heading>
-                            <Paragraph variant="p2">{description}</Paragraph>
-                        </div>
-                    ))}
-                </div>
             </Container>
+            <div className="relative hidden h-100 overflow-hidden lg:block" ref={ref}>
+                <div
+                    ref={expertiseWrapperRef}
+                    className="absolute flex h-100 items-end gap-2 transition-all duration-500"
+                    style={{
+                        left: `${-widthDifference.difference / 2 + getPositionOffset(widthDifference.differenceBetweenOneSection, mousePosition)}px`,
+                    }}
+                >
+                    {/* multiply original array for displaying cards on both sides on screens with width more than 1900 */}
+                    {(new Array(3).fill(expertise).flat() as typeof expertise).map(
+                        ({ description, href, title, number }, i) => (
+                            <ExpertiseCard
+                                description={description}
+                                href={href}
+                                isActive={i === activeCard}
+                                key={`${href}${i}`}
+                                number={number}
+                                onMouseEnter={() => setActiveCard(i)}
+                                title={title}
+                                wrapperStyle={getCardStyles(i, activeCard)}
+                            />
+                        )
+                    )}
+                </div>
+            </div>
+            <Swiper slidesPerView="auto" spaceBetween={8}>
+                {expertise.map(({ description, href, title, number }, i) => (
+                    <SwiperSlide key={`${href}${i}`} className="!w-fit">
+                        <ExpertiseCard
+                            description={description}
+                            href={href}
+                            isActive={i === activeCard}
+                            number={number}
+                            onMouseEnter={() => setActiveCard(i)}
+                            title={title}
+                            wrapperStyle={getCardStyles(i, activeCard)}
+                        />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
         </SectionWrapper>
     )
 }

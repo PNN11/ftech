@@ -5,7 +5,7 @@ import AboutUs from '@/components/pages/home/aboutUs'
 import OurService from '@/components/pages/home/ourService'
 import OurExpertise from '@/components/pages/home/ourExpertise'
 
-const namespaces = ['homepage']
+const namespaces = ['homepage', 'common']
 
 export default async function Home({ params: { locale } }: { params: { locale: string } }) {
     const { resources } = await initTranslations(locale, namespaces)
