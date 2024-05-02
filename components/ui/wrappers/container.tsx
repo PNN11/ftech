@@ -10,7 +10,7 @@ const Container: FC<ContainerProps> = ({ className = '', children, size = 'm', .
         <div
             className={cn(
                 `mx-auto`,
-                { 'max-w-320 px-4 sm:px-6 md:px-7 xl:px-11': size === 'm' },
+                { 'max-w-320 px-4 sm:px-5 lg:px-7 xl:px-11': size === 'm' },
 
                 className
             )}

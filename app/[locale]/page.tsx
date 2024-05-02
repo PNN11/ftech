@@ -4,6 +4,7 @@ import HomePageFirstScreen from '@/components/pages/home/firstScreen/homePageFir
 import AboutUs from '@/components/pages/home/aboutUs'
 import OurService from '@/components/pages/home/ourService'
 import OurExpertise from '@/components/pages/home/ourExpertise'
+import OurCases from '@/components/pages/home/ourCases'
 
 const namespaces = ['homepage', 'common']
 
@@ -17,6 +18,7 @@ export default async function Home({ params: { locale } }: { params: { locale: s
                 <AboutUs />
                 <OurService />
                 <OurExpertise />
+                <OurCases />
             </main>
         </TranslationsProvider>
     )

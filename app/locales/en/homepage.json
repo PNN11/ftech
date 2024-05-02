@@ -106,6 +106,16 @@
         "subtitle": "Our expertise",
         "title": "It's crucial to have a experts in software developing",
         "description": "Having experts in software development is crucial. Their knowledge and experience can lead to more efficient coding practices. Experts can offer innovative solutions to complex problems, ultimately improving the overall performance of the software.",
-        "find-more": "Find more"
+        "find-more": "Find more",
+        "full-expertise-domains": "Full expertise domains"
+    },
+    "our-cases": {
+        "subtitle": "Our cases",
+        "title": "Showcasing versatility and ability to adapt to different challenges",
+        "description": "Our projects span various industries, from real estate to technology, showcasing our versatility and expertise",
+        "all-cases": "All cases",
+        "discover-case": "Discover case",
+        "explore-all-cases-in-portfolio": "Explore all cases in portfolio",
+        "explore-all-cases": "Explore all {{casesCount}} cases"
     }
 }

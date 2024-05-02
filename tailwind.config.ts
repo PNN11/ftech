@@ -125,6 +125,7 @@ const config: Config = {
                 45.25: '11.3125rem', // 181px
                 46.5: '11.625rem', // 186px
                 46.75: '11.6875rem', // 187px
+                47.25: '11.8125rem', // 189px
                 47.5: '11.875rem', // 190px
                 47.75: '11.9375rem', // 191px
                 48: '12rem', // 192px
@@ -251,6 +252,7 @@ const config: Config = {
                 'gray-200': '#EBEBEB',
                 'gray-300': '#E4E4E4',
                 'gray-350': '#DADADA',
+                'gray-400': '#1F1F1F',
                 'gray-500': '#C0C0C0',
                 'gray-600': '#8A8A8A',
                 'gray-700': '#5F5F5F',

@@ -2,19 +2,16 @@
 import { expertise } from '@/components/layout/Header/expertise/ExpertiseSubmenu'
 import TitleWithDescription from '@/components/ui/TitleWithDescription'
 import Button from '@/components/ui/buttons/defaultButton/button'
-import Heading from '@/components/ui/typography/heading'
-import Paragraph from '@/components/ui/typography/paragraph'
 import Container from '@/components/ui/wrappers/container'
 import SectionWrapper from '@/components/ui/wrappers/sectionWrapper'
-import { cn } from '@/lib/classNames'
 import { formatNumber } from '@/lib/formatNumber'
 import { ScreenWidths } from '@/types/common'
-import Image from 'next/image'
 
+import Link from 'next/link'
 import { FC, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Swiper, SwiperSlide } from 'swiper/react'
 import ExpertiseCard from './ExpertiseCard'
+import ExpertiseSlider from './ExpertiseSlider'
 
 type ExpertiseData = {
     title: string
@@ -113,7 +110,11 @@ const OurExpertise: FC = () => {
                     subtitle={subtitle}
                 />
             </Container>
-            <div className="relative hidden h-100 overflow-hidden lg:block" ref={ref}>
+            <div
+                onMouseLeave={() => setActiveCard(13)}
+                className="relative hidden h-100 overflow-hidden lg:block"
+                ref={ref}
+            >
                 <div
                     ref={expertiseWrapperRef}
                     className="absolute flex h-100 items-end gap-2 transition-all duration-500"
@@ -138,21 +139,16 @@ const OurExpertise: FC = () => {
                     )}
                 </div>
             </div>
-            <Swiper slidesPerView="auto" spaceBetween={8}>
-                {expertise.map(({ description, href, title, number }, i) => (
-                    <SwiperSlide key={`${href}${i}`} className="!w-fit">
-                        <ExpertiseCard
-                            description={description}
-                            href={href}
-                            isActive={i === activeCard}
-                            number={number}
-                            onMouseEnter={() => setActiveCard(i)}
-                            title={title}
-                            wrapperStyle={getCardStyles(i, activeCard)}
-                        />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+            <Container className="lg:hidden">
+                <ExpertiseSlider />
+                <div className="mt-8 flex w-full justify-center">
+                    <Link href="/cases" className="w-full md:w-fit">
+                        <Button className="w-full" size="m">
+                            {t('our-expertise.full-expertise-domains')}
+                        </Button>
+                    </Link>
+                </div>
+            </Container>
         </SectionWrapper>
     )
 }

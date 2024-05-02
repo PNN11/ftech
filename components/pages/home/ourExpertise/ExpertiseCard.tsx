@@ -14,8 +14,8 @@ type ExpertiseCardProps = {
     href: string
     number: number
     isActive: boolean
-    wrapperStyle: CSSProperties
-    onMouseEnter: () => void
+    wrapperStyle?: CSSProperties
+    onMouseEnter?: () => void
 }
 
 const ExpertiseCard: FC<ExpertiseCardProps> = ({
@@ -32,8 +32,8 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({
     return (
         <Link href={`/expertise${href}`}>
             <div
-                className="relative w-48 overflow-hidden rounded-8 border border-gray-300 
-                                bg-white-300 p-5.5 shadow-button transition-all duration-500"
+                className="w-47.25 relative overflow-hidden rounded-8 border border-gray-300 bg-white-300 
+                                p-5.5 shadow-button transition-all duration-500 lg:w-48"
                 style={wrapperStyle}
                 onMouseEnter={onMouseEnter}
             >
@@ -45,7 +45,7 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({
                 </Heading>
                 <Paragraph variant="p2">{t(description)}</Paragraph>
                 {isActive && (
-                    <Button className="animate-fade-in-up mt-4 w-full" size="s">
+                    <Button className="mt-4 w-full animate-fade-in-up" size="s">
                         {t('our-expertise.find-more')}
                     </Button>
                 )}
