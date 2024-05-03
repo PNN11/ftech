@@ -23,6 +23,7 @@ const config: Config = {
                 'primary-gray': 'linear-gradient(180.28deg, #606060 -3.64%, #373737 99.62%)',
                 'primary-black': 'linear-gradient(180.28deg, #303030 -3.64%, #1E1E1E 86.01%)',
                 'primary-white': 'linear-gradient(180.28deg, #FFFFFF -3.64%, #F4F4F4 99.62%)',
+                'contact-us-blue': 'linear-gradient(180.28deg, #10A9FF -3.64%, #0070D7 80.56%)',
             },
             boxShadow: {
                 heading: '0px 5px 3.4px 0px rgba(246, 246, 246, 1)',
@@ -196,6 +197,7 @@ const config: Config = {
                 135: '33.75rem', // 540px
                 135.5: '33.875rem', // 542px
                 137.5: '34.375rem', // 550px
+                145: '36.25rem', // 580px
                 145.5: '36.375rem', // 582px
                 146.75: '36.6875rem', // 587px
                 150: '37.5rem', // 600px
@@ -338,6 +340,7 @@ const config: Config = {
                 24.3: '6.075rem', // 97.2px
             },
             borderRadius: {
+                1.25: '0.3125rem', // 5px
                 2.25: '0.5625rem', // 9px
                 2.5: '0.625rem', // 10px
                 8: '2rem', // 32px

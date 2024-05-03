@@ -8,10 +8,7 @@ import { useTranslation } from 'react-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-type CaseCardProps = Case & {
-    bgColor?: string
-    bgTone?: 'dark' | 'light'
-}
+type CaseCardProps = Case
 
 const CaseCard: FC<CaseCardProps> = ({
     description,

@@ -6,6 +6,8 @@ export type Case = {
     features: { value: string; text: string }[]
     image: string
     mobileImage: string
+    bgColor?: string
+    bgTone?: 'dark' | 'light'
 }
 
 export const casesEn: Case[] = [

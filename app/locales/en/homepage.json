@@ -117,5 +117,21 @@
         "discover-case": "Discover case",
         "explore-all-cases-in-portfolio": "Explore all cases in portfolio",
         "explore-all-cases": "Explore all {{casesCount}} cases"
+    },
+    "client-reviews": {
+        "subtitle": "Client reviews",
+        "title": "Our valued clients",
+        "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success. ",
+        "action_button": "Become a customer"
+    },
+    "faq": {
+        "subtitle": "FAQ",
+        "title": "Do you have any questions?",
+        "description": "Our projects span various industries, from real estate to technology, showcasing our versatility and expertise"
+    },
+    "contact-us": {
+        "title": "Have an idea of project?",
+        "description": "Our team is dedicated to providing excellent customer service and ensuring your experience with us is a positive one. We look forward to hearing from you soon!",
+        "action_button": "Contact us"
     }
 }

@@ -78,3 +78,19 @@
         height: 0;
     }
 }
+
+.review-slider-bullet {
+    @apply rounded-1.25 relative mx-2.5 inline-block h-4 w-4 cursor-pointer bg-gray-200 transition-all duration-300 dark:bg-blue-350;
+}
+
+.review-slider-bullet-active {
+    @apply bg-gray-900 dark:bg-blue-900;
+}
+/* .review-slider-bullet-active-next,
+.review-slider-bullet-active-prev {
+    @apply scale-75;
+}
+.review-slider-bullet-active-next-next,
+.review-slider-bullet-active-prev-prev {
+    @apply scale-50;
+} */

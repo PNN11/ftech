@@ -5,6 +5,9 @@ import AboutUs from '@/components/pages/home/aboutUs'
 import OurService from '@/components/pages/home/ourService'
 import OurExpertise from '@/components/pages/home/ourExpertise'
 import OurCases from '@/components/pages/home/ourCases'
+import Reviews from '@/components/pages/home/reviews'
+import Faq from '@/components/pages/home/faq'
+import HomeContactUs from '@/components/pages/home/contactUs/HomeContactUs'
 
 const namespaces = ['homepage', 'common']
 
@@ -19,6 +22,9 @@ export default async function Home({ params: { locale } }: { params: { locale: s
                 <OurService />
                 <OurExpertise />
                 <OurCases />
+                <Reviews />
+                <Faq />
+                <HomeContactUs />
             </main>
         </TranslationsProvider>
     )
