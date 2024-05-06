@@ -34,7 +34,9 @@ const config: Config = {
             },
             spacing: {
                 0.75: '0.1875rem', // 3px
+                1.25: '0.3125rem', // 5px
                 1.5: '0.375rem', // 6px
+                1.75: '0.4375rem', // 7px
                 2.25: '0.5625rem', // 9px
                 2.375: '0.5938rem', // 9.5px
                 2.5: '0.625rem', // 10px
@@ -172,6 +174,7 @@ const config: Config = {
                 91.25: '22.8125rem', // 365px
                 93: '23.25rem', // 372px
                 93.25: '23.3125rem', // 373px
+                94: '23.5rem', // 376px
                 96.5: '24.125rem', // 386px
                 98.25: '24.5625rem', // 393px
                 99: '24.75rem', // 396px
@@ -288,6 +291,8 @@ const config: Config = {
                 'white-100': '#F8F9FA',
                 'white-200': '#F9FAFC',
                 'white-300': '#FBFAFA',
+
+                'clutch-star': '#EF4335',
             },
             fontSize: {
                 '2xs': '0.8125rem', // 13px

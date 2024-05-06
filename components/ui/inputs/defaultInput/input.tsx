@@ -1,61 +1,45 @@
-import { Icons } from '@/components/svg'
-import { gilroy } from '@/fonts'
 import { cn } from '@/lib/classNames'
-import { ComponentProps, FC } from 'react'
+import { ComponentProps, FC, useId } from 'react'
 
 type InputSize = 'l' | 'm' | 's'
 
 type InputProps = ComponentProps<'input'> & {
     inputSize?: InputSize
-    withIcon?: boolean
-    Icon?: FC<ComponentProps<'svg'>>
-    iconClassName?: string
-    onIconClick?: () => void
+    label?: string
 }
 
-const Input: FC<InputProps> = ({
-    className = '',
-    width,
-    inputSize = 'l',
-    withIcon = false,
-    Icon = Icons.Arrows.ArrowUpRight,
-    iconClassName = '',
-    onIconClick,
-    ...props
-}) => {
+const Input: FC<InputProps> = ({ className = '', width, inputSize = 'm', value, label, id = '', ...props }) => {
+    const _id = useId()
+    const inputId = `${id}-${_id}`
+
     return (
-        <div className="relative">
+        <div>
+            {label && (
+                <label className="mb-2.5 block text-base leading-none text-gray-700" htmlFor={inputId}>
+                    {label}
+                </label>
+            )}
             <input
                 className={cn(
-                    `relative w-full border-b border-b-base-16 bg-transparent font-light leading-8.25 text-base-5 outline-none placeholder:text-base-5`,
-                    gilroy.className,
+                    `rounded-xl border border-gray-200 bg-gray-50 leading-none tracking-h2 text-gray-600 outline-none hover:border-gray-500
+                    hover:text-gray-750 focus-visible:border-gray-350 focus-visible:text-gray-900 disabled:border-none disabled:bg-gray-200
+                     disabled:text-gray-500 dark:bg-blue-200`,
 
                     {
-                        'h-20 px-10 text-3xl': inputSize === 'l',
-                        'px-5,5 h-15 text-1xl': inputSize === 'm',
-                        'h-11.75 px-4.75 text-xl': inputSize === 's',
+                        'h-14.5 px-4.25 text-1xl': inputSize === 'l',
+                        'h-12 px-3.5 text-xl': inputSize === 'm',
+                        'h-8 px-3.25 text-base': inputSize === 's',
                     },
                     {
-                        'pr-26': inputSize === 'l' && withIcon,
-                        'pr-16.5': (inputSize === 'm' || inputSize === 's') && withIcon,
-                    }
+                        'border-transparent text-gray-700': !!value,
+                    },
+
+                    className
                 )}
+                value={value}
+                id={inputId}
                 {...props}
             />
-            {withIcon && (
-                <Icon
-                    onClick={onIconClick}
-                    className={cn(
-                        {
-                            'right-5.25 h-15 w-15': inputSize === 'l',
-                            'right-2.375 h-7 w-7': inputSize === 'm' || inputSize === 's',
-                            'cursor-pointer': !!onIconClick,
-                        },
-                        'absolute top-1/2 -translate-y-1/2 text-white',
-                        iconClassName
-                    )}
-                />
-            )}
         </div>
     )
 }

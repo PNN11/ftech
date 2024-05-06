@@ -10,6 +10,7 @@ import './globals.css'
 import initTranslations from './i18n'
 import { outfit } from '@/fonts'
 import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/footer'
 
 export const metadata: Metadata = {
     title: 'FTECH',
@@ -35,6 +36,7 @@ export default async function RootLayout({
                     <div className="grid min-h-screen grid-cols-1">
                         <Header />
                         {children}
+                        <Footer />
                     </div>
                     <div id="modals" />
                 </TranslationsProvider>

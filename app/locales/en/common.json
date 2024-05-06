@@ -84,5 +84,17 @@
             "title": "Dedicated teams",
             "description": "Lorem ipsum dolor sit amet consectetur."
         }
+    },
+    "footer": {
+        "cases": "Cases",
+        "contacts": "Contacts",
+        "home": "Home",
+        "terms": "Terms",
+        "privacy": "Privacy",
+        "city": "Warsaw, Poland",
+        "street": "Stavki 2",
+        "subscribe": "Subscribe for news",
+        "lang": "Lang",
+        "reviews": "Reviews"
     }
 }
