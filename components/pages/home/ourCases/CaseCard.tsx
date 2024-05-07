@@ -8,7 +8,9 @@ import { useTranslation } from 'react-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-type CaseCardProps = Case
+type CaseCardProps = Case & {
+    variant?: 'casesPage' | 'homePage'
+}
 
 const CaseCard: FC<CaseCardProps> = ({
     description,
@@ -20,17 +22,30 @@ const CaseCard: FC<CaseCardProps> = ({
     bgTone = 'dark',
     image,
     mobileImage,
+    variant = 'homePage',
 }) => {
     const { t } = useTranslation()
 
     return (
         <div
-            className="grid grid-cols-1 justify-between gap-6 rounded-8 p-4.5 shadow-button md:grid-cols-[1fr_22.125rem] md:p-6 lg:block xl:p-8"
+            className={cn(
+                'grid grid-cols-1 justify-between gap-6 rounded-8 p-4.5 shadow-button md:grid-cols-[1fr_22.125rem] md:p-6 xl:p-8',
+                { 'lg:block': variant === 'homePage' }
+            )}
             style={{ backgroundColor: bgColor }}
         >
-            <div className="order-1 flex flex-row-reverse justify-between gap-7 md:order-none md:flex-row md:justify-start lg:flex-col">
+            <div
+                className={cn(
+                    'order-1 flex flex-col justify-between gap-6 md:order-none md:flex-row md:justify-start md:gap-7',
+                    { 'lg:flex-col': variant === 'homePage' }
+                )}
+            >
                 <div className="flex justify-between">
-                    <div className="flex flex-col-reverse justify-between lg:flex-col">
+                    <div
+                        className={cn('flex flex-col justify-between md:flex-col-reverse md:gap-0', {
+                            'lg:flex-col': variant === 'homePage',
+                        })}
+                    >
                         <div>
                             <Heading
                                 className={cn('mb-3.5', {
@@ -50,7 +65,7 @@ const CaseCard: FC<CaseCardProps> = ({
                             >
                                 {description}
                             </Paragraph>
-                            <Link href={`/cases/${href}`}>
+                            <Link className="hidden md:block" href={`/cases/${href}`}>
                                 <CaseButton colorTone={bgTone}>{t('homepage:our-cases.discover-case')}</CaseButton>
                             </Link>
                         </div>
@@ -76,11 +91,15 @@ const CaseCard: FC<CaseCardProps> = ({
                         alt={title}
                         width={190}
                         height={380}
-                        className="mr-5 hidden lg:block"
+                        className={cn('mr-5 hidden w-47.5', { 'lg:block': variant === 'homePage' })}
                         quality={100}
                     />
                 </div>
-                <div className="grid grid-cols-1 gap-3.5 lg:grid-cols-3 lg:gap-5.5">
+                <div
+                    className={cn('grid grid-cols-3 gap-3.5 md:grid-cols-1', {
+                        'lg:grid-cols-3 lg:gap-5.5': variant === 'homePage',
+                    })}
+                >
                     {features.map(({ text, value }, i) => (
                         <div key={`${text}${i}`} className="">
                             <Heading
@@ -93,7 +112,7 @@ const CaseCard: FC<CaseCardProps> = ({
                                 {value}
                             </Heading>
                             <Paragraph
-                                className={cn('mb-5.5', {
+                                className={cn('', {
                                     '!text-[#545454]': bgTone === 'light',
                                     '!text-[#F6F6F6]': bgTone === 'dark',
                                 })}
@@ -104,15 +123,24 @@ const CaseCard: FC<CaseCardProps> = ({
                         </div>
                     ))}
                 </div>
+                <Link className="w-full md:hidden" href={`/cases/${href}`}>
+                    <CaseButton className="w-full" colorTone={bgTone}>
+                        {t('homepage:our-cases.discover-case')}
+                    </CaseButton>
+                </Link>
             </div>
-            <div className="self-end rounded-xl bg-white-10 bg-opacity-[0.12] md:bg-transparent lg:hidden">
+            <div
+                className={cn('self-end rounded-xl bg-white-10 bg-opacity-[0.12] md:bg-transparent', {
+                    'lg:hidden': variant === 'homePage',
+                })}
+            >
                 <Image
-                    src={mobileImage}
+                    src={image}
                     alt={title}
-                    width={354}
+                    width={290}
                     height={340}
                     quality={100}
-                    className="mx-auto md:-mb-6"
+                    className="mx-auto h-85 object-cover object-top md:-mb-6"
                 />
             </div>
         </div>

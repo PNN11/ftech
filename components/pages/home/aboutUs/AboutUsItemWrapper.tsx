@@ -11,15 +11,15 @@ const AboutUsItemWrapper: FC<AboutUsItemWrapperProps> = ({ children, className, 
     return (
         <div
             className={cn(
-                `rounded-8 shadow-about-us-card dark:shadow-about-us-card-blue relative overflow-hidden  border
-                 border-gray-800 bg-white-300  dark:border-[#42A1E9] dark:bg-primary-blue`,
+                `relative overflow-hidden rounded-8 border border-gray-800  bg-white-300
+                 shadow-about-us-card dark:bg-white-300 md:dark:border-[#42A1E9] md:dark:bg-primary-blue md:dark:shadow-about-us-card-blue`,
                 className
             )}
             {...props}
         >
             <div
                 className={cn(
-                    'relative z-[1] flex h-full w-full flex-col items-start gap-3.5 px-5 py-6 xl:px-6',
+                    'relative z-[1] flex h-full w-full flex-col items-start gap-3.5 px-4.5 py-6 md:px-6',
                     classes?.childrenWrapper
                 )}
             >
@@ -29,7 +29,7 @@ const AboutUsItemWrapper: FC<AboutUsItemWrapperProps> = ({ children, className, 
                 src={bgSrc}
                 fill
                 alt=""
-                className={cn('rounded-8 hidden mix-blend-soft-light dark:block', classes?.bg)}
+                className={cn('hidden rounded-8 mix-blend-soft-light dark:block', classes?.bg)}
             />
         </div>
     )
