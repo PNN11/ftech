@@ -4,7 +4,8 @@
         "with-us": "with us",
         "client-reviews": "Client reviews",
         "reviews": "reviews",
-        "start-project": "Start project"
+        "start-project": "Start project",
+        "title-services": ["NFT", "SaaS", "Apps"]
     },
     "about-us": {
         "title": "We provide tailored IT solutions for business growth",

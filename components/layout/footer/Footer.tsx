@@ -24,7 +24,7 @@ const Footer: FC = () => {
     const { t } = useTranslation()
 
     return (
-        <footer className="pb-8 pt-12 xl:pb-12">
+        <footer className="self-end pb-8 pt-12 xl:pb-12">
             <Container>
                 <div
                     className="grid grid-cols-1 gap-7.5 md:grid-cols-[repeat(2,max-content)] md:justify-between lg:grid-cols-[repeat(3,max-content)]
@@ -56,7 +56,7 @@ const Footer: FC = () => {
                             {footerLinks.map(({ href, title }) => (
                                 <li
                                     key={href}
-                                    className="after:w-1.25 after:h-1.25 relative after:absolute after:-right-4.5 after:top-1/2 after:-translate-y-1/2 after:rounded-md
+                                    className="relative after:absolute after:-right-4.5 after:top-1/2 after:h-1.25 after:w-1.25 after:-translate-y-1/2 after:rounded-md
                                      after:bg-gray-750 after:content-none last:after:hidden md:after:content-[''] dark:after:bg-blue-800"
                                 >
                                     <Link className="inline-block text-xl leading-none text-gray-900" href={href}>

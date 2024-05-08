@@ -62,6 +62,8 @@ export const casesEn: Case[] = [
         title: 'Title4',
         image: '/images/home/phone.png',
         mobileImage: '/images/home/phone_mobile.png',
+        bgColor: '#ECECEC',
+        bgTone: 'light',
     },
 ]
 

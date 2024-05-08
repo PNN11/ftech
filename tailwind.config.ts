@@ -109,6 +109,7 @@ const config: Config = {
                 30.75: '7.6875rem', // 123px
                 31: '7.75rem', // 124px
                 31.25: '7.8125rem', // 125px
+                31.5: '7.875rem', // 126px
                 31.75: '7.9375rem', // 127px
                 32.25: '8.0625rem', // 129px
                 32.75: '8.1875rem', // 131px
@@ -154,10 +155,12 @@ const config: Config = {
                 69: '17.25rem', // 276px
                 70: '17.5rem', // 280px
                 72: '18rem', // 288px
+                73: '18.25rem', // 292px
                 75: '18.75rem', // 300px
                 76: '19rem', // 304px
                 76.5: '19.125rem', // 306px
                 78.375: '19.5938rem', // 313.5px
+                78: '19.5rem', // 312px
                 78.5: '19.625rem', // 314px
                 79: '19.75rem', // 316px
                 80: '20rem', // 320px
@@ -168,8 +171,10 @@ const config: Config = {
                 84.5: '21.125rem', // 338px
                 85: '21.25rem', // 340px
                 86.5: '21.625rem', // 346px
+                87: '21.75rem', // 348px
                 88: '22rem', // 352px
                 88.5: '22.125rem', // 354px
+                89.5: '22.375rem', // 358px
                 90: '22.5rem', // 360px
                 91.25: '22.8125rem', // 365px
                 93: '23.25rem', // 372px
@@ -363,10 +368,17 @@ const config: Config = {
                     '0%': { height: '0', opacity: '0', paddingTop: '0', paddingBottom: '0' },
                     '100%': { height: '16.875rem', opacity: '1' },
                 },
+                'fade-in-up-bounce': {
+                    '0%': { opacity: '0', transform: 'translateY(50%)' },
+                    '50%': { opacity: '1', transform: 'translateY(-20%)' },
+                    '80%': { opacity: '1', transform: 'translateY(5%)' },
+                    '100%': { opacity: '1', transform: 'translateY(0%)' },
+                },
             },
             animation: {
                 'fade-in': 'fade-in 0.3s linear',
                 'fade-in-up': 'fade-in-up 0.3s linear',
+                'fade-in-up-bounce': 'fade-in-up-bounce 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)',
                 'mobile-menu': 'mobile-menu 0.5s linear',
             },
         },
