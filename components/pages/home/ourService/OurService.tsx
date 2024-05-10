@@ -4,6 +4,7 @@ import Tab from '@/components/ui/Tab'
 import TitleWithDescription from '@/components/ui/TitleWithDescription'
 import Heading from '@/components/ui/typography/heading'
 import Paragraph from '@/components/ui/typography/paragraph'
+import TabsWrapper from '@/components/ui/wrappers/TabsWrapper'
 import Container from '@/components/ui/wrappers/container'
 import SectionWrapper from '@/components/ui/wrappers/sectionWrapper'
 import { formatNumber } from '@/lib/formatNumber'
@@ -28,10 +29,7 @@ const OurService: FC = () => {
                     title={t('our-service.title')}
                     subtitle={t('our-service.subtitle')}
                 />
-                <div
-                    className="hidden-scroll mx-auto mb-8 flex w-fit max-w-full items-center gap-1 overflow-auto rounded-2.5
-                   border border-gray-300 bg-white-10 p-2 shadow-button dark:bg-white-300"
-                >
+                <TabsWrapper className="mb-8">
                     {services.map(({ category }, i) => (
                         <Tab
                             onClick={() => setActiveCategory(i)}
@@ -41,7 +39,7 @@ const OurService: FC = () => {
                             {category}
                         </Tab>
                     ))}
-                </div>
+                </TabsWrapper>
                 <ul className="grid grid-cols-2 lg:grid-cols-4">
                     {services[activeCategory].services.map(({ title, href }, i) => (
                         <li key={`${title}${i}`}>

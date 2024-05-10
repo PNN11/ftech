@@ -32,7 +32,7 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({
     return (
         <Link href={`/expertise${href}`}>
             <div
-                className="w-47.25 relative overflow-hidden rounded-8 border border-gray-300 bg-white-300 
+                className="relative w-47.25 overflow-hidden rounded-8 border border-gray-300 bg-white-300 
                                 p-5.5 shadow-button transition-all duration-500 lg:w-48"
                 style={wrapperStyle}
                 onMouseEnter={onMouseEnter}
@@ -46,7 +46,7 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({
                 <Paragraph variant="p2">{t(description)}</Paragraph>
                 {isActive && (
                     <Button className="mt-4 w-full animate-fade-in-up" size="s">
-                        {t('our-expertise.find-more')}
+                        {t('homepage:our-expertise.find-more')}
                     </Button>
                 )}
                 <Image

@@ -6,5 +6,17 @@
         "client_stories": "Explore client stories",
         "action_button": "Start my own project",
         "card_text": "Lorem ipsum dolor sit amet consectetur. Id."
+    },
+    "cases-list": {
+        "subtitle": "Case studies",
+        "title": "Our valued clients",
+        "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success.",
+        "all": "All"
+    },
+    "get-in-touch": {
+        "subtitle": "Get in touch",
+        "title": "Have an idea of project?",
+        "description": "Our team is dedicated to providing excellent customer service and ensuring your experience with us is a positive one. We look forward to hearing from you soon!",
+        "action_button": "Get in touch"
     }
 }

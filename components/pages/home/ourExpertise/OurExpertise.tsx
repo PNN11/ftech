@@ -58,7 +58,7 @@ const OurExpertise: FC = () => {
     const ref = useRef<HTMLDivElement>(null)
     const expertiseWrapperRef = useRef<HTMLDivElement>(null)
 
-    const { description, subtitle, title } = t('our-expertise', { returnObjects: true }) as ExpertiseData
+    const { description, subtitle, title } = t('homepage:our-expertise', { returnObjects: true }) as ExpertiseData
 
     useEffect(() => {
         if (!ref.current) return
@@ -111,7 +111,10 @@ const OurExpertise: FC = () => {
                 />
             </Container>
             <div
-                onMouseLeave={() => setActiveCard(13)}
+                onMouseLeave={() => {
+                    setActiveCard(13)
+                    setMousePosition(0.5)
+                }}
                 className="relative hidden h-100 overflow-hidden lg:block"
                 ref={ref}
             >
@@ -144,7 +147,7 @@ const OurExpertise: FC = () => {
                 <div className="mt-8 flex w-full justify-center">
                     <Link href="/cases" className="w-full md:w-fit">
                         <Button className="w-full" size="m">
-                            {t('our-expertise.full-expertise-domains')}
+                            {t('homepage:our-expertise.full-expertise-domains')}
                         </Button>
                     </Link>
                 </div>
