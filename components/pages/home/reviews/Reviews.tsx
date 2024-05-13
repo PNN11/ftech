@@ -66,7 +66,7 @@ const Reviews: FC = () => {
                         ))}
                     </Swiper>
 
-                    <Link href="/contact" className="mx-auto block w-full md:w-fit">
+                    <Link href="/contacts" className="mx-auto block w-full md:w-fit">
                         <Button className="w-full">{action_button}</Button>
                     </Link>
                     <MouseParallaxWrapper enableOnTouchDevice={false} isAbsolutelyPositioned strength={0.2}>

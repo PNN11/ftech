@@ -1,0 +1,18 @@
+{
+    "first-section": {
+        "title": "Get in touch",
+        "subtitle": "Contacts",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "phone": "Phone",
+            "message": "Message",
+            "submit": "Submit",
+            "placeholder": "Text"
+        },
+        "ready-to-help": {
+            "title": "Ready to help and contact",
+            "description": "Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus. In semper sed ridiculus pretium vitae. Id venenatis vel senectus elementum pellentesque."
+        }
+    }
+}

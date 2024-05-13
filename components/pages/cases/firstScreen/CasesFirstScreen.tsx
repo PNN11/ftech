@@ -44,14 +44,14 @@ const CasesFirstScreen: FC = () => {
                             <Image src="/images/cases/people.png" width={206} height={90} alt="" />
                             <p className="text-2xl leading-none tracking-h2 text-gray-900">{client_stories}</p>
                         </div>
-                        <Link className="mx-auto block w-full md:w-fit lg:ml-0" href="/contact">
+                        <Link className="mx-auto block w-full md:w-fit lg:ml-0" href="/contacts">
                             <Button className="w-full" size="l">
                                 {action_button}
                             </Button>
                         </Link>
                     </div>
                     <Link
-                        href="/contact"
+                        href="/contacts"
                         className="relative overflow-hidden rounded-3xl border border-gray-200 bg-primary-black p-6 pb-73
                                    md:rounded-8 md:px-12 md:py-10 lg:rounded-[3rem_1rem_3rem_1rem] lg:p-12 lg:pb-87
                                     xl:rounded-[4rem_1rem_4rem_1rem] xl:p-17 xl:pb-89.5 dark:border-none dark:bg-contact-us-blue"

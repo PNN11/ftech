@@ -8,7 +8,7 @@ type InputProps = ComponentProps<'input'> & {
     label?: string
 }
 
-const Input: FC<InputProps> = ({ className = '', width, inputSize = 'm', value, label, id = '', ...props }) => {
+const Input: FC<InputProps> = ({ className = '', inputSize = 'm', value, label, id = '', ...props }) => {
     const _id = useId()
     const inputId = `${id}-${_id}`
 
@@ -21,9 +21,9 @@ const Input: FC<InputProps> = ({ className = '', width, inputSize = 'm', value, 
             )}
             <input
                 className={cn(
-                    `rounded-xl border border-gray-200 bg-gray-50 leading-none tracking-h2 text-gray-600 outline-none hover:border-gray-500
-                    hover:text-gray-750 focus-visible:border-gray-350 focus-visible:text-gray-900 disabled:border-none disabled:bg-gray-200
-                     disabled:text-gray-500 dark:bg-blue-200`,
+                    `shadow-input-default hover:shadow-input-hover focus-visible:shadow-input-hover w-full rounded-xl border border-gray-200 bg-gray-50 leading-none
+                    tracking-h2 text-gray-600 outline-none hover:border-gray-500 hover:text-gray-750
+                     focus-visible:border-gray-350 focus-visible:text-gray-900 disabled:border-none disabled:bg-gray-200 disabled:text-gray-500 dark:bg-blue-200`,
 
                     {
                         'h-14.5 px-4.25 text-1xl': inputSize === 'l',

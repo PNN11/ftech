@@ -31,6 +31,8 @@ const config: Config = {
                 header: '0px 1px 16.8px 1px #BCBCBC12',
                 'about-us-card': '0px 1px 8px 1px #BCBCBC12',
                 'about-us-card-blue': '0px 1px 8px 1px #BCBCBC12, 0px 12px 26.7px -1px #36A2EE85',
+                'input-default': '0px 2px 15.9px 0px #F1F1F1',
+                'input-hover': '0px 2px 5.7px 0px #E2E2E28A',
             },
             spacing: {
                 0.75: '0.1875rem', // 3px

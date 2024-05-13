@@ -31,7 +31,7 @@ const CasesGetInTouch: FC = () => {
                             subtitle={subtitle}
                             description={description}
                         />
-                        <Link className="relative z-[2] mx-auto block w-full md:w-fit" href="/contact">
+                        <Link className="relative z-[2] mx-auto block w-full md:w-fit" href="/contacts">
                             <Button size="l" className="w-full">
                                 {action_button}
                             </Button>

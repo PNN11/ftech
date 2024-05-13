@@ -24,8 +24,8 @@ const HomeContactUs: FC = () => {
     return (
         <SectionWrapper>
             <Container>
-                <div className="dark:bg-contact-us-blue lg:pt-19 relative overflow-hidden rounded-8 border border-gray-300 bg-primary-black px-5.5 pb-5.5 pt-8 lg:pb-15">
-                    <div className="md:max-w-145 relative z-[1] mx-auto mb-10 text-center lg:max-w-159">
+                <div className="lg:pt-19 relative overflow-hidden rounded-8 border border-gray-300 bg-primary-black px-5.5 pb-5.5 pt-8 lg:pb-15 dark:bg-contact-us-blue">
+                    <div className="relative z-[1] mx-auto mb-10 text-center md:max-w-145 lg:max-w-159">
                         <Heading className="mb-5.5 !text-white-300" variant="h2">
                             {title}
                         </Heading>
@@ -33,7 +33,7 @@ const HomeContactUs: FC = () => {
                             {description}
                         </Paragraph>
                     </div>
-                    <Link href={'/contact-us'} className="relative z-[1] mx-auto block w-full lg:w-fit">
+                    <Link href={'/contacts'} className="relative z-[1] mx-auto block w-full lg:w-fit">
                         <Button className="w-full" color="secondary">
                             {action_button}
                         </Button>
