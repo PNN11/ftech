@@ -11,6 +11,7 @@ import { useTranslation } from 'react-i18next'
 import ContactInfo from './ContactInfo'
 import LanguagesList from './LanguagesList'
 import SubscribeForm from './SubscribeForm'
+import ClutchInfo from '@/components/ui/ClutchInfo'
 
 const footerLinks = [
     { href: '/', title: 'common:footer.home' },
@@ -33,16 +34,14 @@ const Footer: FC = () => {
                     <div className="row-span-2 flex flex-col gap-5.5 xl:gap-7.75">
                         <Logo className="" />
                         <div className="flex items-end gap-6 md:flex-col md:items-start md:gap-5.5 lg:grow lg:justify-between xl:gap-7.75">
-                            <div>
-                                <div className="mb-1 flex items-center gap-1">
-                                    <Star className="text-clutch-star" />
-                                    <span className="text-base leading-none text-gray-900">5.0</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <Clutch />
-                                    <span className="text-xs leading-none text-gray-900">20 {t('footer.reviews')}</span>
-                                </div>
-                            </div>
+                            <ClutchInfo
+                                classes={{
+                                    wrapper: 'flex-col gap-1 items-start',
+                                    ratingWrapper: 'text-base text-gray-900',
+                                    reviews: 'text-xs text-gray-900',
+                                    reviewsWrapper: 'gap-3',
+                                }}
+                            />
                             <Link
                                 className="flex h-7 w-7 items-center justify-center rounded bg-gray-50"
                                 href={LINKEDIN_ADDRESS}

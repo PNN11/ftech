@@ -13,6 +13,7 @@ import Clutch from '@/components/svg/Clutch'
 import Button from '@/components/ui/buttons/defaultButton/button'
 import MouseParallaxWrapper from '@/components/ui/wrappers/mouseParallaxWrapper'
 import { useInView } from 'react-intersection-observer'
+import ClutchInfo from '@/components/ui/ClutchInfo'
 
 const HomePageFirstScreen: FC = () => {
     const { t } = useTranslation()
@@ -89,7 +90,7 @@ const HomePageFirstScreen: FC = () => {
                         <span
                             key={currentService}
                             style={{ width: serviceTitleWidth ? `${serviceTitleWidth}px` : 'auto' }}
-                            className="animate-fade-in-up-bounce inline-block uppercase text-gray-600 dark:text-blue-900"
+                            className="inline-block animate-fade-in-up-bounce uppercase text-gray-600 dark:text-blue-900"
                         >
                             {currentService}
                         </span>{' '}
@@ -102,12 +103,7 @@ const HomePageFirstScreen: FC = () => {
                             <p className="text-lg font-light leading-none">{t('first-screen.client-reviews')}</p>
                         </ReviewWrapper>
                         <ReviewWrapper className="w-full justify-center py-2.25 md:w-fit">
-                            <div className="mr-4.5 flex items-center gap-1 text-lg leading-none">
-                                <Star className="text-clutch-star" />
-                                5.0
-                            </div>
-                            <Clutch className="mr-3.5" />
-                            <p className="text-sm font-light uppercase leading-none">10 {t('first-screen.reviews')}</p>
+                            <ClutchInfo />
                         </ReviewWrapper>
                     </div>
                     <div className="flex justify-center">

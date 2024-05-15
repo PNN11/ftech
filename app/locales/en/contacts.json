@@ -14,5 +14,14 @@
             "title": "Ready to help and contact",
             "description": "Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus. In semper sed ridiculus pretium vitae. Id venenatis vel senectus elementum pellentesque."
         }
+    },
+    "second-section": {
+        "subtitle": "Our Cases",
+        "description": "Lorem ipsum dolor sit amet consectetur. Tincidunt in risus etiam nec accumsan eleifend id integer. Nibh a rutrum id a sed in nunc cursus. Diam ante ac.",
+        "schedule_call": {
+            "title": "Schedule a call",
+            "description": "Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus.",
+            "action_button": "Schedule a call"
+        }
     }
 }

@@ -57,7 +57,7 @@ const Reviews: FC = () => {
                                 <Heading className="mb-6.5 md:mb-12" variant="h5">
                                     {name}
                                 </Heading>
-                                <div className="grid grid-cols-[1.3125rem_1fr_1.3125rem] gap-6 md:gap-9">
+                                <div className="grid-cols-review-with-quotes grid gap-6 md:gap-9">
                                     <Quotes />
                                     <Paragraph variant="p2">{text}</Paragraph>
                                     <Quotes className="rotate-180 self-end" />

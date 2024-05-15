@@ -33,6 +33,7 @@ const config: Config = {
                 'about-us-card-blue': '0px 1px 8px 1px #BCBCBC12, 0px 12px 26.7px -1px #36A2EE85',
                 'input-default': '0px 2px 15.9px 0px #F1F1F1',
                 'input-hover': '0px 2px 5.7px 0px #E2E2E28A',
+                map: '0px 8px 18.5px -1px #CFCFCF29',
             },
             spacing: {
                 0.75: '0.1875rem', // 3px
@@ -153,6 +154,7 @@ const config: Config = {
                 63.25: '15.8125rem', // 253px
                 65: '16.25rem', // 260px
                 65.5: '16.375rem', // 262px
+                68: '17rem', // 272px
                 68.5: '17.125rem', // 274px
                 69: '17.25rem', // 276px
                 70: '17.5rem', // 280px
@@ -385,6 +387,9 @@ const config: Config = {
                 'fade-in-up': 'fade-in-up 0.3s linear',
                 'fade-in-up-bounce': 'fade-in-up-bounce 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)',
                 'mobile-menu': 'mobile-menu 0.5s linear',
+            },
+            gridTemplateColumns: {
+                'review-with-quotes': '1.3125rem 1fr 1.3125rem',
             },
         },
     },

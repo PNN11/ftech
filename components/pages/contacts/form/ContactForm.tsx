@@ -1,9 +1,9 @@
 'use client'
-import TitleWithDescription from '@/components/ui/TitleWithDescription'
 import Button from '@/components/ui/buttons/defaultButton/button'
-import Input from '@/components/ui/inputs/defaultInput/input'
-import TextArea from '@/components/ui/inputs/defaultTextArea/textArea'
-import React from 'react'
+import ReactHookFormInput from '@/components/ui/inputs/hookFormInput/ReactHookFormInput'
+import ReactHookFormTextArea from '@/components/ui/inputs/hookFormTextArea/ReactHookFormTextArea'
+import { cn } from '@/lib/classNames'
+import { FC } from 'react'
 import { useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
 
@@ -27,34 +27,47 @@ type FormValues = {
     message: string
 }
 
-const ContactForm = () => {
+type ContactFormProps = {
+    classes?: { wrapper?: string }
+}
+
+const ContactForm: FC<ContactFormProps> = ({ classes }) => {
     const { t } = useTranslation()
     const {
         form: { email, message, name, phone, placeholder, submit },
-        subtitle,
-        title,
     } = t('first-section', { returnObjects: true }) as FormContent
 
-    const { register, handleSubmit } = useForm<FormValues>({
+    const { handleSubmit, control, reset, formState } = useForm<FormValues>({
         defaultValues: { email: '', message: '', name: '', phone: '' },
     })
 
     return (
-        <div>
-            <TitleWithDescription classes={{ wrapper: 'text-left', title: 'mb-9' }} title={title} subtitle={subtitle} />
-            <form
-                onSubmit={handleSubmit(data => {
-                    console.log(data)
-                })}
-                className="flex flex-col gap-9"
-            >
-                <Input placeholder={placeholder} {...register('name')} label={name} inputSize="l" />
-                <Input placeholder={placeholder} {...register('email')} label={email} inputSize="l" />
-                <Input placeholder={placeholder} {...register('phone')} label={phone} inputSize="l" />
-                <TextArea placeholder={placeholder} {...register('message')} label={message} inputSize="l" />
-                <Button type="submit">{submit}</Button>
-            </form>
-        </div>
+        <form
+            onSubmit={handleSubmit(data => {
+                console.log(data)
+                reset()
+            })}
+            className={cn('flex flex-col gap-9', classes?.wrapper)}
+        >
+            <ReactHookFormInput
+                controllerProps={{ control, name: 'name' }}
+                inputProps={{ placeholder, label: name, inputSize: 'l' }}
+            />
+            <ReactHookFormInput
+                controllerProps={{ control, name: 'email' }}
+                inputProps={{ placeholder, label: email, inputSize: 'l' }}
+            />
+            <ReactHookFormInput
+                controllerProps={{ control, name: 'phone' }}
+                inputProps={{ placeholder, label: phone, inputSize: 'l' }}
+            />
+            <ReactHookFormTextArea
+                controllerProps={{ control, name: 'message' }}
+                inputProps={{ placeholder, label: message, inputSize: 'l' }}
+            />
+
+            <Button type="submit">{submit}</Button>
+        </form>
     )
 }
 
