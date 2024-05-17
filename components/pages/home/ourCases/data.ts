@@ -21,7 +21,7 @@ export const casesEn: Case[] = [
             { value: '120+', text: 'Projects Completed' },
             { value: '120+', text: 'Projects Completed' },
         ],
-        href: '/',
+        href: 'case1',
         tags: ['Tag', 'Tag', 'Tag', 'Tag', 'Tag'],
         title: 'Title1',
         image: '/images/home/phone.png',

@@ -4,6 +4,7 @@ import TranslationsProvider from '@/components/providers/locales'
 import Container from '@/components/ui/wrappers/container'
 import { allCases } from '../data'
 import { notFound } from 'next/navigation'
+import ProjectDefinition from '@/components/pages/case/projectDefinition'
 
 const namespaces = ['case']
 
@@ -26,6 +27,19 @@ export default async function CasePage({
                         description={caseInfo.description}
                         shortTitle={caseInfo.shortTitle}
                         title={caseInfo.title}
+                    />
+                    <ProjectDefinition
+                        budget={caseInfo.budget}
+                        client={caseInfo.client}
+                        clutchReview={caseInfo.clutchReview}
+                        delivering={caseInfo.delivering}
+                        environment={caseInfo.environment}
+                        industry={caseInfo.industry}
+                        location={caseInfo.location}
+                        problem={caseInfo.problem}
+                        release={caseInfo.release}
+                        solution={caseInfo.solution}
+                        tags={caseInfo.tags}
                     />
                 </Container>
             </main>
