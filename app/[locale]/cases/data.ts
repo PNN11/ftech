@@ -34,6 +34,20 @@ const case1En = {
         'Lorem ipsum dolor sit amet consectetur. Amet quam interdum posuere commodo id imperdiet dictumst commodo cursus. Egestas eget ultrices habitasse non. In congue mauris pellentesque molestie egestas eleifend lacus. At velit nulla ipsum egestas suscipit tellus magnis arcu. Interdum et imperdiet commodo malesuada.',
     delivering:
         'Lorem ipsum dolor sit amet consectetur. Amet quam interdum posuere commodo id imperdiet dictumst commodo cursus. Egestas eget ultrices habitasse non. In congue mauris pellentesque molestie egestas eleifend lacus. At velit nulla ipsum egestas suscipit tellus magnis arcu. Interdum et imperdiet commodo malesuada.',
+    outcome: {
+        title: 'Showcasing versatility and ability to adapt to different challenges',
+        description:
+            'Our projects span various industries, from real estate to technology, showcasing our versatility and expertise',
+        features: [
+            { value: '90%', text: 'of staff are middle grade and higher ' },
+            { value: '120+', text: 'Projects Completed' },
+            { value: '5 years', text: "Establishing a solid foundation, we've honed our skills over half a decade" },
+        ],
+    },
+    owner: {
+        name: 'Project owner',
+        message: 'Lorem ipsum dolor sit amet consectetur. Ultricies consectetur proin vitae sodales.',
+    },
 }
 
 const casesEn = [case1En]

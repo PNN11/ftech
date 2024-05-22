@@ -5,6 +5,7 @@ import Container from '@/components/ui/wrappers/container'
 import { allCases } from '../data'
 import { notFound } from 'next/navigation'
 import ProjectDefinition from '@/components/pages/case/projectDefinition'
+import ProjectOutcome from '@/components/pages/case/projectOutcome'
 
 const namespaces = ['case']
 
@@ -40,6 +41,12 @@ export default async function CasePage({
                         release={caseInfo.release}
                         solution={caseInfo.solution}
                         tags={caseInfo.tags}
+                    />
+                    <ProjectOutcome
+                        title={caseInfo.outcome.title}
+                        description={caseInfo.outcome.description}
+                        features={caseInfo.outcome.features}
+                        owner={caseInfo.owner}
                     />
                 </Container>
             </main>

@@ -20,5 +20,7 @@
             "description": "Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus.",
             "action_button": "Contact us"
         }
-    }
+    },
+    "project-outcome": "Project outcome",
+    "see-project": "See project"
 }
