@@ -6,8 +6,9 @@ import Container from '@/components/ui/wrappers/container'
 import SectionWrapper from '@/components/ui/wrappers/sectionWrapper'
 import React, { FC, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { cases } from '../../home/ourCases/data'
+
 import CaseCard from '../../home/ourCases/CaseCard'
+import { allCases } from '@/app/[locale]/cases/data'
 
 const categories = [
     { title: 'cases:cases-list.all', category: 'all' },
@@ -34,8 +35,8 @@ const CasesList: FC = () => {
 
     const _cases =
         activeCategory === 'all'
-            ? cases[i18n.language]
-            : cases[i18n.language].filter(item => item.category === activeCategory)
+            ? allCases[i18n.language]
+            : allCases[i18n.language].filter(item => item.category === activeCategory)
 
     return (
         <SectionWrapper>

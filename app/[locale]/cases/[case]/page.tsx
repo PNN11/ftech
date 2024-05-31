@@ -6,8 +6,13 @@ import { allCases } from '../data'
 import { notFound } from 'next/navigation'
 import ProjectDefinition from '@/components/pages/case/projectDefinition'
 import ProjectOutcome from '@/components/pages/case/projectOutcome'
+import ProjectWorkflow from '@/components/pages/case/projectWorkflow'
+import ProjectChallenges from '@/components/pages/case/projectChallenges'
+import ProjectReviews from '@/components/pages/case/reviews/ProjectReviews'
+import NextCaseSection from '@/components/pages/case/nextCase/NextCaseSection'
+import CaseContactUs from '@/components/pages/case/contact/CaseContactUs'
 
-const namespaces = ['case']
+const namespaces = ['case', 'homepage']
 
 export default async function CasePage({
     params: { locale, case: caseName },
@@ -16,7 +21,13 @@ export default async function CasePage({
 }) {
     const { resources } = await initTranslations(locale, namespaces)
 
-    const caseInfo = allCases[locale].find(({ href }) => href === caseName)
+    const caseIndex = allCases[locale].findIndex(({ href }) => href === caseName)
+
+    const caseInfo = allCases[locale][caseIndex]
+
+    const nextCaseIndex = caseIndex < allCases[locale].length - 1 ? caseIndex + 1 : 0
+
+    const nextCase = allCases[locale][nextCaseIndex]
 
     if (!caseInfo) return notFound()
 
@@ -28,6 +39,7 @@ export default async function CasePage({
                         description={caseInfo.description}
                         shortTitle={caseInfo.shortTitle}
                         title={caseInfo.title}
+                        nextCaseShortTitle={nextCase.shortTitle}
                     />
                     <ProjectDefinition
                         budget={caseInfo.budget}
@@ -48,6 +60,14 @@ export default async function CasePage({
                         features={caseInfo.outcome.features}
                         owner={caseInfo.owner}
                     />
+                    <ProjectWorkflow
+                        stages={caseInfo.stages}
+                        basicImage={{ capture: caseInfo.images.basicCapture, src: caseInfo.images.basic }}
+                    />
+                    <ProjectChallenges challenges={caseInfo.challenges} additionalInfo={caseInfo.additionalInfo} />
+                    <ProjectReviews title={caseInfo.reviews.title} item={caseInfo.reviews.item} />
+                    <NextCaseSection caseInfo={nextCase} />
+                    <CaseContactUs />
                 </Container>
             </main>
         </TranslationsProvider>

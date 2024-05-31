@@ -11,9 +11,10 @@ type CaseFirstScreenProps = {
     title: string
     description: string
     shortTitle: string
+    nextCaseShortTitle: string
 }
 
-const CaseFirstScreen: FC<CaseFirstScreenProps> = ({ description, shortTitle, title }) => {
+const CaseFirstScreen: FC<CaseFirstScreenProps> = ({ description, shortTitle, title, nextCaseShortTitle }) => {
     const { t } = useTranslation()
 
     const ref = useStopVideoOutOfView()
@@ -36,7 +37,7 @@ const CaseFirstScreen: FC<CaseFirstScreenProps> = ({ description, shortTitle, ti
                     </Link>
                     <p className="hidden md:block">{shortTitle}</p>
                     <Link href={'/cases'} className="flex items-center gap-1.5">
-                        <p>{t('case:first-screen.next_case', { title: 'Title' })}</p>
+                        <p>{t('case:first-screen.next_case', { title: nextCaseShortTitle })}</p>
                         <ChevronUp className="rotate-90" />
                     </Link>
                 </div>

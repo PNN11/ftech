@@ -34,6 +34,7 @@ const config: Config = {
                 'input-default': '0px 2px 15.9px 0px #F1F1F1',
                 'input-hover': '0px 2px 5.7px 0px #E2E2E28A',
                 map: '0px 8px 18.5px -1px #CFCFCF29',
+                'case-image': '0px 9px 16.8px 6px #F1F1F1 inset',
             },
             spacing: {
                 0.75: '0.1875rem', // 3px
@@ -150,6 +151,7 @@ const config: Config = {
                 58.75: '14.6875rem', // 235px
                 59.25: '14.8125rem', // 237px
                 61.25: '15.3125rem', // 245px
+                62: '15.5rem', // 248px
                 62.5: '15.625rem', // 250px
                 63.25: '15.8125rem', // 253px
                 65: '16.25rem', // 260px

@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Case } from './data'
+
 import Heading from '@/components/ui/typography/heading'
 import Paragraph from '@/components/ui/typography/paragraph'
 import CaseButton from '@/components/ui/buttons/caseButton'
@@ -7,6 +7,7 @@ import { cn } from '@/lib/classNames'
 import { useTranslation } from 'react-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Case } from '@/types/cases'
 
 type CaseCardProps = Case & {
     variant?: 'casesPage' | 'homePage'
@@ -21,28 +22,28 @@ const CaseCard: FC<CaseCardProps> = ({
     bgColor = '#1F1F1F',
     bgTone = 'dark',
     image,
-    mobileImage,
     variant = 'homePage',
+    shortTitle,
 }) => {
     const { t } = useTranslation()
 
     return (
         <div
             className={cn(
-                'grid grid-cols-1 justify-between gap-6 rounded-8 p-4.5 shadow-button md:grid-cols-[1fr_22.125rem] md:p-6 xl:p-8',
+                'grid grid-cols-1 justify-between gap-6 rounded-8 p-4.5 shadow-button md:grid-cols-[1fr_20.125rem] md:p-6 lg:grid-cols-[1fr_22.125rem] xl:p-8',
                 { 'lg:block': variant === 'homePage' }
             )}
             style={{ backgroundColor: bgColor }}
         >
             <div
                 className={cn(
-                    'order-1 flex flex-col justify-between gap-6 md:order-none md:flex-row md:justify-start md:gap-7',
-                    { 'lg:flex-col': variant === 'homePage' }
+                    'order-1 grid grid-cols-1 justify-between gap-6 md:order-none md:grid md:grid-cols-[1fr_5.5rem] md:flex-row md:justify-start md:gap-7 lg:grid-cols-1',
+                    { 'max-w-[35.375rem]': variant === 'casesPage' }
                 )}
             >
-                <div className="flex justify-between">
+                <div className="flex items-start justify-between gap-2">
                     <div
-                        className={cn('flex flex-col justify-between md:flex-col-reverse md:gap-0', {
+                        className={cn('flex h-full flex-col justify-between md:flex-col-reverse md:gap-2', {
                             'lg:flex-col': variant === 'homePage',
                         })}
                     >
@@ -54,10 +55,10 @@ const CaseCard: FC<CaseCardProps> = ({
                                 })}
                                 variant="h3"
                             >
-                                {title}
+                                {shortTitle}
                             </Heading>
                             <Paragraph
-                                className={cn('mb-5.5', {
+                                className={cn('mb-5.5 line-clamp-3', {
                                     '!text-[#545454]': bgTone === 'light',
                                     '!text-[#F6F6F6]': bgTone === 'dark',
                                 })}
@@ -70,7 +71,7 @@ const CaseCard: FC<CaseCardProps> = ({
                             </Link>
                         </div>
                         <div className="flex flex-wrap items-center gap-2">
-                            {tags.map((tag, i) => (
+                            {tags.slice(0, 5).map((tag, i) => (
                                 <div
                                     className={cn(
                                         'h-7.5 rounded-lg px-3 py-2 text-sm leading-none tracking-h2 text-white-300',
@@ -95,11 +96,7 @@ const CaseCard: FC<CaseCardProps> = ({
                         quality={100}
                     />
                 </div>
-                <div
-                    className={cn('grid grid-cols-3 gap-3.5 md:grid-cols-1', {
-                        'lg:grid-cols-3 lg:gap-5.5': variant === 'homePage',
-                    })}
-                >
+                <div className={cn('grid grid-cols-3 gap-3.5 md:grid-cols-1 lg:grid-cols-3 lg:gap-5.5')}>
                     {features.map(({ text, value }, i) => (
                         <div key={`${text}${i}`} className="">
                             <Heading
@@ -140,7 +137,7 @@ const CaseCard: FC<CaseCardProps> = ({
                     width={290}
                     height={340}
                     quality={100}
-                    className="mx-auto h-85 object-cover object-top md:-mb-6"
+                    className="mx-auto h-85 object-cover object-top md:-mb-6 xl:-mb-8"
                 />
             </div>
         </div>

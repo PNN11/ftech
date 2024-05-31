@@ -1,19 +1,19 @@
 'use client'
+import { allCases } from '@/app/[locale]/cases/data'
 import TitleWithDescription from '@/components/ui/TitleWithDescription'
 import Button from '@/components/ui/buttons/defaultButton/button'
+import Heading from '@/components/ui/typography/heading'
 import Container from '@/components/ui/wrappers/container'
 import SectionWrapper from '@/components/ui/wrappers/sectionWrapper'
 import Link from 'next/link'
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
-import { cases } from './data'
 import CaseCard from './CaseCard'
-import Heading from '@/components/ui/typography/heading'
 
 const OurCases: FC = () => {
     const { t, i18n } = useTranslation()
 
-    const _cases = cases[i18n.language]
+    const _cases = allCases[i18n.language]
 
     return (
         <SectionWrapper>
@@ -51,7 +51,7 @@ const OurCases: FC = () => {
                                 </Heading>
                                 <Link href="/cases" className="w-full md:w-fit">
                                     <Button className="w-full">
-                                        {t('homepage:our-cases.explore-all-cases', { casesCount: '20+' })}
+                                        {t('homepage:our-cases.explore-all-cases', { casesCount: `${_cases.length}+` })}
                                     </Button>
                                 </Link>
                             </div>

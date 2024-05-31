@@ -22,5 +22,20 @@
         }
     },
     "project-outcome": "Project outcome",
-    "see-project": "See project"
+    "see-project": "See project",
+    "workflow": {
+        "title": "Stages of project",
+        "subtitle": "Our workflow",
+        "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success. "
+    },
+    "challenges": {
+        "title": "Showcasing versatility and ability to adapt to different challenges",
+        "subtitle": "Project challenges",
+        "description": "Our projects span various industries, from real estate to technology, showcasing our versatility and expertise"
+    },
+    "contact-us": {
+        "title": "Contact us",
+        "description": "Our team is dedicated to providing excellent customer service and ensuring your experience with us is a positive one. We look forward to hearing from you soon!",
+        "action_button": "Contact us"
+    }
 }
