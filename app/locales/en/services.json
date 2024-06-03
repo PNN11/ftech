@@ -1,0 +1,13 @@
+{
+    "first-screen": {
+        "subtitle": "Our service",
+        "title": "Lorem ipsum dolor sit amet consectetur.",
+        "description": "Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus. In semper sed ridiculus pretium vitae. Id venenatis vel senectus elementum pellentesque.",
+
+        "expertise": {
+            "title": "Exact industry project?",
+            "description": "Explore our industry expertise highlights",
+            "action_button": "About Expertise"
+        }
+    }
+}

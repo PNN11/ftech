@@ -96,5 +96,9 @@
         "subscribe": "Subscribe for news",
         "lang": "Lang",
         "reviews": "Reviews"
+    },
+    "contact_us": {
+        "title": "Get in touch",
+        "action_button": "Contact us"
     }
 }

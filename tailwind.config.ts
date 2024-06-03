@@ -24,6 +24,8 @@ const config: Config = {
                 'primary-black': 'linear-gradient(180.28deg, #303030 -3.64%, #1E1E1E 86.01%)',
                 'primary-white': 'linear-gradient(180.28deg, #FFFFFF -3.64%, #F4F4F4 99.62%)',
                 'contact-us-blue': 'linear-gradient(180.28deg, #10A9FF -3.64%, #0070D7 80.56%)',
+                'services-first-screen':
+                    'linear-gradient(185.83deg, #575757 12.21%, #484848 40%, #343434 61.46%, #161616 80.15%)',
             },
             boxShadow: {
                 heading: '0px 5px 3.4px 0px rgba(246, 246, 246, 1)',
@@ -35,6 +37,7 @@ const config: Config = {
                 'input-hover': '0px 2px 5.7px 0px #E2E2E28A',
                 map: '0px 8px 18.5px -1px #CFCFCF29',
                 'case-image': '0px 9px 16.8px 6px #F1F1F1 inset',
+                'services-first-screen': '0px 36px 62.6px 0px #33333338 inset',
             },
             spacing: {
                 0.75: '0.1875rem', // 3px
@@ -143,6 +146,7 @@ const config: Config = {
                 51.25: '12.8125rem', // 205px
                 51.5: '12.875rem', // 206px
                 52.5: '13.125rem', // 210px
+                53: '13.25rem', // 212px
                 53.75: '13.4375rem', // 215px
                 54.75: '13.6875rem', // 219px
                 55: '13.75rem', // 220px
@@ -198,6 +202,7 @@ const config: Config = {
                 103: '25.75rem', // 412px
                 104: '26rem', // 416px
                 105.5: '26.375rem', // 422px
+                108: '27rem', // 432px
                 109.25: '27.3125rem', // 437px
                 112: '28rem', // 448px
                 114.5: '28.625rem', // 458px
@@ -209,6 +214,7 @@ const config: Config = {
                 125: '31.25rem', // 500px
                 129.5: '32.375rem', // 518px
                 130: '32.5rem', // 520px
+                131: '32.75rem', // 524px
                 133: '33.25rem', // 532px
                 134: '33.5rem', // 536px
                 135: '33.75rem', // 540px

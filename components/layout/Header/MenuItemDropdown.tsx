@@ -3,6 +3,8 @@ import MenuItem from './MenuItem'
 import ChevronUp from '@/components/svg/ChevronUp'
 import { cn } from '@/lib/classNames'
 import Accordion from '@/components/ui/accordion'
+import { useWindowSize } from '@/hooks/useWindowSize'
+import { ScreenWidths } from '@/types/common'
 
 type MenuItemDropdownProps = {
     title: string
@@ -12,14 +14,14 @@ type MenuItemDropdownProps = {
 
 const MenuItemDropdown: FC<MenuItemDropdownProps> = ({ title, children, href }) => {
     const [isOpen, setIsOpen] = useState(false)
+    const { width } = useWindowSize()
 
     return (
         <div className="group w-full lg:w-auto">
             <MenuItem
                 href={href}
                 onClick={e => {
-                    e.preventDefault()
-                    e.stopPropagation()
+                    width < ScreenWidths.lg && e.preventDefault()
                     setIsOpen(prev => !prev)
                 }}
                 className={cn(
