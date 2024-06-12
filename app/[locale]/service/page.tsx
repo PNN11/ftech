@@ -1,5 +1,7 @@
 import initTranslations from '@/app/i18n'
-import ServicesFirstScreen from '@/components/pages/services/firstScreen/ServicesFirstScreen'
+import ServicesFirstScreen from '@/components/pages/services/firstScreen'
+import ServicesReasons from '@/components/pages/services/reasons'
+import ServicesList from '@/components/pages/services/servicesList'
 import TranslationsProvider from '@/components/providers/locales'
 import Container from '@/components/ui/wrappers/container'
 
@@ -13,6 +15,8 @@ export default async function ServicesPage({ params: { locale } }: { params: { l
             <main className="">
                 <Container>
                     <ServicesFirstScreen />
+                    <ServicesReasons />
+                    <ServicesList />
                 </Container>
             </main>
         </TranslationsProvider>

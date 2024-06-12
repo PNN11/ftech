@@ -9,5 +9,99 @@
             "description": "Explore our industry expertise highlights",
             "action_button": "About Expertise"
         }
+    },
+    "reasons": {
+        "subtitle": "Why FTECH?",
+        "title": "Showcasing versatility and ability to adapt to different challenges",
+        "description": "Our projects span various industries, from real estate to technology, showcasing our versatility and expertise",
+        "items": [
+            { "value": "90%", "text": "of staff are middle grade and higher " },
+            { "value": "120+", "text": "Projects Completed" },
+            { "value": "5 years", "text": "Establishing a solid foundation, we've honed our skills over half a decade" }
+        ],
+        "owner": {
+            "name": "Eugen  Lahutsin",
+            "position": "CEO",
+            "message": "Lorem ipsum dolor sit amet consectetur. Ultricies consectetur proin vitae sodales."
+        },
+        "hire-team": "Hire a team"
+    },
+    "services-list": {
+        "web-development": {
+            "title": "Web development",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "mobile-development": {
+            "title": "Mobile development",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "software-testing": {
+            "title": "Software testing",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "manual-testing": {
+            "title": "Manual testing",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "design": {
+            "title": "Digital and product design",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "ai-development": {
+            "title": "AI/ML and data science",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "devops": {
+            "title": "DevOps",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "cloud-platform": {
+            "title": "Cloud and platform",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "staff-augmentation": {
+            "title": "Staff augmentation",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "outsourcing": {
+            "title": "Outsourcing",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "dedicated-teams": {
+            "title": "Dedicated teams",
+            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
+            "short_description": ["Web development", "Mobile development"],
+            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        },
+        "groups": {
+            "software-development": "Software development",
+            "software-testing": "Software testing & QA",
+            "design": "Digital design and product design",
+            "ai": "Data science an ML",
+            "cloud": "Cloud infrastructure",
+            "cooperations": "Cooperations"
+        },
+        "explore-service": "Explore service",
+        "about-solutions": "About solutions"
     }
 }
