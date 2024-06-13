@@ -103,5 +103,22 @@
         },
         "explore-service": "Explore service",
         "about-solutions": "About solutions"
+    },
+    "workflow": {
+        "subtitle": "Our workflow",
+        "title": "Workflow",
+        "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success. ",
+        "items": [
+            { "title": "Discovery, research, scoping", "description": "Explore our industry expertise highlights" },
+            { "title": "Design and architecting", "description": "Explore our industry expertise highlights" },
+            { "title": "Solution developing", "description": "Explore our industry expertise highlights" },
+            { "title": "Testing and launching", "description": "Explore our industry expertise highlights" },
+            { "title": "Maintenance", "description": "Explore our industry expertise highlights" }
+        ]
+    },
+    "tech-stack": {
+        "subtitle": "Tech stack",
+        "title": "Showcasing versatility and ability to adapt to different challenges",
+        "description": "Lorem ipsum dolor sit amet consectetur. Rhoncus proin libero pellentesque elit. Tincidunt feugiat sit fermentum sit faucibus in cras. Vel non purus nisl risus sit sagittis commodo etiam. "
     }
 }
