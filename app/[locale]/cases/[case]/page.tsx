@@ -11,6 +11,7 @@ import ProjectChallenges from '@/components/pages/case/projectChallenges'
 import ProjectReviews from '@/components/pages/case/reviews/ProjectReviews'
 import NextCaseSection from '@/components/pages/case/nextCase/NextCaseSection'
 import CaseContactUs from '@/components/pages/case/contact/CaseContactUs'
+import Section3 from '@/components/pages/case/section3'
 
 const namespaces = ['case', 'homepage']
 
@@ -41,18 +42,13 @@ export default async function CasePage({
                         title={caseInfo.title}
                         nextCaseShortTitle={nextCase.shortTitle}
                     />
+                    <Section3
+                        title="Specify of project"
+                        image="/images/case/section3-image.png"
+                        description="The customer is a company specializing in the manufacture of medical equipment, including blood transfusion devices and devices for the biochemical analysis of physiological fluids"
+                    />
                     <ProjectDefinition
-                        budget={caseInfo.budget}
-                        client={caseInfo.client}
-                        clutchReview={caseInfo.clutchReview}
-                        delivering={caseInfo.delivering}
-                        environment={caseInfo.environment}
-                        industry={caseInfo.industry}
-                        location={caseInfo.location}
-                        problem={caseInfo.problem}
-                        release={caseInfo.release}
-                        solution={caseInfo.solution}
-                        tags={caseInfo.tags}
+                        listItems={{}}
                     />
                     <ProjectOutcome
                         title={caseInfo.outcome.title}

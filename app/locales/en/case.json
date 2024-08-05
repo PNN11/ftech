@@ -15,6 +15,11 @@
         "problem": "Problem",
         "solution": "Solution",
         "delivering": "Delivering",
+        "brand": "Brand",
+        "projectType": "Project type",
+        "team": "Team",
+        "projectServices": "Service list",
+        "contact": "Contact us",
         "have-idea": {
             "title": "Have same idea?",
             "description": "Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus.",
