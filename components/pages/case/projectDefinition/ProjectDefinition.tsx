@@ -52,7 +52,7 @@ const ProjectDefinition: FC<ProjectDefinitionProps> = ({ listItems, tags, contac
                     {_listItems.map(({ title, description }) => (
                         <li key={title}>
                             <Heading className="mb-3" variant="h6">
-                                {title}
+                                {t(`project-info.${title}`)}
                             </Heading>
                             {Array.isArray(description) ? (
                                 <ul className="space-y-3">
@@ -69,14 +69,7 @@ const ProjectDefinition: FC<ProjectDefinitionProps> = ({ listItems, tags, contac
                     ))}
                 </ul>
                 <div>
-                    <ul className="mb-12 flex flex-wrap items-center gap-1">
-                        {tags.map(tag => (
-                            <li key={tag}>
-                                <Tab>{tag}</Tab>
-                            </li>
-                        ))}
-                    </ul>
-                    <ul className="space-y-12">
+                    <ul className="mb-12 space-y-12">
                         {_descriptionItems.map(({ title, description }) => (
                             <li key={title}>
                                 <Heading className="mb-8" variant="h6">
@@ -86,10 +79,23 @@ const ProjectDefinition: FC<ProjectDefinitionProps> = ({ listItems, tags, contac
                             </li>
                         ))}
                     </ul>
+                    <ul className="flex flex-wrap items-center gap-1">
+                        {tags.map(tag => (
+                            <li key={tag}>
+                                <Tab>{tag}</Tab>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-11 border-b border-t border-gray-300 py-9.5 md:flex-row md:gap-29 lg:gap-25">
-                <Image src={contact.image ?? '/images/case/case_people.png'} width={267} height={253} alt="" />
+                <Image
+                    src={contact.image ?? '/images/case/case_people.png'}
+                    width={267}
+                    height={253}
+                    alt=""
+                    quality={100}
+                />
                 <div className="md:max-w-87 lg:max-w-122">
                     <Heading className="mb-4" variant="h5">
                         💡 {contact.title}

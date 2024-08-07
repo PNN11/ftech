@@ -48,7 +48,23 @@ export default async function CasePage({
                         description="The customer is a company specializing in the manufacture of medical equipment, including blood transfusion devices and devices for the biochemical analysis of physiological fluids"
                     />
                     <ProjectDefinition
-                        listItems={{}}
+                        listItems={{
+                            brand: 'Brand',
+                            client: 'client',
+                            environment: ['web', 'ios', 'android'],
+                            industry: 'Industry',
+                            location: 'Location',
+                            projectType: ['Project type', 'web', 'ios', 'android'],
+                            release: 'Release',
+                            team: 'Team',
+                        }}
+                        descriptionItems={{ delivering: ' Delivering', problem: 'Problem', solution: 'Solution' }}
+                        contact={{
+                            title: 'Have same idea? ',
+                            description:
+                                'Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus. ',
+                        }}
+                        tags={['qwe']}
                     />
                     <ProjectOutcome
                         title={caseInfo.outcome.title}
