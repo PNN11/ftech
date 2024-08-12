@@ -3,13 +3,15 @@ import { ComponentProps, FC } from 'react'
 import CaseFirstScreen from '../firstScreen'
 import ProjectDefinition from '../projectDefinition/ProjectDefinition'
 import projectOutcome from '../projectOutcome'
+import Section3 from '../section3'
+import ProjectChallenges from '../projectChallenges/ProjectChallenges'
 
 const blocksMap = {
     section1: CaseFirstScreen,
     section2: ProjectDefinition,
-    section3: projectOutcome,
+    section3: Section3,
     section4: projectOutcome,
-    section5: ProjectDefinition,
+    section5: ProjectChallenges,
     section6: ProjectDefinition,
     section7: ProjectDefinition,
     section8: ProjectDefinition,

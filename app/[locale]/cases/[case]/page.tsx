@@ -67,10 +67,26 @@ export default async function CasePage({
                         tags={['qwe']}
                     />
                     <ProjectOutcome
-                        title={caseInfo.outcome.title}
-                        description={caseInfo.outcome.description}
-                        features={caseInfo.outcome.features}
-                        owner={caseInfo.owner}
+                        cards={[
+                            {
+                                title: '5+',
+                                description: 'back-enders on project for creating gorges server part',
+                                actionButton: { text: 'Back service', href: '/services/backend-development' },
+                                image: '/images/case/outcome-icon-1.png',
+                            },
+                            {
+                                title: 'High team lvl',
+                                description: 'only senr / middle grade and higher ',
+                                image: '/images/case/outcome-icon-2.png',
+                            },
+                            {
+                                title: 'M-team',
+                                description: 'size of team on this project include 5+ members',
+                                actionButton: { text: 'More teams', href: '/services/backend-development' },
+                            },
+                        ]}
+                        title="Mostly back-enders on the team"
+                        description="The main scope of work on this project was allocated by the customer to us for the development of the backend. Therefore, in a team of size M, most developers were involved in the backend"
                     />
                     <ProjectWorkflow
                         stages={caseInfo.stages}
