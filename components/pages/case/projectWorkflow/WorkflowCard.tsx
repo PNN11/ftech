@@ -2,7 +2,7 @@ import Heading from '@/components/ui/typography/heading'
 import Paragraph from '@/components/ui/typography/paragraph'
 import { cn } from '@/lib/classNames'
 import { formatNumber } from '@/lib/formatNumber'
-import React, { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 type WorkflowCardProps = {
     number: number
@@ -12,9 +12,10 @@ type WorkflowCardProps = {
         wrapper?: string
         title?: string
     }
+    children?: ReactNode
 }
 
-const WorkflowCard: FC<WorkflowCardProps> = ({ classes, description, number, title }) => {
+const WorkflowCard: FC<WorkflowCardProps> = ({ classes, description, number, title, children }) => {
     return (
         <div className={cn('rounded-8 border border-gray-200 bg-white-10 px-7 py-6', classes?.wrapper)}>
             <Paragraph className="mb-1.75" variant="subt">
@@ -24,6 +25,7 @@ const WorkflowCard: FC<WorkflowCardProps> = ({ classes, description, number, tit
                 {title}
             </Heading>
             <Paragraph variant="p1">{description}</Paragraph>
+            {children}
         </div>
     )
 }

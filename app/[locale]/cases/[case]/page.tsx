@@ -12,6 +12,8 @@ import ProjectReviews from '@/components/pages/case/reviews/ProjectReviews'
 import NextCaseSection from '@/components/pages/case/nextCase/NextCaseSection'
 import CaseContactUs from '@/components/pages/case/contact/CaseContactUs'
 import Section3 from '@/components/pages/case/section3'
+import CaseSection6 from '@/components/pages/case/section6/Section6'
+import Section7 from '@/components/pages/case/section7/Section7'
 
 const namespaces = ['case', 'homepage']
 
@@ -89,10 +91,31 @@ export default async function CasePage({
                         description="The main scope of work on this project was allocated by the customer to us for the development of the backend. Therefore, in a team of size M, most developers were involved in the backend"
                     />
                     <ProjectWorkflow
-                        stages={caseInfo.stages}
+                        cards={caseInfo.stages}
                         basicImage={{ capture: caseInfo.images.basicCapture, src: caseInfo.images.basic }}
                     />
-                    <ProjectChallenges challenges={caseInfo.challenges} additionalInfo={caseInfo.additionalInfo} />
+                    <ProjectChallenges
+                        cards={caseInfo.challenges}
+                        title="Showcasing versatility and ability to adapt to different challenges"
+                        subtitle="Project challanges"
+                        description="Our projects span various industries, from real estate to technology, showcasing our versatility and expertise"
+                    />
+                    <CaseSection6
+                        cards={[
+                            { title: 'Tech 1', image: '/images/cases/e-commerce-molding/tech1.png' },
+                            { title: 'Tech 2', image: '/images/cases/e-commerce-molding/tech2.png' },
+                            { title: 'Tech 3', image: '/images/cases/e-commerce-molding/tech3.png' },
+                            { title: 'Tech 4', image: '/images/cases/e-commerce-molding/tech4.png' },
+                            { title: 'Tech 5', image: '/images/cases/e-commerce-molding/tech5.png' },
+                            { title: 'Tech 6', image: '/images/cases/e-commerce-molding/tech6.png' },
+                        ]}
+                    />
+                    <Section7
+                        title="Showcasing versatility and ability to adapt to different challenges"
+                        description="Our projects span various industries, from real estate to technology, showcasing our versatility and expertise"
+                        subtitle="Title + P"
+                        position="left"
+                    />
                     <ProjectReviews title={caseInfo.reviews.title} item={caseInfo.reviews.item} />
                     <NextCaseSection caseInfo={nextCase} />
                     <CaseContactUs />

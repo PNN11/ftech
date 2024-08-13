@@ -5,6 +5,11 @@ import ProjectDefinition from '../projectDefinition/ProjectDefinition'
 import projectOutcome from '../projectOutcome'
 import Section3 from '../section3'
 import ProjectChallenges from '../projectChallenges/ProjectChallenges'
+import CaseContactUs from '../contact'
+import Section6 from '../section6'
+import NextCaseSection from '../nextCase'
+import Section7 from '../section7'
+import projectWorkflow from '../projectWorkflow'
 
 const blocksMap = {
     section1: CaseFirstScreen,
@@ -12,9 +17,9 @@ const blocksMap = {
     section3: Section3,
     section4: projectOutcome,
     section5: ProjectChallenges,
-    section6: ProjectDefinition,
-    section7: ProjectDefinition,
-    section8: ProjectDefinition,
+    section6: Section6,
+    section7: Section7,
+    section8: projectWorkflow,
     section9: ProjectDefinition,
     section10: ProjectDefinition,
     section11: ProjectDefinition,
@@ -78,7 +83,8 @@ const CaseBlocksMapper: FC<CaseBlocksMapperProps> = ({ config, nextProject }) =>
 
                 return <Component key={`${block}${i}`} {...(props as any)} />
             })}
-            <CaseContactUs nextProject={nextProject} />
+            <CaseContactUs />
+            <NextCaseSection caseInfo={nextProject} />
         </main>
     )
 }

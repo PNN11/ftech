@@ -30,6 +30,11 @@
     "our-team": "Our team",
     "see-project": "See project",
     "workflow": {
+        "contact": {
+            "title": "Contact us",
+            "description": "At first, we will try to understand the clients needs and propose proper solution",
+            "action_button": "Contact us"
+        },
         "title": "Stages of project",
         "subtitle": "Our workflow",
         "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success. "
@@ -43,5 +48,6 @@
         "title": "Contact us",
         "description": "Our team is dedicated to providing excellent customer service and ensuring your experience with us is a positive one. We look forward to hearing from you soon!",
         "action_button": "Contact us"
-    }
+    },
+    "tech-stack": "Tech stack"
 }
