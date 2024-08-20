@@ -37,7 +37,7 @@ const ProjectWorkflow: FC<ProjectWorkflowProps> = ({ cards, description, subtitl
                 description={description ?? defaultInfo.description}
             />
             <Swiper slidesPerView="auto" spaceBetween={8}>
-                <SwiperSlide className="!w-73" key={title}>
+                <SwiperSlide className="!h-auto !w-73" key={title}>
                     <WorkflowCard
                         classes={{ title: 'mb-6', wrapper: 'h-full flex flex-col' }}
                         title={defaultInfo.contact.title}
@@ -52,7 +52,7 @@ const ProjectWorkflow: FC<ProjectWorkflowProps> = ({ cards, description, subtitl
                     </WorkflowCard>
                 </SwiperSlide>
                 {cards.map(({ description, title }, i) => (
-                    <SwiperSlide className="!w-73" key={title}>
+                    <SwiperSlide className="!h-auto !w-73" key={title}>
                         <WorkflowCard
                             classes={{ title: 'mb-6', wrapper: 'h-full' }}
                             title={title}

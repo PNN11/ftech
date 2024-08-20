@@ -14,6 +14,10 @@ import CaseContactUs from '@/components/pages/case/contact/CaseContactUs'
 import Section3 from '@/components/pages/case/section3'
 import CaseSection6 from '@/components/pages/case/section6/Section6'
 import Section7 from '@/components/pages/case/section7/Section7'
+import Section9 from '@/components/pages/case/section9'
+import Section10 from '@/components/pages/case/section10'
+import Section11 from '@/components/pages/case/section11'
+import Section12 from '@/components/pages/case/section12'
 
 const namespaces = ['case', 'homepage']
 
@@ -90,10 +94,7 @@ export default async function CasePage({
                         title="Mostly back-enders on the team"
                         description="The main scope of work on this project was allocated by the customer to us for the development of the backend. Therefore, in a team of size M, most developers were involved in the backend"
                     />
-                    <ProjectWorkflow
-                        cards={caseInfo.stages}
-                        basicImage={{ capture: caseInfo.images.basicCapture, src: caseInfo.images.basic }}
-                    />
+                    <ProjectWorkflow cards={caseInfo.stages} />
                     <ProjectChallenges
                         cards={caseInfo.challenges}
                         title="Showcasing versatility and ability to adapt to different challenges"
@@ -116,6 +117,60 @@ export default async function CasePage({
                         subtitle="Title + P"
                         position="left"
                     />
+                    <Section9
+                        title="Developed features of app’s backend"
+                        subtitle="Project highlights"
+                        description="Let's see what was included in the backend and the entire server development of the call for help application"
+                        cards={[
+                            {
+                                title: '“Turnkey” backend level',
+                                description: 'Implemented the "turnkey" server part of the application',
+                            },
+                            {
+                                title: 'Range the risks',
+                                description: 'Implemented an administrator-configurable risk assessment system',
+                            },
+                            { title: 'Robotic calls', description: 'Integrated robotic calls with a message' },
+                            {
+                                title: '- 911 emergency?',
+                                description:
+                                    'Integrated short-number redirects via local telecom operators, depending on the region of use (pre-installed supported countries)',
+                            },
+                            {
+                                title: 'Data management',
+                                description:
+                                    'Developed an algorithm for determining the necessary specialization of the emergency software team',
+                            },
+                            {
+                                title: 'Integration',
+                                description: 'Payment and whole connecting server backend to mobile app',
+                            },
+                        ]}
+                        variant="3"
+                    />
+                    <Section10
+                        title="Features of product development in medtech"
+                        description="The topic of telemedicine has been actively gaining momentum in recent years. The key feature of this niche is conservatism, while the technology market is the most open to innovation and technological solutions, discoveries. Current research shows that the market is heading towards better communications and an improved medical process. 
+                            In such an unusual and delicate topic as men's health, it is important to establish communication and maintain privacy and comfort.
+                             Our client asked us to create a product that will allow you to remotely visit the clinic, take surveys and receive consultations and treatment,
+                              if necessary, quickly, comfortably and privately."
+                        subtitle="About domain"
+                        imageTitle="Specify of project"
+                        imageDescription="A special feature of the project was the need to provide detailed diagnostics at a distance. The client should be able to take tests at the nearest partner laboratory, the results of which are automatically entered into the portal database. Then, the client must complete a survey regarding his symptoms and condition. The algorithm analyzes the answers, after which it makes a preliminary diagnosis. This significantly saves the time of the attending physician and reduces the likelihood of an erroneous diagnosis. After that, the client will receive a consultation via video call and can receive an electronic prescription for medicines with the possibility of ordering them with home delivery"
+                        imageProps={{ src: '/images/case/section10-image.png', width: 329, height: 247 }}
+                    />
+                    <Section11
+                        title="Electricity tariff adviser app"
+                        description="Find only the best rates and spend less on electricity"
+                        services={[
+                            { title: 'Back-end service', href: 'web-development' },
+                            { title: 'Mobile app service', href: 'mobile-development' },
+                            { title: 'Integration service', href: 'dedicated-teams' },
+                            { title: 'DevOps service', href: 'devops' },
+                            { title: 'Dedicated teams ', href: 'dedicated-teams' },
+                        ]}
+                    />
+                    <Section12 image="/images/case/test-image.png" capture="App design - schedule and excises" />
                     <ProjectReviews title={caseInfo.reviews.title} item={caseInfo.reviews.item} />
                     <NextCaseSection caseInfo={nextCase} />
                     <CaseContactUs />

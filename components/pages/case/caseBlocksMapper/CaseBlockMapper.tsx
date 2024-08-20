@@ -10,6 +10,9 @@ import Section6 from '../section6'
 import NextCaseSection from '../nextCase'
 import Section7 from '../section7'
 import projectWorkflow from '../projectWorkflow'
+import Section9 from '../section9'
+import Section10 from '../section10'
+import Section11 from '../section11'
 
 const blocksMap = {
     section1: CaseFirstScreen,
@@ -20,9 +23,9 @@ const blocksMap = {
     section6: Section6,
     section7: Section7,
     section8: projectWorkflow,
-    section9: ProjectDefinition,
-    section10: ProjectDefinition,
-    section11: ProjectDefinition,
+    section9: Section9,
+    section10: Section10,
+    section11: Section11,
     section12: ProjectDefinition,
     section13: ProjectDefinition,
 }
