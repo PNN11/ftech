@@ -49,10 +49,13 @@ const getPositionOffset = (width: number, position: number) => {
     return width / 2 - width * position
 }
 
+const MULTIPLAYER = 4
+const MIDDLE_INDEX = Math.floor((expertise.length * MULTIPLAYER) / 2)
+
 const OurExpertise: FC = () => {
     const { t } = useTranslation()
     const [mousePosition, setMousePosition] = useState(0.5)
-    const [activeCard, setActiveCard] = useState<number>(13)
+    const [activeCard, setActiveCard] = useState<number>(MIDDLE_INDEX)
     const [widthDifference, setWidthDifference] = useState({ difference: 0, differenceBetweenOneSection: 0 })
 
     const ref = useRef<HTMLDivElement>(null)
@@ -112,7 +115,7 @@ const OurExpertise: FC = () => {
             </Container>
             <div
                 onMouseLeave={() => {
-                    setActiveCard(13)
+                    setActiveCard(MIDDLE_INDEX)
                     setMousePosition(0.5)
                 }}
                 className="relative hidden h-100 overflow-hidden lg:block"
@@ -126,7 +129,7 @@ const OurExpertise: FC = () => {
                     }}
                 >
                     {/* multiply original array for displaying cards on both sides on screens with width more than 1900 */}
-                    {(new Array(3).fill(expertise).flat() as typeof expertise).map(
+                    {(new Array(4).fill(expertise).flat() as typeof expertise).map(
                         ({ description, href, title, number }, i) => (
                             <ExpertiseCard
                                 description={description}

@@ -13,6 +13,7 @@ import projectWorkflow from '../projectWorkflow'
 import Section9 from '../section9'
 import Section10 from '../section10'
 import Section11 from '../section11'
+import Section12 from '../section12'
 
 const blocksMap = {
     section1: CaseFirstScreen,
@@ -26,8 +27,7 @@ const blocksMap = {
     section9: Section9,
     section10: Section10,
     section11: Section11,
-    section12: ProjectDefinition,
-    section13: ProjectDefinition,
+    section12: Section12,
 }
 
 type CaseBlocksMap = typeof blocksMap
@@ -39,31 +39,34 @@ type BaseCaseBlock<T extends BlocksUnion> = {
     props: ComponentProps<CaseBlocksMap[T]>
 }
 
-type FirstScreenBlock = BaseCaseBlock<'firstScreen'>
-type CaseInfoBlock = BaseCaseBlock<'caseDefinition'>
-type ListOfHighlightsBlock = BaseCaseBlock<'listOfHighlights'>
-type CaseServicesListBlock = BaseCaseBlock<'caseServicesList'>
-type CaseTitleWithDescriptionBlock = BaseCaseBlock<'caseTitleWithDescription'>
-type CaseImageBlock = BaseCaseBlock<'caseImage'>
-type CaseStagesBlock = BaseCaseBlock<'caseStages'>
-type CaseStepsBlock = BaseCaseBlock<'caseSteps'>
-// type CaseContactUsBlock = BaseCaseBlock<'contact'>
-type CaseTechnologiesBlock = BaseCaseBlock<'caseTechnologies'>
-type CaseHighlightCardsBlock = BaseCaseBlock<'caseHighlightCards'>
+type Section1Block = BaseCaseBlock<'section1'>
+type Section2Block = BaseCaseBlock<'section2'>
+type Section3Block = BaseCaseBlock<'section3'>
+type Section4Block = BaseCaseBlock<'section4'>
+type Section5Block = BaseCaseBlock<'section5'>
+type Section6Block = BaseCaseBlock<'section6'>
+type Section7Block = BaseCaseBlock<'section7'>
+type Section8Block = BaseCaseBlock<'section8'>
+type Section9Block = BaseCaseBlock<'section9'>
+type Section10Block = BaseCaseBlock<'section10'>
+type Section11Block = BaseCaseBlock<'section11'>
+type Section12Block = BaseCaseBlock<'section12'>
+
 type CaseCard = Project
 
 type CaseBlock =
-    | FirstScreenBlock
-    | CaseInfoBlock
-    | ListOfHighlightsBlock
-    | CaseServicesListBlock
-    | CaseTitleWithDescriptionBlock
-    | CaseImageBlock
-    | CaseStagesBlock
-    | CaseStepsBlock
-    // | CaseContactUsBlock
-    | CaseTechnologiesBlock
-    | CaseHighlightCardsBlock
+    | Section1Block
+    | Section2Block
+    | Section3Block
+    | Section4Block
+    | Section5Block
+    | Section6Block
+    | Section7Block
+    | Section8Block
+    | Section9Block
+    | Section10Block
+    | Section11Block
+    | Section12Block
 
 export type CaseBlocksConfig = CaseBlock[]
 

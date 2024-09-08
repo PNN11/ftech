@@ -1,0 +1,12 @@
+{
+    "first_screen": {
+        "title": "Expertise title or bigger and cool",
+        "description": "Lorem ipsum dolor sit amet consectetur. Sit fermentum sit sapien justo gravida gravida nec ipsum. Tellus non ullamcorper varius turpis. Viverra leo a non sit in purus vulputate. Odio sed donec facilisis netus. Quis velit cursus.",
+        "explore": "Explore",
+        "service": {
+            "title": "Need any service?",
+            "description": "Explore our service list highlights",
+            "action_button": "Explore service"
+        }
+    }
+}

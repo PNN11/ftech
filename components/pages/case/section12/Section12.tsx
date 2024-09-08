@@ -18,7 +18,11 @@ const Section12: FC<Section12Props> = ({ image, alt = '', size = '600', capture 
                 alt={alt}
                 width={1192}
                 height={size}
-                className={cn('rounded-8 border border-gray-100')}
+                className={cn('rounded-8 border border-gray-100 object-cover', {
+                    'md:h-106.25 lg:h-123.75 h-60 xl:h-150': size === '600',
+                    'lg:h-81.25 h-60 md:h-75 xl:h-104': size === '416',
+                    'lg:h-61 h-50 md:h-55 xl:h-74': size === '296',
+                })}
                 quality={100}
             />
             {capture && (
