@@ -9,7 +9,7 @@ type ButtonWithIconProps = ComponentProps<typeof Button> & {
 }
 
 const ButtonWithIcon: FC<ButtonWithIconProps> = ({
-    size,
+    size = 'm',
     children,
     Icon = Arrow,
     iconClassName,

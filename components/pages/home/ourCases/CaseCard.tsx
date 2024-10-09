@@ -13,27 +13,31 @@ type CaseCardProps = Case & {
     variant?: 'casesPage' | 'homePage'
 }
 
+const imageSizes: Record<NonNullable<Case['mockup']>, { width: number; height: number }> = {
+    laptop: { height: 444, width: 598 },
+    mobile: { height: 583, width: 313 },
+}
+
 const CaseCard: FC<CaseCardProps> = ({
     description,
-    features,
     href,
     tags,
     title,
-    bgColor = '#1F1F1F',
-    bgTone = 'dark',
+    bgImage = '#1F1F1F',
+    tone = 'dark',
     image,
     variant = 'homePage',
-    shortTitle,
+    mockup,
 }) => {
     const { t } = useTranslation()
 
     return (
         <div
             className={cn(
-                'grid grid-cols-1 justify-between gap-6 rounded-8 p-4.5 shadow-button md:grid-cols-[1fr_20.125rem] md:p-6 lg:grid-cols-[1fr_22.125rem] xl:p-8',
-                { 'lg:block': variant === 'homePage' }
+                'grid grid-cols-1 justify-between gap-6 overflow-hidden rounded-8',
+                'p-4.5 shadow-button md:grid-cols-[1fr_20.125rem] md:p-6 lg:grid-cols-[1fr_22.125rem] xl:p-8'
             )}
-            style={{ backgroundColor: bgColor }}
+            style={{ background: bgImage }}
         >
             <div
                 className={cn(
@@ -50,24 +54,24 @@ const CaseCard: FC<CaseCardProps> = ({
                         <div>
                             <Heading
                                 className={cn('mb-3.5', {
-                                    '!text-gray-400': bgTone === 'light',
-                                    '!text-white-300': bgTone === 'dark',
+                                    '!text-gray-400': tone === 'dark',
+                                    '!text-white-300': tone === 'light',
                                 })}
                                 variant="h3"
                             >
-                                {shortTitle}
+                                {title}
                             </Heading>
                             <Paragraph
                                 className={cn('mb-5.5 line-clamp-3', {
-                                    '!text-[#545454]': bgTone === 'light',
-                                    '!text-[#F6F6F6]': bgTone === 'dark',
+                                    '!text-[#545454]': tone === 'dark',
+                                    '!text-[#F6F6F6]': tone === 'light',
                                 })}
                                 variant="p2"
                             >
                                 {description}
                             </Paragraph>
                             <Link className="hidden md:block" href={`/cases/${href}`}>
-                                <CaseButton colorTone={bgTone}>{t('homepage:our-cases.discover-case')}</CaseButton>
+                                <CaseButton colorTone={tone}>{t('homepage:our-cases.discover-case')}</CaseButton>
                             </Link>
                         </div>
                         <div className="flex flex-wrap items-center gap-2">
@@ -76,8 +80,8 @@ const CaseCard: FC<CaseCardProps> = ({
                                     className={cn(
                                         'h-7.5 rounded-lg px-3 py-2 text-sm leading-none tracking-h2 text-white-300',
                                         {
-                                            'bg-gray-100 bg-opacity-[0.33]': bgTone === 'dark',
-                                            'bg-[#6C6C6C] bg-opacity-[0.66]': bgTone === 'light',
+                                            'bg-gray-100 bg-opacity-[0.33]': tone === 'light',
+                                            'bg-[#6C6C6C] bg-opacity-[0.66]': tone === 'dark',
                                         }
                                     )}
                                     key={`${tag}${i}`}
@@ -87,58 +91,29 @@ const CaseCard: FC<CaseCardProps> = ({
                             ))}
                         </div>
                     </div>
-                    <Image
-                        src={image}
-                        alt={title}
-                        width={190}
-                        height={380}
-                        className={cn('mr-5 hidden w-47.5', { 'lg:block': variant === 'homePage' })}
-                        quality={100}
-                    />
                 </div>
-                <div className={cn('grid grid-cols-3 gap-3.5 md:grid-cols-1 lg:grid-cols-3 lg:gap-5.5')}>
-                    {features.map(({ text, value }, i) => (
-                        <div key={`${text}${i}`} className="">
-                            <Heading
-                                className={cn('mb-3.5', {
-                                    '!text-gray-400': bgTone === 'light',
-                                    '!text-white-300': bgTone === 'dark',
-                                })}
-                                variant="h3"
-                            >
-                                {value}
-                            </Heading>
-                            <Paragraph
-                                className={cn('', {
-                                    '!text-[#545454]': bgTone === 'light',
-                                    '!text-[#F6F6F6]': bgTone === 'dark',
-                                })}
-                                variant="p2"
-                            >
-                                {text}
-                            </Paragraph>
-                        </div>
-                    ))}
-                </div>
+
                 <Link className="w-full md:hidden" href={`/cases/${href}`}>
-                    <CaseButton className="w-full" colorTone={bgTone}>
+                    <CaseButton className="w-full" colorTone={tone}>
                         {t('homepage:our-cases.discover-case')}
                     </CaseButton>
                 </Link>
             </div>
             <div
-                className={cn('self-end rounded-xl bg-white-10 bg-opacity-[0.12] md:bg-transparent', {
-                    'lg:hidden': variant === 'homePage',
+                className={cn('h-85 self-end overflow-hidden rounded-xl md:h-auto md:w-88.5 md:bg-transparent', {
+                    'bg-white-10 bg-opacity-[0.12]': mockup === 'mobile',
                 })}
             >
-                <Image
-                    src={image}
-                    alt={title}
-                    width={290}
-                    height={340}
-                    quality={100}
-                    className="mx-auto h-85 object-cover object-top md:-mb-6 xl:-mb-8"
-                />
+                {mockup && (
+                    <Image
+                        src={image}
+                        alt={title}
+                        width={imageSizes[mockup].width}
+                        height={imageSizes[mockup].width}
+                        quality={100}
+                        className="mx-auto max-w-max object-cover object-top md:-mb-6 xl:-mb-8"
+                    />
+                )}
             </div>
         </div>
     )

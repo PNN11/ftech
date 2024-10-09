@@ -10,6 +10,7 @@ const config: Config = {
     theme: {
         screens: {
             sm: '420px',
+            '2sm': '490px',
             md: '744px',
             lg: '1024px',
             xl: '1280px',
@@ -26,6 +27,8 @@ const config: Config = {
                 'contact-us-blue': 'linear-gradient(180.28deg, #10A9FF -3.64%, #0070D7 80.56%)',
                 'services-first-screen':
                     'linear-gradient(185.83deg, #575757 12.21%, #484848 40%, #343434 61.46%, #161616 80.15%)',
+                'expertise-first-screen':
+                    'linear-gradient(180deg, #FFFFFF 39.49%, rgba(255, 255, 255, 0.849829) 71.59%, rgba(255, 255, 255, 0.72) 91.62%)',
             },
             boxShadow: {
                 heading: '0px 5px 3.4px 0px rgba(246, 246, 246, 1)',
@@ -154,6 +157,7 @@ const config: Config = {
                 58.25: '14.5625rem', // 233px
                 58.75: '14.6875rem', // 235px
                 59.25: '14.8125rem', // 237px
+                61: '15.25rem', // 244px
                 61.25: '15.3125rem', // 245px
                 62: '15.5rem', // 248px
                 62.5: '15.625rem', // 250px
@@ -166,16 +170,18 @@ const config: Config = {
                 70: '17.5rem', // 280px
                 72: '18rem', // 288px
                 73: '18.25rem', // 292px
+                74: '18.5rem', // 296px
                 75: '18.75rem', // 300px
                 75.5: '18.875rem', // 302px
                 76: '19rem', // 304px
                 76.5: '19.125rem', // 306px
-                78.375: '19.5938rem', // 313.5px
                 78: '19.5rem', // 312px
+                78.375: '19.5938rem', // 313.5px
                 78.5: '19.625rem', // 314px
                 79: '19.75rem', // 316px
                 80: '20rem', // 320px
                 81: '20.25rem', // 324px
+                81.25: '20.3125rem', // 325px
                 82: '20.5rem', // 328px
                 83.5: '20.875rem', // 334px
                 84: '21rem', // 336px
@@ -202,6 +208,7 @@ const config: Config = {
                 103: '25.75rem', // 412px
                 104: '26rem', // 416px
                 105.5: '26.375rem', // 422px
+                106.25: '26.5625rem', // 425px
                 108: '27rem', // 432px
                 109.25: '27.3125rem', // 437px
                 112: '28rem', // 448px
@@ -211,6 +218,7 @@ const config: Config = {
                 120: '30rem', // 480px
                 122: '30.5rem', // 488px
                 123: '30.75rem', // 492px
+                123.75: '30.9375rem', // 495px
                 125: '31.25rem', // 500px
                 129.5: '32.375rem', // 518px
                 130: '32.5rem', // 520px

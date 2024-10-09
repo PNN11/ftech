@@ -11,6 +11,14 @@ import ProjectChallenges from '@/components/pages/case/projectChallenges'
 import ProjectReviews from '@/components/pages/case/reviews/ProjectReviews'
 import NextCaseSection from '@/components/pages/case/nextCase/NextCaseSection'
 import CaseContactUs from '@/components/pages/case/contact/CaseContactUs'
+import Section3 from '@/components/pages/case/section3'
+import CaseSection6 from '@/components/pages/case/section6/Section6'
+import Section7 from '@/components/pages/case/section7/Section7'
+import Section9 from '@/components/pages/case/section9'
+import Section10 from '@/components/pages/case/section10'
+import Section11 from '@/components/pages/case/section11'
+import Section12 from '@/components/pages/case/section12'
+import CaseBlocksMapper from '@/components/pages/case/caseBlocksMapper/CaseBlockMapper'
 
 const namespaces = ['case', 'homepage']
 
@@ -21,9 +29,11 @@ export default async function CasePage({
 }) {
     const { resources } = await initTranslations(locale, namespaces)
 
-    const caseIndex = allCases[locale].findIndex(({ href }) => href === caseName)
+    const caseIndex = allCases[locale].findIndex(({ card }) => card.href === caseName)
 
     const caseInfo = allCases[locale][caseIndex]
+
+    if (!caseInfo) notFound()
 
     const nextCaseIndex = caseIndex < allCases[locale].length - 1 ? caseIndex + 1 : 0
 
@@ -35,39 +45,7 @@ export default async function CasePage({
         <TranslationsProvider locale={locale} namespaces={namespaces} resources={resources}>
             <main className="">
                 <Container>
-                    <CaseFirstScreen
-                        description={caseInfo.description}
-                        shortTitle={caseInfo.shortTitle}
-                        title={caseInfo.title}
-                        nextCaseShortTitle={nextCase.shortTitle}
-                    />
-                    <ProjectDefinition
-                        budget={caseInfo.budget}
-                        client={caseInfo.client}
-                        clutchReview={caseInfo.clutchReview}
-                        delivering={caseInfo.delivering}
-                        environment={caseInfo.environment}
-                        industry={caseInfo.industry}
-                        location={caseInfo.location}
-                        problem={caseInfo.problem}
-                        release={caseInfo.release}
-                        solution={caseInfo.solution}
-                        tags={caseInfo.tags}
-                    />
-                    <ProjectOutcome
-                        title={caseInfo.outcome.title}
-                        description={caseInfo.outcome.description}
-                        features={caseInfo.outcome.features}
-                        owner={caseInfo.owner}
-                    />
-                    <ProjectWorkflow
-                        stages={caseInfo.stages}
-                        basicImage={{ capture: caseInfo.images.basicCapture, src: caseInfo.images.basic }}
-                    />
-                    <ProjectChallenges challenges={caseInfo.challenges} additionalInfo={caseInfo.additionalInfo} />
-                    <ProjectReviews title={caseInfo.reviews.title} item={caseInfo.reviews.item} />
-                    <NextCaseSection caseInfo={nextCase} />
-                    <CaseContactUs />
+                    <CaseBlocksMapper config={caseInfo.config} nextProject={nextCase.card} />
                 </Container>
             </main>
         </TranslationsProvider>

@@ -12,8 +12,8 @@ const CaseButton: FC<CaseButtonProps> = ({ children, className, colorTone, ...pr
             className={cn(
                 'inline-flex h-10 items-center justify-center rounded-xl px-5 text-lg leading-none tracking-h2',
                 {
-                    'bg-gray-900 text-white-10': colorTone === 'light',
-                    'bg-primary-white text-[#1F1F1F]': colorTone === 'dark',
+                    'bg-gray-900 text-white-10': colorTone === 'dark',
+                    'bg-primary-white text-[#1F1F1F]': colorTone === 'light',
                 },
                 className
             )}

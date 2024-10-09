@@ -3,6 +3,7 @@ import ChevronUp from '@/components/svg/ChevronUp'
 import Heading from '@/components/ui/typography/heading'
 import Paragraph from '@/components/ui/typography/paragraph'
 import useStopVideoOutOfView from '@/hooks/useStopVideoOutOfView'
+import { Case } from '@/types/cases'
 import Link from 'next/link'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -11,10 +12,11 @@ type CaseFirstScreenProps = {
     title: string
     description: string
     shortTitle: string
-    nextCaseShortTitle: string
+    nextProject?: Case
+    image?: string
 }
 
-const CaseFirstScreen: FC<CaseFirstScreenProps> = ({ description, shortTitle, title, nextCaseShortTitle }) => {
+const CaseFirstScreen: FC<CaseFirstScreenProps> = ({ description, shortTitle, title, nextProject }) => {
     const { t } = useTranslation()
 
     const ref = useStopVideoOutOfView()
@@ -36,8 +38,8 @@ const CaseFirstScreen: FC<CaseFirstScreenProps> = ({ description, shortTitle, ti
                         <p>{t('case:first-screen.back_to_cases')}</p>
                     </Link>
                     <p className="hidden md:block">{shortTitle}</p>
-                    <Link href={'/cases'} className="flex items-center gap-1.5">
-                        <p>{t('case:first-screen.next_case', { title: nextCaseShortTitle })}</p>
+                    <Link href={`/cases/${nextProject?.href}`} className="flex items-center gap-1.5">
+                        <p>{t('case:first-screen.next_case')}</p>
                         <ChevronUp className="rotate-90" />
                     </Link>
                 </div>
