@@ -10,41 +10,35 @@
     "expertise": {
         "our-expertise": "Our Expertise",
         "items": {
-            "real-estate": {
-                "title": "Real Estate",
-                "description": "Let the pixels made they magic"
-            },
             "e-commerce": {
                 "title": "E-commerce",
-                "description": "Data and models"
+                "description": "Data and models",
+                "long-description": "Lorem ipsum dolor sit amet consectetur. Eget mattis pellentesque amet nibh habitant consequat a. In nunc."
             },
             "edtech": {
                 "title": "EdTech",
-                "description": "Data and models"
-            },
-            "web3": {
-                "title": "Web 3.0",
-                "description": "Let the pixels made they magic"
+                "description": "Data and models",
+                "long-description": "Lorem ipsum dolor sit amet consectetur. Eget mattis pellentesque amet nibh habitant consequat a. In nunc."
             },
             "healthcare": {
                 "title": "Healthcare",
-                "description": "Data and models"
+                "description": "Data and models",
+                "long-description": "Lorem ipsum dolor sit amet consectetur. Eget mattis pellentesque amet nibh habitant consequat a. In nunc."
             },
             "fintech": {
                 "title": "Fintech",
-                "description": "Data and models"
+                "description": "Data and models",
+                "long-description": "Lorem ipsum dolor sit amet consectetur. Eget mattis pellentesque amet nibh habitant consequat a. In nunc."
             },
-            "travel": {
+            "sport": {
                 "title": "Travel",
-                "description": "Let the pixels made they magic"
-            },
-            "logistics": {
-                "title": "Logistics",
-                "description": "Data and models"
+                "description": "Let the pixels made they magic",
+                "long-description": "Lorem ipsum dolor sit amet consectetur. Eget mattis pellentesque amet nibh habitant consequat a. In nunc."
             },
             "energetics": {
                 "title": "Energetics",
-                "description": "Data and models"
+                "description": "Data and models",
+                "long-description": "Lorem ipsum dolor sit amet consectetur. Eget mattis pellentesque amet nibh habitant consequat a. In nunc."
             }
         }
     },

@@ -13,6 +13,7 @@ import projectWorkflow from '../projectWorkflow'
 import Section9 from '../section9'
 import Section10 from '../section10'
 import Section11 from '../section11'
+import Section12 from '../section12'
 import { Case } from '@/types/cases'
 
 const blocksMap = {
@@ -27,8 +28,7 @@ const blocksMap = {
     section9: Section9,
     section10: Section10,
     section11: Section11,
-    section12: ProjectDefinition,
-    section13: ProjectDefinition,
+    section12: Section12,
 }
 
 type CaseBlocksMap = typeof blocksMap

@@ -22,7 +22,7 @@ const ContactUsBlock: FC = () => {
                     {title}
                 </Heading>
                 <Link href="/contact">
-                    <Button size="l" color="secondary">
+                    <Button size="l" color="secondary" className="font-medium">
                         {action_button}
                     </Button>
                 </Link>
