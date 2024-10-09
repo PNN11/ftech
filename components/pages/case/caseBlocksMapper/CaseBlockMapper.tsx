@@ -52,7 +52,6 @@ type Section9Block = BaseCaseBlock<'section9'>
 type Section10Block = BaseCaseBlock<'section10'>
 type Section11Block = BaseCaseBlock<'section11'>
 type Section12Block = BaseCaseBlock<'section12'>
-type Section13Block = BaseCaseBlock<'section13'>
 
 type CaseCard = Case
 
@@ -69,7 +68,6 @@ type CaseBlock =
     | Section10Block
     | Section11Block
     | Section12Block
-    | Section13Block
 
 export type CaseBlocksConfig = CaseBlock[]
 
