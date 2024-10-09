@@ -12,12 +12,9 @@ import { allCases } from '@/app/[locale]/cases/data'
 
 const categories = [
     { title: 'cases:cases-list.all', category: 'all' },
-    { title: 'common:expertise.items.real-estate.title', category: 'real-estate' },
-    { title: 'common:expertise.items.web3.title', category: 'web3' },
-    { title: 'common:expertise.items.travel.title', category: 'travel' },
+    { title: 'common:expertise.items.sport.title', category: 'sport' },
     { title: 'common:expertise.items.e-commerce.title', category: 'e-commerce' },
     { title: 'common:expertise.items.healthcare.title', category: 'healthcare' },
-    { title: 'common:expertise.items.logistics.title', category: 'logistics' },
     { title: 'common:expertise.items.edtech.title', category: 'edtech' },
     { title: 'common:expertise.items.fintech.title', category: 'fintech' },
     { title: 'common:expertise.items.energetics.title', category: 'energetics' },
