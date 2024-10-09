@@ -36,7 +36,7 @@ const CasesList: FC = () => {
     const _cases =
         activeCategory === 'all'
             ? allCases[i18n.language]
-            : allCases[i18n.language].filter(item => item.category === activeCategory)
+            : allCases[i18n.language].filter(item => item.card.category === activeCategory)
 
     return (
         <SectionWrapper>
@@ -60,7 +60,7 @@ const CasesList: FC = () => {
                 </TabsWrapper>
                 <div className="space-y-2">
                     {_cases.map(item => (
-                        <CaseCard key={item.title} {...item} variant="casesPage" />
+                        <CaseCard key={item.card.title} {...item.card} variant="casesPage" />
                     ))}
                 </div>
             </Container>

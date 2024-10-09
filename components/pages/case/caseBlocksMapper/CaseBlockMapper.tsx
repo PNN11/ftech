@@ -13,6 +13,7 @@ import projectWorkflow from '../projectWorkflow'
 import Section9 from '../section9'
 import Section10 from '../section10'
 import Section11 from '../section11'
+import { Case } from '@/types/cases'
 
 const blocksMap = {
     section1: CaseFirstScreen,
@@ -39,31 +40,36 @@ type BaseCaseBlock<T extends BlocksUnion> = {
     props: ComponentProps<CaseBlocksMap[T]>
 }
 
-type FirstScreenBlock = BaseCaseBlock<'firstScreen'>
-type CaseInfoBlock = BaseCaseBlock<'caseDefinition'>
-type ListOfHighlightsBlock = BaseCaseBlock<'listOfHighlights'>
-type CaseServicesListBlock = BaseCaseBlock<'caseServicesList'>
-type CaseTitleWithDescriptionBlock = BaseCaseBlock<'caseTitleWithDescription'>
-type CaseImageBlock = BaseCaseBlock<'caseImage'>
-type CaseStagesBlock = BaseCaseBlock<'caseStages'>
-type CaseStepsBlock = BaseCaseBlock<'caseSteps'>
-// type CaseContactUsBlock = BaseCaseBlock<'contact'>
-type CaseTechnologiesBlock = BaseCaseBlock<'caseTechnologies'>
-type CaseHighlightCardsBlock = BaseCaseBlock<'caseHighlightCards'>
-type CaseCard = Project
+type Section1Block = BaseCaseBlock<'section1'>
+type Section2Block = BaseCaseBlock<'section2'>
+type Section3Block = BaseCaseBlock<'section3'>
+type Section4Block = BaseCaseBlock<'section4'>
+type Section5Block = BaseCaseBlock<'section5'>
+type Section6Block = BaseCaseBlock<'section6'>
+type Section7Block = BaseCaseBlock<'section7'>
+type Section8Block = BaseCaseBlock<'section8'>
+type Section9Block = BaseCaseBlock<'section9'>
+type Section10Block = BaseCaseBlock<'section10'>
+type Section11Block = BaseCaseBlock<'section11'>
+type Section12Block = BaseCaseBlock<'section12'>
+type Section13Block = BaseCaseBlock<'section13'>
+
+type CaseCard = Case
 
 type CaseBlock =
-    | FirstScreenBlock
-    | CaseInfoBlock
-    | ListOfHighlightsBlock
-    | CaseServicesListBlock
-    | CaseTitleWithDescriptionBlock
-    | CaseImageBlock
-    | CaseStagesBlock
-    | CaseStepsBlock
-    // | CaseContactUsBlock
-    | CaseTechnologiesBlock
-    | CaseHighlightCardsBlock
+    | Section1Block
+    | Section2Block
+    | Section3Block
+    | Section4Block
+    | Section5Block
+    | Section6Block
+    | Section7Block
+    | Section8Block
+    | Section9Block
+    | Section10Block
+    | Section11Block
+    | Section12Block
+    | Section13Block
 
 export type CaseBlocksConfig = CaseBlock[]
 
@@ -84,7 +90,7 @@ const CaseBlocksMapper: FC<CaseBlocksMapperProps> = ({ config, nextProject }) =>
                 const Component = blocksMap[block]
                 if (!Component) return null
 
-                return <Component key={`${block}${i}`} {...(props as any)} />
+                return <Component key={`${block}${i}`} {...(props as any)} nextProject={nextProject} />
             })}
             <CaseContactUs />
             <NextCaseSection caseInfo={nextProject} />

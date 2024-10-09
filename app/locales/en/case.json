@@ -1,7 +1,7 @@
 {
     "first-screen": {
         "back_to_cases": "Back to cases",
-        "next_case": "Next case {{title}}"
+        "next_case": "Next case"
     },
     "project-info": {
         "project-definition": "Project definition",

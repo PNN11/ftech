@@ -33,14 +33,14 @@ const OurCases: FC = () => {
                         </Link>
                         <div className="space-y-2">
                             {_cases.slice(0, 2).map((item, index) => (
-                                <CaseCard key={`${item.title}${index}`} {...item} />
+                                <CaseCard key={`${item.card.title}${index}`} {...item.card} />
                             ))}
                         </div>
                     </div>
                     <div>
                         <div className="space-y-2">
                             {_cases.slice(2, 4).map((item, index) => (
-                                <CaseCard key={`${item.title}${index}`} {...item} />
+                                <CaseCard key={`${item.card.title}${index}`} {...item.card} />
                             ))}
                             <div
                                 className="flex flex-col items-center gap-6 rounded-8 border border-[#E5E5E5] bg-white-300 p-4.5 
