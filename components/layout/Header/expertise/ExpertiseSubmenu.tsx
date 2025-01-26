@@ -14,6 +14,9 @@ export const expertise = [
         href: '/e-commerce',
         number: 1,
         image: { src: '/images/expertise/e-commerce.png', width: 280, height: 148 },
+        projectsCount: '10+',
+        caseStudies: '3',
+        services: 'common:expertise.items.e-commerce.services',
     },
     {
         title: 'common:expertise.items.fintech.title',
@@ -22,6 +25,9 @@ export const expertise = [
         href: '/fintech',
         number: 2,
         image: { src: '/images/expertise/fintech.png', width: 240, height: 187 },
+        projectsCount: '10+',
+        caseStudies: '6',
+        services: 'common:expertise.items.fintech.services',
     },
     {
         title: 'common:expertise.items.healthcare.title',
@@ -30,6 +36,9 @@ export const expertise = [
         href: '/healthcare',
         number: 3,
         image: { src: '/images/expertise/healthcare.png', width: 245, height: 184 },
+        projectsCount: '10+',
+        caseStudies: '4',
+        services: 'common:expertise.items.healthcare.services',
     },
     {
         title: 'common:expertise.items.edtech.title',
@@ -38,6 +47,9 @@ export const expertise = [
         href: '/edtech',
         number: 4,
         image: { src: '/images/expertise/edtech.png', width: 144, height: 182 },
+        projectsCount: '10+',
+        caseStudies: '2',
+        services: 'common:expertise.items.edtech.services',
     },
     {
         title: 'common:expertise.items.sport.title',
@@ -46,6 +58,9 @@ export const expertise = [
         href: '/sport',
         number: 5,
         image: { src: '/images/expertise/sport.png', width: 243, height: 172 },
+        projectsCount: '10+',
+        caseStudies: '2',
+        services: 'common:expertise.items.sport.services',
     },
     {
         title: 'common:expertise.items.energetics.title',
@@ -54,6 +69,9 @@ export const expertise = [
         href: '/energetics',
         number: 6,
         image: { src: '/images/expertise/e-commerce.png', width: 209, height: 194 },
+        projectsCount: '10+',
+        caseStudies: '6',
+        services: 'common:expertise.items.energetics.services',
     },
 ]
 

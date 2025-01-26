@@ -9,7 +9,7 @@ const config: Config = {
     darkMode: 'selector',
     theme: {
         screens: {
-            sm: '420px',
+            sm: '430px',
             '2sm': '490px',
             md: '744px',
             lg: '1024px',

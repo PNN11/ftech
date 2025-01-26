@@ -1,4 +1,5 @@
 import initTranslations from '@/app/i18n'
+import ExpertisesList from '@/components/pages/expertise/expertisesList'
 import ExpertiseFirstScreen from '@/components/pages/expertise/firstScreen/ExpertiseFirstScreen'
 import TranslationsProvider from '@/components/providers/locales'
 import Container from '@/components/ui/wrappers/container'
@@ -13,6 +14,7 @@ export default async function ExpertisePage({ params: { locale } }: { params: { 
             <main className="overflow-hidden">
                 <Container>
                     <ExpertiseFirstScreen />
+                    <ExpertisesList />
                 </Container>
             </main>
         </TranslationsProvider>
