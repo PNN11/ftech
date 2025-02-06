@@ -37,7 +37,21 @@
         },
         "title": "Stages of project",
         "subtitle": "Our workflow",
-        "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success. "
+        "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success. ",
+        "cards": [
+            {
+                "title": "Requirements Gathering and Business Analysis",
+                "description": "Our business analysts will gather all the details of the upcoming project and create a scope of tasks for the technical team"
+            },
+            {
+                "title": "Budget Estimation and Coordination",
+                "description": "The project is structured into a comprehensive set of tasks and subtasks, each of them is estimated in terms of hours with fixed pricing depending on the specialist performing the work. In FTECH-IT we ensure that our final budget estimates are both clear and transparent. We provide a detailed breakdown of how each dollar of your budget will be allocated. "
+            },
+            {
+                "title": "Development",
+                "description": "Whether it's a web or mobile application, FTECH-IT will always recommend the optimal tech stack for your idea or professionally implement your technical vision of the project"
+            }
+        ]
     },
     "challenges": {
         "title": "Showcasing versatility and ability to adapt to different challenges",

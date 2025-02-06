@@ -14,11 +14,16 @@ type ExpertiseStatProps = {
 
 const ExpertiseStat: FC<ExpertiseStatProps> = ({ value, capture, classes }) => {
     return (
-        <div className={cn('flex w-fit gap-2 rounded-lg bg-gray-200 px-2 py-0.5', classes?.wrapper)}>
-            <Heading variant="h5" className="text-[1.125rem] leading-none">
+        <div
+            className={cn(
+                'flex w-fit gap-2 rounded-lg bg-gray-200 px-2 py-0.5 md:flex-col md:p-3 lg:bg-transparent',
+                classes?.wrapper
+            )}
+        >
+            <Heading variant="h5" className="text-[1.125rem] leading-none md:text-4xl">
                 {value}
             </Heading>
-            <Paragraph variant="p2" className="text-sm lowercase">
+            <Paragraph variant="p2" className="text-sm lowercase md:text-base">
                 {capture}
             </Paragraph>
         </div>

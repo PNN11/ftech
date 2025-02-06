@@ -1,14 +1,26 @@
 {
     "first_screen": {
-        "title": "Expertise title or bigger and cool",
-        "description": "Lorem ipsum dolor sit amet consectetur. Sit fermentum sit sapien justo gravida gravida nec ipsum. Tellus non ullamcorper varius turpis. Viverra leo a non sit in purus vulputate. Odio sed donec facilisis netus. Quis velit cursus.",
-        "explore": "Explore"
+        "title": "Our expertise",
+        "description": "FTECH-IT is ready to help you develop solutions in various  solutions in many domains. Contact us to get consultation",
+        "explore": "Explore",
+        "consultation_button": "Get consultation"
     },
     "expertise_list": {
         "title": "Various domains of expertise, find yours",
         "subtitle": "Our expertise",
         "description": "We have wide fields of expertise in projects from fintech, medicine, e-commerce, education, sport and entertainment, energetics and manufacturing domains. Our mission is creating new digital opportunities for customers and wide spreading newest technologies",
         "projects": "Projects",
-        "case_studies": "Case studies"
+        "case_studies": "Case studies",
+        "action_button": "Explore",
+        "contact_us": {
+            "title": "💡  Contact us to get a free consultation",
+            "action_button": "Contact us",
+            "explore_button": "Explore portfolio"
+        }
+    },
+    "contact-us": {
+        "title": "Have an idea of project?",
+        "description": "Our team is dedicated to providing excellent customer service and ensuring your experience with us is a positive one. We look forward to hearing from you soon!",
+        "action_button": "Contact us"
     }
 }

@@ -30,7 +30,7 @@ const ServicesReasons: FC = () => {
     }) as ServicesReasonsData
 
     return (
-        <section className="grid grid-cols-1 items-center gap-6 py-12.5 md:grid-cols-[1fr_max-content] md:gap-3 lg:py-25 xl:items-end">
+        <section className="grid grid-cols-1 items-center gap-6 py-12.5 md:grid-cols-[1fr_max-content] md:gap-3 xl:items-end">
             <TitleWithDescription
                 classes={{ wrapper: 'text-start md:max-w-100 xl:max-w-123 md:ml-0' }}
                 subtitle={subtitle}
@@ -52,36 +52,12 @@ const ServicesReasons: FC = () => {
                             {t('services:reasons.hire-team')}
                         </ButtonWithIcon>
                     </FeatureCard>
-                    <FeatureCardWrapper className="px-0 pb-0 pt-4.5 sm:px-0">
-                        <div className="mb-4 flex items-start gap-5 px-4.5">
-                            <Image
-                                src={'/images/services/owner.png'}
-                                width={38}
-                                height={38}
-                                alt={owner.name}
-                                quality={100}
-                            />
-                            <div>
-                                <Paragraph className="mb-1" variant="p2">
-                                    {owner.name}
-                                </Paragraph>
-                                <Paragraph variant="p3">{owner.position}</Paragraph>
-                            </div>
-                        </div>
-
-                        <div className="top-17.5 rounded-8 bg-gray-900 px-6 pb-9.5 pt-5 outline outline-1 outline-gray-200">
-                            <Quotes className="mb-5.5 w-2.5 text-bg-page" />
-                            <Paragraph className="text-gray-100 dark:text-white-200" variant="p3">
-                                {owner.message}
-                            </Paragraph>
-                        </div>
-                    </FeatureCardWrapper>
+                    <FeatureCard classes={{ title: 'text-6xl' }} title={items[1].value} description={items[1].text} />
                 </div>
                 <div className="space-y-2">
-                    <FeatureCard title={items[1].value} description={items[1].text}></FeatureCard>
-                    <FeatureCard title={items[2].value} description={items[2].text} />
+                    <FeatureCard title={items[2].value} description={items[2].text}></FeatureCard>
+                    <FeatureCard title={items[3].value} description={items[3].text} />
                 </div>
-                <CasesStar className="absolute right-30 top-1 h-10 w-10 md:-left-18 md:right-auto md:top-5 lg:top-2 xl:top-12.5" />
             </div>
         </section>
     )

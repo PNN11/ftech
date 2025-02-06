@@ -24,7 +24,7 @@ const Faq: FC = () => {
             <Container>
                 <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:gap-2.5">
                     <TitleWithDescription
-                        classes={{ wrapper: 'text-start lg:max-w-[29.625rem]' }}
+                        classes={{ wrapper: 'text-start lg:max-w-[30.375rem] ml-0' }}
                         subtitle={subtitle}
                         title={title}
                         description={description}

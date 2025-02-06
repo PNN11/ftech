@@ -25,7 +25,7 @@ type MenuItem = { title: string; href: string } & (
 
 const menuItems: MenuItem[] = [
     { title: 'common:header.service', type: 'dropdown', Component: ServiceSubmenu, href: 'service' },
-    { title: 'common:header.expertise', type: 'dropdown', Component: ExpertiseSubmenu, href: 'expertise' },
+    { title: 'common:header.expertise', type: 'link', href: '/expertise' },
     { title: 'common:header.cases', type: 'link', href: '/cases' },
     { title: 'common:header.contacts', type: 'link', href: '/contacts' },
 ]

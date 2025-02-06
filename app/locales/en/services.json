@@ -12,18 +12,21 @@
     },
     "reasons": {
         "subtitle": "Why FTECH?",
-        "title": "Showcasing versatility and ability to adapt to different challenges",
-        "description": "Our projects span various industries, from real estate to technology, showcasing our versatility and expertise",
+        "title": "Excellent experience in software development",
+        "description": "FTECH-IT will be glad to work with new clients and help companies achieve best results on the market",
         "items": [
-            { "value": "90%", "text": "of staff are middle grade and higher " },
-            { "value": "120+", "text": "Projects Completed" },
-            { "value": "5 years", "text": "Establishing a solid foundation, we've honed our skills over half a decade" }
+            { "value": "89%", "text": "of engineers are mid-level or higher" },
+            {
+                "value": "Expertise",
+                "text": "Expert business analysts and detailed estimates during the presale phase"
+            },
+            { "value": "60+", "text": "Projects Completed" },
+            {
+                "value": "5+ years",
+                "text": "Our team’s expertise ensures the successful implementation of your IT solution"
+            }
         ],
-        "owner": {
-            "name": "Eugen  Lahutsin",
-            "position": "CEO",
-            "message": "Lorem ipsum dolor sit amet consectetur. Ultricies consectetur proin vitae sodales."
-        },
+
         "hire-team": "Hire a team"
     },
     "services-list": {

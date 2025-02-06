@@ -19,7 +19,7 @@ const FaqItem: FC<FaqItemProps> = ({ answer, question, classes }) => {
         <div className={cn(classes?.wrapper)}>
             <div
                 onClick={() => setIsOpened(prev => !prev)}
-                className="flex cursor-pointer items-center justify-between gap-4 text-gray-900 dark:text-blue-900"
+                className="grid cursor-pointer grid-cols-[1fr_2rem] items-center justify-between gap-4 text-gray-900 dark:text-blue-900"
             >
                 <Heading variant="h5">{question}</Heading>
                 {isOpened ? <MinusCircle /> : <PlusCircle />}

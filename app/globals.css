@@ -97,11 +97,11 @@
 
 .expertise-slider-pagination {
     --swiper-pagination-bottom: auto;
-    --swiper-pagination-top: 4rem;
+    --swiper-pagination-top: 2rem;
 }
 
 .expertise-slider-pagination-horizontal {
-    padding-left: 3.6875rem;
+    padding-left: 2.75rem;
     text-align: left;
 }
 

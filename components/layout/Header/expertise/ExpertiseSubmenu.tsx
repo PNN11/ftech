@@ -68,7 +68,7 @@ export const expertise = [
         longDescription: 'common:expertise.items.energetics.long-description',
         href: '/energetics',
         number: 6,
-        image: { src: '/images/expertise/e-commerce.png', width: 209, height: 194 },
+        image: { src: '/images/expertise/energetics.png', width: 209, height: 194 },
         projectsCount: '10+',
         caseStudies: '6',
         services: 'common:expertise.items.energetics.services',
