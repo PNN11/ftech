@@ -24,20 +24,25 @@ const ExpertiseFirstScreen: FC = () => {
         consultation_button: string
     }
     return (
-        <section className="mb-3 grid grid-cols-1 gap-2 rounded-8 border border-gray-200 bg-white-10 md:mb-4 lg:grid-cols-[58%_1fr]">
-            <div className="relative overflow-hidden p-4.5 pt-82 md:p-12 xl:px-16 xl:py-15">
-                <div className="relative z-[1] space-y-9 md:max-w-80">
-                    <Heading variant="h1">{title}</Heading>
-                    <Paragraph variant="p1">{description}</Paragraph>
-                    <ButtonWithIcon>{consultation_button}</ButtonWithIcon>
+        <section className="mb-3 grid grid-cols-1 gap-2 overflow-hidden rounded-8 border border-gray-200 bg-white-10 md:mb-4 lg:grid-cols-[58%_1fr]">
+            <div className="relative">
+                <div className="relative p-4.5 md:p-12 xl:px-16 xl:py-15">
+                    <div className="relative z-[1] space-y-9 md:max-w-80">
+                        <Heading variant="h1">{title}</Heading>
+                        <Paragraph variant="p1">{description}</Paragraph>
+                        <Link className="block" href="/contacts">
+                            <ButtonWithIcon>{consultation_button}</ButtonWithIcon>
+                        </Link>
+                    </div>
                 </div>
                 <Image
                     src="/images/expertise/lines.svg"
                     alt=""
-                    width={447}
-                    height={447}
+                    width={571}
+                    height={363}
                     quality={100}
-                    className="absolute -top-5 left-1/2 max-w-max -translate-x-1/4 md:left-auto md:right-0 md:top-1/2 md:-translate-y-1/2 md:translate-x-1/2"
+                    className="absolute -top-5 left-1/2 hidden max-w-max -translate-x-1/4 md:bottom-0 md:left-auto
+                     md:right-0 md:top-auto md:block md:translate-x-1/2 lg:translate-x-2/3"
                 />
             </div>
             <div className="h-full lg:p-4">

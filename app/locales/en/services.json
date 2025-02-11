@@ -1,9 +1,8 @@
 {
     "first-screen": {
-        "subtitle": "Our service",
-        "title": "Lorem ipsum dolor sit amet consectetur.",
-        "description": "Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus. In semper sed ridiculus pretium vitae. Id venenatis vel senectus elementum pellentesque.",
-
+        "title": "Our service",
+        "description": "FTECH-IT is ready to help you develop solutions in various niche solutions in many areas. Contact us to get consultation",
+        "consultation_button": "Get consultation",
         "expertise": {
             "title": "Exact industry project?",
             "description": "Explore our industry expertise highlights",
@@ -30,6 +29,8 @@
         "hire-team": "Hire a team"
     },
     "services-list": {
+        "title": "FTECH-IT service proposal",
+        "subtitle": "Our service",
         "web-development": {
             "title": "Web development",
             "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",

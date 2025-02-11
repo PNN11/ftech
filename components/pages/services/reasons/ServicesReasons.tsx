@@ -37,7 +37,7 @@ const ServicesReasons: FC = () => {
                 title={title}
                 description={description}
             />
-            <div className="relative grid grid-cols-[repeat(2,minmax(0,12rem))] items-center justify-center gap-2 py-6 xl:grid-cols-[2fr_1fr] xl:items-end">
+            <div className="relative grid grid-cols-[repeat(2,minmax(0,12rem))] items-center justify-center gap-2 py-6 md:py-0 xl:grid-cols-[2fr_1fr] xl:items-end">
                 <div className="grid grid-cols-1 items-end gap-2 xl:grid-cols-2">
                     <FeatureCard classes={{ description: 'mb-17' }} title={items[0].value} description={items[0].text}>
                         <Image

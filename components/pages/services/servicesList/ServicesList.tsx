@@ -7,6 +7,8 @@ import Terminal from '@/components/svg/Terminal'
 import UsersFour from '@/components/svg/UsersFour'
 import React, { FC } from 'react'
 import ServiceListGroupItem from './ServiceListGroupItem'
+import TitleWithDescription from '@/components/ui/TitleWithDescription'
+import { useTranslation } from 'react-i18next'
 
 const serviceList = [
     {
@@ -55,12 +57,20 @@ const serviceList = [
 ]
 
 const ServicesList: FC = () => {
+    const { t } = useTranslation()
+    const { subtitle, title } = t('services:services-list', { returnObjects: true }) as {
+        title: string
+        subtitle: string
+    }
     return (
-        <ul className="">
-            {serviceList.map(item => (
-                <ServiceListGroupItem key={item.title} {...item} />
-            ))}
-        </ul>
+        <section>
+            <TitleWithDescription title={title} subtitle={subtitle} />
+            <ul className="">
+                {serviceList.map(item => (
+                    <ServiceListGroupItem key={item.title} {...item} />
+                ))}
+            </ul>
+        </section>
     )
 }
 
