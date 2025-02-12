@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
+import CTASection from './CTASection'
 
 type ListLabels =
     | 'brand'
@@ -26,7 +27,7 @@ type ProjectDefinitionProps = {
     tags: string[]
     listItems: Partial<Record<ListLabels, string | string[]>>
     descriptionItems: Partial<Record<DescriptionLabels, string>>
-    contact: { title?: string; description: string; image?: string }
+    contact: { title: string; description: string; image?: string }
 }
 
 const ProjectDefinition: FC<ProjectDefinitionProps> = ({ listItems, tags, contact, descriptionItems }) => {
@@ -88,26 +89,7 @@ const ProjectDefinition: FC<ProjectDefinitionProps> = ({ listItems, tags, contac
                     </ul>
                 </div>
             </div>
-            <div className="flex flex-col items-center justify-center gap-11 border-b border-t border-gray-300 py-9.5 md:flex-row md:gap-29 lg:gap-25">
-                <Image
-                    src={contact.image ?? '/images/case/case_people.png'}
-                    width={267}
-                    height={253}
-                    alt=""
-                    quality={100}
-                />
-                <div className="md:max-w-87 lg:max-w-122">
-                    <Heading className="mb-4" variant="h5">
-                        💡 {contact.title}
-                    </Heading>
-                    <Paragraph className="mb-7" variant="p1">
-                        {contact.description}
-                    </Paragraph>
-                    <Link href="/contacts">
-                        <Button size="s">{t('case:project-info.contact')}</Button>
-                    </Link>
-                </div>
-            </div>
+            <CTASection actionButton={{ href: '/contacts', title: t('case:project-info.contact') }} {...contact} />
         </section>
     )
 }

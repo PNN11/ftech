@@ -8,6 +8,7 @@ import OurCases from '@/components/pages/home/ourCases'
 import Reviews from '@/components/pages/home/reviews'
 import Faq from '@/components/pages/home/faq'
 import HomeContactUs from '@/components/pages/home/contactUs/HomeContactUs'
+import Container from '@/components/ui/wrappers/container'
 
 const namespaces = ['homepage', 'common']
 
@@ -21,7 +22,9 @@ export default async function Home({ params: { locale } }: { params: { locale: s
                 <AboutUs />
                 <OurService />
                 <OurExpertise />
-                <OurCases />
+                <Container>
+                    <OurCases />
+                </Container>
                 <Reviews />
                 <Faq />
                 <HomeContactUs />

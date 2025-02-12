@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Case } from '@/types/cases'
+import CaseCardTags from './CaseCardTags'
 
 type CaseCardProps = Case & {
     variant?: 'casesPage' | 'homePage'
@@ -34,74 +35,69 @@ const CaseCard: FC<CaseCardProps> = ({
     return (
         <div
             className={cn(
-                'grid grid-cols-1 justify-between gap-6 overflow-hidden rounded-8',
-                'p-4.5 shadow-button md:grid-cols-[1fr_20.125rem] md:p-6 lg:grid-cols-[1fr_22.125rem] xl:p-8'
+                'grid grid-cols-1 justify-between gap-6 overflow-hidden rounded-8 md:min-h-[27.5rem]',
+                'p-4.5 shadow-button md:grid-cols-[1fr_20.125rem] md:p-6 md:pb-0 lg:grid-cols-[1fr_23.125rem] xl:grid-cols-[1fr_28.125rem] xl:p-8 xl:pb-0',
+                {
+                    'lg:min-h-[33.75rem] lg:grid-cols-2 lg:gap-0 lg:pr-2 xl:grid-cols-2 xl:pr-0':
+                        variant === 'homePage',
+                    'lg:pr-0 xl:pr-0': variant === 'homePage' && mockup === 'laptop',
+                    'gap-0 lg:gap-0 xl:gap-0': !mockup,
+                    'lg:flex lg:flex-col': !mockup && variant === 'homePage',
+                    'lg:min-h-[24.375rem] xl:min-h-[23.25rem]': variant === 'casesPage',
+                }
             )}
             style={{ background: bgImage }}
         >
             <div
                 className={cn(
-                    'order-1 grid grid-cols-1 justify-between gap-6 md:order-none md:grid md:grid-cols-[1fr_5.5rem] md:flex-row md:justify-start md:gap-7 lg:grid-cols-1',
-                    { 'max-w-[35.375rem]': variant === 'casesPage' }
+                    'order-1 flex flex-col justify-between gap-6 md:order-none md:justify-start md:gap-7 md:pb-6 xl:pb-8',
+                    { 'max-w-[calc(100%-9rem)]': !mockup && variant === 'homePage' }
                 )}
             >
-                <div className="flex items-start justify-between gap-2">
-                    <div
-                        className={cn('flex h-full flex-col justify-between md:flex-col-reverse md:gap-2', {
-                            'lg:flex-col': variant === 'homePage',
-                        })}
-                    >
-                        <div>
-                            <Heading
-                                className={cn('mb-3.5', {
-                                    '!text-gray-400': tone === 'dark',
-                                    '!text-white-300': tone === 'light',
-                                })}
-                                variant="h3"
-                            >
-                                {title}
-                            </Heading>
-                            <Paragraph
-                                className={cn('mb-5.5 line-clamp-3', {
-                                    '!text-[#545454]': tone === 'dark',
-                                    '!text-[#F6F6F6]': tone === 'light',
-                                })}
-                                variant="p2"
-                            >
-                                {description}
-                            </Paragraph>
-                            <Link className="hidden md:block" href={`/cases/${href}`}>
-                                <CaseButton colorTone={tone}>{t('homepage:our-cases.discover-case')}</CaseButton>
-                            </Link>
-                        </div>
-                        <div className="flex flex-wrap items-center gap-2">
-                            {tags.slice(0, 5).map((tag, i) => (
-                                <div
-                                    className={cn(
-                                        'h-7.5 rounded-lg px-3 py-2 text-sm leading-none tracking-h2 text-white-300',
-                                        {
-                                            'bg-gray-100 bg-opacity-[0.33]': tone === 'light',
-                                            'bg-[#6C6C6C] bg-opacity-[0.66]': tone === 'dark',
-                                        }
-                                    )}
-                                    key={`${tag}${i}`}
-                                >
-                                    {tag}
-                                </div>
-                            ))}
-                        </div>
+                <div
+                    className={cn('flex h-full flex-col justify-between md:gap-2', {
+                        'lg:justify-start lg:gap-0': variant === 'homePage',
+                    })}
+                >
+                    <div>
+                        <Heading
+                            className={cn('mb-3.5', {
+                                '!text-gray-400': tone === 'dark',
+                                '!text-white-300': tone === 'light',
+                            })}
+                            variant="h3"
+                        >
+                            {title}
+                        </Heading>
+                        <Paragraph
+                            className={cn('mb-5.5 line-clamp-3', {
+                                '!text-[#545454]': tone === 'dark',
+                                '!text-[#F6F6F6]': tone === 'light',
+                            })}
+                            variant="p2"
+                        >
+                            {description}
+                        </Paragraph>
+                    </div>
+                    <div className={cn('space-y-6', { 'lg:space-y-0': variant === 'homePage' })}>
+                        <CaseCardTags
+                            tags={tags}
+                            tone={tone}
+                            classes={{ wrapper: cn({ 'lg:hidden': variant === 'homePage' }) }}
+                        />
+                        <Link className="block w-full md:w-fit" href={`/cases/${href}`}>
+                            <CaseButton className="w-full" colorTone={tone}>
+                                {t('homepage:our-cases.discover-case')}
+                            </CaseButton>
+                        </Link>
                     </div>
                 </div>
-
-                <Link className="w-full md:hidden" href={`/cases/${href}`}>
-                    <CaseButton className="w-full" colorTone={tone}>
-                        {t('homepage:our-cases.discover-case')}
-                    </CaseButton>
-                </Link>
             </div>
             <div
                 className={cn('h-85 self-end overflow-hidden rounded-xl md:h-auto md:w-88.5 md:bg-transparent', {
-                    'bg-white-10 bg-opacity-[0.12]': mockup === 'mobile',
+                    'md:h-101 xl:h-86 bg-white-10 bg-opacity-[0.12] lg:h-90': mockup === 'mobile',
+                    'lg:w-[24.625rem] xl:w-[30.625rem]': variant === 'casesPage',
+                    'lg:h-auto lg:w-auto lg:self-start xl:h-auto': variant === 'homePage',
                 })}
             >
                 {mockup && (
@@ -109,12 +105,24 @@ const CaseCard: FC<CaseCardProps> = ({
                         src={image}
                         alt={title}
                         width={imageSizes[mockup].width}
-                        height={imageSizes[mockup].width}
+                        height={imageSizes[mockup].height}
                         quality={100}
-                        className="mx-auto max-w-max object-cover object-top md:-mb-6 xl:-mb-8"
+                        className={cn('mx-auto max-w-max object-cover object-top md:-mb-4 lg:-mb-14 xl:-mb-18', {
+                            'lg:mb-0 lg:w-[14.3125rem] xl:mb-0': variant === 'homePage' && mockup === 'mobile',
+                            'lg:-mt-6 lg:mb-0 xl:mb-0': variant === 'homePage' && mockup === 'laptop',
+                        })}
                     />
                 )}
             </div>
+            <CaseCardTags
+                tags={tags}
+                tone={tone}
+                classes={{
+                    wrapper: cn('hidden', {
+                        'lg:flex col-span-2 pb-6 xl:pb-8 lg:pr-6 xl:pr-8': variant === 'homePage',
+                    }),
+                }}
+            />
         </div>
     )
 }

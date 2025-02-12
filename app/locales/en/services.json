@@ -31,98 +31,129 @@
     "services-list": {
         "title": "FTECH-IT service proposal",
         "subtitle": "Our service",
-        "web-development": {
-            "title": "Web development",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
-        },
-        "mobile-development": {
-            "title": "Mobile development",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
-        },
-        "software-testing": {
-            "title": "Software testing",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
-        },
-        "manual-testing": {
-            "title": "Manual testing",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        "ai-development": {
+            "title": "ML Engineering / Computer Vision",
+            "description": "",
+            "short_description": ["Machine Learning Model Development", "Computer vision", "AI Solution Integration"],
+            "tags": ["Python", "Pytorch", "Hugging Face", "OpenCV", "+1 more"]
         },
         "design": {
-            "title": "Digital and product design",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
-        },
-        "ai-development": {
-            "title": "AI/ML and data science",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+            "title": "UI/UX Design ",
+            "description": "",
+            "short_description": [
+                "User Interface Development",
+                "User Experience Analysis and Customer Development",
+                "Prototyping and Testing",
+                "Mobile App Design",
+                "Website Design and Low-code Development"
+            ],
+            "tags": ["Figma", "Adobe", "Webflow", "Framer", "+3 more"]
         },
         "devops": {
             "title": "DevOps",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+            "description": "",
+            "short_description": [
+                "Automation of Development and Deployment Processes",
+                "Monitoring and Infrastructure Management"
+            ],
+            "tags": ["AWS Amazon", "Azure", "Google Cloud", "Heroku", "+1 more"]
         },
-        "cloud-platform": {
-            "title": "Cloud and platform",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        "mobile-development": {
+            "title": "Mobile development ",
+            "description": "",
+            "short_description": [
+                "Mobile Android Development",
+                "Mobile IOS Development ",
+                "Cross-platform Mobile development",
+                "Mobile development for wearable devices "
+            ],
+            "tags": ["Kotlin", "React Native", "Swift", "Xamarin", "+1 more"]
         },
-        "staff-augmentation": {
-            "title": "Staff augmentation",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        "frontend-development": {
+            "title": "Front-end Development ",
+            "description": "",
+            "short_description": [
+                "Front-end Development for WEB",
+                "Front-end Desktop Development",
+                "Single-page Application Development",
+                "Customization of Outdated Front-end Solutions"
+            ],
+            "tags": ["Angular", "React.js", "CSS", "HTML", "+2 more"]
+        },
+        "backend-development": {
+            "title": "Back-end Development",
+            "description": "",
+            "short_description": [
+                "Back-end Development for Web",
+                "Back-end Architecture Development",
+                "Back-end Development for Mobile Applications",
+                "API Development",
+                "and +2 more"
+            ],
+            "tags": ["ASP.Net Core", ".Net 6", "Node.js", "Java", "+6 more"]
         },
         "outsourcing": {
-            "title": "Outsourcing",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+            "title": "Outsourcing Development",
+            "description": "",
+            "short_description": ["Full-cycle", "Friendly rates", "Transparency", "Expertise", "Post-release support"],
+            "tags": []
         },
-        "dedicated-teams": {
-            "title": "Dedicated teams",
-            "description": "Lorem ipsum dolor sit amet consectetur. Luctus quis turpis venenatis rhoncus. Nisi pellentesque felis hendrerit viverra ultricies tristique lectus vitae. Tincidunt adipiscing placerat amet turpis.",
-            "short_description": ["Web development", "Mobile development"],
-            "tags": ["Tech", "Tech", "Tag", "Tag", "Tag"]
+        "client-team-extension": {
+            "title": "Client Team Extension",
+            "description": "",
+            "short_description": [
+                "<10 days to start working on project",
+                "90% Middle and Senior specialists",
+                "30 days of special conditions",
+                "Expertise",
+                "Large pool of candidates"
+            ],
+            "tags": []
         },
-        "groups": {
-            "software-development": "Software development",
-            "software-testing": "Software testing & QA",
-            "design": "Digital design and product design",
-            "ai": "Data science an ML",
-            "cloud": "Cloud infrastructure",
-            "cooperations": "Cooperations"
+        "business-analysis": {
+            "title": "Business analysis",
+            "description": "",
+            "short_description": [
+                "Preparation of Technical Specification",
+                "Market and Competitor Analysis",
+                "Process Optimization for Technical Solutions"
+            ],
+            "tags": []
         },
+        "quality-assurance": {
+            "title": "AQA/QA",
+            "description": "",
+            "short_description": ["Automated Testing", "Manual Testing", "Performance Testing"],
+            "tags": []
+        },
+        "third-party-services": {
+            "title": "Third-party Service Integration",
+            "description": "",
+            "short_description": [
+                "API Integration",
+                "Integration of corporate systems",
+                "Integration with cloud services"
+            ],
+            "tags": []
+        },
+
         "explore-service": "Explore service",
         "about-solutions": "About solutions"
     },
-    "workflow": {
-        "subtitle": "Our workflow",
-        "title": "Workflow",
-        "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success. ",
-        "items": [
-            { "title": "Discovery, research, scoping", "description": "Explore our industry expertise highlights" },
-            { "title": "Design and architecting", "description": "Explore our industry expertise highlights" },
-            { "title": "Solution developing", "description": "Explore our industry expertise highlights" },
-            { "title": "Testing and launching", "description": "Explore our industry expertise highlights" },
-            { "title": "Maintenance", "description": "Explore our industry expertise highlights" }
-        ]
-    },
+
     "tech-stack": {
         "subtitle": "Tech stack",
-        "title": "Showcasing versatility and ability to adapt to different challenges",
-        "description": "Lorem ipsum dolor sit amet consectetur. Rhoncus proin libero pellentesque elit. Tincidunt feugiat sit fermentum sit faucibus in cras. Vel non purus nisl risus sit sagittis commodo etiam. "
+        "title": "Technologies",
+        "description": "Accumulated experience allows FTECH-IT to provide specialists in a wide range of technologies from .NET on the backend to Swift in mobile development. You are sure to find the right fit among our dozens of specialists",
+        "cta_section": {
+            "title": "Ready to discuss project details? ",
+            "description": "Contact us and our managers will provide you with consultations on all your questions",
+            "action_button": "Consultation"
+        }
+    },
+    "contact-us": {
+        "title": "Software Development with FTECH",
+        "description": "Contact us and our managers will provide you with consultations on all your questions",
+        "action_button": "Get consultation"
     }
 }

@@ -6,22 +6,35 @@ import Button from '../buttons/defaultButton'
 import ContactUsEllipse from '@/components/svg/ContactUsEllipse'
 import ContactUsEllipseBlue from '@/components/svg/ContactUsEllipseBlue'
 import Image from 'next/image'
+import { cn } from '@/lib/classNames'
 
 type ContactUsBlockWrapperProps = {
     title: string
     description: string
     action_button: string
     href: string
+    classes?: { textWrapper?: string; title?: string; description?: string }
 }
 
-const ContactUsBlockWrapper: FC<ContactUsBlockWrapperProps> = ({ action_button, description, title, href }) => {
+const ContactUsBlockWrapper: FC<ContactUsBlockWrapperProps> = ({
+    action_button,
+    description,
+    title,
+    href,
+    classes,
+}) => {
     return (
         <div className="lg:pt-19 relative overflow-hidden rounded-8 border border-gray-300 bg-primary-black px-5.5 pb-5.5 pt-8 lg:pb-15 dark:bg-contact-us-blue">
-            <div className="relative z-[1] mx-auto mb-10 text-center md:max-w-145 lg:max-w-159">
-                <Heading className="mb-5.5 !text-white-300" variant="h2">
+            <div
+                className={cn(
+                    'relative z-[1] mx-auto mb-10 text-center md:max-w-145 lg:max-w-159',
+                    classes?.textWrapper
+                )}
+            >
+                <Heading className={cn('mb-5.5 !text-white-300', classes?.title)} variant="h2">
                     {title}
                 </Heading>
-                <Paragraph className="!text-gray-100" variant="p1">
+                <Paragraph className={cn('!text-gray-100', classes?.description)} variant="p1">
                     {description}
                 </Paragraph>
             </div>

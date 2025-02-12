@@ -9,51 +9,20 @@ import React, { FC } from 'react'
 import ServiceListGroupItem from './ServiceListGroupItem'
 import TitleWithDescription from '@/components/ui/TitleWithDescription'
 import { useTranslation } from 'react-i18next'
+import ServiceListItem from './ServiceListItem'
 
 const serviceList = [
-    {
-        title: 'software-development',
-        items: [
-            { href: '/web-development', serviceKey: 'web-development', number: '01' },
-            { href: '/mobile-development', serviceKey: 'mobile-development', number: '02' },
-        ],
-        Icon: AppWindow,
-    },
-    {
-        title: 'software-testing',
-        items: [
-            { href: '/software-testing', serviceKey: 'software-testing', number: '03' },
-            { href: '/manual-testing', serviceKey: 'manual-testing', number: '04' },
-        ],
-        Icon: Terminal,
-    },
-    {
-        title: 'design',
-        items: [{ href: '/design', serviceKey: 'design', number: '05' }],
-        Icon: SketchLogo,
-    },
-    {
-        title: 'ai',
-        items: [{ href: '/ai-development', serviceKey: 'ai-development', number: '06' }],
-        Icon: DatabaseIcon,
-    },
-    {
-        title: 'cloud',
-        items: [
-            { href: '/cloud-and-platform', serviceKey: 'cloud-platform', number: '07' },
-            { href: '/devops', serviceKey: 'devops', number: '08' },
-        ],
-        Icon: Cloud,
-    },
-    {
-        title: 'cooperations',
-        items: [
-            { href: '/staff-augmentation', serviceKey: 'staff-augmentation', number: '09' },
-            { href: '/outsourcing', serviceKey: 'outsourcing', number: '10' },
-            { href: '/dedicated-teams', serviceKey: 'dedicated-teams', number: '11' },
-        ],
-        Icon: UsersFour,
-    },
+    { href: '/ai-development', serviceKey: 'ai-development' },
+    { href: '/design', serviceKey: 'design' },
+    { href: '/devops', serviceKey: 'devops' },
+    { href: '/mobile-development', serviceKey: 'mobile-development' },
+    { href: '/frontend-development', serviceKey: 'frontend-development' },
+    { href: '/backend-development', serviceKey: 'backend-development' },
+    { href: '/outsourcing', serviceKey: 'outsourcing' },
+    { href: '/client-team-extension', serviceKey: 'client-team-extension' },
+    { href: '/business-analysis', serviceKey: 'business-analysis' },
+    { href: '/quality-assurance', serviceKey: 'quality-assurance' },
+    { href: '/third-party-services', serviceKey: 'third-party-services' },
 ]
 
 const ServicesList: FC = () => {
@@ -65,9 +34,9 @@ const ServicesList: FC = () => {
     return (
         <section>
             <TitleWithDescription title={title} subtitle={subtitle} />
-            <ul className="">
-                {serviceList.map(item => (
-                    <ServiceListGroupItem key={item.title} {...item} />
+            <ul className="space-y-2">
+                {serviceList.map((item, i) => (
+                    <ServiceListItem key={item.href} {...item} number={i + 1} />
                 ))}
             </ul>
         </section>
