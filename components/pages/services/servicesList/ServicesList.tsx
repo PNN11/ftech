@@ -10,8 +10,9 @@ import ServiceListGroupItem from './ServiceListGroupItem'
 import TitleWithDescription from '@/components/ui/TitleWithDescription'
 import { useTranslation } from 'react-i18next'
 import ServiceListItem from './ServiceListItem'
+import { TService } from '@/types/common'
 
-const serviceList = [
+const serviceList: { href: `/${TService}`; serviceKey: TService }[] = [
     { href: '/ai-development', serviceKey: 'ai-development' },
     { href: '/design', serviceKey: 'design' },
     { href: '/devops', serviceKey: 'devops' },

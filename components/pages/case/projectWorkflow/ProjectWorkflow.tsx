@@ -21,6 +21,7 @@ const ProjectWorkflow: FC<ProjectWorkflowProps> = ({ cards, description, subtitl
         title: string
         subtitle: string
         description: string
+        get_started: string
         contact: {
             title: string
             description: string
@@ -28,6 +29,8 @@ const ProjectWorkflow: FC<ProjectWorkflowProps> = ({ cards, description, subtitl
         }
         cards: { title: string; description: string }[]
     }
+
+    const _cards = cards ?? defaultInfo.cards
 
     return (
         <section className="py-12.5">
@@ -52,7 +55,7 @@ const ProjectWorkflow: FC<ProjectWorkflowProps> = ({ cards, description, subtitl
                         </div>
                     </WorkflowCard>
                 </SwiperSlide>
-                {(cards ?? defaultInfo.cards).map(({ description, title }, i) => (
+                {_cards.slice(0, -1).map(({ description, title }, i) => (
                     <SwiperSlide className="!h-auto !w-89.5" key={title}>
                         <WorkflowCard
                             classes={{ title: 'mb-6', wrapper: 'h-full' }}
@@ -60,6 +63,22 @@ const ProjectWorkflow: FC<ProjectWorkflowProps> = ({ cards, description, subtitl
                             description={description}
                             number={i + 2}
                         />
+                    </SwiperSlide>
+                ))}
+                {_cards.slice(-1).map(({ description, title }, i) => (
+                    <SwiperSlide className="!h-auto !w-89.5" key={title}>
+                        <WorkflowCard
+                            classes={{ title: 'mb-6', wrapper: 'h-full flex flex-col' }}
+                            title={title}
+                            description={description}
+                            number={_cards.length + 1}
+                        >
+                            <div className="flex grow items-end">
+                                <Link className="mt-4 inline-block" href="/contacts">
+                                    <ButtonWithIcon variant="outlined">{defaultInfo.get_started}</ButtonWithIcon>
+                                </Link>
+                            </div>
+                        </WorkflowCard>
                     </SwiperSlide>
                 ))}
             </Swiper>

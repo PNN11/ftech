@@ -35,6 +35,7 @@
             "description": "At first, we will try to understand the clients needs and propose proper solution",
             "action_button": "Contact us"
         },
+        "get_started": "Get started",
         "title": "Stages of project",
         "subtitle": "Our workflow",
         "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success. ",
@@ -50,6 +51,18 @@
             {
                 "title": "Development",
                 "description": "Whether it's a web or mobile application, FTECH-IT will always recommend the optimal tech stack for your idea or professionally implement your technical vision of the project"
+            },
+            {
+                "title": "Testing",
+                "description": "Strong team of AQA and QA professionals will ensure the stability and reliability of your application"
+            },
+            {
+                "title": "Production Deployment",
+                "description": "Our DevOps specialists will deploy your project on the server and help you choose the optimal hardware configuration based on your load"
+            },
+            {
+                "title": "Project Support",
+                "description": "If needed we are ready to provide long-term support for your solution. Also we offer a warranty period during which any discovered issues or bugs will be fixed completely free of charge"
             }
         ]
     },

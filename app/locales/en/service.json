@@ -1,5 +1,12 @@
 {
     "first-screen": {
-        "back_to_services": "Back to service"
+        "back_to_services": "Back to service",
+        "action_button": {
+            "title": "Get service",
+            "description": "Click to book consultation now"
+        }
+    },
+    "info": {
+        "get_service": "Get service"
     }
 }

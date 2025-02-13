@@ -83,7 +83,7 @@ type CaseBlocksMapperProps = {
 
 const CaseBlocksMapper: FC<CaseBlocksMapperProps> = ({ config, nextProject }) => {
     return (
-        <main>
+        <>
             {config.map(({ block, props }, i) => {
                 const Component = blocksMap[block]
                 if (!Component) return null
@@ -92,7 +92,7 @@ const CaseBlocksMapper: FC<CaseBlocksMapperProps> = ({ config, nextProject }) =>
             })}
             <CaseContactUs />
             <NextCaseSection caseInfo={nextProject} />
-        </main>
+        </>
     )
 }
 
