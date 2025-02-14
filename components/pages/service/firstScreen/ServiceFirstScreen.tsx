@@ -51,7 +51,7 @@ const ServiceFirstScreen: FC<ServiceFirstScreenProps> = ({ title, image, stats }
                         </div>
                     ))}
                     <Link href="/contacts" className="col-span-2 md:col-span-1">
-                        <Button className="h-auto w-full flex-col gap-3.5 whitespace-normal p-4">
+                        <Button className="h-auto w-full flex-col gap-3.5 whitespace-normal rounded-2xl p-4">
                             <p className="text-4xl font-medium leading-[0.9] text-white-300">
                                 {t('service:first-screen.action_button.title')}
                             </p>
@@ -72,7 +72,7 @@ const ServiceFirstScreen: FC<ServiceFirstScreenProps> = ({ title, image, stats }
                 width={1192}
                 height={1058}
                 alt=""
-                className="absolute left-0 top-0 h-full object-cover"
+                className="absolute left-0 top-0 h-full object-cover object-[50%_65%]"
                 quality={100}
             />
         </section>

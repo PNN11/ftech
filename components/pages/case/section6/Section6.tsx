@@ -18,13 +18,20 @@ const CaseSection6: FC<CaseSection6Props> = ({ title, cards }) => {
             <Heading className="mb-10.5 text-center" variant="h5">
                 {title ?? t('tech-stack')}
             </Heading>
-            <ul className="2sm:flex grid grid-cols-1 flex-wrap items-center justify-center gap-2 sm:grid-cols-2">
+            <ul className="grid grid-cols-1 flex-wrap items-center justify-center gap-2 sm:grid-cols-2 2sm:flex">
                 {cards.map(({ image, title }) => (
                     <li
-                        className="2sm:max-w-48 flex flex-col items-center gap-2.5 rounded-3xl bg-gray-50 p-3"
+                        className="flex flex-col items-center gap-2.5 rounded-3xl bg-gray-50 p-3 2sm:max-w-48"
                         key={title}
                     >
-                        <Image src={image} alt={title} width={168} height={64} />
+                        <Image
+                            src={image}
+                            alt={title}
+                            width={168}
+                            height={64}
+                            quality={100}
+                            className="h-16 object-contain"
+                        />
                         <Paragraph variant="subt">{title}</Paragraph>
                     </li>
                 ))}

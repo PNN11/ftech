@@ -11,7 +11,7 @@ type ServiceInfoProps = {
     title: string
     subtitle: string
     description: string
-    cards: { title: string; description: string }[]
+    cards: { title: string; description: string; hasActionButton?: boolean }[]
     hasCTASection: boolean
 }
 
@@ -28,18 +28,21 @@ const ServiceInfo: FC<ServiceInfoProps> = ({ cards, description, subtitle, title
         <section className="space-y-8 py-12.5">
             <TitleWithDescription title={title} subtitle={subtitle} description={description} />
             <ul className="grid grid-cols-1 gap-2.5 lg:grid-cols-2 xl:gap-2">
-                {cards.map((card, i) => (
+                {cards.map(({ description, title, hasActionButton = true }, i) => (
                     <WorkflowCard
                         classes={{ wrapper: 'min-h-102.5 h-full flex flex-col' }}
-                        key={card.title}
-                        {...card}
+                        key={title}
+                        description={description}
+                        title={title}
                         number={i + 1}
                     >
-                        <div className="flex grow items-end">
-                            <Link className="mt-4 inline-block" href="/contacts">
-                                <Button>{t('service:info.get_service')}</Button>
-                            </Link>
-                        </div>
+                        {hasActionButton && (
+                            <div className="flex grow items-end">
+                                <Link className="mt-4 inline-block" href="/contacts">
+                                    <Button>{t('service:info.get_service')}</Button>
+                                </Link>
+                            </div>
+                        )}
                     </WorkflowCard>
                 ))}
                 {hasCTASection && (

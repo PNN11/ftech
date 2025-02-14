@@ -1,23 +1,18 @@
 'use client'
 import TitleWithDescription from '@/components/ui/TitleWithDescription'
-import React, { FC } from 'react'
+import Paragraph from '@/components/ui/typography/paragraph'
+import Image from 'next/image'
+import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import { technologies } from './data'
-import Image from 'next/image'
-import Paragraph from '@/components/ui/typography/paragraph'
-import CTASection from '../../case/projectDefinition/CTASection'
+import ServicesCTASection from './ServicesCTASection'
 
 const ServicesTechStack: FC = () => {
     const { t } = useTranslation()
-    const { description, subtitle, title, cta_section } = t('services:tech-stack', { returnObjects: true }) as {
+    const { description, subtitle, title } = t('services:tech-stack', { returnObjects: true }) as {
         subtitle: string
         title: string
         description: string
-        cta_section: {
-            title: string
-            description: string
-            action_button: string
-        }
     }
     return (
         <>
@@ -43,10 +38,7 @@ const ServicesTechStack: FC = () => {
                     ))}
                 </ul>
             </section>
-            <CTASection
-                actionButton={{ title: cta_section.action_button, href: '/contacts', size: 'm' }}
-                {...cta_section}
-            />
+            <ServicesCTASection />
         </>
     )
 }
