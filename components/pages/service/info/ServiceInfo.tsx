@@ -10,7 +10,7 @@ import CTASection from '../../case/projectDefinition/CTASection'
 type ServiceInfoProps = {
     title: string
     subtitle: string
-    description: string
+    description?: string
     cards: { title: string; description: string; hasActionButton?: boolean }[]
     hasCTASection: boolean
 }

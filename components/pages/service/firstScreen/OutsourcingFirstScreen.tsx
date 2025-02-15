@@ -16,7 +16,7 @@ const OutsourcingFirstScreen: FC<OutsourcingFirstScreenProps> = ({ title, descri
     return (
         <section className="relative overflow-hidden rounded-8 p-5 md:p-12">
             <div className="relative z-[1] max-w-160 space-y-9">
-                <Heading className="text-dark-blue-100 dark:text-dark-blue-100" variant="h1">
+                <Heading className="max-w-116 text-dark-blue-100 dark:text-dark-blue-100" variant="h1">
                     {title}
                 </Heading>
                 <Paragraph className="text-gray-100 dark:text-white-200" variant="p1">
@@ -42,7 +42,7 @@ const OutsourcingFirstScreen: FC<OutsourcingFirstScreenProps> = ({ title, descri
                 width={571}
                 height={363}
                 quality={100}
-                className="absolute -right-8 bottom-0 max-w-max"
+                className="absolute bottom-0 right-0 max-w-max"
             />
         </section>
     )
