@@ -7,7 +7,7 @@ import OutcomeCard, { OutcomeCardProps } from './card'
 type ProjectOutcomeProps = {
     title: string
     description: string
-    cards: OutcomeCardProps[]
+    cards: [OutcomeCardProps, OutcomeCardProps, OutcomeCardProps]
 }
 
 const ProjectOutcome: FC<ProjectOutcomeProps> = ({ description, cards, title }) => {

@@ -9,16 +9,11 @@ import { useTranslation } from 'react-i18next'
 
 import CaseCard from '../../home/ourCases/CaseCard'
 import { allCases } from '@/app/[locale]/cases/data'
+import { expertise } from '@/components/layout/Header/expertise/ExpertiseSubmenu'
 
-const categories = [
-    { title: 'cases:cases-list.all', category: 'all' },
-    { title: 'common:expertise.items.sport.title', category: 'sport' },
-    { title: 'common:expertise.items.e-commerce.title', category: 'e-commerce' },
-    { title: 'common:expertise.items.healthcare.title', category: 'healthcare' },
-    { title: 'common:expertise.items.edtech.title', category: 'edtech' },
-    { title: 'common:expertise.items.fintech.title', category: 'fintech' },
-    { title: 'common:expertise.items.energetics.title', category: 'energetics' },
-]
+const categories = [{ title: 'cases:cases-list.all', category: 'all' }].concat(
+    expertise.map(({ title, href }) => ({ title, category: href.replace('/', '') }))
+)
 
 const CasesList: FC = () => {
     const { t, i18n } = useTranslation()

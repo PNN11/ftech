@@ -1,11 +1,8 @@
 'use client'
 import Tab from '@/components/ui/Tab'
-import Button from '@/components/ui/buttons/defaultButton/button'
 import Heading from '@/components/ui/typography/heading'
 import Paragraph from '@/components/ui/typography/paragraph'
-import Image from 'next/image'
-import Link from 'next/link'
-import React, { FC } from 'react'
+import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import CTASection from './CTASection'
 
@@ -20,6 +17,7 @@ type ListLabels =
     | 'projectType'
     | 'team'
     | 'projectServices'
+    | 'platform'
 
 type DescriptionLabels = 'problem' | 'solution' | 'delivering'
 
@@ -34,12 +32,12 @@ const ProjectDefinition: FC<ProjectDefinitionProps> = ({ listItems, tags, contac
     const { t } = useTranslation()
 
     const _listItems = Object.entries(listItems).map(([key, value]) => ({
-        title: t(`cases:${key}`),
+        title: key,
         description: value,
     }))
 
     const _descriptionItems = Object.entries(descriptionItems).map(([key, value]) => ({
-        title: t(`cases:${key}`),
+        title: key,
         description: value,
     }))
 

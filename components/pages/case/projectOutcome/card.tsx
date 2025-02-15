@@ -18,7 +18,7 @@ const OutcomeCard: FC<OutcomeCardProps> = ({ description, title, actionButton, i
                 <Image src={image} width={40} height={38} alt="" className="absolute -top-5.5 left-5" quality={100} />
             )}
             {actionButton && (
-                <Link className="mt-5 block" href={actionButton.href}>
+                <Link className="-mx-1 mt-5 block" href={actionButton.href}>
                     <ButtonWithIcon className="w-full" size="s">
                         {actionButton.text}
                     </ButtonWithIcon>

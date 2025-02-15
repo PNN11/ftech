@@ -5,8 +5,25 @@ import { useTranslation } from 'react-i18next'
 import MenuItemDropdown from '../MenuItemDropdown'
 import VerticalDashedLine from '../VerticalDashedLine'
 import SubMenuItem from '../subMenu/SubMenuItem'
+import { Expertise } from '@/types/common'
 
-export const expertise = [
+type ExpertiseItem = {
+    title: `common:expertise.items.${Expertise}.title`
+    description: `common:expertise.items.${Expertise}.description`
+    longDescription: `common:expertise.items.${Expertise}.long-description`
+    href: `/${Expertise}`
+    number: number
+    image: {
+        src: string
+        width: number
+        height: number
+    }
+    projectsCount: string
+    caseStudies: string
+    services: `common:expertise.items.${Expertise}.services`
+}
+
+export const expertise: ExpertiseItem[] = [
     {
         title: 'common:expertise.items.e-commerce.title',
         description: 'common:expertise.items.e-commerce.description',

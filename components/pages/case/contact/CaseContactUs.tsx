@@ -21,6 +21,7 @@ const CaseContactUs: FC = () => {
                 description={description}
                 title={title}
                 href="/contacts"
+                variant="light"
             />
         </SectionWrapper>
     )

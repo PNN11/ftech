@@ -17,7 +17,7 @@ const Paragraph: FC<ParagraphProps> = ({ variant, className = '', children, ...p
                     'text-base leading-none text-gray-600 dark:text-blue-900': variant === 'subt',
                 },
                 className,
-                neueMontreal.className
+                `${variant === 'subt' ? '' : neueMontreal.className}`
             )}
             {...props}
         >

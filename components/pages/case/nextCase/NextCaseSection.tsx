@@ -16,7 +16,7 @@ const NextCaseSection: FC<NextCaseSectionProps> = ({ caseInfo }) => {
     return (
         <SectionWrapper>
             <Heading className="mb-12.5" variant="h2">
-                {t('case:first-screen.next_case', { title: '' })}
+                {t('case:next-case', { title: '' })}
             </Heading>
             <CaseCard variant="casesPage" {...caseInfo} />
         </SectionWrapper>

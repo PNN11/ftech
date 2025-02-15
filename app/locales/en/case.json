@@ -19,6 +19,7 @@
         "projectType": "Project type",
         "team": "Team",
         "projectServices": "Service list",
+        "platform": "Platform",
         "contact": "Contact us",
         "have-idea": {
             "title": "Have same idea?",
@@ -36,9 +37,9 @@
             "action_button": "Contact us"
         },
         "get_started": "Get started",
-        "title": "Stages of project",
+        "title": "Development Process",
         "subtitle": "Our workflow",
-        "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success. ",
+        "description": "In FTECH-IT we have a cohesive team of professionals across various IT fields, enabling us to handle projects end-to-end without needing external specialists. No matter how complex the project is, all you need to provide is the idea — FTECH-IT will take care of everything else",
         "cards": [
             {
                 "title": "Requirements Gathering and Business Analysis",
@@ -76,5 +77,6 @@
         "description": "Our team is dedicated to providing excellent customer service and ensuring your experience with us is a positive one. We look forward to hearing from you soon!",
         "action_button": "Contact us"
     },
-    "tech-stack": "Technologies"
+    "tech-stack": "Technologies",
+    "next-case": "Next the best matching case"
 }

@@ -1,20 +1,23 @@
 import initTranslations from '@/app/i18n'
-import OutsourcingFirstScreen from '@/components/pages/service/firstScreen/OutsourcingFirstScreen'
-import ServiceFirstScreen from '@/components/pages/service/firstScreen/ServiceFirstScreen'
-import ServiceInfo from '@/components/pages/service/info/ServiceInfo'
-import ServiceAdvantages from '@/components/pages/service/ServiceAdvantages/ServiceAdvantages'
 import ServiceBlocksMapper from '@/components/pages/service/serviceBlocksMapper/ServiceBlocksMapper'
+
 import TranslationsProvider from '@/components/providers/locales'
 import Container from '@/components/ui/wrappers/container'
-import { allServices } from '../data'
+import { TService } from '@/types/common'
 import { notFound } from 'next/navigation'
+import { allServices } from '../data'
+import { serviceList } from '@/lib/constants'
+
+export function generateStaticParams() {
+    return serviceList.map(service => ({ service: service.serviceKey }))
+}
 
 const namespaces = ['services', 'common', 'case', 'homepage', 'service', 'expertise']
 
 export default async function ServicePage({
     params: { locale, service },
 }: {
-    params: { locale: string; service: string }
+    params: { locale: string; service: TService }
 }) {
     const { resources } = await initTranslations(locale, namespaces)
 

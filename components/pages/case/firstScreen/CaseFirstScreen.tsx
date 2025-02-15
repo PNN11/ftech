@@ -4,6 +4,7 @@ import Heading from '@/components/ui/typography/heading'
 import Paragraph from '@/components/ui/typography/paragraph'
 import useStopVideoOutOfView from '@/hooks/useStopVideoOutOfView'
 import { Case } from '@/types/cases'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -13,24 +14,14 @@ type CaseFirstScreenProps = {
     description: string
     shortTitle: string
     nextProject?: Case
-    image?: string
+    image: string
 }
 
-const CaseFirstScreen: FC<CaseFirstScreenProps> = ({ description, shortTitle, title, nextProject }) => {
+const CaseFirstScreen: FC<CaseFirstScreenProps> = ({ description, shortTitle, title, nextProject, image }) => {
     const { t } = useTranslation()
 
-    const ref = useStopVideoOutOfView()
-
     return (
-        <section className="relative h-150 rounded-8 px-5 pt-16 md:pt-37 lg:h-85 lg:pt-16">
-            <video
-                src="/video/case_video.mp4"
-                autoPlay
-                loop
-                muted
-                className="absolute inset-0 h-full max-h-full w-full rounded-8 object-cover mix-blend-luminosity dark:mix-blend-normal"
-                ref={ref}
-            />
+        <section className="relative h-150 overflow-hidden rounded-8 px-5 pt-16 md:pt-37 lg:h-85 lg:pt-16">
             <div className="relative z-[1]">
                 <div className="mb-8 flex items-center justify-between gap-12 text-base leading-none text-blue-300 md:justify-center">
                     <Link href="/cases" className="flex items-center gap-1.5">
@@ -52,6 +43,14 @@ const CaseFirstScreen: FC<CaseFirstScreenProps> = ({ description, shortTitle, ti
                     </Paragraph>
                 </div>
             </div>
+            <Image
+                src={image}
+                width={1192}
+                height={600}
+                alt=""
+                className="absolute left-0 top-0 h-full object-cover object-[50%_50%]"
+                quality={100}
+            />
         </section>
     )
 }

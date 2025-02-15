@@ -14,7 +14,7 @@ const ExpertiseSlider = () => {
             className="lg:hidden"
             wrapperClass="items-end h-100"
         >
-            {expertise.map(({ description, href, title, number }, i) => (
+            {expertise.map(({ description, href, title, number, image }, i) => (
                 <SwiperSlide key={`${href}${i}`} className="!h-fit !w-fit">
                     <ExpertiseCard
                         description={description}
@@ -23,6 +23,7 @@ const ExpertiseSlider = () => {
                         number={number}
                         title={title}
                         wrapperStyle={{ height: i === activeSlide ? 400 : 380 }}
+                        image={image}
                     />
                 </SwiperSlide>
             ))}

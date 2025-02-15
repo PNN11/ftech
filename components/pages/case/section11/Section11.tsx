@@ -19,7 +19,7 @@ const Section11: FC<Section11Props> = ({ description, services, title }) => {
             <ul className="flex flex-wrap items-center justify-center gap-2">
                 {services.map(({ href, title }) => (
                     <li key={title}>
-                        <Link href={`/services/${href}`}>
+                        <Link href={`/service/${href}`}>
                             <Tab className="gap-2.5">
                                 {title} <ArrowLineUpRight />
                             </Tab>

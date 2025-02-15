@@ -130,7 +130,7 @@ const OurExpertise: FC = () => {
                 >
                     {/* multiply original array for displaying cards on both sides on screens with width more than 1900 */}
                     {(new Array(4).fill(expertise).flat() as typeof expertise).map(
-                        ({ description, href, title, number }, i) => (
+                        ({ description, href, title, number, image }, i) => (
                             <ExpertiseCard
                                 description={description}
                                 href={href}
@@ -140,6 +140,7 @@ const OurExpertise: FC = () => {
                                 onMouseEnter={() => setActiveCard(i)}
                                 title={title}
                                 wrapperStyle={getCardStyles(i, activeCard)}
+                                image={image}
                             />
                         )
                     )}
