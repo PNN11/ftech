@@ -471,7 +471,438 @@ const casesEn: CaseData[] = [
             mockup: 'laptop',
             tone: 'light',
         },
-        config: [],
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Web trading platform',
+                    title: 'Assistant system for traders ',
+                    description: 'Web platform for analyzing cryptocurrency market data, transactions, and securities ',
+                    image: '/images/cases/trading-platform/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Europe',
+                        client: 'Investment company ',
+                        industry: 'Fintech',
+                        projectType: 'Trading platform ',
+                        team: 'M-size ',
+                        projectServices: [
+                            'Back-end development',
+                            'Business analysis',
+                            'DevOps',
+                            'Service Integration',
+                            'AQA/QA',
+                        ],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The client is a fintech company from Europe, engaged in trading and investments, that commissioned the development of a new project for evaluating and supporting traders on their platforms. The system must collect and store historical data on supported markets. All data should be stored using minimal memory while ensuring an acceptable read speed',
+                        solution:
+                            'The first phase of the project has been successfully completed. To achieve this, our team developed and implemented algorithms that significantly reduce memory usage, both for RAM and storage. Currently, the system supports three types of tradable products (crypto, forex, options) and uses data from eight different providers. The client highly appreciated the results achieved by our team, and the project roadmap is planned until 2026 ',
+                    },
+                    tags: [
+                        'C#',
+                        '.Net 6',
+                        'ASP.Net Core',
+                        'Entity Framework Core',
+                        'PostgreSQL',
+                        'Apache Parquet',
+                        'PostgreSQL',
+                        'SignalR',
+                        'QuickFIX',
+                        'Kafka',
+                        'Redis',
+                        'Angular',
+                        'TradingView SDK',
+                    ],
+                    contact: {
+                        title: 'Do you need a fintech solution? ',
+                        description:
+                            'We will develop a customized product tailored to the specifics of your capital and investment management ',
+                        image: '/images/cases/trading-platform/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section12',
+                props: { image: '/images/cases/trading-platform/image1.png', capture: 'Home screen ', size: '600' },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '1',
+                    title: 'Highlights of the assistant system development',
+                    subtitle: 'Project highlights',
+                    description:
+                        'In this project, it was necessary to ensure maximum reliability and fault tolerance while using minimal memory. Additionally, all transactions must be securely protected',
+                    cards: [
+                        {
+                            title: 'Level of integration ',
+                            description:
+                                'We created a service for collecting, storing, and analyzing data on cryptocurrency markets, foreign exchange transactions, and securities ',
+                        },
+                        {
+                            title: 'Data management ',
+                            description:
+                                'The collection and storage of large volumes of market data was implemented, with the ability to read it relatively quickly while using minimal memory ',
+                        },
+                        {
+                            title: 'Development roadmap until 2026 ',
+                            description:
+                                'The highest evaluation of the work done by the client is their desire to continue developing their products with us. The project roadmap is planned for the next one and a half years',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/trading-platform/image2.png' } },
+            {
+                block: 'section4',
+                props: {
+                    title: 'Development team ',
+                    description:
+                        'The development team has back-end developers and a business analyst. Also QA for testing the project and handling critical project parts. Fault tolerance and decision-making speed are important for such a project like this one',
+                    cards: [
+                        {
+                            title: 'M-size',
+                            description: 'project team consists of 6 people ',
+                            actionButton: { text: 'Extend team', href: '/service/client-team-extension' },
+                            image: '/images/cases/trading-platform/team1.png',
+                        },
+                        {
+                            title: 'High team lvl',
+                            description: 'only senior / middle level and higher',
+                            image: '/images/cases/trading-platform/team2.png',
+                        },
+                        {
+                            title: 'Back-end ',
+                            description: 'Creating an efficient and fault-tolerant back-end for the platform',
+                            actionButton: { text: 'Back-end', href: '/service/backend-development' },
+                        },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            { block: 'section12', props: { image: '/images/cases/trading-platform/image3.png' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'ASP.Net Core', image: '/images/cases/trading-platform/tech1.png' },
+                        { title: 'PostgreSQL', image: '/images/cases/trading-platform/tech2.png' },
+                        { title: 'TradingView SDK', image: '/images/cases/trading-platform/tech3.png' },
+                        { title: 'Redis', image: '/images/cases/trading-platform/tech4.png' },
+                        { title: 'Angular', image: '/images/cases/trading-platform/tech5.png' },
+                        { title: 'SignalR', image: '/images/cases/trading-platform/tech6.png' },
+                    ],
+                },
+            },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Assistant system for traders ',
+                    description: 'Web platform for analyzing cryptocurrency market data, transactions, and securities ',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Business analysis', href: 'business-analysis' },
+                        { title: 'Service Integration ', href: 'third-party-services' },
+                        { title: 'DevOps', href: 'devops' },
+                        { title: 'AQA, QA', href: 'quality-assurance' },
+                        { title: 'UI/UX Design', href: 'design' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'AI education platform    ',
+            description: 'Next-generation education platform for students using AI',
+            tags: [
+                'C#',
+                '.Net 6',
+                'ASP.Net Core',
+                'AWS Cloud Computing Services',
+                'Stripe',
+                'Flutter',
+                'OpenAI',
+                'PyTorch',
+                'nginx',
+                'Redux',
+            ],
+            href: 'ai-education-platform',
+            image: '/images/cases/ai-education-platform/card.png',
+            category: 'edtech',
+            bgImage: '#2B2B2B',
+            mockup: 'mobile',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Edtech platfrom',
+                    title: 'AI education platform',
+                    description: 'Next-generation education platform for students using AI',
+                    image: '/images/cases/ai-education-platform/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Europe',
+                        client: 'Private entrepreneur ',
+                        industry: 'Education ',
+                        projectType: 'Web platform',
+                        team: 'M-size ',
+                        projectServices: [
+                            'Back-end development',
+                            'Front-end development',
+                            'Business analysis',
+                            'DevOPS',
+                            'Service Integration',
+                            'AQA / QA',
+                            'UI/UX design',
+                        ],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The client approached us with the task of developing a platform to help students prepare for exams. A key feature of this platform will be an AI assistant that creates study plans, assesses students  knowledge through texts, and generates summaries of uploaded materials, highlighting the main points',
+                        solution:
+                            'Using .NET Core and React as the main technologies, we developed a comprehensive system that meets all the client s turnkey requirements. Students can upload all necessary literature and specify their exam date, after which they receive a step-by-step study plan for each day, various tests to assess their knowledge, summaries of materials, and much more. Depending on the chosen plan, students can use either a Chat-GPT-based assistant or an internally developed model. Additionally, we implemented integration with a payment system, the ability to leave notes in study materials, and the option to take lecture notes, among other features',
+                    },
+                    tags: [
+                        'C#',
+                        '.Net 6',
+                        'ASP.Net Core',
+                        'Azure Services',
+                        'AWS Cloud Computing Services',
+                        'MS SQL Server',
+                        'Stripe',
+                        'SMTP',
+                        'Python',
+                        'Azure',
+                        'OpenAI',
+                        'PyTorch',
+                        'FastAPI',
+                        'scikit-learn',
+                        'nginx',
+                        'React',
+                        'TypeScript',
+                        'Redux',
+                        'Redux-Saga',
+                    ],
+                    contact: {
+                        title: 'Need a modern AI learning platform? ',
+                        description:
+                            'We will develop a platform with the integration of neural networks for an optimal learning experience ',
+                        image: '/images/cases/ai-education-platform/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section12',
+                props: { image: '/images/cases/ai-education-platform/image1.png', size: '296' },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '3',
+                    subtitle: 'Project highlights',
+                    title: 'Key features of the AI platform for students ',
+                    cards: [
+                        {
+                            title: 'AI integration',
+                            description: 'Created one of the first educational platforms using AI',
+                        },
+                        {
+                            title: 'Proprietary ML',
+                            description: 'We developed a proprietary language model, training it on our own database ',
+                        },
+                        {
+                            title: 'High-performance infrastructure ',
+                            description:
+                                'We provided the infrastructure and the necessary level of customization to unlock the potential of the latest models based on OpenAI GPT ',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/ai-education-platform/image2.png', size: '416' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'ASP.Net Core', image: '/images/cases/ai-education-platform/tech1.png' },
+                        { title: 'Azure services', image: '/images/cases/ai-education-platform/tech2.png' },
+                        { title: 'React.js', image: '/images/cases/ai-education-platform/tech3.png' },
+                        { title: 'OpenAI', image: '/images/cases/ai-education-platform/tech4.png' },
+                        { title: 'PostgreSQL', image: '/images/cases/ai-education-platform/tech5.png' },
+                        { title: 'Redis', image: '/images/cases/ai-education-platform/tech6.png' },
+                        { title: 'Python', image: '/images/cases/ai-education-platform/tech7.png' },
+                        { title: '.Net 6', image: '/images/cases/ai-education-platform/tech8.png' },
+                        { title: 'AWS Cloud', image: '/images/cases/ai-education-platform/tech9.png' },
+                        { title: 'Stripe', image: '/images/cases/ai-education-platform/tech10.png' },
+                        { title: 'TypeScript', image: '/images/cases/ai-education-platform/tech11.png' },
+                        { title: 'nginx', image: '/images/cases/ai-education-platform/tech12.png' },
+                    ],
+                },
+            },
+            {
+                block: 'section4',
+                props: {
+                    title: 'Development team ',
+                    description:
+                        'The development of such a project implies close interaction between back-end, front-end and ML developers',
+                    cards: [
+                        {
+                            title: 'M-size',
+                            description: 'project team consists of 8 members',
+                            actionButton: { text: 'Extend team', href: '/service/client-team-extension' },
+                            image: '/images/cases/ai-education-platform/team1.png',
+                        },
+                        {
+                            title: 'High team lvl',
+                            description: 'only senior / middle level and higher',
+                            image: '/images/cases/ai-education-platform/team2.png',
+                        },
+                        {
+                            title: 'Own ML',
+                            description: 'Implementing OpenAI tech in project',
+                            actionButton: { text: 'ML service', href: '/service/ai-development' },
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/ai-education-platform/image3.png', size: '416' } },
+            { block: 'section8', props: {} },
+            {
+                block: 'section12',
+                props: {
+                    image: '/images/cases/ai-education-platform/image4.png',
+                    size: '416',
+                    capture: 'UI UX of the app',
+                },
+            },
+            {
+                block: 'section11',
+                props: {
+                    title: 'AI education platform',
+                    description: 'Next-generation education platform for students using AI',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Front-end development', href: 'frontend-development' },
+                        { title: 'Business analysis', href: 'business-analysis' },
+                        { title: 'DevOPS', href: 'devops' },
+                        { title: 'Service Integration', href: 'third-party-services' },
+                        { title: 'AQA / QA', href: 'quality-assurance' },
+                        { title: 'UI/UX design', href: 'design' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Golf club management system ',
+            description:
+                'Web service that allows remote management of clubs, tracking games, visitors, purchases, consumables, equipment, and machinery',
+            tags: ['.Net Core', 'Vue.js', 'ASP.Net Core', 'Redis', 'SMTP', 'RabbitMQ'],
+            href: 'golf-club-admin-system',
+            image: '/images/cases/golf-club-admin-system/card.png',
+            category: 'sport',
+            bgImage: '#A7CCE7',
+            mockup: 'laptop',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Golf Club back office',
+                    title: 'Golf club management system ',
+                    description:
+                        'Web service that allows remote management of clubs, tracking games, visitors, purchases, consumables, equipment, and machinery',
+                    image: '/images/cases/golf-club-admin-system/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America',
+                        client: 'Network of golf clubs ',
+                        industry: 'Sports and entertainment',
+                        projectType: 'Web service',
+                        team: 'S-size ',
+                        projectServices: ['Back-end development', 'Front-end development'],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The main task of this project was refactoring the existing legacy code, as well as providing ongoing support and customization of the system according to the client’s requirements based on technical specifications. The goal of the project is to migrate the application to the latest version of .Net Core and enhance its functionality, including features such as remote booking of golf courses via the web, tracking course availability, ordering food and drinks during the game, and much more. The system allows full management of golf clubs at all levels',
+                        solution:
+                            'Our work significantly improved the functionality and performance of the system by decomposing the monolith into modules, resulting in more convenient and efficient management of the golf clubs. The end client highly appreciated the outcome, particularly noting the significant increase in system performance ',
+                    },
+                    tags: ['.Net Core', 'Vue.js', 'ASP.Net Core', 'Redis', 'SMTP', 'RabbitMQ'],
+                    contact: {
+                        image: '/images/cases/golf-club-admin-system/contact.png',
+                        title: 'Have same request? ',
+                        description: 'We will create a similar solution for your business. Contact us',
+                    },
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/golf-club-admin-system/image1.png', size: '416' } },
+            {
+                block: 'section9',
+                props: {
+                    variant: '2',
+                    subtitle: 'Project highlights',
+                    title: 'Solved project tasks ',
+                    cards: [
+                        {
+                            title: 'Modernization',
+                            description:
+                                'We transitioned from outdated technologies to modern ones in the server-side of the system ',
+                        },
+                        {
+                            title: 'Decomposition',
+                            description:
+                                'The legacy heavyweight monolith was decomposed into a series of independent modules, which allowed for increased system performance and reduced resource usage ',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/golf-club-admin-system/image2.png', size: '416' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'ASP.Net Core', image: '/images/cases/golf-club-admin-system/tech1.png' },
+                        { title: 'Vue.js', image: '/images/cases/golf-club-admin-system/tech2.png' },
+                        { title: 'React.js', image: '/images/cases/golf-club-admin-system/tech3.png' },
+                        { title: '.Net Core', image: '/images/cases/golf-club-admin-system/tech4.png' },
+                        { title: 'Redis', image: '/images/cases/golf-club-admin-system/tech5.png' },
+                        { title: 'RabbitMQ', image: '/images/cases/golf-club-admin-system/tech6.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Golf club management system ',
+                    description:
+                        'Web service that allows remote management of clubs, tracking games, visitors, purchases, consumables, equipment, and machinery',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Front-end development', href: 'frontend-development' },
+                    ],
+                },
+            },
+        ],
     },
 ]
 

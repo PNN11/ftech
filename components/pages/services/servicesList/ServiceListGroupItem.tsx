@@ -10,7 +10,7 @@ import { cn } from '@/lib/classNames'
 
 type ServiceListGroupItemProps = {
     title: string
-    items: { href: string; serviceKey: string; number: string }[]
+    items: { href: string; serviceKey: string; number: number }[]
     Icon: React.FC<React.SVGProps<SVGSVGElement>>
 }
 
