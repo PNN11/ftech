@@ -49,7 +49,7 @@ const getPositionOffset = (width: number, position: number) => {
     return width / 2 - width * position
 }
 
-const MULTIPLAYER = 4
+const MULTIPLAYER = 5
 const MIDDLE_INDEX = Math.floor((expertise.length * MULTIPLAYER) / 2)
 
 const OurExpertise: FC = () => {
@@ -129,7 +129,7 @@ const OurExpertise: FC = () => {
                     }}
                 >
                     {/* multiply original array for displaying cards on both sides on screens with width more than 1900 */}
-                    {(new Array(4).fill(expertise).flat() as typeof expertise).map(
+                    {(new Array(MULTIPLAYER).fill(expertise).flat() as typeof expertise).map(
                         ({ description, href, title, number, image }, i) => (
                             <ExpertiseCard
                                 description={description}

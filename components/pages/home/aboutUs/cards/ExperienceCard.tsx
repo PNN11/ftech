@@ -6,6 +6,7 @@ import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import AboutUsItemWrapper from '../AboutUsItemWrapper'
 import { cn } from '@/lib/classNames'
+import ArrowCircleRightDown from '@/components/svg/ArrowCircleRightDown'
 
 type ExperienceCardProps = {
     classes?: { wrapper?: string }
@@ -17,9 +18,10 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ classes }) => {
     return (
         <AboutUsItemWrapper
             bgSrc="/images/home/experience_bg.png"
-            classes={{ bg: 'opacity-[0.22]' }}
+            classes={{ bg: 'opacity-[0.22]', childrenWrapper: 'pb-29' }}
             className={cn('', classes?.wrapper)}
         >
+            <ArrowCircleRightDown className="-rotate-90 text-gray-900 dark:text-blue-900 md:dark:text-white" />
             <Heading className="dark:text-dark-blue-900 md:dark:text-white" variant="h3">
                 {t('about-us.items.experience.title', { count: 5 })}
             </Heading>
@@ -31,7 +33,7 @@ const ExperienceCard: FC<ExperienceCardProps> = ({ classes }) => {
                 width={213}
                 height={249}
                 alt=""
-                className="absolute right-3.5 top-50 max-w-max dark:hidden"
+                className="absolute bottom-0 right-3.5 max-w-max dark:hidden"
             />
             <Image
                 src="/images/home/about_us_blue.svg"

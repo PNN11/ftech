@@ -5,103 +5,49 @@
         "client-reviews": "Client reviews",
         "reviews": "reviews",
         "start-project": "Start project",
-        "title-services": ["NFT", "SaaS", "Apps"]
+        "title-services": [".Net", "Java", "Python", "ML", "React", "Angular"],
+        "see-portfolio": "See portfolio"
     },
     "about-us": {
         "title": "We provide tailored IT solutions for business growth",
         "description": "From software development to tech support, we are dedicated to providing reliable and efficient services that help your company thrive in the digital age",
         "items": {
             "experience": {
-                "title": "{{count}} years",
-                "description": "Establishing a solid foundation, we've honed our skills over half a decade"
+                "title": "250.000 € CGL Coverage",
+                "description": "Ftech‑IT is insured against business risks, ensuring peace of mind for our clients and operations"
             },
             "returning-customers": {
-                "title": "Returning customers",
-                "description": "Our service quality keeps clients coming back for more"
+                "title": "4.8 on Clutch",
+                "description": "Our high rating on Clutch is a testament to our high expertise"
             },
             "referral": {
-                "description": "Clients come as Referral"
+                "description": "Projects Completed",
+                "button": "Portfolio"
             },
             "foundation": {
-                "title": "Since {{year}}",
-                "description": "We've been on this journey since 2019, committed to excellence and growth."
+                "title": "{{years}} years",
+                "description": "Our team’s expertise ensures the successful implementation of your IT solution"
             },
             "completed-projects": {
-                "description": "Projects Completed",
+                "title": "Trusted by US & EUClients",
+                "description": "A majority of our clientele hails from US and EU regions, reflecting their confidence in our reliable, high‑quality services",
                 "button": "Explore cases"
             }
         }
     },
     "our-service": {
         "subtitle": "Our service",
-        "title": "Cost-Effective Solutions",
-        "items": [
-            {
-                "category": "Explore cases",
-                "services": [
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" }
-                ]
-            },
-            {
-                "category": "Explore cases",
-                "services": [
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" }
-                ]
-            },
-            {
-                "category": "Explore cases",
-                "services": [
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" }
-                ]
-            },
-            {
-                "category": "Explore cases",
-                "services": [
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" }
-                ]
-            },
-            {
-                "category": "Explore cases",
-                "services": [
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" },
-                    { "title": "Service title", "href": "/" }
-                ]
-            }
-        ]
+        "title": "Cost-Effective Solutions for best result",
+        "ai-development": "ML Engineering / Computer Vision",
+        "design": "UI/UX Design service",
+        "mobile-development": "Mobile development",
+        "frontend-development": "Front-end development",
+        "backend-development": "Back-end development",
+        "outsourcing": "Outsorsing software development",
+        "client-team-extension": "Outstaffing high-qualified experts",
+        "quality-assurance": "AQA/QA service",
+        "get-service": "Get service",
+        "all-services": "Explore all service"
     },
     "our-expertise": {
         "subtitle": "Our expertise",
@@ -123,7 +69,7 @@
         "subtitle": "Client reviews",
         "title": "Our valued clients",
         "description": "Our clients are at the heart of everything we do. We strive to provide exceptional service, tailored to their needs. Building strong relationships and understanding their unique requirements is key to our success. ",
-        "action_button": "Become a customer"
+        "action_button": "See more on"
     },
     "faq": {
         "subtitle": "FAQ",

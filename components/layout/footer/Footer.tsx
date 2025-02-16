@@ -12,6 +12,7 @@ import ContactInfo from './ContactInfo'
 import LanguagesList from './LanguagesList'
 import SubscribeForm from './SubscribeForm'
 import ClutchInfo from '@/components/ui/ClutchInfo'
+import Socials from '@/components/ui/Socials'
 
 const footerLinks = [
     { href: '/', title: 'common:footer.home' },
@@ -36,18 +37,12 @@ const Footer: FC = () => {
                         <div className="flex items-end gap-6 md:flex-col md:items-start md:gap-5.5 lg:grow lg:justify-between xl:gap-7.75">
                             <ClutchInfo
                                 classes={{
-                                    wrapper: 'flex-col gap-1 items-start',
-                                    ratingWrapper: 'text-base text-gray-900',
-                                    reviews: 'text-xs text-gray-900',
-                                    reviewsWrapper: 'gap-3',
+                                    wrapper: 'flex-col-reverse gap-1 items-start',
+                                    clutchIcon: '',
+                                    reviews: 'hidden',
                                 }}
                             />
-                            <Link
-                                className="flex h-7 w-7 items-center justify-center rounded bg-gray-50"
-                                href={LINKEDIN_ADDRESS}
-                            >
-                                <Linkedin className="text-gray-900 dark:text-blue-900" />
-                            </Link>
+                            <Socials />
                         </div>
                     </div>
                     <div>
@@ -66,9 +61,7 @@ const Footer: FC = () => {
                         </ul>
                         <ContactInfo />
                     </div>
-                    <div>
-                        <SubscribeForm />
-                    </div>
+
                     <LanguagesList classes={{ wrapper: 'md:order-1 lg:order-none' }} />
                     <p className="self-center text-sm leading-none text-gray-900">©2019-{new Date().getFullYear()}</p>
                 </div>

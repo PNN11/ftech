@@ -4,6 +4,7 @@ import Map from '@/components/pages/contacts/Map'
 import ContactForm from '@/components/pages/contacts/form/ContactForm'
 import TranslationsProvider from '@/components/providers/locales'
 import ClutchInfo from '@/components/ui/ClutchInfo'
+import Socials from '@/components/ui/Socials'
 import TitleWithDescription from '@/components/ui/TitleWithDescription'
 import Button from '@/components/ui/buttons/defaultButton/button'
 import Heading from '@/components/ui/typography/heading'
@@ -17,10 +18,9 @@ const namespaces = ['contacts', 'common']
 type SecondSectionData = {
     subtitle: string
     description: string
-    schedule_call: {
+    company_details: {
         title: string
-        description: string
-        action_button: string
+        description: string[]
     }
 }
 
@@ -34,7 +34,7 @@ export default async function ContactsPage({ params: { locale } }: { params: { l
 
     const {
         description,
-        schedule_call,
+        company_details,
         subtitle: secondSubtitle,
     } = t('second-section', { returnObjects: true }) as SecondSectionData
 
@@ -51,8 +51,8 @@ export default async function ContactsPage({ params: { locale } }: { params: { l
                             />
                             <ContactForm classes={{ wrapper: 'order-1 lg:order-none' }} />
                         </div>
-                        <div className="contents lg:block">
-                            <div className="lg:mb-34">
+                        <div className="contents h-full flex-col lg:flex lg:justify-between">
+                            <div className="border-b border-b-gray-200 pb-8">
                                 <Image
                                     src="/images/contacts_people.png"
                                     alt="people"
@@ -66,12 +66,20 @@ export default async function ContactsPage({ params: { locale } }: { params: { l
                                 <Paragraph className="mb-8 lg:mb-12" variant="p2">
                                     {t('first-section.ready-to-help.description')}
                                 </Paragraph>
-                                <ClutchInfo classes={{ wrapper: 'flex-row-reverse gap-11.5 w-fit' }} />
+                                <ClutchInfo classes={{ wrapper: '' }} />
                             </div>
-                            <ContactReviews classes={{ wrapper: 'order-2 lg:order-none' }} />
+                            <div>
+                                <Heading className="mb-4" variant="h5">
+                                    💡 {t('first-section.stay-connected.title')}
+                                </Heading>
+                                <Paragraph className="mb-8" variant="p1">
+                                    {t('first-section.stay-connected.description')}
+                                </Paragraph>
+                                <Socials />
+                            </div>
                         </div>
                     </section>
-                    <section className="grid grid-cols-1 gap-11 py-12.5 lg:grid-cols-2 lg:items-center lg:gap-23 xl:gap-28 xl:py-25">
+                    <section className="grid grid-cols-1 gap-11 py-12.5 lg:grid-cols-2 lg:items-end lg:gap-23 xl:gap-28 xl:py-25">
                         <TitleWithDescription
                             title={SALES_DEPARTMENT_EMAIL}
                             description={description}
@@ -79,13 +87,16 @@ export default async function ContactsPage({ params: { locale } }: { params: { l
                             classes={{ wrapper: 'text-left' }}
                         />
                         <div>
-                            <Heading className="mb-4" variant="h6">
-                                {schedule_call.title}
+                            <Heading className="mb-4" variant="h5">
+                                {company_details.title}
                             </Heading>
-                            <Paragraph className="mb-7" variant="p1">
-                                {schedule_call.description}
-                            </Paragraph>
-                            <Button variant="outlined">{schedule_call.action_button}</Button>
+                            <div>
+                                {company_details.description.map(item => (
+                                    <Paragraph variant="p1" key={item}>
+                                        {item}
+                                    </Paragraph>
+                                ))}
+                            </div>
                         </div>
                     </section>
                     <section className="py-12.5">

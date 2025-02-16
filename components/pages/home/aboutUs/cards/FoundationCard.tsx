@@ -17,8 +17,8 @@ const FoundationCard: FC<FoundationCardProps> = ({ classes }) => {
             bgSrc="/images/home/foundation_bg.png"
             classes={{ bg: 'opacity-[0.33]' }}
         >
-            <Heading className="dark:text-dark-blue-900 md:dark:text-white" variant="h3">
-                {t('about-us.items.foundation.title', { year: 2019 })}
+            <Heading className="font-normal dark:text-dark-blue-900 md:dark:text-white" variant="h1" tag="h5">
+                {t('about-us.items.foundation.title', { years: '5+' })}
             </Heading>
             <Paragraph className="dark:text-dark-blue-700 md:dark:text-white" variant="p2">
                 {t('about-us.items.foundation.description')}

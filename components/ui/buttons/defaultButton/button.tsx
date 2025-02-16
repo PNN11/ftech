@@ -1,3 +1,4 @@
+import { neueMontreal } from '@/fonts'
 import { cn } from '@/lib/classNames'
 
 import { ComponentProps, FC } from 'react'
@@ -41,7 +42,8 @@ const Button: FC<ButtonProps> = ({
                         variant === 'outlined' && color === 'primary',
                 },
 
-                className
+                className,
+                neueMontreal.className
             )}
             {...props}
         >

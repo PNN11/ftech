@@ -12,37 +12,37 @@
         "items": {
             "e-commerce": {
                 "title": "E-commerce",
-                "description": "Data and models",
+                "description": "Platforms and online-shops",
                 "long-description": "Best practices in creating online e-commerce platforms for best results and highest sales in your business",
                 "services": ["WP websites", "Marketplaces", "Mobile apps"]
             },
             "edtech": {
                 "title": "Education",
-                "description": "Data and models",
+                "description": "Edu platforms, web-portals with AI",
                 "long-description": "Using modern technologies like AI helper we able to create projects for students to increase their studying performance",
                 "services": ["Custom education systems", "Services for studens", "AI education platforms"]
             },
             "healthcare": {
                 "title": "Healthcare",
-                "description": "Data and models",
+                "description": "Medical devices and emergency services ",
                 "long-description": "From IoT solution for monitoring the state of medical devices to web portals and solutions for remote diagnostics",
                 "services": ["Web-Portals", "IoT And hardware solutions for devices", "AI Integrations"]
             },
             "fintech": {
                 "title": "Fintech",
-                "description": "Data and models",
+                "description": "Banking, trading and analytical  applications",
                 "long-description": "FTECH-IT team able to create any type of fintech project like acquiring, trading platform or apps for bank clients",
                 "services": ["Bankings", "Trading platforms", "Acquirings"]
             },
             "sport": {
                 "title": "Sports and entertainment",
-                "description": "Let the pixels made they magic",
+                "description": "Online broadcasts and streaming ",
                 "long-description": "Sports broadcasts, streaming services, donation apps and much more. Anything is possible with FTECH-IT ",
                 "services": ["Developing couching solutions for training", "Entertainment applications development"]
             },
             "energetics": {
                 "title": "Energetics and manufacturing",
-                "description": "Data and models",
+                "description": "Energy consumption and factory monitoring systems ",
                 "long-description": "Get ready to archive best experience with FTECH-IT in developing industrial solutions",
                 "services": [
                     "Developing custom ML for manufacturing",

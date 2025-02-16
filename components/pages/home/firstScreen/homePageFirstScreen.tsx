@@ -14,6 +14,7 @@ import Button from '@/components/ui/buttons/defaultButton/button'
 import MouseParallaxWrapper from '@/components/ui/wrappers/mouseParallaxWrapper'
 import { useInView } from 'react-intersection-observer'
 import ClutchInfo from '@/components/ui/ClutchInfo'
+import Link from 'next/link'
 
 const HomePageFirstScreen: FC = () => {
     const { t } = useTranslation()
@@ -85,7 +86,7 @@ const HomePageFirstScreen: FC = () => {
                     </div>
                 </MouseParallaxWrapper>
                 <div className="relative z-[2] self-end">
-                    <Heading ref={ref} variant="h1" className="mx-auto mb-15 max-w-2xl  text-center">
+                    <Heading ref={ref} variant="h1" className="mx-auto mb-15 max-w-156.75 text-center">
                         {t('first-screen.turn-on-your-project')}{' '}
                         <span
                             key={currentService}
@@ -96,18 +97,18 @@ const HomePageFirstScreen: FC = () => {
                         </span>{' '}
                         {t('first-screen.with-us')}
                     </Heading>
-                    <div className="mx-auto mb-13.5 flex flex-col items-center justify-between gap-3.5 md:mb-7.5 md:max-w-fit md:flex-row lg:mb-12 lg:max-w-171">
-                        <ReviewWrapper className="w-full justify-center md:w-fit">
-                            <p className="mr-4 text-sm font-medium leading-none">20+</p>
-                            <Image src="/images/review_avatars.png" width={95} height={26} alt="" className="mr-7" />
-                            <p className="text-lg font-light leading-none">{t('first-screen.client-reviews')}</p>
-                        </ReviewWrapper>
-                        <ReviewWrapper className="w-full justify-center py-2.25 md:w-fit">
-                            <ClutchInfo />
-                        </ReviewWrapper>
+                    <div className="mb-5.5 flex flex-col justify-center gap-3 2sm:flex-row">
+                        <Link className="w-full 2sm:w-fit" href="/contacts">
+                            <Button className="w-full">{t('first-screen.start-project')}</Button>
+                        </Link>
+                        <Link className="w-full 2sm:w-fit" href="/cases">
+                            <Button className="w-full" variant="outlined">
+                                {t('first-screen.see-portfolio')}
+                            </Button>
+                        </Link>
                     </div>
                     <div className="flex justify-center">
-                        <Button className="w-full md:w-fit">{t('first-screen.start-project')}</Button>
+                        <ClutchInfo />
                     </div>
                 </div>
             </Container>

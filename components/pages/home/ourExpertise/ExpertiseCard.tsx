@@ -50,9 +50,14 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({
             </Heading>
             <Paragraph variant="p2">{t(description)}</Paragraph>
             {isActive && (
-                <Button className="mt-4 w-full animate-fade-in-up" size="s">
-                    {t('homepage:our-expertise.find-more')}
-                </Button>
+                <Link
+                    className="mt-4 block w-full animate-fade-in-up"
+                    href={{ pathname: '/cases', query: { category: href.replace('/', '') } }}
+                >
+                    <Button className="w-full" size="s">
+                        {t('homepage:our-expertise.find-more')}
+                    </Button>
+                </Link>
             )}
             <Image
                 src={image.src}

@@ -3,25 +3,38 @@
         "title": "Get in touch",
         "subtitle": "Contacts",
         "form": {
-            "name": "Name",
-            "email": "Email",
-            "phone": "Phone",
-            "message": "Message",
+            "name": { "label": "Name", "placeholder": "Your name" },
+            "email": { "label": "Email", "placeholder": "email@adress.com" },
+            "phone": { "label": "Phone", "placeholder": "+ 726" },
+            "message": { "label": "Notes", "placeholder": "Cover letter here" },
             "submit": "Submit",
             "placeholder": "Text"
         },
         "ready-to-help": {
             "title": "Ready to help and contact",
-            "description": "Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus. In semper sed ridiculus pretium vitae. Id venenatis vel senectus elementum pellentesque."
+            "description": "Our team is dedicated to providing excellent customer service and ensuring your experience with us is a positive one. We look forward to hearing from you soon!"
+        },
+        "stay-connected": {
+            "title": "Stay connected",
+            "description": "Follow us on our social media and platforms as well"
         }
     },
     "second-section": {
         "subtitle": "Our Cases",
-        "description": "Lorem ipsum dolor sit amet consectetur. Tincidunt in risus etiam nec accumsan eleifend id integer. Nibh a rutrum id a sed in nunc cursus. Diam ante ac.",
+        "description": "You can contact the sales department directly at any time. We are ready to provide consultation and respond to you as fast as possible",
         "schedule_call": {
             "title": "Schedule a call",
             "description": "Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus.",
             "action_button": "Schedule a call"
+        },
+        "company_details": {
+            "title": "Company details",
+            "description": [
+                "FTECH Solutions Ltd.",
+                "Legal address:",
+                "Bartycka str. 116, 00-716 Warszawa, Poland",
+                "sales@ftech-it.com"
+            ]
         }
     }
 }

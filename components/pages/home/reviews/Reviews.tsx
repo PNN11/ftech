@@ -14,6 +14,11 @@ import { useTranslation } from 'react-i18next'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { reviews } from './data'
+import Clutch from '@/components/svg/Clutch'
+import ButtonWithIcon from '@/components/ui/buttons/withIcon/ButtonWithIcon'
+import ReviewWrapper from '../firstScreen/ReviewWrapper'
+import Star from '@/components/svg/Star'
+import { clutchLink, clutchRating } from '@/lib/constants'
 
 type ReviewData = {
     subtitle: string
@@ -54,10 +59,16 @@ const Reviews: FC = () => {
                         {_reviews.map(({ image, name, text }) => (
                             <SwiperSlide key={name} className="text-center">
                                 <Image src={image} alt={name} width={100} height={100} className="mx-auto mb-5" />
-                                <Heading className="mb-6.5 md:mb-12" variant="h5">
+                                <Heading className="mb-2" variant="h5">
                                     {name}
                                 </Heading>
-                                <div className="grid-cols-review-with-quotes grid gap-6 md:gap-9">
+                                <ReviewWrapper className="mx-auto mb-5 flex w-fit gap-2">
+                                    <Star className="text-clutch-star" />{' '}
+                                    <span className="text-lg font-medium leading-none text-gray-900 dark:text-dark-blue-900">
+                                        {clutchRating}
+                                    </span>
+                                </ReviewWrapper>
+                                <div className="grid grid-cols-review-with-quotes gap-6 md:gap-9">
                                     <Quotes />
                                     <Paragraph variant="p2">{text}</Paragraph>
                                     <Quotes className="rotate-180 self-end" />
@@ -66,8 +77,16 @@ const Reviews: FC = () => {
                         ))}
                     </Swiper>
 
-                    <Link href="/contacts" className="mx-auto block w-full md:w-fit">
-                        <Button className="w-full">{action_button}</Button>
+                    <Link
+                        href={clutchLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="relative z-[2] mx-auto block w-fit"
+                    >
+                        <ButtonWithIcon variant="outlined" className="w-full">
+                            {action_button}
+                            <Clutch className="h-5" />
+                        </ButtonWithIcon>
                     </Link>
                     <MouseParallaxWrapper enableOnTouchDevice={false} isAbsolutelyPositioned strength={0.2}>
                         <Image

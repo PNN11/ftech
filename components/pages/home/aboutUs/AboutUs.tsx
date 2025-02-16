@@ -21,19 +21,19 @@ const AboutUs: FC = () => {
                     description={t('about-us.description')}
                     classes={{ wrapper: 'max-w-159 mb-5 md:mb-0' }}
                 />
-                <div className="grid grid-cols-1 items-end gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[19.37%_1fr_39.5%] lg:gap-2 xl:gap-4">
+                <div className="grid grid-cols-1 items-end gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[20.3%_1fr_41.1%] lg:gap-2 xl:gap-3.25">
                     <div className="h-full">
-                        <ExperienceCard classes={{ wrapper: 'h-84 md:h-full lg:h-84 mb-3 md:mb-0' }} />
-                        <CompletedProjectsCard classes={{ wrapper: 'md:hidden h-84' }} />
+                        <ExperienceCard classes={{ wrapper: 'mb-3 md:mb-0' }} />
+                        <CompletedProjectsCard classes={{ wrapper: 'md:hidden h-100' }} />
                     </div>
-                    <div className="grid h-full grid-cols-1 grid-rows-[1fr_max-content_1fr] items-end gap-3 md:h-auto md:grid-rows-none lg:grid-cols-[54%_1fr] lg:gap-2 xl:gap-4">
+                    <div className="grid h-full grid-cols-1 grid-rows-[1fr_max-content_1fr] items-end gap-3 md:h-auto md:grid-rows-none lg:grid-cols-[54%_1fr] lg:gap-2 xl:gap-3.25">
                         <ReturningCustomersCard classes={{ wrapper: 'h-full md:h-fit' }} />
                         <ReferralCard />
                         <FoundationCard classes={{ wrapper: 'md:hidden h-full' }} />
                     </div>
-                    <div className="hidden grid-cols-1 items-end gap-2 md:grid lg:grid-cols-[47.3%_1fr] xl:gap-4">
+                    <div className="hidden grid-cols-1 items-end gap-2 md:grid lg:grid-cols-[51%_1fr] xl:gap-3.25">
                         <FoundationCard classes={{ wrapper: 'order-1 lg:order-none' }} />
-                        <CompletedProjectsCard classes={{ wrapper: 'lg:h-84' }} />
+                        <CompletedProjectsCard classes={{ wrapper: 'lg:h-100' }} />
                     </div>
                 </div>
             </Container>
