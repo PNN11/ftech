@@ -4,8 +4,13 @@ import TranslationsProvider from '@/components/providers/locales'
 import Container from '@/components/ui/wrappers/container'
 import { notFound } from 'next/navigation'
 import { allCases } from '../data'
+import i18nConfig from '@/i18nConfig'
 
 const namespaces = ['case', 'homepage']
+
+export function generateStaticParams() {
+    return i18nConfig.locales.map(locale => allCases[locale].map(({ card }) => ({ locale, case: card.href }))).flat()
+}
 
 export default async function CasePage({
     params: { locale, case: caseName },

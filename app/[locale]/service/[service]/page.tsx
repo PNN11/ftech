@@ -7,9 +7,12 @@ import { TService } from '@/types/common'
 import { notFound } from 'next/navigation'
 import { allServices } from '../data'
 import { serviceList } from '@/lib/constants'
+import i18nConfig from '@/i18nConfig'
 
 export function generateStaticParams() {
-    return serviceList.map(service => ({ service: service.serviceKey }))
+    return i18nConfig.locales
+        .map(locale => serviceList.map(({ serviceKey }) => ({ locale, service: serviceKey })))
+        .flat()
 }
 
 const namespaces = ['services', 'common', 'case', 'homepage', 'service', 'expertise']
