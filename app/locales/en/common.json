@@ -54,40 +54,39 @@
     },
     "service": {
         "software-development": "Software development",
+        "ai-development": { "title": "ML and Computer Vision", "description": "Data and models" },
+        "design": { "title": "Digital design and product design", "description": "Let the pixels made they magic" },
+        "devops": { "title": "DevOps", "description": "" },
+        "mobile-development": { "title": "Mobile software development", "description": "" },
+        "frontend-development": { "title": "Front-end development", "description": "" },
+        "backend-development": { "title": "Back-end development", "description": "" },
+        "outsourcing": {
+            "title": "Outsourcing",
+            "description": "Full-cycle development within the FTECH-IT. Maximum quality at friendly rates"
+        },
+        "client-team-extension": {
+            "title": "Outstaffing",
+            "description": "Extend your team with best specialists. Try it now with trial days of special conditions"
+        },
+        "business-analysis": { "title": "Business analysis", "description": "Preparation of technical specification" },
+        "quality-assurance": { "title": "Software Testing AQA / QA", "description": "" },
+        "third-party-services": {
+            "title": "Integration service",
+            "description": "Connection and integration of  services"
+        },
+        "manual-testing": {
+            "title": "Manual testing",
+            "description": ""
+        },
         "product-development": {
-            "title": "Product development",
-            "description": ["Web development", "Mobile development"]
+            "title": "Product development"
         },
         "software-testing": "Software testing & QA",
         "qa": {
-            "title": "QA",
-            "description": ["Manual testing", "Software testing"]
+            "title": "QA"
         },
-        "design": {
-            "title": "Digital design and product design",
-            "description": "Let the pixels made they magic"
-        },
-        "ai-development": {
-            "title": "AI / ML and data science",
-            "description": "Data and models"
-        },
-        "cloud-infrastructure": {
-            "title": "Cloud infrastructure",
-            "description": ["DevOps", "Cloud and platform"]
-        },
-        "cooperations": "Cooperations",
-        "staff-augmentation": {
-            "title": "Staff augmentation",
-            "description": "Lorem ipsum dolor sit amet consectetur."
-        },
-        "outsourcing": {
-            "title": "Outsourcing",
-            "description": "Lorem ipsum dolor sit amet consectetur."
-        },
-        "dedicated-teams": {
-            "title": "Dedicated teams",
-            "description": "Lorem ipsum dolor sit amet consectetur."
-        }
+
+        "cooperations": "Cooperations"
     },
     "footer": {
         "cases": "Cases",
@@ -95,11 +94,48 @@
         "home": "Home",
         "terms": "Terms",
         "privacy": "Privacy",
-        "city": "Warsaw, Poland",
-        "street": "Stavki 2",
+        "city": "Warszawa, Poland",
+        "street": "Bartycka str. 116, 00-716 ",
         "subscribe": "Subscribe for news",
-        "lang": "Lang",
-        "reviews": "Reviews"
+        "lang": "Localization:",
+        "reviews": "Reviews",
+        "services-list": {
+            "title": "FTECH-IT service proposal",
+            "subtitle": "Our service",
+            "ai-development": {
+                "title": "ML Engineering / Computer Vision"
+            },
+            "design": {
+                "title": "UI/UX Design "
+            },
+            "devops": {
+                "title": "DevOps"
+            },
+            "mobile-development": {
+                "title": "Mobile development "
+            },
+            "frontend-development": {
+                "title": "Front-end Development "
+            },
+            "backend-development": {
+                "title": "Back-end Development"
+            },
+            "outsourcing": {
+                "title": "Outsourcing"
+            },
+            "client-team-extension": {
+                "title": "Outstaffing"
+            },
+            "business-analysis": {
+                "title": "Business analysis"
+            },
+            "quality-assurance": {
+                "title": "AQA/QA"
+            },
+            "third-party-services": {
+                "title": "Service Integration"
+            }
+        }
     },
     "contact_us": {
         "title": "Get in touch",

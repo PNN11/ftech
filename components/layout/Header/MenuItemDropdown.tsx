@@ -1,10 +1,10 @@
-import React, { FC, ReactNode, useState } from 'react'
-import MenuItem from './MenuItem'
 import ChevronUp from '@/components/svg/ChevronUp'
-import { cn } from '@/lib/classNames'
 import Accordion from '@/components/ui/accordion'
 import { useWindowSize } from '@/hooks/useWindowSize'
+import { cn } from '@/lib/classNames'
 import { ScreenWidths } from '@/types/common'
+import { FC, ReactNode, useState } from 'react'
+import MenuItem from './MenuItem'
 
 type MenuItemDropdownProps = {
     title: string

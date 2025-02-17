@@ -1,5 +1,5 @@
 'use client'
-import { FC } from 'react'
+import { FC, SVGProps } from 'react'
 import { useTranslation } from 'react-i18next'
 import MenuItemDropdown from '../MenuItemDropdown'
 import AppWindow from '@/components/svg/AppWindow'
@@ -7,16 +7,43 @@ import SubMenuGroup from '../subMenu/SubMenuGroup'
 import Terminal from '@/components/svg/Terminal'
 import UsersFour from '@/components/svg/UsersFour'
 import VerticalDashedLine from '../VerticalDashedLine'
+import { SubMenuItemProps } from '../subMenu/SubMenuItem'
+import { SubMenuItemWithListProps } from '../subMenu/SubMenuItemWithList'
+import { TService } from '@/types/common'
 
-const services = {
+type ServiceDropdownData = Record<
+    string,
+    {
+        groupTitle?: string
+        groupItems: (
+            | {
+                  title: string
+                  description: string
+                  href: `/service/${TService}`
+              }
+            | {
+                  title: string
+                  description: {
+                      text: string
+                      href: `/service/${TService}`
+                  }[]
+              }
+        )[]
+        groupIcon?: FC<SVGProps<SVGSVGElement>>
+    }
+>
+
+const services: ServiceDropdownData = {
     softwareDevelopment: {
         groupTitle: 'common:service.software-development',
         groupItems: [
             {
                 title: 'common:service.product-development.title',
                 description: [
-                    { href: '/web-development', text: 'common:service.product-development.description.0' },
-                    { href: '/mobile-development', text: 'common:service.product-development.description.1' },
+                    { href: '/service/backend-development', text: 'common:service.backend-development.title' },
+                    { href: '/service/frontend-development', text: 'common:service.frontend-development.title' },
+                    { href: '/service/mobile-development', text: 'common:service.mobile-development.title' },
+                    { href: '/service/devops', text: 'common:service.devops.title' },
                 ],
             },
         ],
@@ -28,8 +55,8 @@ const services = {
             {
                 title: 'common:service.qa.title',
                 description: [
-                    { href: '/manual-testing', text: 'common:service.qa.description.0' },
-                    { href: '/software-testing', text: 'common:service.qa.description.1' },
+                    { href: '/service/quality-assurance', text: 'common:service.quality-assurance.title' },
+                    { href: '/service/quality-assurance', text: 'common:service.manual-testing.title' },
                 ],
             },
         ],
@@ -37,18 +64,25 @@ const services = {
     },
     common: {
         groupItems: [
-            { title: 'common:service.design.title', description: 'common:service.design.description', href: '/design' },
+            {
+                title: 'common:service.design.title',
+                description: 'common:service.design.description',
+                href: '/service/design',
+            },
             {
                 title: 'common:service.ai-development.title',
                 description: 'common:service.ai-development.description',
-                href: '/ai-development',
+                href: '/service/ai-development',
             },
             {
-                title: 'common:service.cloud-infrastructure.title',
-                description: [
-                    { href: '/devops', text: 'common:service.cloud-infrastructure.description.0' },
-                    { href: '/cloud-and-platform', text: 'common:service.cloud-infrastructure.description.1' },
-                ],
+                title: 'common:service.third-party-services.title',
+                description: 'common:service.third-party-services.description',
+                href: '/service/third-party-services',
+            },
+            {
+                title: 'common:service.business-analysis.title',
+                description: 'common:service.business-analysis.description',
+                href: '/service/business-analysis',
             },
         ],
     },
@@ -56,19 +90,14 @@ const services = {
         groupTitle: 'common:service.cooperations',
         groupItems: [
             {
-                title: 'common:service.staff-augmentation.title',
-                description: 'common:service.staff-augmentation.description',
-                href: '/staff-augmentation',
+                title: 'common:service.client-team-extension.title',
+                description: 'common:service.client-team-extension.description',
+                href: '/service/client-team-extension',
             },
             {
                 title: 'common:service.outsourcing.title',
                 description: 'common:service.outsourcing.description',
-                href: '/outsourcing',
-            },
-            {
-                title: 'common:service.dedicated-teams.title',
-                description: 'common:service.dedicated-teams.description',
-                href: '/dedicated-teams',
+                href: '/service/outsourcing',
             },
         ],
         groupIcon: UsersFour,

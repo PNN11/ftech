@@ -1,16 +1,19 @@
+import Warning from '@/components/svg/Warning'
 import { cn } from '@/lib/classNames'
 import { ComponentProps, forwardRef, useId } from 'react'
+import Paragraph from '../../typography/paragraph'
 
 type InputSize = 'l' | 'm' | 's'
 
 type InputProps = ComponentProps<'input'> & {
     inputSize?: InputSize
     label?: string
+    error?: string
 }
 
 // eslint-disable-next-line react/display-name
 const Input = forwardRef<HTMLInputElement, InputProps>(
-    ({ className = '', inputSize = 'm', value, label, id = '', ...props }, ref) => {
+    ({ className = '', inputSize = 'm', value, label, id = '', error, ...props }, ref) => {
         const _id = useId()
         const inputId = `${id}-${_id}`
 
@@ -35,6 +38,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                         {
                             'border-transparent text-gray-700': !!value,
                         },
+                        { 'border-error hover:border-error': !!error },
 
                         className
                     )}
@@ -43,6 +47,14 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                     {...props}
                     ref={ref}
                 />
+                {!!error && (
+                    <div className="mt-2 flex items-center gap-3">
+                        <Warning className="text-error" />
+                        <Paragraph className="text-error" variant="subt">
+                            {error}
+                        </Paragraph>
+                    </div>
+                )}
             </div>
         )
     }

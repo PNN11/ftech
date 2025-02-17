@@ -11,12 +11,13 @@ import initTranslations from './i18n'
 import { outfit } from '@/fonts'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/footer'
+import { Slide, ToastContainer } from 'react-toastify'
 
 export const metadata: Metadata = {
     title: 'FTECH',
 }
 
-const namespaces = ['common']
+const namespaces = ['common', 'services']
 
 export default async function RootLayout({
     children,
@@ -39,6 +40,18 @@ export default async function RootLayout({
                         <Footer />
                     </div>
                     <div id="modals" />
+                    <ToastContainer
+                        position="top-right"
+                        autoClose={5000}
+                        newestOnTop={false}
+                        closeOnClick={false}
+                        rtl={false}
+                        pauseOnFocusLoss
+                        draggable
+                        pauseOnHover
+                        theme="light"
+                        transition={Slide}
+                    />
                 </TranslationsProvider>
             </body>
         </html>

@@ -10,7 +10,7 @@ type ReactHookFormInputProps = {
 const ReactHookFormInput: FC<ReactHookFormInputProps> = ({ controllerProps, inputProps }) => {
     const { field, fieldState } = useController(controllerProps)
 
-    return <Input {...inputProps} {...field} />
+    return <Input {...inputProps} {...field} error={fieldState.invalid ? fieldState.error?.message : undefined} />
 }
 
 export default ReactHookFormInput

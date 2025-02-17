@@ -1,5 +1,6 @@
 import BritainFlag from '@/components/svg/BritainFlag'
 import PolandFlag from '@/components/svg/PolandFlag'
+import Paragraph from '@/components/ui/typography/paragraph'
 import useChangeLang from '@/hooks/useChangeLang'
 import { cn } from '@/lib/classNames'
 import { FC } from 'react'
@@ -20,17 +21,16 @@ const LanguagesList: FC<LanguagesListProps> = ({ classes }) => {
 
     return (
         <div className={cn('flex items-center gap-2', classes?.wrapper)}>
-            <p>{t('common:footer.lang')}</p>
-            <ul className="flex items-center gap-3.5">
+            <Paragraph variant="p3">{t('common:footer.lang')}</Paragraph>
+            <ul className="flex items-center gap-2">
                 {langs.map(({ value, Icon }) => (
-                    <li
-                        key={value}
-                        onClick={() => changeLang(value)}
-                        className={cn('flex h-7 w-7 cursor-pointer items-center justify-center rounded bg-gray-100', {
-                            'border border-gray-200 bg-transparent': value === i18n.language,
-                        })}
-                    >
-                        <Icon />
+                    <li key={value} className="cursor-pointer" onClick={() => changeLang(value)}>
+                        <Paragraph
+                            className={cn('capitalize', { 'text-gray-600': i18n.language === value })}
+                            variant="p3"
+                        >
+                            {value}
+                        </Paragraph>
                     </li>
                 ))}
             </ul>

@@ -329,6 +329,7 @@ const config: Config = {
                 'white-300': '#FBFAFA',
 
                 'clutch-star': '#EF4335',
+                error: '#FF3D00',
             },
             fontSize: {
                 '2xs': '0.8125rem', // 13px

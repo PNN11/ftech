@@ -8,7 +8,8 @@
             "phone": { "label": "Phone", "placeholder": "+ 726" },
             "message": { "label": "Notes", "placeholder": "Cover letter here" },
             "submit": "Submit",
-            "placeholder": "Text"
+            "placeholder": "Text",
+            "success": "Form has been successfully send"
         },
         "ready-to-help": {
             "title": "Ready to help and contact",
