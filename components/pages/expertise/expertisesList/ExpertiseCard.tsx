@@ -8,6 +8,7 @@ import Image from 'next/image'
 import React, { FC } from 'react'
 import ExpertiseStat from './ExpertiseStat'
 import { useTranslation } from 'react-i18next'
+import Link from 'next/link'
 
 type ExpertiseCardProps = {
     image: {
@@ -21,6 +22,7 @@ type ExpertiseCardProps = {
     number: number
     longDescription: string
     services: string
+    href: string
 }
 
 const ExpertiseCard: FC<ExpertiseCardProps> = ({
@@ -31,6 +33,7 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({
     services,
     image,
     title,
+    href,
 }) => {
     const { t } = useTranslation()
     const { projects, case_studies, action_button } = t('expertise:expertise_list', { returnObjects: true }) as {
@@ -95,9 +98,14 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({
                         ))}
                     </ul>
                 </div>
-                <ButtonWithIcon className="w-full md:w-fit" size="s">
-                    {action_button}
-                </ButtonWithIcon>
+                <Link
+                    className="w-full md:w-fit"
+                    href={{ pathname: '/cases', query: { category: href.replace('/', '') } }}
+                >
+                    <ButtonWithIcon className="w-full" size="s">
+                        {action_button}
+                    </ButtonWithIcon>
+                </Link>
             </div>
         </div>
     )

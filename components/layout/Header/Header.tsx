@@ -69,7 +69,7 @@ const Header: FC = () => {
                     </Link>
                     <nav
                         ref={menuRef}
-                        className={cn(`absolute left-0 top-[calc(100%+0.5rem)] w-full animate-mobile-menu flex-col-reverse items-center gap-3 overflow-hidden rounded-2xl border border-gray-200 bg-white-300 px-5
+                        className={cn(`absolute -left-0.5 top-[calc(100%+0.4rem)] w-[calc(100%+0.25rem)] animate-mobile-menu flex-col-reverse items-center gap-3 overflow-hidden rounded-2xl border border-gray-200 bg-white-300 px-5
                             py-4 lg:static lg:flex lg:w-auto lg:animate-none lg:flex-row
                             lg:gap-1 lg:border-none lg:px-0 lg:py-0 ${isMenuOpened ? 'flex' : 'hidden'}`)}
                     >
@@ -77,7 +77,9 @@ const Header: FC = () => {
                             {menuItems.map(item => (
                                 <li key={item.href} className="w-full lg:w-auto">
                                     {item.type === 'link' ? (
-                                        <MenuItem href={item.href}>{t(item.title)}</MenuItem>
+                                        <MenuItem onClick={handleCloseMenu} href={item.href}>
+                                            {t(item.title)}
+                                        </MenuItem>
                                     ) : (
                                         <item.Component />
                                     )}

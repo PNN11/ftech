@@ -398,7 +398,7 @@ const config: Config = {
                 },
                 'mobile-menu': {
                     '0%': { height: '0', opacity: '0', paddingTop: '0', paddingBottom: '0' },
-                    '100%': { height: '16.875rem', opacity: '1' },
+                    '100%': { height: '15.125rem', opacity: '1' },
                 },
                 'fade-in-up-bounce': {
                     '0%': { opacity: '0', transform: 'translateY(50%)' },

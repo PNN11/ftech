@@ -12,7 +12,7 @@ const ExpertiseSlider = () => {
             slidesPerView="auto"
             spaceBetween={8}
             className="lg:hidden"
-            wrapperClass="items-end h-100"
+            wrapperClass="items-end !h-100"
         >
             {expertise.map(({ description, href, title, number, image }, i) => (
                 <SwiperSlide key={`${href}${i}`} className="!h-fit !w-fit">
