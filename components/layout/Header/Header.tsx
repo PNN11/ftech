@@ -39,6 +39,7 @@ const Header: FC = () => {
     const handleOpenMenu = () => setIsMenuOpened(true)
 
     const handleCloseMenu = () => {
+        if (!isMenuOpened) return
         const animation = menuRef.current?.animate(
             [
                 { height: '16.875rem', opacity: 1 },
