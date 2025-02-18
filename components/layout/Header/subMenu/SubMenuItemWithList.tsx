@@ -17,7 +17,7 @@ const SubMenuItemWithList: FC<SubMenuItemWithListProps> = ({ description, title 
             <SubMenuItemTitle>{t(title)}</SubMenuItemTitle>
             <ul className="flex flex-col gap-1.5">
                 {description.map(({ href, text }) => (
-                    <li key={href}>
+                    <li key={`${href}${text}`}>
                         <Link href={href} className="flex items-center gap-2">
                             <div className="h-0.75 w-0.75 rounded-full bg-gray-750" />
                             <SubMenuItemDescription className="text-gray-750">{t(text)}</SubMenuItemDescription>

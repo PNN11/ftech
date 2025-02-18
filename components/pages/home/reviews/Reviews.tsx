@@ -18,7 +18,7 @@ import Clutch from '@/components/svg/Clutch'
 import ButtonWithIcon from '@/components/ui/buttons/withIcon/ButtonWithIcon'
 import ReviewWrapper from '../firstScreen/ReviewWrapper'
 import Star from '@/components/svg/Star'
-import { clutchLink, clutchRating } from '@/lib/constants'
+import { CLUTCH_LINK, CLUTCH_RATING } from '@/lib/constants'
 
 type ReviewData = {
     subtitle: string
@@ -54,7 +54,7 @@ const Reviews: FC = () => {
                             dynamicMainBullets: 3,
                             clickable: true,
                         }}
-                        className="mb-7 pb-15"
+                        className="mb-7 !pb-15"
                     >
                         {_reviews.map(({ image, name, text }) => (
                             <SwiperSlide key={name} className="text-center">
@@ -65,7 +65,7 @@ const Reviews: FC = () => {
                                 <ReviewWrapper className="mx-auto mb-5 flex w-fit gap-2">
                                     <Star className="text-clutch-star" />{' '}
                                     <span className="text-lg font-medium leading-none text-gray-900 dark:text-dark-blue-900">
-                                        {clutchRating}
+                                        {CLUTCH_RATING}
                                     </span>
                                 </ReviewWrapper>
                                 <div className="grid grid-cols-review-with-quotes gap-6 md:gap-9">
@@ -78,7 +78,7 @@ const Reviews: FC = () => {
                     </Swiper>
 
                     <Link
-                        href={clutchLink}
+                        href={CLUTCH_LINK}
                         target="_blank"
                         rel="noreferrer"
                         className="relative z-[2] mx-auto block w-fit"
@@ -90,14 +90,14 @@ const Reviews: FC = () => {
                     </Link>
                     <MouseParallaxWrapper enableOnTouchDevice={false} isAbsolutelyPositioned strength={0.2}>
                         <Image
-                            src="images/home/people_review_1.png"
+                            src="/images/home/people_review_1.png"
                             alt=""
                             width={403}
                             height={349}
                             className="absolute left-[-481px] top-1/2 hidden -translate-y-1/2 md:block"
                         />
                         <Image
-                            src="images/home/people_review_2.png"
+                            src="/images/home/people_review_2.png"
                             alt=""
                             width={394}
                             height={396}

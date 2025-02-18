@@ -81,7 +81,7 @@ const HomePageFirstScreen: FC = () => {
                             type="button"
                             className="absolute left-1/2 top-81 -translate-x-1/2"
                         >
-                            <PowerButton />
+                            <PowerButton className="animate-pulse dark:animate-none" />
                         </button>
                     </div>
                 </MouseParallaxWrapper>

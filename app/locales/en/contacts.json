@@ -4,8 +4,8 @@
         "subtitle": "Contacts",
         "form": {
             "name": { "label": "Name", "placeholder": "Your name" },
-            "email": { "label": "Email", "placeholder": "email@adress.com" },
-            "phone": { "label": "Phone", "placeholder": "+ 726" },
+            "email": { "label": "Email", "placeholder": "email@address.com" },
+            "phone": { "label": "Phone", "placeholder": "+ 48" },
             "message": { "label": "Notes", "placeholder": "Cover letter here" },
             "submit": "Submit",
             "placeholder": "Text",
@@ -23,11 +23,6 @@
     "second-section": {
         "subtitle": "Our Cases",
         "description": "You can contact the sales department directly at any time. We are ready to provide consultation and respond to you as fast as possible",
-        "schedule_call": {
-            "title": "Schedule a call",
-            "description": "Lorem ipsum dolor sit amet consectetur. Enim sed morbi eu pellentesque porttitor aenean sit tellus.",
-            "action_button": "Schedule a call"
-        },
         "company_details": {
             "title": "Company details",
             "description": [

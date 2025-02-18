@@ -1,3 +1,4 @@
+import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
 import { create } from 'zustand'
 
@@ -18,6 +19,8 @@ export const useThemeStore = create<ThemeStore & ThemeStoreActions>(set => ({
 
 export const useApplyTheme = () => {
     const theme = useThemeStore(s => s.theme)
+    const setTheme = useThemeStore(s => s.setTheme)
+    const pathname = usePathname()
 
     useEffect(() => {
         if (theme === 'blue') {
@@ -26,6 +29,23 @@ export const useApplyTheme = () => {
             document.documentElement.classList.remove('dark')
         }
     }, [theme])
+
+    useEffect(() => {
+        if (pathname !== '/') setTheme('blue')
+    }, [pathname, setTheme])
+
+    useEffect(() => {
+        const handler = () => {
+            if (window.scrollY > 400) setTheme('blue')
+        }
+        if (theme === 'monochrome') {
+            handler()
+            window.addEventListener('scroll', handler)
+        }
+        return () => {
+            window.removeEventListener('scroll', handler)
+        }
+    }, [theme, setTheme])
 }
 
 export const useChangeTheme = () => {

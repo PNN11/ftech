@@ -9,11 +9,12 @@ type InputProps = ComponentProps<'input'> & {
     inputSize?: InputSize
     label?: string
     error?: string
+    regexp?: RegExp
 }
 
 // eslint-disable-next-line react/display-name
 const Input = forwardRef<HTMLInputElement, InputProps>(
-    ({ className = '', inputSize = 'm', value, label, id = '', error, ...props }, ref) => {
+    ({ className = '', inputSize = 'm', value, label, id = '', error, onChange, regexp, ...props }, ref) => {
         const _id = useId()
         const inputId = `${id}-${_id}`
 
@@ -44,13 +45,22 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                     )}
                     value={value}
                     id={inputId}
+                    onChange={e => {
+                        const value = e.target.value
+
+                        if (regexp && value && !regexp.test(value)) {
+                            return
+                        }
+
+                        onChange?.(e)
+                    }}
                     {...props}
                     ref={ref}
                 />
                 {!!error && (
                     <div className="mt-2 flex items-center gap-3">
                         <Warning className="text-error" />
-                        <Paragraph className="text-error" variant="subt">
+                        <Paragraph className="!text-error" variant="subt">
                             {error}
                         </Paragraph>
                     </div>

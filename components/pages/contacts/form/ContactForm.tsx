@@ -75,7 +75,12 @@ const ContactForm: FC<ContactFormProps> = ({ classes }) => {
             />
             <ReactHookFormInput
                 controllerProps={{ control, name: 'phone' }}
-                inputProps={{ placeholder: phone.placeholder, label: phone.label, inputSize: 'l' }}
+                inputProps={{
+                    placeholder: phone.placeholder,
+                    label: phone.label,
+                    inputSize: 'l',
+                    regexp: /[0-9+\s()]$/,
+                }}
             />
             <ReactHookFormTextArea
                 controllerProps={{ control, name: 'message' }}

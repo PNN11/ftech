@@ -23,21 +23,21 @@ const FooterServiceLinks = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-2 2sm:grid-cols-[9.25rem_max-content_9.25rem] md:gap-x-2 lg:gap-x-8">
             <div className="flex flex-col gap-2">
                 {footerServiceList.slice(0, 4).map(({ href, serviceKey }) => (
-                    <Link className="w-fit 2sm:w-auto" key={href} href={href}>
+                    <Link className="w-fit 2sm:w-auto" key={href} href={`/service${href}`}>
                         <Paragraph variant="p3">{t(`common:footer.services-list.${serviceKey}.title`)}</Paragraph>
                     </Link>
                 ))}
             </div>
             <div className="flex flex-col gap-2">
                 {footerServiceList.slice(4, 8).map(({ href, serviceKey }) => (
-                    <Link className="w-fit 2sm:w-auto" key={href} href={href}>
+                    <Link className="w-fit 2sm:w-auto" key={href} href={`/service${href}`}>
                         <Paragraph variant="p3">{t(`common:footer.services-list.${serviceKey}.title`)}</Paragraph>
                     </Link>
                 ))}
             </div>
             <div className="flex flex-col gap-2">
                 {footerServiceList.slice(8).map(({ href, serviceKey }) => (
-                    <Link className="w-fit 2sm:w-auto" key={href} href={href}>
+                    <Link className="w-fit 2sm:w-auto" key={href} href={`/service${href}`}>
                         <Paragraph variant="p3">{t(`common:footer.services-list.${serviceKey}.title`)}</Paragraph>
                     </Link>
                 ))}

@@ -1,20 +1,12 @@
 'use client'
-import Clutch from '@/components/svg/Clutch'
-import Linkedin from '@/components/svg/Linkedin'
 import Logo from '@/components/svg/Logo'
-import Star from '@/components/svg/Star'
-import Container from '@/components/ui/wrappers/container'
-import { COMPANY_EMAIL, COMPANY_PHONE, LINKEDIN_ADDRESS, serviceList } from '@/lib/constants'
-import Link from 'next/link'
-import React, { FC } from 'react'
-import { useTranslation } from 'react-i18next'
-import ContactInfo from './ContactInfo'
-import LanguagesList from './LanguagesList'
-import SubscribeForm from './SubscribeForm'
 import ClutchInfo from '@/components/ui/ClutchInfo'
 import Socials from '@/components/ui/Socials'
-import Paragraph from '@/components/ui/typography/paragraph'
-import { TService } from '@/types/common'
+import Container from '@/components/ui/wrappers/container'
+import Link from 'next/link'
+import { FC } from 'react'
+import { useTranslation } from 'react-i18next'
+import ContactInfo from './ContactInfo'
 import FooterServiceLinks from './ServiceLinks'
 
 const footerLinks = [
@@ -44,7 +36,7 @@ const Footer: FC = () => {
                                     reviews: 'hidden',
                                 }}
                             />
-                            <LanguagesList classes={{ wrapper: 'md:order-1 lg:order-none' }} />
+                            {/* <LanguagesList classes={{ wrapper: 'md:order-1 lg:order-none' }} /> */}
                             <Socials />
                         </div>
                     </div>

@@ -5,7 +5,7 @@
         "client-reviews": "Client reviews",
         "reviews": "reviews",
         "start-project": "Start project",
-        "title-services": [".Net", "Java", "Python", "ML", "React", "Angular"],
+        "title-services": [".Net", "Java", "Ml", "JS", "AI"],
         "see-portfolio": "See portfolio"
     },
     "about-us": {
@@ -13,11 +13,11 @@
         "description": "From software development to tech support, we are dedicated to providing reliable and efficient services that help your company thrive in the digital age",
         "items": {
             "experience": {
-                "title": "250.000 € CGL Coverage",
+                "title": "Full CGL Insurance Coverage",
                 "description": "Ftech‑IT is insured against business risks, ensuring peace of mind for our clients and operations"
             },
             "returning-customers": {
-                "title": "4.8 on Clutch",
+                "title": "4.9 on Clutch",
                 "description": "Our high rating on Clutch is a testament to our high expertise"
             },
             "referral": {
@@ -29,7 +29,7 @@
                 "description": "Our team’s expertise ensures the successful implementation of your IT solution"
             },
             "completed-projects": {
-                "title": "Trusted by US & EUClients",
+                "title": "Trusted by US & EU Clients",
                 "description": "A majority of our clientele hails from US and EU regions, reflecting their confidence in our reliable, high‑quality services",
                 "button": "Explore cases"
             }

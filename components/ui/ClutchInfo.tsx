@@ -4,7 +4,7 @@ import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import Clutch from '../svg/Clutch'
 import Star from '../svg/Star'
-import { clutchRating } from '@/lib/constants'
+import { CLUTCH_RATING } from '@/lib/constants'
 
 type ClutchInfoProps = {
     classes?: {
@@ -29,7 +29,7 @@ const ClutchInfo: FC<ClutchInfoProps> = ({ classes }) => {
             </div>
             <div className={cn('flex items-center gap-1 text-lg leading-none', classes?.ratingWrapper)}>
                 <Star className="text-clutch-star" />
-                {clutchRating}
+                {CLUTCH_RATING}
             </div>
         </div>
     )

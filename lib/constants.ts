@@ -12,8 +12,8 @@ export const SALES_DEPARTMENT_EMAIL = 'sales@ftech-it.com'
 
 export const COMPANY_PHONE = '+ 1 543 625 42 24'
 
-export const clutchRating = '4.9'
-export const clutchLink = 'https://clutch.co/'
+export const CLUTCH_RATING = '4.9'
+export const CLUTCH_LINK = 'https://clutch.co/'
 
 export const serviceList: { href: `/${TService}`; serviceKey: TService }[] = [
     { href: '/ai-development', serviceKey: 'ai-development' },

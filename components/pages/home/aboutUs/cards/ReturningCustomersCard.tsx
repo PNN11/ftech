@@ -1,11 +1,13 @@
 import Heading from '@/components/ui/typography/heading'
 import Paragraph from '@/components/ui/typography/paragraph'
 
+import ClutchInfo from '@/components/ui/ClutchInfo'
+import { CLUTCH_LINK } from '@/lib/constants'
+import Link from 'next/link'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
-import AboutUsItemWrapper from '../AboutUsItemWrapper'
 import ReviewWrapper from '../../firstScreen/ReviewWrapper'
-import ClutchInfo from '@/components/ui/ClutchInfo'
+import AboutUsItemWrapper from '../AboutUsItemWrapper'
 
 type ReturningCustomersCardProps = {
     classes?: { wrapper?: string }
@@ -27,15 +29,17 @@ const ReturningCustomersCard: FC<ReturningCustomersCardProps> = ({ classes }) =>
                 <Paragraph className="dark:text-dark-blue-700 md:dark:text-white" variant="p2">
                     {t('about-us.items.returning-customers.description')}
                 </Paragraph>
-                <ReviewWrapper>
-                    <ClutchInfo
-                        classes={{
-                            reviews: 'hidden',
-                            clutchIcon: 'h-4',
-                            wrapper: 'flex-row-reverse justify-center w-full',
-                        }}
-                    />
-                </ReviewWrapper>
+                <Link target="_blank" rel="noopener noreferrer" href={CLUTCH_LINK}>
+                    <ReviewWrapper>
+                        <ClutchInfo
+                            classes={{
+                                reviews: 'hidden',
+                                clutchIcon: 'h-4',
+                                wrapper: 'flex-row-reverse justify-center w-full',
+                            }}
+                        />
+                    </ReviewWrapper>
+                </Link>
             </div>
         </AboutUsItemWrapper>
     )

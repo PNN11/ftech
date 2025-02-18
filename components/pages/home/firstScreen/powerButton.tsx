@@ -1,6 +1,7 @@
-import React, { ComponentProps, FC } from 'react'
+import { cn } from '@/lib/classNames'
+import { ComponentProps, FC } from 'react'
 
-const PowerButton: FC<ComponentProps<'svg'>> = props => {
+const PowerButton: FC<ComponentProps<'svg'>> = ({ className, ...props }) => {
     return (
         <svg
             width="139"
@@ -8,7 +9,7 @@ const PowerButton: FC<ComponentProps<'svg'>> = props => {
             viewBox="0 0 139 140"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="text-gray-600 dark:text-blue-900"
+            className={cn('text-gray-600 dark:text-blue-900', className)}
             {...props}
         >
             <g filter="url(#filter0_d_269_3806)">
