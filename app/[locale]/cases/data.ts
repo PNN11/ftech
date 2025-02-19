@@ -1,5 +1,4 @@
 import { CaseData } from '@/components/pages/case/caseBlocksMapper/CaseBlockMapper'
-import { Case } from '@/types/cases'
 
 const casesEn: CaseData[] = [
     {
@@ -1132,12 +1131,142 @@ const casesEn: CaseData[] = [
                 block: 'section6',
                 props: {
                     cards: [
-                        { title: '', image: '/images/cases/medical-monitoring-service/tech1.png' },
-                        { title: '', image: '/images/cases/medical-monitoring-service/tech2.png' },
-                        { title: '', image: '/images/cases/medical-monitoring-service/tech3.png' },
-                        { title: '', image: '/images/cases/medical-monitoring-service/tech4.png' },
-                        { title: '', image: '/images/cases/medical-monitoring-service/tech5.png' },
-                        { title: '', image: '/images/cases/medical-monitoring-service/tech6.png' },
+                        { title: '.Net Framework', image: '/images/cases/medical-monitoring-service/tech1.png' },
+                        { title: 'ASP.Net MVC', image: '/images/cases/medical-monitoring-service/tech2.png' },
+                        { title: 'ASP.Net Core', image: '/images/cases/medical-monitoring-service/tech3.png' },
+                        { title: 'Knockout.js', image: '/images/cases/medical-monitoring-service/tech4.png' },
+                        { title: 'ext.js', image: '/images/cases/medical-monitoring-service/tech5.png' },
+                        { title: 'SignalR', image: '/images/cases/medical-monitoring-service/tech6.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Service for monitoring of medical equipment ',
+                    description: 'Application for real-time monitoring of medical equipment',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Service Integration ', href: 'third-party-services' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Educational platform  ',
+            description: 'Educational platform for standardized test preparation',
+            tags: ['JavaScript', 'Material UI', 'React', 'Redux/xstate', 'ESLint + Prettier', 'GitLab'],
+            href: 'edu-platform',
+            image: '/images/cases/edu-platform/card.png',
+            category: 'edtech',
+            bgImage: '#FBD13C',
+            mockup: 'laptop',
+            tone: 'dark',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Medical equipment monitoring',
+                    title: 'Educational platform  ',
+                    description: 'Educational platform for standardized test preparation',
+                    image: '/images/cases/edu-platform/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America',
+                        industry: 'Education',
+                        projectType: 'Web platform',
+                        team: 'M-size ',
+                        projectServices: [
+                            'Back-end development',
+                            'Front-end development',
+                            'Business analysis',
+                            'DevOps',
+                            'Service Integration',
+                            'AQA / QA ',
+                        ],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'Our task was to develop an educational platform for a company specializing in preparing students for standardized tests such as the ACT and SAT. The platform needed to provide students with self-study materials, practice tests, and strategies to improve their exam scores ',
+                        solution:
+                            'A successful educational platform has been implemented, providing students with access to high-quality learning resources and helping them prepare for standardized tests. The platform equips students with the necessary knowledge, practice, and strategies to successfully pass the ACT and SAT exams ',
+                    },
+                    tags: [
+                        'JavaScript',
+                        'Webpack/Vite',
+                        'React',
+                        'Material UI',
+                        'Redux/xstate',
+                        'ESLint + Prettier',
+                        'GitLab',
+                        'Node.js',
+                    ],
+                    contact: {
+                        title: 'Need a modern online learning platform? ',
+                        description:
+                            'We will develop a platform to optimize the learning process and achieve the best results ',
+                        image: '/images/cases/edu-platform/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '2',
+                    subtitle: 'Project highlights',
+                    title: 'Highlights of the educational service ',
+                    cards: [
+                        {
+                            title: 'Web platform',
+                            description:
+                                'We created an educational platform for preparing students for standardized tests such as the ACT and SAT, providing them with resources and services for successful completion ',
+                        },
+                        {
+                            title: 'Roles for students and teachers ',
+                            description:
+                                'We created a division between students and teachers, designing virtual classrooms for a well-coordinated learning process',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/edu-platform/image1.png' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'node.js', image: '/images/cases/edu-platform/tech1.png' },
+                        { title: 'Webpack', image: '/images/cases/edu-platform/tech2.png' },
+                        { title: 'Vite', image: '/images/cases/edu-platform/tech3.png' },
+                        { title: 'Redux', image: '/images/cases/edu-platform/tech4.png' },
+                        { title: 'xstate', image: '/images/cases/edu-platform/tech5.png' },
+                        { title: 'Material UI', image: '/images/cases/edu-platform/tech6.png' },
+                        { title: 'React.js', image: '/images/cases/edu-platform/tech7.png' },
+                        { title: 'JavaScript', image: '/images/cases/edu-platform/tech8.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            { block: 'section12', props: { image: '/images/cases/edu-platform/image2.png' } },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Educational platform  ',
+                    description: 'Educational platform for standardized test preparation',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Front-end development', href: 'frontend-development' },
+                        { title: 'Business analysis', href: 'business-analysis' },
+                        { title: 'DevOps', href: 'devops' },
+                        { title: 'Integration service', href: 'third-party-services' },
+                        { title: 'AQA / QA ', href: 'quality-assurance' },
                     ],
                 },
             },

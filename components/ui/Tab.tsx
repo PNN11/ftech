@@ -1,3 +1,4 @@
+import { neueMontreal } from '@/fonts'
 import { cn } from '@/lib/classNames'
 import React, { ComponentProps, FC } from 'react'
 
@@ -15,7 +16,8 @@ const Tab: FC<TabProps> = ({ children, className, isActive = false, ...props }) 
                     'border-t-gray-750 bg-primary-gray text-white-10 dark:border-t-blue-600 dark:bg-primary-blue':
                         isActive,
                 },
-                className
+                className,
+                neueMontreal.className
             )}
             {...props}
         >
