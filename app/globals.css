@@ -100,7 +100,7 @@
     --swiper-pagination-top: 2rem;
 }
 
-.expertise-slider-pagination-horizontal {
+div.expertise-slider-pagination-horizontal {
     padding-left: 2.75rem;
     text-align: left;
 }

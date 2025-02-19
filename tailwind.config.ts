@@ -400,6 +400,10 @@ const config: Config = {
                     '0%': { height: '0', opacity: '0', paddingTop: '0', paddingBottom: '0' },
                     '100%': { height: '15.125rem', opacity: '1' },
                 },
+                'main-page-mobile-menu': {
+                    '0%': { height: '0', opacity: '0', paddingTop: '0', paddingBottom: '0' },
+                    '100%': { height: '16.875rem', opacity: '1' },
+                },
                 'fade-in-up-bounce': {
                     '0%': { opacity: '0', transform: 'translateY(50%)' },
                     '50%': { opacity: '1', transform: 'translateY(-20%)' },
@@ -412,6 +416,7 @@ const config: Config = {
                 'fade-in-up': 'fade-in-up 0.3s linear',
                 'fade-in-up-bounce': 'fade-in-up-bounce 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)',
                 'mobile-menu': 'mobile-menu 0.5s linear',
+                'main-page-mobile-menu': 'main-page-mobile-menu 0.5s linear',
             },
             gridTemplateColumns: {
                 'review-with-quotes': '1.3125rem 1fr 1.3125rem',

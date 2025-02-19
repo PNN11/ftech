@@ -15,7 +15,11 @@ type Section11Props = {
 const Section11: FC<Section11Props> = ({ description, services, title }) => {
     return (
         <section className="py-12.5">
-            <TitleWithDescription classes={{ wrapper: 'mb-6.25' }} title={title} description={description} />
+            <TitleWithDescription
+                classes={{ wrapper: 'mb-6.25 max-w-203.5' }}
+                title={title}
+                description={description}
+            />
             <ul className="flex flex-wrap items-center justify-center gap-2">
                 {services.map(({ href, title }) => (
                     <li key={title}>

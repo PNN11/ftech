@@ -30,8 +30,8 @@ const ExpertiseFirstScreen: FC = () => {
                     <div className="relative z-[1] space-y-9 md:max-w-80">
                         <Heading variant="h1">{title}</Heading>
                         <Paragraph variant="p1">{description}</Paragraph>
-                        <Link className="block" href="/contacts">
-                            <ButtonWithIcon>{consultation_button}</ButtonWithIcon>
+                        <Link className="block w-full 2sm:w-fit" href="/contacts">
+                            <ButtonWithIcon className="w-full">{consultation_button}</ButtonWithIcon>
                         </Link>
                     </div>
                 </div>
@@ -45,8 +45,8 @@ const ExpertiseFirstScreen: FC = () => {
                      md:right-0 md:top-auto md:block md:translate-x-1/2 lg:translate-x-2/3"
                 />
             </div>
-            <div className="h-full lg:p-4">
-                <div className="hidden h-full overflow-hidden rounded-2xl border border-dark-blue-100 bg-gray-350 lg:block">
+            <div className="hidden h-full lg:block lg:p-4">
+                <div className="h-full overflow-hidden rounded-2xl border border-dark-blue-100 bg-gray-350">
                     <div className="grid h-full grid-cols-1">
                         <Swiper
                             modules={[Pagination]}

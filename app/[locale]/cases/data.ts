@@ -904,6 +904,245 @@ const casesEn: CaseData[] = [
             },
         ],
     },
+    {
+        card: {
+            title: 'App for personal training at home  ',
+            description: 'Application for training with a professional trainer in real time',
+            tags: ['Kotlin', 'Android SDK (32 API)', 'SQLite (Room ORM)', 'Retrofit', 'Firebase', 'MVP'],
+            href: 'personal-training-platform',
+            image: '/images/cases/personal-training-platform/card.png',
+            category: 'sport',
+            bgImage: '#6A8170',
+            mockup: 'mobile',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Personal training app',
+                    title: 'App for personal training at home  ',
+                    description: 'Application for training with a professional trainer in real time',
+                    image: '/images/cases/personal-training-platform/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Europe',
+                        client: 'Well-known fitness coach ',
+                        industry: 'Sports and entertainment ',
+                        platform: ['Android', 'iOS'],
+                        team: ['S-size '],
+                        projectServices: [
+                            'Mobile development',
+                            'UI/UX design',
+                            'Business analysis',
+                            'DevOps',
+                            'Service Integration',
+                        ],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The client, a successful fitness coach, needed an app that would enable him to train clients online, provide personalized nutrition and lifestyle recommendations, and track the progress of his trainees. Additionally, the app needed to help clients achieve their goals, integrate with their personal calendars, and send notifications about their achievements. An important feature was also the ability to track the balance of proteins, fats, and carbohydrates, as well as monitor weight changes and other body parameters ',
+                        solution:
+                            'Our team successfully developed an app for Android and iOS that meets all the specified requirements. Kotlin was chosen as the primary technology due to its functionality and reliability. One of the significant achievements was the implementation of a real-time streaming feature, supporting simultaneous interaction for up to 20 users with minimal latency. We also integrated a voice chat function during workouts and connected the app with leading calendar applications. The developed app also includes integration with several popular payment systems in Europe ',
+                    },
+                    tags: ['Kotlin', 'Android SDK (32 API)', 'SQLite (Room ORM)', 'Retrofit', 'Firebase', 'MVP'],
+                    contact: {
+                        image: '/images/cases/personal-training-platform/contact.png',
+                        title: 'Have same idea? ',
+                        description:
+                            'Do you have similar project ideas? Contact us, and we will discuss the details and development of your application ',
+                    },
+                },
+            },
+            {
+                block: 'section12',
+                props: {
+                    image: '/images/cases/personal-training-platform/image1.png',
+                    size: '296',
+                    capture: 'Final app design - real-time coaching ',
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '1',
+                    subtitle: 'Project highlights',
+                    title: 'Key features of the client training app ',
+                    cards: [
+                        {
+                            title: 'Remote support ',
+                            description: 'We created an app for remote fitness sessions and interaction with a coach',
+                        },
+                        {
+                            title: 'Streams ',
+                            description:
+                                'A real-time streaming feature has been implemented for groups of up to 20 people each ',
+                        },
+                        {
+                            title: 'Online payment ',
+                            description: 'Integration with popular payment services has been implemented  ',
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section12',
+                props: {
+                    image: '/images/cases/personal-training-platform/image2.png',
+                    size: '416',
+                    capture: 'App design - schedule and programs ',
+                },
+            },
+            { block: 'section8', props: {} },
+            {
+                block: 'section4',
+                props: {
+                    title: 'Our team has successfully developed couching app',
+                    description:
+                        'Our wonderful team of cool developers at Kotlin worked on the development of this project in the shortest possible time',
+                    cards: [
+                        {
+                            title: 'High team lvl',
+                            description: 'only senior / middle level and higher',
+                            actionButton: { text: 'Extend team', href: '/service/client-team-extension' },
+                            image: '/images/cases/personal-training-platform/team1.png',
+                        },
+                        {
+                            title: 'S-team',
+                            description: 'size of team on this project',
+                            image: '/images/cases/personal-training-platform/team2.png',
+                        },
+                        {
+                            title: 'Kotlin',
+                            description: 'Based on Kotlin we create an app for android',
+                            actionButton: { text: 'App dev', href: '/service/mobile-app-development' },
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section12',
+                props: { image: '/images/cases/personal-training-platform/image3.png', size: '296' },
+            },
+            {
+                block: 'section11',
+                props: {
+                    title: 'App for personal training at home  ',
+                    description:
+                        'App provides the right approach through online training with an experienced coach. Proven programs from the app s author, along with continuous monitoring of participants  performance, help achieve the set goals',
+                    services: [
+                        { title: 'Mobile development', href: 'mobile-development' },
+                        { title: 'UI/UX design', href: 'design' },
+                        { title: 'Business analysis', href: 'business-analysis' },
+                        { title: 'DevOps', href: 'devops' },
+                        { title: 'Service Integration', href: 'third-party-services' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Service for monitoring of medical equipment ',
+            description: 'Application for real-time monitoring of medical equipment',
+            tags: ['.Net Framework', 'ASP.Net MVC', '.Net Core', 'ASP.Net Core', 'Knockout.js', 'ext.js', 'SignalR'],
+            href: 'medical-monitoring-service',
+            image: '/images/cases/medical-monitoring-service/card.png',
+            category: 'healthcare',
+            bgImage: '#FFFFFF',
+            mockup: 'laptop',
+            tone: 'dark',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Medical equipment monitoring',
+                    title: 'Service for monitoring of medical equipment ',
+                    description: 'Application for real-time monitoring of medical equipment',
+                    image: '/images/cases/medical-monitoring-service/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America, Europe, Asia',
+                        client: 'Manufacturer of equipment ',
+                        industry: 'Healthcare ',
+                        projectType: 'Local web service',
+                        team: 'S-size ',
+                        projectServices: ['Back-end development', 'Service integration '],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'Our task was to enhance and modernize the existing portal for monitoring the operation of medical devices and analyzing the collected data',
+                        solution:
+                            'During our team’s work, support for more than 10 new devices was implemented, including hemodialysis machines, updated versions of laboratory centrifuges, and more. Our solutions significantly accelerated data processing and reduced memory usage without compromising functionality. Additionally, we achieved impressive results in improving the system’s fault tolerance',
+                    },
+                    tags: [
+                        '.Net Framework',
+                        'ASP.Net MVC',
+                        '.Net Core',
+                        'ASP.Net Core',
+                        'Knockout.js',
+                        'ext.js',
+                        'SignalR',
+                    ],
+                    contact: {
+                        title: 'Have same request? ',
+                        description:
+                            'We will create a turnkey solution for monitoring the condition of equipment tailored to your clinic. Contact us ',
+                        image: '/images/cases/medical-monitoring-service/contact.png',
+                    },
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/medical-monitoring-service/image1.png' } },
+            {
+                block: 'section9',
+                props: {
+                    variant: '1',
+                    subtitle: 'Project highlights',
+                    title: 'Service highlights ',
+                    description:
+                        'The development of such a service implies an increase in fault tolerance, support for multiple devices and optimal use of data',
+                    cards: [
+                        {
+                            title: 'Increased performance ',
+                            description: 'The existing solution for monitoring complex medical equipment was improved ',
+                        },
+                        {
+                            title: 'Broad range of supported devices ',
+                            description: 'Support for more than 10 new devices was added',
+                        },
+                        {
+                            title: 'Data processing optimization ',
+                            description:
+                                'The data processing speed significantly increased, memory usage was reduced, and fault tolerance was ',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/medical-monitoring-service/image2.png' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: '', image: '/images/cases/medical-monitoring-service/tech1.png' },
+                        { title: '', image: '/images/cases/medical-monitoring-service/tech2.png' },
+                        { title: '', image: '/images/cases/medical-monitoring-service/tech3.png' },
+                        { title: '', image: '/images/cases/medical-monitoring-service/tech4.png' },
+                        { title: '', image: '/images/cases/medical-monitoring-service/tech5.png' },
+                        { title: '', image: '/images/cases/medical-monitoring-service/tech6.png' },
+                    ],
+                },
+            },
+        ],
+    },
 ]
 
 export const allCases: Record<string, CaseData[]> = {
