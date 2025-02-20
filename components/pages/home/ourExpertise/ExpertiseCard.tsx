@@ -64,6 +64,7 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({
                 width={image.width}
                 height={image.height}
                 alt=""
+                style={{ width: image.width, height: image.height }}
                 className={`absolute left-5.5 max-w-max transition-all duration-500 ${isActive ? 'bottom-0' : 'bottom-2.5'}`}
             />
         </div>

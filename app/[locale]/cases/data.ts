@@ -1272,6 +1272,927 @@ const casesEn: CaseData[] = [
             },
         ],
     },
+    {
+        card: {
+            title: 'Back-end application for emergency ambulance calls',
+            description: 'Server-side project for a mobile application for emergency medical assistance calls ',
+            tags: ['.Net Core', 'ASP.Net Core', 'workflow-core', 'Angular', 'SignalR'],
+            href: 'private-ambulance',
+            image: '/images/cases/private-ambulance/card.png',
+            category: 'healthcare',
+            bgImage: '#64BB9D',
+            mockup: 'mobile',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Mobile emergency application',
+                    title: 'Back-end application for emergency ambulance calls',
+                    description: 'Server-side project for a mobile application for emergency medical assistance calls ',
+                    image: '/images/cases/private-ambulance/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Europe',
+                        industry: 'Healthcare ',
+                        client: 'Startup',
+                        projectType: 'Mobile app',
+                        platform: 'iOS, Android',
+                        team: 'M-size ',
+                        projectServices: ['Back-end development', 'DevOps'],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'A delay in providing assistance during a heart attack, stroke, or other critical conditions often results in fatalities. In many cases, the timely arrival of medical professionals could save lives. Our client set out to solve this problem. Their task was to develop an intuitive mobile application that allows users to quickly receive qualified first aid and automatically call emergency services. The app would display the victim’s location on a map and provide information about their condition in multiple languages for tourists. According to the client’s vision, calling an ambulance should be even easier than ordering an Uber',
+                        solution:
+                            'Our team was tasked with developing the server-side of the application. Using ASP.NET Core, we designed the API and database structure. We created an extensive tree of localized symptoms and integrated the system with Robo-voice for making emergency calls. Mechanisms were developed for redirecting international calls and locating the nearest qualified specialists. Additionally, we implemented a system for automatic risk level assessment, real-time tracking of injured people’s and responders  locations, integration with KYC procedures, and a manual verification mechanism. Finally, we integrated the application with payment systems',
+                    },
+                    tags: ['.Net Core', 'ASP.Net Core', 'workflow-core', 'Angular', 'SignalR'],
+                    contact: {
+                        title: '💡  Do you need a similar application? ',
+                        description:
+                            'Do you need a similar service? Contact us, and we will discuss the details of your project ',
+                        image: '/images/cases/private-ambulance/contact.png',
+                    },
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/private-ambulance/image1.png' } },
+            {
+                block: 'section9',
+                props: {
+                    variant: '3',
+                    subtitle: 'Project highlights',
+                    title: 'App development highlights ',
+                    cards: [
+                        {
+                            title: 'Turnkey back-end development ',
+                            description: 'We implemented the server-side of the application turnkey',
+                        },
+                        {
+                            title: 'Risk assessment ',
+                            description:
+                                'We implemented a customizable risk level assessment system, configurable by the administrator ',
+                        },
+                        { title: 'Robotic calls ', description: 'We integrated a robotic call system' },
+                        {
+                            title: 'Call forwarding ',
+                            description:
+                                'We implemented call forwarding through local telecom operators using short numbers, based on the region of use (from a pre-defined list of supported countries) ',
+                        },
+                        {
+                            title: 'Algorithm for determining the required assistance',
+                            description:
+                                'We developed an algorithm for determining the required specialization of the emergency response team ',
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'ASP.Net Core', image: '/images/cases/private-ambulance/tech1.png' },
+                        { title: 'Angular', image: '/images/cases/private-ambulance/tech2.png' },
+                        { title: 'SignalR', image: '/images/cases/private-ambulance/tech3.png' },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/private-ambulance/image2.png' } },
+            { block: 'section8', props: {} },
+            { block: 'section12', props: { image: '/images/cases/private-ambulance/image3.png', size: '416' } },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Back-end application for emergency ambulance calls',
+                    description: 'Server-side project for a mobile application for emergency medical assistance calls ',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'DevOps', href: 'devops' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Online store for household chemicals and cosmetics',
+            description: 'Online store for retail sale of hygiene and cosmetic products',
+            tags: ['Knockout.js', 'Node.js', 'Oracle Commerce Cloud'],
+            href: 'ecom-retail',
+            image: '/images/cases/ecom-retail/card.png',
+            category: 'e-commerce',
+            bgImage: '#8C1CFF',
+            mockup: 'mobile',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'E-commerce',
+                    title: 'Online store for household chemicals and cosmetics',
+                    description: 'Online store for retail sale of hygiene and cosmetic products',
+                    image: '/images/cases/ecom-retail/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Asia',
+                        client: 'Store',
+                        industry: 'E-commerce',
+                        projectType: 'Online store',
+                        team: 'M-size ',
+                        projectServices: [
+                            'Back-end development',
+                            'Front-end development',
+                            'Business analysis',
+                            'DevOps',
+                            'UI/UX design',
+                        ],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The project involved creating an online store for the sale of hygiene and cosmetic products. Using Knockout.js and Oracle Commerce Cloud, the goal was to develop a configurable website that ensures user-friendly experience and efficient product management ',
+                        solution:
+                            'The online store was successfully implemented, providing a convenient and secure platform for purchasing hygiene and cosmetic products',
+                    },
+                    tags: ['Knockout.js', 'Node.js', 'Oracle Commerce Cloud'],
+                    contact: {
+                        title: 'Need an online shopping platform? ',
+                        description:
+                            'We are ready to create a turnkey e-commerce project for you in the shortest possible time with high quality. Contact us, and we will begin development ',
+                        image: '/images/cases/ecom-retail/contact.png',
+                    },
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/ecom-retail/image1.png' } },
+            {
+                block: 'section9',
+                props: {
+                    variant: '3',
+                    subtitle: 'Project highlights',
+                    title: 'Project highlights ',
+                    cards: [
+                        {
+                            title: 'Flexible configuration',
+                            description:
+                                'Developed a configurable website using Knockout.js and Oracle Commerce Cloud for retail sales of hygiene and cosmetics products ',
+                        },
+                        {
+                            title: 'Integration of online payments ',
+                            description: 'Implemented integration with payment systems ',
+                        },
+                        { title: 'High development speed ', description: 'The project implementation took 6 months' },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/ecom-retail/image2.png' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'Oracle Commerce Cloud', image: '/images/cases/ecom-retail/tech1.png' },
+                        { title: 'node.js', image: '/images/cases/ecom-retail/tech2.png' },
+                        { title: 'Knockout.js', image: '/images/cases/ecom-retail/tech3.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            { block: 'section12', props: { image: '/images/cases/ecom-retail/image3.png' } },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Online store for household chemicals and cosmetics',
+                    description: 'Online store for retail sale of hygiene and cosmetic products',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Front-end development', href: 'frontend-development' },
+                        { title: 'Business analysis', href: 'business-analysis' },
+                        { title: 'DevOps', href: 'devops' },
+                        { title: 'UI/UX design', href: 'design' },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/ecom-retail/image4.png', size: '296' } },
+        ],
+    },
+    {
+        card: {
+            title: 'Entertainment service for integration into streams',
+            description: 'System for sending fun food donations to streamers and bloggers',
+            tags: ['Node.js', 'Telegraf.js', 'TypeScript', 'Telegram', 'Angular', 'Google Maps'],
+            href: 'stream-donations-app',
+            image: '/images/cases/stream-donations-app/card.png',
+            category: 'sport',
+            bgImage: '#A3FEDD',
+            mockup: 'mobile',
+            tone: 'dark',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Medical equipment monitoring',
+                    title: 'Entertainment service for integration into streams',
+                    description: 'System for sending fun food donations to streamers and bloggers',
+                    image: '/images/cases/stream-donations-app/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Asia',
+                        industry: 'Sport and entertainment',
+                        team: 'S-size ',
+                        projectServices: ['Back-end development', 'Front-end development', 'UI/UX design', 'AQA / QA'],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The project involves the development of a platform for fun food donations to streamers and bloggers. The main goal is to create options for ordering food through a Telegram bot or website and processing payments in both cryptocurrencies and fiat money. Additionally, the platform needed to include functionality for sending and receiving food vouchers between users',
+                        solution:
+                            "The platform was successfully implemented, meeting all the client's requirements. It allows users to order food, make payments, and send food vouchers to other users via the Telegram bot or website, ensuring ease of use and offering a variety of options for users ",
+                    },
+                    tags: ['Node.js', 'Telegraf.js', 'TypeScript', 'Telegram', 'Angular', 'Google Maps'],
+                    contact: {
+                        title: 'Have same request? ',
+                        description: 'We will create a similar turnkey solution for you. Contact us to get started ',
+                        image: '/images/cases/stream-donations-app/contact.png',
+                    },
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/stream-donations-app/image1.png', size: '296' } },
+            {
+                block: 'section9',
+                props: {
+                    variant: '1',
+                    subtitle: 'Project highlights',
+                    title: 'Service development highlights ',
+                    cards: [
+                        {
+                            title: 'Telegram UI app',
+                            description:
+                                'Development of a Telegram bot and website for organizing fun food donations to streamers and bloggers ',
+                        },
+                        {
+                            title: 'Payment processing ',
+                            description:
+                                'Creating the ability to order food via Telegram bot or website and process payments in both cryptocurrencies and fiat currency, as well as creating a coupon system and the ability to share them with anyone',
+                        },
+                        { title: '4 months ', description: 'Development time for the project was 4 months' },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/stream-donations-app/image2.png' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'Node.js', image: '/images/cases/stream-donations-app/tech1.png' },
+                        { title: 'Telegraf.js', image: '/images/cases/stream-donations-app/tech2.png' },
+                        { title: 'TypeScript', image: '/images/cases/stream-donations-app/tech3.png' },
+                        { title: 'Telegram', image: '/images/cases/stream-donations-app/tech4.png' },
+                        { title: 'Angular', image: '/images/cases/stream-donations-app/tech5.png' },
+                        { title: 'Google Maps', image: '/images/cases/stream-donations-app/tech6.png' },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/stream-donations-app/image3.png' } },
+            { block: 'section8', props: {} },
+            {
+                block: 'section7',
+                props: {
+                    title: 'Identity and service design ',
+                    description: 'The user interface of the service had to be bright and memorable ',
+                    position: 'center',
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/stream-donations-app/image4.png' } },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Entertainment service for integration into streams',
+                    description: 'System for sending fun food donations to streamers and bloggers',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Front-end development', href: 'frontend-development' },
+                        { title: 'UI/UX design', href: 'design' },
+                        { title: 'AQA / QA', href: 'quality-assurance' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Development of ML models for a medical center ',
+            description: 'Development of two machine learning models for use in a medical center',
+            tags: ['Python', 'Tensorflow', 'pandas', 'scikit learn', 'Mlflow'],
+            href: 'medical-center-ml',
+            image: '',
+            category: 'healthcare',
+            bgImage: 'url("/images/cases/medical-center-ml/first-screen.png")',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Medical ML model',
+                    title: 'Development of ML models for a medical center ',
+                    description: 'Development of two machine learning models for use in a medical center',
+                    image: '/images/cases/medical-center-ml/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America ',
+                        client: 'Private clinic in North America ',
+                        industry: 'Healthcare ',
+                        projectType: 'ML model',
+                        projectServices: 'ML Engineering / Computer Vision',
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The goal of this project was to develop two machine learning models for use in a medical center. The first model is designed to predict the likelihood of patient churn, allowing the clinic to take timely measures to retain clients. The model was trained using anonymized data on patient visits, the duration of their stay at the center, the number of consultations with doctors, and other related factors. The second model was designed to automate the handling of patients  paper documentation. It was intended to scan, digitize, and process information extracted from physical documents ',
+                        solution:
+                            'Both models were successfully developed and implemented in practice. The first model demonstrates a client churn prediction accuracy of 78%. The generated data is forwarded to the quality control department, where specialists analyze the reasons why clients may have discontinued services and switched to competitors.',
+                    },
+                    tags: ['Python', 'Tensorflow', 'pandas', 'scikit learn', 'Mlflow'],
+                    contact: {
+                        title: 'Have same request? ',
+                        description: 'We will create an ML model to solve your business challenges ',
+                        image: '/images/cases/medical-center-ml/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '1',
+                    subtitle: 'Project highlights',
+                    title: 'Highlights of ML model development ',
+                    cards: [
+                        { title: '2 ML models', description: 'We developed two ML models for the medical center  ' },
+                        {
+                            title: 'Accuracy of customer behavior prediction ',
+                            description: 'The accuracy of customer churn prediction is 78% ',
+                        },
+                        {
+                            title: 'Accuracy of document recognition ',
+                            description: 'The accuracy of medical paper document recognition is 99% ',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/medical-center-ml/image1.png', size: '296' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'Python', image: '/images/cases/medical-center-ml/tech1.png' },
+                        { title: 'Tensorflow', image: '/images/cases/medical-center-ml/tech2.png' },
+                        { title: 'pandas', image: '/images/cases/medical-center-ml/tech3.png' },
+                        { title: 'scikit learn', image: '/images/cases/medical-center-ml/tech4.png' },
+                        { title: 'Mlflow', image: '/images/cases/medical-center-ml/tech5.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Development of ML models for a medical center ',
+                    description: 'Development of two machine learning models for use in a medical center',
+                    services: [{ title: 'ML Engineering ', href: 'ai-development' }],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Back-end development for online banking application ',
+            description: 'Backend development for a new generation banking application',
+            tags: ['.NET 6', 'MSSQL', 'Azure Blob', 'Azure Notification Hub', 'Google', 'KYC-DocsAlloy', 'ITextSharp'],
+            href: 'neobank-backend-development',
+            image: '/images/cases/neobank-backend-development/card.png',
+            category: 'fintech',
+            bgImage: '#E8F5E9',
+            mockup: 'laptop',
+            tone: 'dark',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Banking App',
+                    title: 'Back-end development for online banking application ',
+                    description: 'Backend development for a new generation banking application',
+                    image: '/images/cases/neobank-backend-development/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America',
+                        industry: 'Fintech',
+                        client: 'Neobank',
+                        projectType: 'Back-end for mobile app ',
+                        team: 'M-size ',
+                        projectServices: [
+                            'Back-end development',
+                            'Business analysis',
+                            'DevOps',
+                            'Service Integration',
+                            'AQA / QA',
+                        ],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The client is a neobank based in North America, offering a new approach to banking services — speed, convenience, a modern application, and a set of unique features tailored to the banking sector in North America. This approach inevitably affected the bank’s IT infrastructure. The constantly updated application, fast operations, and the continuous addition of new user features required constant adaptation. The task was to rewrite the code of certain backend modules of the mobile banking application and implement new functionalities. Additionally, it was necessary to develop a quick loan feature that would automatically calculate the user’s credit limit based on their current balance and monthly deposits over the past six months ',
+                        solution:
+                            'Although our team did not develop the application from scratch, the volume of code written and the new functionality implemented allows us to claim nearly complete development of the backend for the application. Our specialists have successfully developed the backend for the mobile app of the neobank, establishing themselves as excellent and reliable performers ',
+                    },
+                    tags: [
+                        '.NET 6',
+                        'MSSQL',
+                        'Azure Blob',
+                        'Azure Notification Hub',
+                        'Google',
+                        'KYC-DocsAlloy',
+                        'ITextSharp',
+                    ],
+                    contact: {
+                        title: 'Have same request? ',
+                        description:
+                            'We will help you develop a fast and reliable banking system with the highest level of security ',
+                        image: '/images/cases/neobank-backend-development/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '2',
+                    subtitle: 'Project highlights',
+                    title: 'Project development highlights ',
+                    cards: [
+                        {
+                            title: 'Back-end development ',
+                            description: 'Our team implemented and tested the back-end of the banking application ',
+                        },
+                        {
+                            title: 'Convenience and comfort ',
+                            description:
+                                'A unique functionality for banking systems in North American countries was implemented: the ability to receive instant loans, automatic transfer of salary percentage to investment accounts, the option for quick issuance of plastic cards, and more',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/neobank-backend-development/image1.png' } },
+            {
+                block: 'section4',
+                props: {
+                    title: 'Development team ',
+                    description:
+                        'The work involved the reworking of existing solutions, so we can fully say that the team created the backend of the project from scratch',
+                    cards: [
+                        {
+                            title: '12',
+                            description: 'months to development  ',
+                            actionButton: { text: 'Back-end dev', href: '/service/backend-development' },
+                            image: '/images/cases/neobank-backend-development/team1.png',
+                        },
+                        {
+                            title: 'High team lvl',
+                            description: 'only senior / middle level and higher',
+                            image: '/images/cases/neobank-backend-development/team2.png',
+                        },
+                        {
+                            title: 'S-team',
+                            description: 'project team consists of 3 people ',
+                            actionButton: { text: 'Extend team', href: '/service/client-team-extension' },
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: '.NET 6', image: '/images/cases/neobank-backend-development/tech1.png' },
+                        { title: 'MSSQL', image: '/images/cases/neobank-backend-development/tech2.png' },
+                        { title: 'Azure Blob', image: '/images/cases/neobank-backend-development/tech3.png' },
+                        {
+                            title: 'Azure Notification Hub',
+                            image: '/images/cases/neobank-backend-development/tech4.png',
+                        },
+                        { title: 'Google', image: '/images/cases/neobank-backend-development/tech5.png' },
+                        { title: 'ITextSharp', image: '/images/cases/neobank-backend-development/tech6.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Back-end development for online banking application ',
+                    description: 'Backend development for a new generation banking application',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Business analysis', href: 'business-analysis' },
+                        { title: 'DevOps', href: 'devops' },
+                        { title: 'Integration', href: 'third-party-services' },
+                        { title: 'AQA / QA', href: 'quality-assurance' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'API for working with digital images for diagnostic purposes',
+            description: 'API service for medical diagnosis based on histopathological images',
+            tags: ['C#', '.Net 7', 'Asp.Net Core', 'ABP Framework', 'PostrgeSQL', 'xUni', 'Azure Blob Storage'],
+            href: 'diagnostics-service-ml',
+            image: '',
+            category: 'healthcare',
+            bgImage: 'url("/images/cases/diagnostics-service-ml/first-screen.png")',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Medical API integration',
+                    title: 'API for working with digital images for diagnostic purposes',
+                    description: 'API service for medical diagnosis based on histopathological images',
+                    image: '/images/cases/diagnostics-service-ml/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Europe',
+                        industry: 'Healthcare ',
+                        client: 'Private clinic in Europe ',
+                        projectType: ['API development', 'Server development'],
+                        team: 'M-size ',
+                        projectServices: ['Back-end development', 'Service integration '],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'A private clinic approached us with the task of updating their system for managing histological diagnostic data ',
+                        solution:
+                            'Using .NET in conjunction with the ABP framework, the server-side of the application was developed. The application allowed staff to view historical histological research data and add new results. The administration could restrict access to the resource both for individual employees and for entire departments, providing flexible access control for all clinic staff. Additionally, the administration had the ability to view data "on behalf of a user," which solved the issue of error reporting: admins could log in as a client experiencing an issue and assess the situation from their perspective, allowing them to create a well-informed support request ',
+                    },
+                    tags: [
+                        'C#',
+                        '.Net 7',
+                        'Asp.Net Core',
+                        'ABP Framework',
+                        'Azure Blob Storage',
+                        'Entity Framework',
+                        'PostrgeSQL',
+                        'Redis',
+                        'Autofac',
+                        'xUni',
+                    ],
+                    contact: {
+                        title: 'Have same request? ',
+                        description: 'We will create a high-tech back-end for your application',
+                        image: '/images/cases/diagnostics-service-ml/contact.png',
+                    },
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/diagnostics-service-ml/image1.png', size: '416' } },
+            {
+                block: 'section3',
+                props: {
+                    title: 'Features of product development for diagnostics',
+                    description:
+                        'The main challenge was ensuring the integration of previously stored data into the new system and enabling flexible access control to the data. A distinctive feature of the project was the use of the ABP framework, which the client employs in most of their systems to maintain consistency in application development with a modular monolith architecture ',
+                    image: '/images/cases/diagnostics-service-ml/desc-image1.png',
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '1',
+                    subtitle: 'Project highlights',
+                    title: 'Development highlights ',
+                    cards: [
+                        {
+                            title: 'Tools for image processing ',
+                            description:
+                                'We developed an API for the LIMS (Laboratory Information Management System) used for managing, analyzing, extracting, and reporting on digital histopathological images ',
+                        },
+                        {
+                            title: 'Notifications',
+                            description:
+                                'We developed a specialized notification functionality for both medical staff and system administrators ',
+                        },
+                        {
+                            title: 'Improving user experience ',
+                            description:
+                                'We added new functionality that significantly improved the user experience with histopathological images ',
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'C#', image: '/images/cases/diagnostics-service-ml/tech1.png' },
+                        { title: '.Net 7', image: '/images/cases/diagnostics-service-ml/tech2.png' },
+                        { title: 'Asp.Net Core', image: '/images/cases/diagnostics-service-ml/tech3.png' },
+                        { title: 'ABP Framework', image: '/images/cases/diagnostics-service-ml/tech4.png' },
+                        { title: 'Azure Blob Storage', image: '/images/cases/diagnostics-service-ml/tech5.png' },
+                        { title: 'Entity Framework', image: '/images/cases/diagnostics-service-ml/tech6.png' },
+                        { title: 'PostrgeSQL', image: '/images/cases/diagnostics-service-ml/tech7.png' },
+                        { title: 'Redis', image: '/images/cases/diagnostics-service-ml/tech8.png' },
+                        { title: 'Autofac', image: '/images/cases/diagnostics-service-ml/tech9.png' },
+                        { title: 'xUni', image: '/images/cases/diagnostics-service-ml/tech10.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'API for working with digital images for diagnostic purposes',
+                    description: 'API service for medical diagnosis based on histopathological images',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Service Integration', href: 'third-party-services' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Platform for corporate sales of construction materials',
+            description: 'Online construction store for corporate clients',
+            tags: ['PHP', 'Symfony', 'MySQL', 'Redis', 'React'],
+            href: 'building-materials-e-com',
+            image: '/images/cases/building-materials-e-com/card.png',
+            category: 'e-commerce',
+            bgImage: '#FFFFFF',
+            mockup: 'laptop',
+            tone: 'dark',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'E-commerce',
+                    title: 'Platform for corporate sales of construction materials',
+                    description: 'Online construction store for corporate clients',
+                    image: '/images/cases/building-materials-e-com/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America',
+                        client: 'Network of construction stores',
+                        industry: 'E-commerce',
+                        projectType: 'Online store',
+                        projectServices: ['Back-end development', 'Front-end development', 'UI/UX design'],
+                    },
+                    descriptionItems: {
+                        problem:
+                            "The project was a marketplace for corporate sales of construction materials in North America. The solution needed to support the sale of over 20,000 different items, provide complete information on each product, and indicate their precise location in one of the client's 15 warehouses. Additionally, it was essential to develop a system of personalized pricing offers that would take into account specific client characteristics, seasonality, order volume, and other factors",
+                        solution:
+                            "We developed the platform's UI/UX design and, after approval, successfully implemented it in the project. Our team also carried out integrations with other platforms and payment services. In addition, the FTech-IT team participated in ongoing support and further development of the project for several months after its release",
+                    },
+                    tags: [
+                        'PHP',
+                        'Symfony',
+                        'MySQL',
+                        'Redis',
+                        'React',
+                        'Redux',
+                        'Axios',
+                        'TypeScript',
+                        'styled-components',
+                        'React Skeleton',
+                        'BitBucket',
+                    ],
+                    contact: {
+                        title: 'Need an online shopping platform? ',
+                        description:
+                            "We are ready to create a high-quality, turnkey e-commerce online project for you in the shortest possible time. Contact us, and we'll start the development",
+                        image: '/images/cases/building-materials-e-com/contact.png',
+                    },
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/building-materials-e-com/image1.png' } },
+            {
+                block: 'section9',
+                props: {
+                    variant: '2',
+                    subtitle: 'Project highlights',
+                    title: 'E-commerce development highlights',
+                    cards: [
+                        {
+                            title: 'Platform for corporate clients',
+                            description:
+                                'We developed the front-end for one of the largest construction materials sales platforms in North America, specifically designed for corporate clients ',
+                        },
+                        {
+                            title: 'UI UX from scratch',
+                            description: "We participated in the development of the platform's UI/UX from scratch",
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/building-materials-e-com/image2.png' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'PHP', image: '/images/cases/building-materials-e-com/tech1.png' },
+                        { title: 'Symfony', image: '/images/cases/building-materials-e-com/tech2.png' },
+                        { title: 'MySQL', image: '/images/cases/building-materials-e-com/tech3.png' },
+                        { title: 'Redis', image: '/images/cases/building-materials-e-com/tech4.png' },
+                        { title: 'React.js', image: '/images/cases/building-materials-e-com/tech5.png' },
+                        { title: 'Redux', image: '/images/cases/building-materials-e-com/tech6.png' },
+                        { title: 'Axios', image: '/images/cases/building-materials-e-com/tech7.png' },
+                        { title: 'TypeScript', image: '/images/cases/building-materials-e-com/tech8.png' },
+                        { title: 'styled-components', image: '/images/cases/building-materials-e-com/tech9.png' },
+                        { title: 'React Skeleton', image: '/images/cases/building-materials-e-com/tech10.png' },
+                        { title: 'BitBucket', image: '/images/cases/building-materials-e-com/tech11.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            { block: 'section12', props: { image: '/images/cases/building-materials-e-com/image3.png' } },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Platform for corporate sales of construction materials',
+                    description: 'Online construction store for corporate clients',
+                    services: [
+                        { title: 'Back-end service', href: 'backend-development' },
+                        { title: 'Front-end development', href: 'frontend-development' },
+                        { title: 'UI/UX design', href: 'design' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Acquiring app with the ability to work in crypto and fiat modes',
+            description: 'Acquiring app with the ability to operate in both crypto and fiat modes ',
+            tags: ['.NET 6', 'Stripe', 'Coinmarket', 'Flutter'],
+            href: 'acquiring-app',
+            image: '/images/cases/acquiring-app/card.png',
+            category: 'fintech',
+            bgImage: '#E94E4E',
+            mockup: 'mobile',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Acquiring App',
+                    title: 'Acquiring app with the ability to work in crypto and fiat modes',
+                    description: 'Acquiring app with the ability to operate in both crypto and fiat modes ',
+                    image: '/images/cases/acquiring-app/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Asia',
+                        industry: 'Fintech',
+                        client: 'Private company from Asia ',
+                        projectType: 'Mobile acquiring ',
+                        projectServices: [
+                            'Front-end development',
+                            'Back-end development',
+                            'DevOps',
+                            'Integration Service',
+                            'AQA / QA',
+                            'UI/UX design',
+                        ],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The client is a company owned by a well-known Turkish businessman who owns numerous cafes, hotels, restaurants, an airline ticket sales service, and other businesses in various industries. The task was to create an acquiring system for use both at the client’s enterprises and externally. Additionally, a loyalty system needed to be implemented, which would award points based on the amount spent within the client s ecosystem of businesses. The project also included integration with major cryptocurrency exchanges, enabling the use of cryptocurrencies as a payment method, as well as integration with the largest banks in the client s country',
+                        solution:
+                            'The project was successfully implemented by our team of professionals and is currently in the regulatory approval phase. The client received an acquiring app capable of operating in both crypto and fiat modes. After completing all the bureaucratic procedures, it will be used within the client’s business ecosystem',
+                    },
+                    tags: ['.NET 6', 'Stripe', 'Coinmarket', 'Flutter'],
+                    contact: {
+                        title: '💡  Have same request? ',
+                        description:
+                            'We will help you develop a fast and reliable acquiring app with seamless integration into your ecosystem ',
+                        image: '/images/cases/acquiring-app/contact.png',
+                    },
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/acquiring-app/image1.png', size: '296' } },
+            {
+                block: 'section9',
+                props: {
+                    variant: '3',
+                    subtitle: 'Project highlights',
+                    title: 'Project highlights ',
+                    cards: [
+                        {
+                            title: 'Payment method selection ',
+                            description:
+                                'We created an acquiring app that works in both fiat and cryptocurrency payment modes ',
+                        },
+                        {
+                            title: 'Integrations ',
+                            description: 'We integrated with bank services and major cryptocurrency exchanges',
+                        },
+                        {
+                            title: 'Loyalty program ',
+                            description:
+                                'We implemented a loyalty program, allowing users to accumulate points for actions within the client’s ecosystem',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/acquiring-app/image2.png' } },
+            {
+                block: 'section4',
+                props: {
+                    title: 'Development team ',
+                    description:
+                        'The work involved the reworking of existing solutions, so we can fully say that the team created the backend of the project from scratch',
+                    cards: [
+                        {
+                            title: '6 months ',
+                            description: 'project implementation period ',
+                            actionButton: { text: 'Mobile dev', href: '/service/mobile-development' },
+                            image: '/images/cases/acquiring-app/team1.png',
+                        },
+                        {
+                            title: 'High team lvl',
+                            description: 'only senior / middle level and higher',
+                            image: '/images/cases/acquiring-app/team2.png',
+                        },
+                        {
+                            title: 'M-team',
+                            description: 'project team consists of 6 people ',
+                            actionButton: { text: 'Extend team', href: '/service/client-team-extension' },
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: '.NET 6', image: '/images/cases/acquiring-app/tech1.png' },
+                        { title: 'Stripe', image: '/images/cases/acquiring-app/tech2.png' },
+                        { title: 'Coinmarket', image: '/images/cases/acquiring-app/tech3.png' },
+                        { title: 'Flutter', image: '/images/cases/acquiring-app/tech4.png' },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/acquiring-app/image3.png' } },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Acquiring app with the ability to work in crypto and fiat modes',
+                    description: 'Acquiring app with the ability to operate in both crypto and fiat modes ',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Front-end development', href: 'frontend-development' },
+                        { title: 'Business analysis', href: 'business-analysis' },
+                        { title: 'DevOps', href: 'devops' },
+                        { title: 'Integration Service', href: 'third-party-services' },
+                        { title: 'AQA / QA', href: 'quality-assurance' },
+                        { title: 'UI/UX Design', href: 'design' },
+                    ],
+                },
+            },
+        ],
+    },
 ]
 
 export const allCases: Record<string, CaseData[]> = {

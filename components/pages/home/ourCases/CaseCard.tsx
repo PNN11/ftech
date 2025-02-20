@@ -95,12 +95,12 @@ const CaseCard: FC<CaseCardProps> = ({
             </div>
             <div
                 className={cn('h-85 self-end overflow-hidden rounded-xl md:h-auto md:w-88.5 md:bg-transparent', {
-                    'md:h-101 xl:h-86 bg-white-10 bg-opacity-[0.12] lg:h-90': mockup === 'mobile',
+                    'bg-white-10 bg-opacity-[0.12] md:h-101 lg:h-90 xl:h-86': mockup === 'mobile',
                     'lg:w-[24.625rem] xl:w-[30.625rem]': variant === 'casesPage',
                     'lg:h-auto lg:w-auto lg:self-start xl:h-auto': variant === 'homePage',
                 })}
             >
-                {mockup && (
+                {mockup && image && (
                     <Image
                         src={image}
                         alt={title}
@@ -108,8 +108,11 @@ const CaseCard: FC<CaseCardProps> = ({
                         height={imageSizes[mockup].height}
                         quality={100}
                         className={cn('mx-auto max-w-max object-cover object-top md:-mb-4 lg:-mb-14 xl:-mb-18', {
-                            'lg:mb-0 lg:w-[14.3125rem] xl:mb-0': variant === 'homePage' && mockup === 'mobile',
+                            'lg:mb-0 lg:h-[26.6875rem] lg:w-[14.3125rem] xl:mb-0':
+                                variant === 'homePage' && mockup === 'mobile',
                             'lg:-mt-6 lg:mb-0 xl:mb-0': variant === 'homePage' && mockup === 'laptop',
+                            'h-[27.75rem] w-[37.275rem]': mockup === 'laptop',
+                            'h-[36.4375rem] w-[19.5625rem]': mockup === 'mobile',
                         })}
                     />
                 )}
