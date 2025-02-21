@@ -2193,6 +2193,639 @@ const casesEn: CaseData[] = [
             },
         ],
     },
+    {
+        card: {
+            title: 'Platform for selling comics and fan art ',
+            description: 'Online store for the fast and secure sale of artwork, comics, and fan art ',
+            tags: ['PHP', 'WordPress', 'WooCommerce', 'JavaScript', 'jQuery', 'React'],
+            href: 'art-marketplace',
+            image: '/images/cases/art-marketplace/card.png',
+            category: 'e-commerce',
+            bgImage: '#FFFFFF',
+            mockup: 'laptop',
+            tone: 'dark',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'E-commerce platform',
+                    title: 'Platform for selling comics and fan art ',
+                    description: 'Online store for the fast and secure sale of artwork, comics, and fan art ',
+                    image: '/images/cases/art-marketplace/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Europe',
+                        industry: 'E-commerce',
+                        projectType: 'Online shop',
+                        platform: 'Wordpress ',
+                        team: 'S-size ',
+                        projectServices: 'Front-end development',
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The goal of this project was to develop one of the first marketplaces on the client’s market, specifically designed for comics and fan art. The platform allows collectors and creators to find, buy, sell, and exchange artwork at lower prices than anywhere else. Special attention is given to transaction security: all buyers must be confident that they will receive the selected item, or the platform will refund their money',
+                        solution:
+                            'The platform has been successfully implemented, allowing secure transactions for the sale of comics, fan art, and pop culture-related collectibles. The client’s requirements for a secure payment system were met. The use of PHP and WordPress helped significantly reduce the client’s budget compared to other e-commerce technologies',
+                    },
+                    tags: ['PHP', 'WordPress', 'WooCommerce', 'JavaScript', 'jQuery', 'React'],
+                    contact: {
+                        title: 'Need an online shopping platform? ',
+                        description:
+                            'We are ready to create a turnkey e-commerce online project for you in the shortest time with high quality. Contact us, and we will start the development ',
+                        image: '/images/cases/art-marketplace/contact.png',
+                    },
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/art-marketplace/image1.png' } },
+            {
+                block: 'section9',
+                props: {
+                    variant: '2',
+                    subtitle: 'Project highlights',
+                    title: 'Project development highlights ',
+                    cards: [
+                        {
+                            title: 'Ahead of everyone ',
+                            description:
+                                'We created one of the first specialized platforms for selling comics and fantasy art on the client’s market',
+                        },
+                        {
+                            title: 'Online acquiring ',
+                            description:
+                                'We implemented a secure payment system that allows collectors to make purchases safely and guarantees either the delivery of the selected item or a refund ',
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'PHP', image: '/images/cases/art-marketplace/tech1.png' },
+                        { title: 'WordPress', image: '/images/cases/art-marketplace/tech2.png' },
+                        { title: 'WooCommerce', image: '/images/cases/art-marketplace/tech3.png' },
+                        { title: 'JavaScript', image: '/images/cases/art-marketplace/tech4.png' },
+                        { title: 'jQuery', image: '/images/cases/art-marketplace/tech5.png' },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/art-marketplace/image2.png' } },
+            { block: 'section8', props: {} },
+            { block: 'section12', props: { image: '/images/cases/art-marketplace/image3.png' } },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Platform for selling comics and fan art ',
+                    description: 'Online store for the fast and secure sale of artwork, comics, and fan art ',
+                    services: [{ title: 'Front-end development', href: 'frontend-development' }],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Update of financial accounting systems  ',
+            description:
+                'Update of financial accounting systems for one of the largest pharmaceutical companies in the world',
+            tags: ['.Net Core', 'React', 'Syncfusion', 'MS Project Server'],
+            href: 'finance-back-office',
+            image: '/images/cases/finance-back-office/card.png',
+            category: 'fintech',
+            bgImage: '#4C0000',
+            mockup: 'laptop',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Finance system',
+                    title: 'Update of financial accounting systems  ',
+                    description:
+                        'Update of financial accounting systems for one of the largest pharmaceutical companies in the world',
+                    image: '/images/cases/finance-back-office/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America',
+                        industry: 'Fintech',
+                        client: 'Pharmaceutical company ',
+                        projectType: 'Back-end development',
+                        team: 'M-size ',
+                        projectServices: ['Back-end development'],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The client is one of the largest pharmaceutical companies in the world. During the pandemic and the explosive growth of all key indicators, the company clearly faced the need to improve its financial accounting systems. Our specialists were invited by one of the main contractors to strengthen expertise in the backend direction. The client set very strict requirements regarding the approval of all innovations, technologies, and technical solutions. For our team, this became invaluable practice in justifying our business solutions by providing various statistical calculations and formulas ',
+                        solution:
+                            'Despite the extremely tight deadlines and nearly impossible timeframes, the team successfully completed all assigned tasks. The client specifically acknowledged the stress resistance and productivity of the FTECH-IT team under the pressure of strict deadlines and the constantly growing number of requirements ',
+                    },
+                    tags: ['.Net Core', 'React', 'Syncfusion', 'MS Project Server'],
+                    contact: {
+                        title: 'Have same request? ',
+                        description:
+                            'We will help you develop a fast and reliable financial system with the highest level of security ',
+                        image: '/images/cases/finance-back-office/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '2',
+                    subtitle: 'Project highlights',
+                    title: 'Project achievements ',
+                    cards: [
+                        {
+                            title: 'Fast and on time ',
+                            description:
+                                'Within tight deadlines, the team successfully completed the assigned tasks without missing any deadlines ',
+                        },
+                        {
+                            title: 'New functionality ',
+                            description:
+                                'Improvement of the application functionality, old legacy code was rewritten, and new features were added',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/finance-back-office/image1.png' } },
+            {
+                block: 'section4',
+                props: {
+                    title: 'Development team ',
+                    description:
+                        'The work involved the reworking of existing solutions, so we can fully say that the team created the backend of the project from scratch',
+                    cards: [
+                        {
+                            title: 'Back-end',
+                            description: 'Creating an efficient and fault-tolerant back-end for the platform',
+                            actionButton: { text: 'Get service', href: '/service/backend-development' },
+                        },
+                        {
+                            title: 'High team lvl',
+                            description: 'only senior / middle level and higher',
+                            image: '/images/cases/finance-back-office/team1.png',
+                        },
+                        {
+                            title: 'S-team',
+                            description: 'project team consists of 3 people',
+                            actionButton: { text: 'Find more', href: '/service/outsourcing' },
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: '.Net Core', image: '/images/cases/finance-back-office/tech1.png' },
+                        { title: 'React', image: '/images/cases/finance-back-office/tech2.png' },
+                        { title: 'Syncfusion', image: '/images/cases/finance-back-office/tech3.png' },
+                        { title: 'MS Project Server', image: '/images/cases/finance-back-office/tech4.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Update of financial accounting systems  ',
+                    description:
+                        'Update of financial accounting systems for one of the largest pharmaceutical companies in the world',
+                    services: [{ title: 'Back-end development', href: 'backend-development' }],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Redevelopment of the backend part of the application',
+            description:
+                'Redeveloping of the backend part of a monstrous application for the largest company in the investment sector ',
+            tags: [
+                '.Net Framework',
+                '.Net Core',
+                '.Asp Net MVC',
+                'Asp.Net Core',
+                ' jquery',
+                'React',
+                'SMTP',
+                'Snowflake',
+                'SQLKata',
+            ],
+            href: 'backend-investment-comp',
+            image: '/images/cases/backend-investment-comp/card.png',
+            category: 'fintech',
+            bgImage: '#140E1C',
+            mockup: 'laptop',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Investments platform',
+                    title: 'Redevelopment of the backend part of the application',
+                    description:
+                        'Redeveloping of the backend part of a monstrous application for the largest company in the investment sector ',
+                    image: '/images/cases/backend-investment-comp/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America',
+                        client: 'Major investment company in the field of personal investments ',
+                        industry: 'Fintech',
+                        projectServices: 'Back-end development',
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The client is a leading company in the North American investment market. Our specialists were involved in developing the backend part of the project. The task was to ensure support for the old legacy code, facilitate interaction between old legacy modules and new ones, as well as develop new functionality for the application ',
+                        solution:
+                            'In addition to supporting the monstrous legacy system, our specialists worked on analyzing and evaluating vast amounts of investment data, assessing the usefulness of various financial instruments, implementing new system functionality, and adding modules responsible for security. The project is particularly interesting due to its structure—various tasks were carried out by teams from different countries and time zones, and communication became one of the key challenges. Nevertheless, the team successfully tackled this challenge, gaining invaluable experience working with geographically distrubuted teams across different time zones',
+                    },
+                    tags: [
+                        '.Net Framework',
+                        '.Net Core',
+                        '.Asp Net MVC',
+                        'Asp.Net Core',
+                        'jquery',
+                        'React',
+                        'SMTP',
+                        'ServiceStack',
+                        'SQLKata',
+                        'Snowflake',
+                        'Entity Framework',
+                        'MS SQL Server',
+                    ],
+                    contact: {
+                        title: 'Need fintech software solutions? ',
+                        description:
+                            'We will develop a customized product tailored to the specifics of your work in the fintech sector ',
+                        image: '/images/cases/backend-investment-comp/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '1',
+                    subtitle: 'Project highlights',
+                    title: 'Back-end development highlights ',
+                    cards: [
+                        {
+                            title: 'Legacy support ',
+                            description:
+                                'We ensured support for the monstrous legacy system and seamless interaction between old and new modules ',
+                        },
+                        {
+                            title: 'New financial instruments ',
+                            description:
+                                'Modules for evaluating the usefulness of various financial instruments have been developed ',
+                        },
+                        {
+                            title: 'Fault tolerance of the solution ',
+                            description:
+                                'High-load modules for collecting and evaluating various financial information were developed ',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/backend-investment-comp/image1.png' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'ASP.Net Core', image: '/images/cases/backend-investment-comp/tech1.png' },
+                        { title: 'PostgreSQL', image: '/images/cases/backend-investment-comp/tech2.png' },
+                        { title: 'TradingView SDK', image: '/images/cases/backend-investment-comp/tech3.png' },
+                        { title: 'Redis', image: '/images/cases/backend-investment-comp/tech4.png' },
+                        { title: 'Angular', image: '/images/cases/backend-investment-comp/tech5.png' },
+                        { title: 'SignalR', image: '/images/cases/backend-investment-comp/tech6.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Redevelopment of the backend part of the application',
+                    description:
+                        'Redeveloping of the backend part of a monstrous application for the largest company in the investment sector ',
+                    services: [{ title: 'Back-end development', href: 'backend-development' }],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Product indicators monitoring platform ',
+            description: 'Platform for monitoring food production indicators ',
+            tags: [
+                'C#',
+                '.Net 3.1',
+                'ASP.Net Core',
+                'Entity Framework Core',
+                'MsSQL Server',
+                'Azure IOT hub',
+                'Angular',
+            ],
+            href: 'ml-for-food-factory',
+            image: '',
+            category: 'energetics',
+            bgImage: 'url("/images/cases/ml-for-food-factory/first-screen.png")',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Factory ML model',
+                    title: 'Product indicators monitoring platform ',
+                    description: 'Platform for monitoring food production indicators ',
+                    image: '/images/cases/ml-for-food-factory/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Europe',
+                        client: 'Food production company ',
+                        industry: 'Manufactoring and energy ',
+                        projectType: 'Platform',
+                        projectServices: ['Back-end development', 'Front-end development', 'DevOps'],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'A food production company contacted us with a request to develop a platform capable of aggregating data from various sensors and devices located in different production areas. Based on this data, the platform was to verify compliance with the manufacturing recipe and sanitary-technical regulations ',
+                        solution:
+                            'A platform was developed to collect and process telemetry from sensors in real time. A module for detecting "anomalous" indicators was created. A module for checking compliance with the recipe/technical process was also developed. Additionally, an admin panel was created, allowing administrators to monitor changes in indicators in real time and receive notifications about detected issues, with detailed information about the time and location of the problem ',
+                    },
+                    tags: [
+                        'C#',
+                        '.Net 3.1',
+                        'ASP.Net Core',
+                        'Entity Framework Core',
+                        'MsSQL Server',
+                        'Cosmod DB',
+                        'Azure IOT hub',
+                        'SendGrid',
+                        'Azure storage',
+                        'Azure sbus',
+                        'Azure functions',
+                        'Angular',
+                    ],
+                    contact: {
+                        title: 'Have same request? ',
+                        description:
+                            'We will create a platform for managing production at your enterprise to increase productivity and achieve high results ',
+                        image: '/images/cases/ml-for-food-factory/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '2',
+                    subtitle: 'Project highlights',
+                    title: 'Project highlights ',
+                    cards: [
+                        {
+                            title: 'Platform',
+                            description:
+                                'We developed a platform that allows real-time monitoring of production metrics ',
+                        },
+                        {
+                            title: 'Integrations',
+                            description:
+                                'A module was developed that allowed for checking compliance with the standards at all stages of the production cycle',
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'C#', image: '/images/cases/ml-for-food-factory/tech1.png' },
+                        { title: '.Net 3.1', image: '/images/cases/ml-for-food-factory/tech2.png' },
+                        { title: 'ASP.Net Core', image: '/images/cases/ml-for-food-factory/tech3.png' },
+                        { title: 'Entity Framework Core', image: '/images/cases/ml-for-food-factory/tech4.png' },
+                        { title: 'MsSQL Server', image: '/images/cases/ml-for-food-factory/tech5.png' },
+                        { title: 'Cosmod DB', image: '/images/cases/ml-for-food-factory/tech6.png' },
+                        { title: 'Azure IOT hub', image: '/images/cases/ml-for-food-factory/tech7.png' },
+                        { title: 'SendGrid', image: '/images/cases/ml-for-food-factory/tech8.png' },
+                        { title: 'Azure storage', image: '/images/cases/ml-for-food-factory/tech9.png' },
+                        { title: 'Azure sbus', image: '/images/cases/ml-for-food-factory/tech10.png' },
+                        { title: 'Azure functions', image: '/images/cases/ml-for-food-factory/tech11.png' },
+                        { title: 'Angular', image: '/images/cases/ml-for-food-factory/tech12.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Product indicators monitoring platform ',
+                    description: 'Platform for monitoring food production indicators ',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Front-end development', href: 'frontend-development' },
+                        { title: 'DevOps', href: 'devops' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'ML model and data processing pipeline for manufacturing',
+            description: 'Project for image analysis using ML to detect harmful emissions in manufacturing ',
+            tags: ['Python', 'Azure', 'Apache', 'OpenCV', 'numpy PyTorch'],
+            href: 'fire-safety-ml',
+            image: '',
+            category: 'energetics',
+            bgImage: 'url(/images/cases/fire-safety-ml/first-screen.png)',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Factory ML model',
+                    title: 'ML model and data processing pipeline for manufacturing',
+                    description: 'Project for image analysis using ML to detect harmful emissions in manufacturing ',
+                    image: '/images/cases/fire-safety-ml/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America',
+                        client: 'Furniture factory',
+                        industry: 'Manufacturing and energy ',
+                        projectType: 'ML model',
+                        projectServices: 'ML Engineering / Computer Vision ',
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The main task of this project was to develop an ML model capable of detecting and annotating smoke coming from factory chimneys in images. In addition to the model itself, a data pipeline needed to be implemented to process a large number of surveillance camera images in real-time for smoke detection. The model was trained using manually annotated data with images of smoke coming from chimneys in various weather conditions',
+                        solution:
+                            'The model and data pipeline were successfully implemented at various client factories in North America. The solution enabled real-time monitoring of factory conditions, alerting to unforeseen situations related to the emission of harmful substances into the air, as well as detecting emergency situations. With a model accuracy of 81%, the system reduced the number of incorrect decisions made by personnel and allowed the implementation of an external automated system for starting and stopping production based on the situation assessment ',
+                    },
+                    tags: ['Python', 'Azure', 'Apache', 'OpenCV', 'numpy PyTorch'],
+                    contact: {
+                        title: 'Have same request? ',
+                        description: 'We will create an ML model to solve your business challenges',
+                        image: '/images/cases/fire-safety-ml/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '2',
+                    subtitle: 'Project highlights',
+                    title: 'Highlights of the developed ML model ',
+                    cards: [
+                        {
+                            title: 'Data processing from 150 cameras ',
+                            description:
+                                'Developed a data pipeline capable of processing a large number of images from 150 cameras in real-time ',
+                        },
+                        { title: '81%', description: 'The accuracy of the ML model recognition is 81%' },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/fire-safety-ml/image1.png' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'Python', image: '/images/cases/fire-safety-ml/tech1.png' },
+                        { title: 'Azure', image: '/images/cases/fire-safety-ml/tech2.png' },
+                        { title: 'Apache', image: '/images/cases/fire-safety-ml/tech3.png' },
+                        { title: 'OpenCV', image: '/images/cases/fire-safety-ml/tech4.png' },
+                        { title: 'numpy PyTorch', image: '/images/cases/fire-safety-ml/tech5.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            { block: 'section12', props: { image: '/images/cases/fire-safety-ml/image2.png', size: '296' } },
+            {
+                block: 'section11',
+                props: {
+                    title: 'ML model and data processing pipeline for manufacturing',
+                    description: 'Project for image analysis using ML to detect harmful emissions in manufacturing ',
+                    services: [{ title: 'ML Engineering / Computer Vision ', href: 'ai-development' }],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'ML model for detecting contamination ',
+            description:
+                'Machine learning model for detecting contamination levels in tanks at manufacturing facilities ',
+            tags: ['Python', 'Azure', 'Apache', 'OpenCV', 'numpy PyTorch'],
+            href: 'water-purification-ml',
+            image: '',
+            category: 'energetics',
+            bgImage: "url('/images/cases/water-purification-ml/first-screen.png')",
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Factory ML model',
+                    title: 'ML model for detecting contamination ',
+                    description:
+                        'Machine learning model for detecting contamination levels in tanks at manufacturing facilities ',
+                    image: '/images/cases/water-purification-ml/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America',
+                        industry: 'Manufacturing and energy ',
+                        projectType: 'ML model',
+                        projectServices: 'ML Engineering / Computer Vision ',
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The goal of this project was to develop a machine learning model capable of detecting dirt in a reservoir and determining its quantity relative to the total volume. The model was trained using manually labeled data featuring reservoirs with varying amounts of dirt ',
+                        solution:
+                            'The model was successfully implemented in production and deployed on the client’s server. The solution allowed for real-time monitoring of the reservoir condition, calculating the amount of dirt present, and determining its overall percentage. With an accuracy rate of 84%, the model enabled near-complete automation in tracking reservoir contamination, as well as the setup of an automatic alert system on the terminal for the addition of cleaning agents to the water',
+                    },
+                    tags: ['Python', 'Azure', 'Apache', 'OpenCV', 'numpy PyTorch'],
+                    contact: {
+                        title: 'Have same request? ',
+                        description: 'We will create an ML model to solve your business challenges',
+                        image: '/images/cases/water-purification-ml/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '2',
+                    subtitle: 'Project highlights',
+                    title: 'Results of model development ',
+                    cards: [
+                        {
+                            title: 'Detection of contamination levels ',
+                            description:
+                                'We developed an ML model to determine the amount of dirt in production tanks ',
+                        },
+                        {
+                            title: 'Model accuracy is 84% ',
+                            description:
+                                'The high quality of the model significantly saves staff time and reduces the likelihood of unforeseen situations ',
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'Python', image: '/images/cases/water-purification-ml/tech1.png' },
+                        { title: 'Azure', image: '/images/cases/water-purification-ml/tech2.png' },
+                        { title: 'Apache', image: '/images/cases/water-purification-ml/tech3.png' },
+                        { title: 'OpenCV', image: '/images/cases/water-purification-ml/tech4.png' },
+                        { title: 'numpy PyTorch', image: '/images/cases/water-purification-ml/tech5.png' },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/water-purification-ml/image1.png', size: '296' } },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'ML model for detecting contamination ',
+                    description:
+                        'Machine learning model for detecting contamination levels in tanks at manufacturing facilities ',
+                    services: [{ title: 'ML Engineering / Computer Vision ', href: 'ai-development' }],
+                },
+            },
+        ],
+    },
 ]
 
 export const allCases: Record<string, CaseData[]> = {
