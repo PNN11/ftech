@@ -30,7 +30,12 @@ const ServicesTechStack: FC = () => {
                             <ul className="flex items-center gap-10">
                                 {list.map(({ alt, image }) => (
                                     <li key={alt}>
-                                        <Image className="max-w-fit grayscale dark:filter-none" src={image} alt={alt} />
+                                        <Image
+                                            className="max-w-fit grayscale dark:filter-none"
+                                            src={image}
+                                            alt={alt}
+                                            style={{ width: image.width, height: image.height }}
+                                        />
                                     </li>
                                 ))}
                             </ul>
