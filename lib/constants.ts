@@ -1,10 +1,10 @@
 import { TService } from '@/types/common'
 
 export const LINKEDIN_ADDRESS = 'https://www.linkedin.com/company/ftech-it/'
-export const TELEGRAM_ADDRESS = 'https://t.me/Ftech_IT'
-export const INSTAGRAM_ADDRESS = 'https://www.instagram.com/ftech_it/'
-export const UPWORK_ADDRESS = 'https://www.upwork.com/freelancers/ftech-it'
-export const WHATSAPP_ADDRESS = 'https://wa.me/5436254224'
+export const TELEGRAM_ADDRESS = 'https://t.me/Ftechfounder'
+export const INSTAGRAM_ADDRESS = 'https://www.instagram.com/'
+export const UPWORK_ADDRESS = 'https://www.upwork.com/'
+export const WHATSAPP_ADDRESS = 'https://wa.me/'
 
 export const COMPANY_EMAIL = 'Sales@ftech-it.com'
 
@@ -13,7 +13,7 @@ export const SALES_DEPARTMENT_EMAIL = 'sales@ftech-it.com'
 export const COMPANY_PHONE = '+ 1 543 625 42 24'
 
 export const CLUTCH_RATING = '4.9'
-export const CLUTCH_LINK = 'https://clutch.co/'
+export const CLUTCH_LINK = 'https://clutch.co/profile/ftech-it'
 
 export const serviceList: { href: `/${TService}`; serviceKey: TService }[] = [
     { href: '/ai-development', serviceKey: 'ai-development' },

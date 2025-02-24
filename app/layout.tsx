@@ -12,9 +12,20 @@ import { outfit } from '@/fonts'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/footer'
 import { Slide, ToastContainer } from 'react-toastify'
+import Script from 'next/script'
+
+const SITE_URL = 'https://ftech-it.com'
+const title = 'Ftech-it'
 
 export const metadata: Metadata = {
-    title: 'FTECH',
+    metadataBase: new URL(SITE_URL),
+    title,
+    openGraph: {
+        url: SITE_URL,
+        title,
+        type: 'website',
+    },
+    twitter: { card: 'summary_large_image', site: SITE_URL, title },
 }
 
 const namespaces = ['common', 'services']
@@ -30,8 +41,45 @@ export default async function RootLayout({
 
     const { resources } = await initTranslations(locale, namespaces)
 
+    const schema = {
+        '@context': 'https://schema.org',
+        '@type': 'SiteNavigationElement',
+        name: 'Main Menu',
+        url: SITE_URL,
+        hasPart: [
+            {
+                '@type': 'WebPageElement',
+                name: 'Home',
+                url: `${SITE_URL}`,
+            },
+            {
+                '@type': 'WebPageElement',
+                name: 'Services',
+                url: `${SITE_URL}/service`,
+            },
+            {
+                '@type': 'WebPageElement',
+                name: 'Expertise',
+                url: `${SITE_URL}/expertise`,
+            },
+            {
+                '@type': 'WebPageElement',
+                name: 'Cases',
+                url: `${SITE_URL}/cases`,
+            },
+            {
+                '@type': 'WebPageElement',
+                name: 'Contact',
+                url: `${SITE_URL}/contacts`,
+            },
+        ],
+    }
+
     return (
         <html lang={locale} dir={dir(locale)}>
+            <Script type="application/ld+json" id="rich-result-schema">
+                {JSON.stringify(schema)}
+            </Script>
             <body className={`${outfit.className} bg-bg-page dark:bg-white-100`}>
                 <TranslationsProvider namespaces={namespaces} locale={locale} resources={resources}>
                     <div className="grid min-h-screen grid-cols-1">

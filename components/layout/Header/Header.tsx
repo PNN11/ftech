@@ -90,16 +90,20 @@ const Header: FC = () => {
                                     )}
                                 </li>
                             ))}
-                            <Button size="s" className="w-full justify-center lg:hidden">
-                                {t('common:header.contact-us')}
-                            </Button>
+                            <Link className="w-full lg:hidden" href="/contacts">
+                                <Button size="s" className="w-full justify-center">
+                                    {t('common:header.contact-us')}
+                                </Button>
+                            </Link>
                         </ul>
                         <ThemeSwitch className="w-full lg:w-auto" />
                     </nav>
                     <div>
-                        <Button size="s" className="hidden lg:block">
-                            {t('common:header.contact-us')}
-                        </Button>
+                        <Link href="/contacts">
+                            <Button size="s" className="hidden lg:block">
+                                {t('common:header.contact-us')}
+                            </Button>
+                        </Link>
                         <Button
                             onClick={() => (isMenuOpened ? handleCloseMenu() : handleOpenMenu())}
                             size="s"
