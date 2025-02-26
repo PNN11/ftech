@@ -69,9 +69,9 @@ const HomePageFirstScreen: FC = () => {
 
     return (
         <section ref={sectionRef} className="relative -mt-20.5 min-h-[100dvh] overflow-hidden lg:-mt-21 xl:-mt-22">
-            <Container className="4xl:pt-184 min-h-[100dvh] pt-84 lg:pt-112 3xl:pt-145">
+            <Container className="min-h-[100dvh] pt-84 lg:pt-112 3xl:pt-135 4xl:pt-184">
                 <MouseParallaxWrapper isAbsolutelyPositioned strength={0.2} enableOnTouchDevice={false}>
-                    <div className="4xl:top-40 absolute -top-20 left-1/2 -translate-x-1/2 lg:top-0 3xl:top-20">
+                    <div className="absolute -top-20 left-1/2 -translate-x-1/2 lg:top-0 3xl:top-20 4xl:top-40">
                         <FirstScreenEllipses />
                         <button
                             onClick={changeTheme}
