@@ -24,7 +24,7 @@ const ClutchInfo: FC<ClutchInfoProps> = ({ classes }) => {
             <div className={cn('flex items-end gap-3.5', classes?.reviewsWrapper)}>
                 <Clutch className={classes?.clutchIcon} />
                 <p className={cn('text-sm font-light uppercase leading-none', classes?.reviews)}>
-                    5 {t('common:footer.reviews')}
+                    15+ {t('common:footer.reviews')}
                 </p>
             </div>
             <div className={cn('flex items-center gap-1 text-lg leading-none', classes?.ratingWrapper)}>

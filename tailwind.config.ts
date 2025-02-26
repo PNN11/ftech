@@ -9,6 +9,7 @@ const config: Config = {
     darkMode: 'selector',
     theme: {
         screens: {
+            xs: '380px',
             sm: '430px',
             '2sm': '490px',
             md: '744px',
@@ -16,6 +17,7 @@ const config: Config = {
             xl: '1280px',
             '2xl': '1440px',
             '3xl': '1920px',
+            '4xl': '2560px',
         },
         extend: {
             backgroundImage: {
@@ -41,6 +43,7 @@ const config: Config = {
                 map: '0px 8px 18.5px -1px #CFCFCF29',
                 'case-image': '0px 9px 16.8px 6px #F1F1F1 inset',
                 'services-first-screen': '0px 36px 62.6px 0px #33333338 inset',
+                'power-button': ' 0px 0px 79.4px 0px #0093FF47',
             },
             spacing: {
                 0.75: '0.1875rem', // 3px

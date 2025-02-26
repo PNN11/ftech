@@ -1,20 +1,17 @@
 'use client'
+import DoubleDownArrow from '@/components/svg/DoubleDownArrow'
 import FirstScreenEllipses from '@/components/svg/firstScreenEllipses'
-import Container from '@/components/ui/wrappers/container'
-import React, { FC, useEffect, useRef, useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import PowerButton from './powerButton'
-import { useChangeTheme } from '@/stores/theme'
-import Heading from '@/components/ui/typography/heading'
-import Image from 'next/image'
-import ReviewWrapper from './ReviewWrapper'
-import Star from '@/components/svg/Star'
-import Clutch from '@/components/svg/Clutch'
 import Button from '@/components/ui/buttons/defaultButton/button'
-import MouseParallaxWrapper from '@/components/ui/wrappers/mouseParallaxWrapper'
-import { useInView } from 'react-intersection-observer'
 import ClutchInfo from '@/components/ui/ClutchInfo'
+import Heading from '@/components/ui/typography/heading'
+import Container from '@/components/ui/wrappers/container'
+import MouseParallaxWrapper from '@/components/ui/wrappers/mouseParallaxWrapper'
+import { useChangeTheme } from '@/stores/theme'
 import Link from 'next/link'
+import { FC, useEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+import { useInView } from 'react-intersection-observer'
+import PowerButton from './powerButton'
 
 const HomePageFirstScreen: FC = () => {
     const { t } = useTranslation()
@@ -72,16 +69,17 @@ const HomePageFirstScreen: FC = () => {
 
     return (
         <section ref={sectionRef} className="relative -mt-20.5 min-h-[100dvh] overflow-hidden lg:-mt-21 xl:-mt-22">
-            <Container className="pt-112">
+            <Container className="4xl:pt-184 min-h-[100dvh] pt-84 lg:pt-112 3xl:pt-145">
                 <MouseParallaxWrapper isAbsolutelyPositioned strength={0.2} enableOnTouchDevice={false}>
-                    <div className="absolute left-1/2 top-0 -translate-x-1/2">
+                    <div className="4xl:top-40 absolute -top-20 left-1/2 -translate-x-1/2 lg:top-0 3xl:top-20">
                         <FirstScreenEllipses />
                         <button
                             onClick={changeTheme}
                             type="button"
                             className="absolute left-1/2 top-81 -translate-x-1/2"
                         >
-                            <PowerButton className="animate-pulse dark:animate-none" />
+                            <div className="absolute inset-x-0 top-0 hidden h-[80%] bg-blue-900 blur-[100px] dark:block" />
+                            <PowerButton className="relative z-[2] animate-pulse dark:animate-none" />
                         </button>
                     </div>
                 </MouseParallaxWrapper>
@@ -107,8 +105,17 @@ const HomePageFirstScreen: FC = () => {
                             </Button>
                         </Link>
                     </div>
-                    <div className="flex justify-center">
+                    <div className="flex flex-col items-center justify-center gap-5.5">
                         <ClutchInfo />
+                        <button
+                            type="button"
+                            onClick={() => {
+                                const element = document.getElementById('home-page-about-us')
+                                element?.scrollIntoView({ behavior: 'smooth' })
+                            }}
+                        >
+                            <DoubleDownArrow className="animate-pulse text-gray-900 dark:animate-none dark:text-blue-900" />
+                        </button>
                     </div>
                 </div>
             </Container>

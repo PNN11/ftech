@@ -57,9 +57,7 @@ const Footer: FC = () => {
                         <FooterServiceLinks />
                         <ContactInfo />
                     </div>
-                    <p className="self-end text-sm leading-none text-gray-900 xl:text-end">
-                        ©2019-{new Date().getFullYear()}
-                    </p>
+                    <p className="self-end text-sm leading-none text-gray-900 xl:text-end">©2025</p>
                 </div>
             </Container>
         </footer>

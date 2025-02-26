@@ -9,7 +9,7 @@ const PowerButton: FC<ComponentProps<'svg'>> = ({ className, ...props }) => {
             viewBox="0 0 139 140"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={cn('text-gray-600 dark:text-blue-900', className)}
+            className={cn('text-gray-900 dark:text-blue-900', className)}
             {...props}
         >
             <g filter="url(#filter0_d_269_3806)">

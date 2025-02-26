@@ -21,10 +21,6 @@ const socials = [
         href: LINKEDIN_ADDRESS,
     },
     {
-        Icon: WhatsUp,
-        href: WHATSAPP_ADDRESS,
-    },
-    {
         Icon: Instagram,
         href: INSTAGRAM_ADDRESS,
     },

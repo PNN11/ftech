@@ -112,41 +112,6 @@ const OurExpertise: FC = () => {
                     description={description}
                     subtitle={subtitle}
                 />
-            </Container>
-            <div
-                onMouseLeave={() => {
-                    setActiveCard(MIDDLE_INDEX)
-                    setMousePosition(0.5)
-                }}
-                className="relative hidden h-100 overflow-hidden lg:block"
-                ref={ref}
-            >
-                <div
-                    ref={expertiseWrapperRef}
-                    className="absolute flex h-100 items-end gap-2 transition-all duration-500"
-                    style={{
-                        left: `${-widthDifference.difference / 2 + getPositionOffset(widthDifference.differenceBetweenOneSection, mousePosition)}px`,
-                    }}
-                >
-                    {/* multiply original array for displaying cards on both sides on screens with width more than 1900 */}
-                    {(new Array(MULTIPLAYER).fill(expertise).flat() as typeof expertise).map(
-                        ({ description, href, title, number, image }, i) => (
-                            <ExpertiseCard
-                                description={description}
-                                href={href}
-                                isActive={i === activeCard}
-                                key={`${href}${i}`}
-                                number={number}
-                                onMouseEnter={() => setActiveCard(i)}
-                                title={title}
-                                wrapperStyle={getCardStyles(i, activeCard)}
-                                image={image}
-                            />
-                        )
-                    )}
-                </div>
-            </div>
-            <Container className="lg:hidden">
                 <ExpertiseSlider />
                 <div className="mt-8 flex w-full justify-center">
                     <Link href="/cases" className="w-full md:w-fit">

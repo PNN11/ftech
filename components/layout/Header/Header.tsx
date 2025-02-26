@@ -6,7 +6,7 @@ import Button from '@/components/ui/buttons/defaultButton/button'
 import Container from '@/components/ui/wrappers/container'
 import { cn } from '@/lib/classNames'
 import Link from 'next/link'
-import React, { FC, useRef, useState } from 'react'
+import React, { FC, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import MenuItem from './MenuItem'
 import ThemeSwitch from './ThemeSwitch'
@@ -64,6 +64,10 @@ const Header: FC = () => {
         )
     }
 
+    useEffect(() => {
+        setIsMenuOpened(false)
+    }, [pathname])
+
     return (
         <header className="translate-z-1 relative z-10 h-fit pb-1.5 pt-4">
             <Container>
@@ -82,9 +86,7 @@ const Header: FC = () => {
                             {menuItems.map(item => (
                                 <li key={item.href} className="w-full lg:w-auto">
                                     {item.type === 'link' ? (
-                                        <MenuItem onClick={handleCloseMenu} href={item.href}>
-                                            {t(item.title)}
-                                        </MenuItem>
+                                        <MenuItem href={item.href}>{t(item.title)}</MenuItem>
                                     ) : (
                                         <item.Component />
                                     )}
@@ -96,7 +98,6 @@ const Header: FC = () => {
                                 </Button>
                             </Link>
                         </ul>
-                        <ThemeSwitch className="w-full lg:w-auto" />
                     </nav>
                     <div>
                         <Link href="/contacts">

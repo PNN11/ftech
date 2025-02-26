@@ -25,9 +25,9 @@ const ServicesTechStack: FC = () => {
                 />
                 <ul className="hidden-scroll space-y-10.5 overflow-x-scroll py-10 lg:overflow-visible">
                     {technologies.map(({ group, list }) => (
-                        <li key={group} className="flex items-center gap-12">
+                        <li key={group} className="flex items-center gap-12 lg:gap-7 xl:gap-12">
                             <Paragraph variant="subt">{group}</Paragraph>
-                            <ul className="flex items-center gap-10">
+                            <ul className="flex items-center gap-8 lg:gap-5 xl:gap-8">
                                 {list.map(({ alt, image }) => (
                                     <li key={alt}>
                                         <Image

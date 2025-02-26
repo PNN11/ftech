@@ -58,7 +58,13 @@ const Reviews: FC = () => {
                     >
                         {_reviews.map(({ image, name, text }) => (
                             <SwiperSlide key={name} className="text-center">
-                                <Image src={image} alt={name} width={100} height={100} className="mx-auto mb-5" />
+                                <Image
+                                    src={image}
+                                    alt={name}
+                                    width={200}
+                                    height={200}
+                                    className="mx-auto mb-5 h-25 w-25 rounded-full object-cover"
+                                />
                                 <Heading className="mb-2" variant="h5">
                                     {name}
                                 </Heading>

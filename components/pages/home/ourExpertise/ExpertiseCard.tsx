@@ -13,7 +13,7 @@ type ExpertiseCardProps = {
     description: string
     href: string
     number: number
-    isActive: boolean
+    isActive?: boolean
     wrapperStyle?: CSSProperties
     onMouseEnter?: () => void
     image: {
@@ -37,8 +37,8 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({
 
     return (
         <div
-            className="relative w-47.25 overflow-hidden rounded-8 border border-gray-300 bg-white-300 
-                                p-5.5 shadow-button transition-all duration-500 lg:w-48"
+            className="group relative w-56 overflow-hidden rounded-8 border border-gray-300 bg-white-300 
+                                p-5.5 shadow-button transition-all duration-500"
             style={wrapperStyle}
             onMouseEnter={onMouseEnter}
         >
@@ -49,23 +49,28 @@ const ExpertiseCard: FC<ExpertiseCardProps> = ({
                 {t(title)}
             </Heading>
             <Paragraph variant="p2">{t(description)}</Paragraph>
-            {isActive && (
-                <Link
-                    className="mt-4 block w-full animate-fade-in-up"
-                    href={{ pathname: '/cases', query: { category: href.replace('/', '') } }}
-                >
-                    <Button className="w-full" size="s">
-                        {t('homepage:our-expertise.find-more')}
-                    </Button>
-                </Link>
-            )}
+
+            <Link
+                className={cn('mt-4 hidden w-full animate-fade-in-up lg:hidden lg:group-hover:block', {
+                    block: isActive,
+                })}
+                href={{ pathname: '/cases', query: { category: href.replace('/', '') } }}
+            >
+                <Button className="w-full" size="s">
+                    {t('homepage:our-expertise.find-more')}
+                </Button>
+            </Link>
+
             <Image
                 src={image.src}
                 width={image.width}
                 height={image.height}
                 alt=""
                 style={{ width: image.width, height: image.height }}
-                className={`absolute left-5.5 max-w-max transition-all duration-500 ${isActive ? 'bottom-0' : 'bottom-2.5'}`}
+                className={cn(
+                    `absolute bottom-2.5 left-5.5 max-w-max transition-all duration-500 lg:group-hover:bottom-0`,
+                    { 'bottom-0 lg:bottom-2.5': isActive }
+                )}
             />
         </div>
     )

@@ -186,7 +186,7 @@ const casesEn: CaseData[] = [
             title: 'Electricity tariff aggregator',
             description:
                 'Platform for automated generation of energy tariff change recommendations for business clients ',
-            tags: ['C#', '.NET 6', 'PostgreSQL', 'FCM', 'Azure B2C', 'Stripe', 'Coinmarket', 'Terraform', 'Flutter'],
+            tags: ['C#', '.NET 6', 'PostgreSQL', 'FCM', 'Azure B2C', 'Terraform', 'Flutter', 'APNS'],
             href: 'tariff-adviser-app',
             image: '/images/cases/tariff-adviser-app/card.png',
             category: 'energetics',
@@ -452,17 +452,7 @@ const casesEn: CaseData[] = [
         card: {
             title: 'Assistant system for traders ',
             description: 'Web platform for analyzing cryptocurrency market data, transactions, and securities ',
-            tags: [
-                'C#',
-                '.Net 6',
-                'ASP.Net Core',
-                'Entity Framework Core',
-                'QuickFIX',
-                'TradingView SDK',
-                'Angular',
-                'Flutter',
-                'Kafka',
-            ],
+            tags: ['C#', '.Net 6', 'ASP.Net Core', 'Entity Framework Core', 'QuickFIX', 'TradingView SDK', 'Kafka'],
             href: 'trading-platform',
             image: '/images/cases/trading-platform/card.png',
             category: 'fintech',
@@ -515,7 +505,6 @@ const casesEn: CaseData[] = [
                         'QuickFIX',
                         'Kafka',
                         'Redis',
-                        'Angular',
                         'TradingView SDK',
                     ],
                     contact: {
@@ -626,7 +615,7 @@ const casesEn: CaseData[] = [
                 'ASP.Net Core',
                 'AWS Cloud Computing Services',
                 'Stripe',
-                'Flutter',
+                'React',
                 'OpenAI',
                 'PyTorch',
                 'nginx',
@@ -809,7 +798,7 @@ const casesEn: CaseData[] = [
             title: 'Golf club management system ',
             description:
                 'Web service that allows remote management of clubs, tracking games, visitors, purchases, consumables, equipment, and machinery',
-            tags: ['.Net Core', 'Vue.js', 'ASP.Net Core', 'Redis', 'SMTP', 'RabbitMQ'],
+            tags: ['.Net Core', 'Vue.js', 'ASP.Net Core', 'Redis', 'SMTP'],
             href: 'golf-club-admin-system',
             image: '/images/cases/golf-club-admin-system/card.png',
             category: 'sport',
@@ -845,7 +834,7 @@ const casesEn: CaseData[] = [
                         solution:
                             'Our work significantly improved the functionality and performance of the system by decomposing the monolith into modules, resulting in more convenient and efficient management of the golf clubs. The end client highly appreciated the outcome, particularly noting the significant increase in system performance ',
                     },
-                    tags: ['.Net Core', 'Vue.js', 'ASP.Net Core', 'Redis', 'SMTP', 'RabbitMQ'],
+                    tags: ['.Net Core', 'Vue.js', 'ASP.Net Core', 'Redis', 'SMTP'],
                     contact: {
                         image: '/images/cases/golf-club-admin-system/contact.png',
                         title: 'Have same request? ',
@@ -2534,10 +2523,10 @@ const casesEn: CaseData[] = [
             description: 'Platform for monitoring food production indicators ',
             tags: [
                 'C#',
-                '.Net 3.1',
+                '.Net Core 3.1',
                 'ASP.Net Core',
                 'Entity Framework Core',
-                'MsSQL Server',
+                'MSSQL Server',
                 'Azure IOT hub',
                 'Angular',
             ],
@@ -2575,10 +2564,10 @@ const casesEn: CaseData[] = [
                     },
                     tags: [
                         'C#',
-                        '.Net 3.1',
+                        '.Net Core 3.1',
                         'ASP.Net Core',
                         'Entity Framework Core',
-                        'MsSQL Server',
+                        'MSSQL Server',
                         'Cosmod DB',
                         'Azure IOT hub',
                         'SendGrid',

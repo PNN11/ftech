@@ -1,18 +1,16 @@
 'use client'
 import ArrowCircleRightDown from '@/components/svg/ArrowCircleRightDown'
-import Tab from '@/components/ui/Tab'
 import TitleWithDescription from '@/components/ui/TitleWithDescription'
 import Button from '@/components/ui/buttons/defaultButton'
 import ButtonWithIcon from '@/components/ui/buttons/withIcon/ButtonWithIcon'
 import Heading from '@/components/ui/typography/heading'
 import Paragraph from '@/components/ui/typography/paragraph'
-import TabsWrapper from '@/components/ui/wrappers/TabsWrapper'
 import Container from '@/components/ui/wrappers/container'
 import SectionWrapper from '@/components/ui/wrappers/sectionWrapper'
 import { formatNumber } from '@/lib/formatNumber'
 import { TService } from '@/types/common'
 import Link from 'next/link'
-import React, { FC, useState } from 'react'
+import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const visibleServices: TService[] = [
@@ -38,7 +36,7 @@ const OurService: FC = () => {
                     subtitle={t('our-service.subtitle')}
                 />
 
-                <ul className="mb-8 grid grid-cols-2 lg:grid-cols-4">
+                <ul className="mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                     {visibleServices
                         .map(service => ({ title: t(`our-service.${service}`), href: `/service/${service}` }))
                         .map(({ title, href }, i) => (
@@ -52,7 +50,7 @@ const OurService: FC = () => {
                                         <Heading variant="h5">{title}</Heading>
                                     </div>
                                     <Link
-                                        className="block w-full translate-y-10 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+                                        className="block w-full transition-all duration-300 lg:translate-y-10 lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
                                         href={href}
                                     >
                                         <ButtonWithIcon className="w-full justify-center" size="s">

@@ -1,4 +1,5 @@
 import { ServiceData } from '@/components/pages/service/serviceBlocksMapper/ServiceBlocksMapper'
+import { CLUTCH_RATING } from '@/lib/constants'
 
 export const servicesEn: ServiceData[] = [
     {
@@ -12,7 +13,7 @@ export const servicesEn: ServiceData[] = [
                     title: 'ML Engineering / Computer Vision',
                     stats: [
                         { title: '10+', description: 'projects on AI / ML completed, explore' },
-                        { title: '4,8 / 5', description: 'stars on Clutch' },
+                        { title: `${CLUTCH_RATING} / 5`, description: 'stars on Clutch' },
                     ],
                 },
             },
@@ -71,7 +72,7 @@ export const servicesEn: ServiceData[] = [
                     image: '/images/services/design/first-screen.png',
                     stats: [
                         { title: '25+', description: 'projects with our custom UI/UX completed, explore' },
-                        { title: '4,8 / 5', description: 'stars on Clutch' },
+                        { title: `${CLUTCH_RATING} / 5`, description: 'stars on Clutch' },
                     ],
                 },
             },
@@ -235,7 +236,7 @@ export const servicesEn: ServiceData[] = [
                     image: '/images/services/devops/first-screen.png',
                     title: 'DevOps',
                     stats: [
-                        { title: '4,8 / 5', description: 'stars on Clutch' },
+                        { title: `${CLUTCH_RATING} / 5`, description: 'stars on Clutch' },
                         { title: '5 years', description: 'of experience on IT market' },
                     ],
                 },
@@ -334,7 +335,7 @@ export const servicesEn: ServiceData[] = [
                     image: '/images/services/mobile-development/first-screen.png',
                     stats: [
                         { title: '15+', description: 'apps were delivered and published' },
-                        { title: '4.8', description: 'stars on Clutch' },
+                        { title: CLUTCH_RATING, description: 'stars on Clutch' },
                     ],
                 },
             },
@@ -462,7 +463,7 @@ export const servicesEn: ServiceData[] = [
                     title: 'Back-end Development',
                     image: '/images/services/backend/first-screen.png',
                     stats: [
-                        { title: '4,8 / 5', description: 'stars on Clutch' },
+                        { title: `${CLUTCH_RATING} / 5`, description: 'stars on Clutch' },
                         { title: '89%', description: 'of staff are mid-level or higher professionals' },
                     ],
                 },
