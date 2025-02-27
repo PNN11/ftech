@@ -69,7 +69,7 @@ const HomePageFirstScreen: FC = () => {
 
     return (
         <section ref={sectionRef} className="relative -mt-20.5 min-h-[100dvh] overflow-hidden lg:-mt-21 xl:-mt-22">
-            <Container className="min-h-[100dvh] pt-84 lg:pt-112 3xl:pt-125 4xl:pt-184">
+            <Container className="min-h-[100dvh] pb-18 pt-84 lg:pt-112 3xl:pt-125 4xl:pt-184">
                 <MouseParallaxWrapper isAbsolutelyPositioned strength={0.2} enableOnTouchDevice={false}>
                     <div className="absolute -top-20 left-1/2 -translate-x-1/2 lg:top-0 3xl:top-14 4xl:top-40">
                         <FirstScreenEllipses />
@@ -105,20 +105,21 @@ const HomePageFirstScreen: FC = () => {
                             </Button>
                         </Link>
                     </div>
-                    <div className="flex flex-col items-center justify-center gap-5.5">
+                    <div className="mb-4 flex flex-col items-center justify-center">
                         <ClutchInfo />
-                        <button
-                            type="button"
-                            onClick={() => {
-                                const element = document.getElementById('home-page-about-us')
-                                element?.scrollIntoView({ behavior: 'smooth' })
-                            }}
-                        >
-                            <DoubleDownArrow className="animate-pulse text-gray-900 dark:animate-none dark:text-blue-900" />
-                        </button>
                     </div>
                 </div>
             </Container>
+            <button
+                type="button"
+                className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 md:block 3xl:bottom-10"
+                onClick={() => {
+                    const element = document.getElementById('home-page-about-us')
+                    element?.scrollIntoView({ behavior: 'smooth' })
+                }}
+            >
+                <DoubleDownArrow className="animate-pulse text-gray-900 dark:animate-none dark:text-blue-900" />
+            </button>
         </section>
     )
 }
