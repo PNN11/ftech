@@ -12,6 +12,7 @@ import { FC, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer'
 import PowerButton from './powerButton'
+import FirstScreenCircles from './FirstScreenEllipses'
 
 const HomePageFirstScreen: FC = () => {
     const { t } = useTranslation()
@@ -72,7 +73,8 @@ const HomePageFirstScreen: FC = () => {
             <Container className="min-h-[100dvh] pb-18 pt-84 lg:pt-112 3xl:pt-125 4xl:pt-184">
                 <MouseParallaxWrapper isAbsolutelyPositioned strength={0.2} enableOnTouchDevice={false}>
                     <div className="absolute -top-20 left-1/2 -translate-x-1/2 lg:top-0 3xl:top-14 4xl:top-40">
-                        <FirstScreenEllipses />
+                        {/* <FirstScreenEllipses /> */}
+                        <FirstScreenCircles />
                         <button
                             onClick={changeTheme}
                             type="button"

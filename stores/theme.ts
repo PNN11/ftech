@@ -2,14 +2,14 @@ import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
 import { create } from 'zustand'
 
-type Theme = 'blue' | 'monochrome'
+export type TTheme = 'blue' | 'monochrome'
 
 type ThemeStore = {
-    theme: Theme
+    theme: TTheme
 }
 
 type ThemeStoreActions = {
-    setTheme: (theme: Theme) => void
+    setTheme: (theme: TTheme) => void
 }
 
 export const useThemeStore = create<ThemeStore & ThemeStoreActions>(set => ({
