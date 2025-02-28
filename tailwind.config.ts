@@ -14,6 +14,7 @@ const config: Config = {
             '2sm': '490px',
             md: '744px',
             lg: '1024px',
+            '2lg': '1124px',
             xl: '1280px',
             '2xl': '1440px',
             '3xl': '1920px',

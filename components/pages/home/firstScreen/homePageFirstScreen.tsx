@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer'
 import PowerButton from './powerButton'
 import FirstScreenCircles from './FirstScreenEllipses'
+import BackgroundBlur from '@/components/ui/wrappers/BackgroundBlur'
 
 const HomePageFirstScreen: FC = () => {
     const { t } = useTranslation()
@@ -80,35 +81,40 @@ const HomePageFirstScreen: FC = () => {
                             type="button"
                             className="absolute left-1/2 top-81 -translate-x-1/2"
                         >
-                            <div className="absolute inset-x-0 top-0 hidden h-[80%] bg-blue-900 blur-[100px] dark:block" />
                             <PowerButton className="relative z-[2] animate-pulse dark:animate-none" />
                         </button>
                     </div>
                 </MouseParallaxWrapper>
-                <div className="relative z-[2] self-end">
-                    <Heading ref={ref} variant="h1" className="mx-auto mb-15 max-w-156.75 text-center">
-                        {t('first-screen.turn-on-your-project')}{' '}
-                        <span
-                            key={currentService}
-                            style={{ width: serviceTitleWidth ? `${serviceTitleWidth}px` : 'auto' }}
-                            className="inline-block animate-fade-in-up-bounce uppercase text-gray-600 dark:text-blue-900"
-                        >
-                            {currentService}
-                        </span>{' '}
-                        {t('first-screen.with-us')}
-                    </Heading>
+                <div className="relative z-[2] mx-auto w-fit">
+                    <BackgroundBlur>
+                        <Heading ref={ref} variant="h1" className="mx-auto mb-15 max-w-156.75 text-center">
+                            {t('first-screen.turn-on-your-project')}{' '}
+                            <span
+                                key={currentService}
+                                style={{ width: serviceTitleWidth ? `${serviceTitleWidth}px` : 'auto' }}
+                                className="inline-block animate-fade-in-up-bounce uppercase text-gray-600 transition-colors duration-500 dark:text-blue-900"
+                            >
+                                {currentService}
+                            </span>{' '}
+                            {t('first-screen.with-us')}
+                        </Heading>
+                    </BackgroundBlur>
                     <div className="mb-5.5 flex flex-col justify-center gap-3 2sm:flex-row">
                         <Link className="w-full 2sm:w-fit" href="/contacts">
                             <Button className="w-full">{t('first-screen.start-project')}</Button>
                         </Link>
                         <Link className="w-full 2sm:w-fit" href="/cases">
-                            <Button className="w-full" variant="outlined">
-                                {t('first-screen.see-portfolio')}
-                            </Button>
+                            <BackgroundBlur>
+                                <Button className="w-full" variant="outlined">
+                                    {t('first-screen.see-portfolio')}
+                                </Button>
+                            </BackgroundBlur>
                         </Link>
                     </div>
                     <div className="mb-4 flex flex-col items-center justify-center">
-                        <ClutchInfo />
+                        <BackgroundBlur>
+                            <ClutchInfo />
+                        </BackgroundBlur>
                     </div>
                 </div>
             </Container>
@@ -120,7 +126,7 @@ const HomePageFirstScreen: FC = () => {
                     element?.scrollIntoView({ behavior: 'smooth' })
                 }}
             >
-                <DoubleDownArrow className="animate-pulse text-gray-900 dark:animate-none dark:text-blue-900" />
+                <DoubleDownArrow className="animate-pulse text-gray-900 transition-colors duration-500 dark:animate-none dark:text-blue-900" />
             </button>
         </section>
     )

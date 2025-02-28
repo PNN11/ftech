@@ -9,7 +9,7 @@ const Logo: FC<ComponentProps<'svg'>> = ({ className, ...props }) => {
             viewBox="0 0 122 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={cn('text-gray-600 dark:text-blue-900', className)}
+            className={cn('text-gray-600 transition-colors duration-500 dark:text-blue-900', className)}
             {...props}
         >
             <path

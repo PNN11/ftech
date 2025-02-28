@@ -3,6 +3,383 @@ import { CaseData } from '@/components/pages/case/caseBlocksMapper/CaseBlockMapp
 const casesEn: CaseData[] = [
     {
         card: {
+            title: 'Redevelopment of the backend part of the application',
+            description:
+                'Redeveloping of the backend part of a monstrous application for the largest company in the investment sector ',
+            tags: [
+                '.Net Framework',
+                '.Net Core',
+                '.Asp Net MVC',
+                'Asp.Net Core',
+                ' jquery',
+                'React',
+                'SMTP',
+                'Snowflake',
+                'SQLKata',
+            ],
+            href: 'backend-investment-comp',
+            image: '/images/cases/backend-investment-comp/card.png',
+            category: 'fintech',
+            bgImage: '#140E1C',
+            mockup: 'laptop',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Investments platform',
+                    title: 'Redevelopment of the backend part of the application',
+                    description:
+                        'Redeveloping of the backend part of a monstrous application for the largest company in the investment sector ',
+                    image: '/images/cases/backend-investment-comp/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America',
+                        client: 'Major investment company in the field of personal investments ',
+                        industry: 'Fintech',
+                        projectServices: 'Back-end development',
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The client is a leading company in the North American investment market. Our specialists were involved in developing the backend part of the project. The task was to ensure support for the old legacy code, facilitate interaction between old legacy modules and new ones, as well as develop new functionality for the application ',
+                        solution:
+                            'In addition to supporting the monstrous legacy system, our specialists worked on analyzing and evaluating vast amounts of investment data, assessing the usefulness of various financial instruments, implementing new system functionality, and adding modules responsible for security. The project is particularly interesting due to its structure—various tasks were carried out by teams from different countries and time zones, and communication became one of the key challenges. Nevertheless, the team successfully tackled this challenge, gaining invaluable experience working with geographically distrubuted teams across different time zones',
+                    },
+                    tags: [
+                        '.Net Framework',
+                        '.Net Core',
+                        '.Asp Net MVC',
+                        'Asp.Net Core',
+                        'jquery',
+                        'React',
+                        'SMTP',
+                        'ServiceStack',
+                        'SQLKata',
+                        'Snowflake',
+                        'Entity Framework',
+                        'MS SQL Server',
+                    ],
+                    contact: {
+                        title: 'Need fintech software solutions? ',
+                        description:
+                            'We will develop a customized product tailored to the specifics of your work in the fintech sector ',
+                        image: '/images/cases/backend-investment-comp/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '1',
+                    subtitle: 'Project highlights',
+                    title: 'Back-end development highlights ',
+                    cards: [
+                        {
+                            title: 'Legacy support ',
+                            description:
+                                'We ensured support for the monstrous legacy system and seamless interaction between old and new modules ',
+                        },
+                        {
+                            title: 'New financial instruments ',
+                            description:
+                                'Modules for evaluating the usefulness of various financial instruments have been developed ',
+                        },
+                        {
+                            title: 'Fault tolerance of the solution ',
+                            description:
+                                'High-load modules for collecting and evaluating various financial information were developed ',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/backend-investment-comp/image1.png' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'ASP.Net Core', image: '/images/cases/backend-investment-comp/tech1.png' },
+                        { title: 'PostgreSQL', image: '/images/cases/backend-investment-comp/tech2.png' },
+                        { title: 'TradingView SDK', image: '/images/cases/backend-investment-comp/tech3.png' },
+                        { title: 'Redis', image: '/images/cases/backend-investment-comp/tech4.png' },
+                        { title: 'Angular', image: '/images/cases/backend-investment-comp/tech5.png' },
+                        { title: 'SignalR', image: '/images/cases/backend-investment-comp/tech6.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Redevelopment of the backend part of the application',
+                    description:
+                        'Redeveloping of the backend part of a monstrous application for the largest company in the investment sector ',
+                    services: [{ title: 'Back-end development', href: 'backend-development' }],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Acquiring app with the ability to work in crypto and fiat modes',
+            description: 'Acquiring app with the ability to operate in both crypto and fiat modes ',
+            tags: ['.NET 6', 'Stripe', 'Coinmarket', 'Flutter'],
+            href: 'acquiring-app',
+            image: '/images/cases/acquiring-app/card.png',
+            category: 'fintech',
+            bgImage: '#E94E4E',
+            mockup: 'mobile',
+            tone: 'light',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Acquiring App',
+                    title: 'Acquiring app with the ability to work in crypto and fiat modes',
+                    description: 'Acquiring app with the ability to operate in both crypto and fiat modes ',
+                    image: '/images/cases/acquiring-app/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'Asia',
+                        industry: 'Fintech',
+                        client: 'Private company from Asia ',
+                        projectType: 'Mobile acquiring ',
+                        projectServices: [
+                            'Front-end development',
+                            'Back-end development',
+                            'DevOps',
+                            'Integration Service',
+                            'AQA / QA',
+                            'UI/UX design',
+                        ],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'The client is a company owned by a well-known Turkish businessman who owns numerous cafes, hotels, restaurants, an airline ticket sales service, and other businesses in various industries. The task was to create an acquiring system for use both at the client’s enterprises and externally. Additionally, a loyalty system needed to be implemented, which would award points based on the amount spent within the client s ecosystem of businesses. The project also included integration with major cryptocurrency exchanges, enabling the use of cryptocurrencies as a payment method, as well as integration with the largest banks in the client s country',
+                        solution:
+                            'The project was successfully implemented by our team of professionals and is currently in the regulatory approval phase. The client received an acquiring app capable of operating in both crypto and fiat modes. After completing all the bureaucratic procedures, it will be used within the client’s business ecosystem',
+                    },
+                    tags: ['.NET 6', 'Stripe', 'Coinmarket', 'Flutter'],
+                    contact: {
+                        title: '💡  Have same request? ',
+                        description:
+                            'We will help you develop a fast and reliable acquiring app with seamless integration into your ecosystem ',
+                        image: '/images/cases/acquiring-app/contact.png',
+                    },
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/acquiring-app/image1.png', size: '296' } },
+            {
+                block: 'section9',
+                props: {
+                    variant: '3',
+                    subtitle: 'Project highlights',
+                    title: 'Project highlights ',
+                    cards: [
+                        {
+                            title: 'Payment method selection ',
+                            description:
+                                'We created an acquiring app that works in both fiat and cryptocurrency payment modes ',
+                        },
+                        {
+                            title: 'Integrations ',
+                            description: 'We integrated with bank services and major cryptocurrency exchanges',
+                        },
+                        {
+                            title: 'Loyalty program ',
+                            description:
+                                'We implemented a loyalty program, allowing users to accumulate points for actions within the client’s ecosystem',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/acquiring-app/image2.png' } },
+            {
+                block: 'section4',
+                props: {
+                    title: 'Development team ',
+                    description:
+                        'The work involved the reworking of existing solutions, so we can fully say that the team created the backend of the project from scratch',
+                    cards: [
+                        {
+                            title: '6 months ',
+                            description: 'project implementation period ',
+                            actionButton: { text: 'Mobile dev', href: '/service/mobile-development' },
+                            image: '/images/cases/acquiring-app/team1.png',
+                        },
+                        {
+                            title: 'High team lvl',
+                            description: 'only senior / middle level and higher',
+                            image: '/images/cases/acquiring-app/team2.png',
+                        },
+                        {
+                            title: 'M-team',
+                            description: 'project team consists of 6 people ',
+                            actionButton: { text: 'Extend team', href: '/service/client-team-extension' },
+                        },
+                    ],
+                },
+            },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: '.NET 6', image: '/images/cases/acquiring-app/tech1.png' },
+                        { title: 'Stripe', image: '/images/cases/acquiring-app/tech2.png' },
+                        { title: 'Coinmarket', image: '/images/cases/acquiring-app/tech3.png' },
+                        { title: 'Flutter', image: '/images/cases/acquiring-app/tech4.png' },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/acquiring-app/image3.png' } },
+            { block: 'section8', props: {} },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Acquiring app with the ability to work in crypto and fiat modes',
+                    description: 'Acquiring app with the ability to operate in both crypto and fiat modes ',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Front-end development', href: 'frontend-development' },
+                        { title: 'Business analysis', href: 'business-analysis' },
+                        { title: 'DevOps', href: 'devops' },
+                        { title: 'Integration Service', href: 'third-party-services' },
+                        { title: 'AQA / QA', href: 'quality-assurance' },
+                        { title: 'UI/UX Design', href: 'design' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
+            title: 'Educational platform  ',
+            description: 'Educational platform for standardized test preparation',
+            tags: ['JavaScript', 'Material UI', 'React', 'Redux/xstate', 'ESLint + Prettier', 'GitLab'],
+            href: 'edu-platform',
+            image: '/images/cases/edu-platform/card.png',
+            category: 'edtech',
+            bgImage: '#FBD13C',
+            mockup: 'laptop',
+            tone: 'dark',
+        },
+        config: [
+            {
+                block: 'section1',
+                props: {
+                    shortTitle: 'Medical equipment monitoring',
+                    title: 'Educational platform  ',
+                    description: 'Educational platform for standardized test preparation',
+                    image: '/images/cases/edu-platform/first-screen.png',
+                },
+            },
+            {
+                block: 'section2',
+                props: {
+                    listItems: {
+                        location: 'North America',
+                        industry: 'Education',
+                        projectType: 'Web platform',
+                        team: 'M-size ',
+                        projectServices: [
+                            'Back-end development',
+                            'Front-end development',
+                            'Business analysis',
+                            'DevOps',
+                            'Service Integration',
+                            'AQA / QA ',
+                        ],
+                    },
+                    descriptionItems: {
+                        problem:
+                            'Our task was to develop an educational platform for a company specializing in preparing students for standardized tests such as the ACT and SAT. The platform needed to provide students with self-study materials, practice tests, and strategies to improve their exam scores ',
+                        solution:
+                            'A successful educational platform has been implemented, providing students with access to high-quality learning resources and helping them prepare for standardized tests. The platform equips students with the necessary knowledge, practice, and strategies to successfully pass the ACT and SAT exams ',
+                    },
+                    tags: [
+                        'JavaScript',
+                        'Webpack/Vite',
+                        'React',
+                        'Material UI',
+                        'Redux/xstate',
+                        'ESLint + Prettier',
+                        'GitLab',
+                        'Node.js',
+                    ],
+                    contact: {
+                        title: 'Need a modern online learning platform? ',
+                        description:
+                            'We will develop a platform to optimize the learning process and achieve the best results ',
+                        image: '/images/cases/edu-platform/contact.png',
+                    },
+                },
+            },
+            {
+                block: 'section9',
+                props: {
+                    variant: '2',
+                    subtitle: 'Project highlights',
+                    title: 'Highlights of the educational service ',
+                    cards: [
+                        {
+                            title: 'Web platform',
+                            description:
+                                'We created an educational platform for preparing students for standardized tests such as the ACT and SAT, providing them with resources and services for successful completion ',
+                        },
+                        {
+                            title: 'Roles for students and teachers ',
+                            description:
+                                'We created a division between students and teachers, designing virtual classrooms for a well-coordinated learning process',
+                        },
+                    ],
+                },
+            },
+            { block: 'section12', props: { image: '/images/cases/edu-platform/image1.png' } },
+            {
+                block: 'section6',
+                props: {
+                    cards: [
+                        { title: 'node.js', image: '/images/cases/edu-platform/tech1.png' },
+                        { title: 'Webpack', image: '/images/cases/edu-platform/tech2.png' },
+                        { title: 'Vite', image: '/images/cases/edu-platform/tech3.png' },
+                        { title: 'Redux', image: '/images/cases/edu-platform/tech4.png' },
+                        { title: 'xstate', image: '/images/cases/edu-platform/tech5.png' },
+                        { title: 'Material UI', image: '/images/cases/edu-platform/tech6.png' },
+                        { title: 'React.js', image: '/images/cases/edu-platform/tech7.png' },
+                        { title: 'JavaScript', image: '/images/cases/edu-platform/tech8.png' },
+                    ],
+                },
+            },
+            { block: 'section8', props: {} },
+            { block: 'section12', props: { image: '/images/cases/edu-platform/image2.png' } },
+            {
+                block: 'section11',
+                props: {
+                    title: 'Educational platform  ',
+                    description: 'Educational platform for standardized test preparation',
+                    services: [
+                        { title: 'Back-end development', href: 'backend-development' },
+                        { title: 'Front-end development', href: 'frontend-development' },
+                        { title: 'Business analysis', href: 'business-analysis' },
+                        { title: 'DevOps', href: 'devops' },
+                        { title: 'Integration service', href: 'third-party-services' },
+                        { title: 'AQA / QA ', href: 'quality-assurance' },
+                    ],
+                },
+            },
+        ],
+    },
+    {
+        card: {
             title: 'Remote health assessment service ',
             description: 'Telemedicine portal for a clinic specializing in men’s health',
             tags: ['MSSQL', 'Asp.net Core', 'React', 'Xamarin'],
@@ -1145,124 +1522,6 @@ const casesEn: CaseData[] = [
     },
     {
         card: {
-            title: 'Educational platform  ',
-            description: 'Educational platform for standardized test preparation',
-            tags: ['JavaScript', 'Material UI', 'React', 'Redux/xstate', 'ESLint + Prettier', 'GitLab'],
-            href: 'edu-platform',
-            image: '/images/cases/edu-platform/card.png',
-            category: 'edtech',
-            bgImage: '#FBD13C',
-            mockup: 'laptop',
-            tone: 'dark',
-        },
-        config: [
-            {
-                block: 'section1',
-                props: {
-                    shortTitle: 'Medical equipment monitoring',
-                    title: 'Educational platform  ',
-                    description: 'Educational platform for standardized test preparation',
-                    image: '/images/cases/edu-platform/first-screen.png',
-                },
-            },
-            {
-                block: 'section2',
-                props: {
-                    listItems: {
-                        location: 'North America',
-                        industry: 'Education',
-                        projectType: 'Web platform',
-                        team: 'M-size ',
-                        projectServices: [
-                            'Back-end development',
-                            'Front-end development',
-                            'Business analysis',
-                            'DevOps',
-                            'Service Integration',
-                            'AQA / QA ',
-                        ],
-                    },
-                    descriptionItems: {
-                        problem:
-                            'Our task was to develop an educational platform for a company specializing in preparing students for standardized tests such as the ACT and SAT. The platform needed to provide students with self-study materials, practice tests, and strategies to improve their exam scores ',
-                        solution:
-                            'A successful educational platform has been implemented, providing students with access to high-quality learning resources and helping them prepare for standardized tests. The platform equips students with the necessary knowledge, practice, and strategies to successfully pass the ACT and SAT exams ',
-                    },
-                    tags: [
-                        'JavaScript',
-                        'Webpack/Vite',
-                        'React',
-                        'Material UI',
-                        'Redux/xstate',
-                        'ESLint + Prettier',
-                        'GitLab',
-                        'Node.js',
-                    ],
-                    contact: {
-                        title: 'Need a modern online learning platform? ',
-                        description:
-                            'We will develop a platform to optimize the learning process and achieve the best results ',
-                        image: '/images/cases/edu-platform/contact.png',
-                    },
-                },
-            },
-            {
-                block: 'section9',
-                props: {
-                    variant: '2',
-                    subtitle: 'Project highlights',
-                    title: 'Highlights of the educational service ',
-                    cards: [
-                        {
-                            title: 'Web platform',
-                            description:
-                                'We created an educational platform for preparing students for standardized tests such as the ACT and SAT, providing them with resources and services for successful completion ',
-                        },
-                        {
-                            title: 'Roles for students and teachers ',
-                            description:
-                                'We created a division between students and teachers, designing virtual classrooms for a well-coordinated learning process',
-                        },
-                    ],
-                },
-            },
-            { block: 'section12', props: { image: '/images/cases/edu-platform/image1.png' } },
-            {
-                block: 'section6',
-                props: {
-                    cards: [
-                        { title: 'node.js', image: '/images/cases/edu-platform/tech1.png' },
-                        { title: 'Webpack', image: '/images/cases/edu-platform/tech2.png' },
-                        { title: 'Vite', image: '/images/cases/edu-platform/tech3.png' },
-                        { title: 'Redux', image: '/images/cases/edu-platform/tech4.png' },
-                        { title: 'xstate', image: '/images/cases/edu-platform/tech5.png' },
-                        { title: 'Material UI', image: '/images/cases/edu-platform/tech6.png' },
-                        { title: 'React.js', image: '/images/cases/edu-platform/tech7.png' },
-                        { title: 'JavaScript', image: '/images/cases/edu-platform/tech8.png' },
-                    ],
-                },
-            },
-            { block: 'section8', props: {} },
-            { block: 'section12', props: { image: '/images/cases/edu-platform/image2.png' } },
-            {
-                block: 'section11',
-                props: {
-                    title: 'Educational platform  ',
-                    description: 'Educational platform for standardized test preparation',
-                    services: [
-                        { title: 'Back-end development', href: 'backend-development' },
-                        { title: 'Front-end development', href: 'frontend-development' },
-                        { title: 'Business analysis', href: 'business-analysis' },
-                        { title: 'DevOps', href: 'devops' },
-                        { title: 'Integration service', href: 'third-party-services' },
-                        { title: 'AQA / QA ', href: 'quality-assurance' },
-                    ],
-                },
-            },
-        ],
-    },
-    {
-        card: {
             title: 'Back-end application for emergency ambulance calls',
             description: 'Server-side project for a mobile application for emergency medical assistance calls ',
             tags: ['.Net Core', 'ASP.Net Core', 'workflow-core', 'Angular', 'SignalR'],
@@ -2047,143 +2306,6 @@ const casesEn: CaseData[] = [
     },
     {
         card: {
-            title: 'Acquiring app with the ability to work in crypto and fiat modes',
-            description: 'Acquiring app with the ability to operate in both crypto and fiat modes ',
-            tags: ['.NET 6', 'Stripe', 'Coinmarket', 'Flutter'],
-            href: 'acquiring-app',
-            image: '/images/cases/acquiring-app/card.png',
-            category: 'fintech',
-            bgImage: '#E94E4E',
-            mockup: 'mobile',
-            tone: 'light',
-        },
-        config: [
-            {
-                block: 'section1',
-                props: {
-                    shortTitle: 'Acquiring App',
-                    title: 'Acquiring app with the ability to work in crypto and fiat modes',
-                    description: 'Acquiring app with the ability to operate in both crypto and fiat modes ',
-                    image: '/images/cases/acquiring-app/first-screen.png',
-                },
-            },
-            {
-                block: 'section2',
-                props: {
-                    listItems: {
-                        location: 'Asia',
-                        industry: 'Fintech',
-                        client: 'Private company from Asia ',
-                        projectType: 'Mobile acquiring ',
-                        projectServices: [
-                            'Front-end development',
-                            'Back-end development',
-                            'DevOps',
-                            'Integration Service',
-                            'AQA / QA',
-                            'UI/UX design',
-                        ],
-                    },
-                    descriptionItems: {
-                        problem:
-                            'The client is a company owned by a well-known Turkish businessman who owns numerous cafes, hotels, restaurants, an airline ticket sales service, and other businesses in various industries. The task was to create an acquiring system for use both at the client’s enterprises and externally. Additionally, a loyalty system needed to be implemented, which would award points based on the amount spent within the client s ecosystem of businesses. The project also included integration with major cryptocurrency exchanges, enabling the use of cryptocurrencies as a payment method, as well as integration with the largest banks in the client s country',
-                        solution:
-                            'The project was successfully implemented by our team of professionals and is currently in the regulatory approval phase. The client received an acquiring app capable of operating in both crypto and fiat modes. After completing all the bureaucratic procedures, it will be used within the client’s business ecosystem',
-                    },
-                    tags: ['.NET 6', 'Stripe', 'Coinmarket', 'Flutter'],
-                    contact: {
-                        title: '💡  Have same request? ',
-                        description:
-                            'We will help you develop a fast and reliable acquiring app with seamless integration into your ecosystem ',
-                        image: '/images/cases/acquiring-app/contact.png',
-                    },
-                },
-            },
-            { block: 'section12', props: { image: '/images/cases/acquiring-app/image1.png', size: '296' } },
-            {
-                block: 'section9',
-                props: {
-                    variant: '3',
-                    subtitle: 'Project highlights',
-                    title: 'Project highlights ',
-                    cards: [
-                        {
-                            title: 'Payment method selection ',
-                            description:
-                                'We created an acquiring app that works in both fiat and cryptocurrency payment modes ',
-                        },
-                        {
-                            title: 'Integrations ',
-                            description: 'We integrated with bank services and major cryptocurrency exchanges',
-                        },
-                        {
-                            title: 'Loyalty program ',
-                            description:
-                                'We implemented a loyalty program, allowing users to accumulate points for actions within the client’s ecosystem',
-                        },
-                    ],
-                },
-            },
-            { block: 'section12', props: { image: '/images/cases/acquiring-app/image2.png' } },
-            {
-                block: 'section4',
-                props: {
-                    title: 'Development team ',
-                    description:
-                        'The work involved the reworking of existing solutions, so we can fully say that the team created the backend of the project from scratch',
-                    cards: [
-                        {
-                            title: '6 months ',
-                            description: 'project implementation period ',
-                            actionButton: { text: 'Mobile dev', href: '/service/mobile-development' },
-                            image: '/images/cases/acquiring-app/team1.png',
-                        },
-                        {
-                            title: 'High team lvl',
-                            description: 'only senior / middle level and higher',
-                            image: '/images/cases/acquiring-app/team2.png',
-                        },
-                        {
-                            title: 'M-team',
-                            description: 'project team consists of 6 people ',
-                            actionButton: { text: 'Extend team', href: '/service/client-team-extension' },
-                        },
-                    ],
-                },
-            },
-            {
-                block: 'section6',
-                props: {
-                    cards: [
-                        { title: '.NET 6', image: '/images/cases/acquiring-app/tech1.png' },
-                        { title: 'Stripe', image: '/images/cases/acquiring-app/tech2.png' },
-                        { title: 'Coinmarket', image: '/images/cases/acquiring-app/tech3.png' },
-                        { title: 'Flutter', image: '/images/cases/acquiring-app/tech4.png' },
-                    ],
-                },
-            },
-            { block: 'section12', props: { image: '/images/cases/acquiring-app/image3.png' } },
-            { block: 'section8', props: {} },
-            {
-                block: 'section11',
-                props: {
-                    title: 'Acquiring app with the ability to work in crypto and fiat modes',
-                    description: 'Acquiring app with the ability to operate in both crypto and fiat modes ',
-                    services: [
-                        { title: 'Back-end development', href: 'backend-development' },
-                        { title: 'Front-end development', href: 'frontend-development' },
-                        { title: 'Business analysis', href: 'business-analysis' },
-                        { title: 'DevOps', href: 'devops' },
-                        { title: 'Integration Service', href: 'third-party-services' },
-                        { title: 'AQA / QA', href: 'quality-assurance' },
-                        { title: 'UI/UX Design', href: 'design' },
-                    ],
-                },
-            },
-        ],
-    },
-    {
-        card: {
             title: 'Platform for selling comics and fan art ',
             description: 'Online store for the fast and secure sale of artwork, comics, and fan art ',
             tags: ['PHP', 'WordPress', 'WooCommerce', 'JavaScript', 'jQuery', 'React'],
@@ -2395,128 +2517,7 @@ const casesEn: CaseData[] = [
             },
         ],
     },
-    {
-        card: {
-            title: 'Redevelopment of the backend part of the application',
-            description:
-                'Redeveloping of the backend part of a monstrous application for the largest company in the investment sector ',
-            tags: [
-                '.Net Framework',
-                '.Net Core',
-                '.Asp Net MVC',
-                'Asp.Net Core',
-                ' jquery',
-                'React',
-                'SMTP',
-                'Snowflake',
-                'SQLKata',
-            ],
-            href: 'backend-investment-comp',
-            image: '/images/cases/backend-investment-comp/card.png',
-            category: 'fintech',
-            bgImage: '#140E1C',
-            mockup: 'laptop',
-            tone: 'light',
-        },
-        config: [
-            {
-                block: 'section1',
-                props: {
-                    shortTitle: 'Investments platform',
-                    title: 'Redevelopment of the backend part of the application',
-                    description:
-                        'Redeveloping of the backend part of a monstrous application for the largest company in the investment sector ',
-                    image: '/images/cases/backend-investment-comp/first-screen.png',
-                },
-            },
-            {
-                block: 'section2',
-                props: {
-                    listItems: {
-                        location: 'North America',
-                        client: 'Major investment company in the field of personal investments ',
-                        industry: 'Fintech',
-                        projectServices: 'Back-end development',
-                    },
-                    descriptionItems: {
-                        problem:
-                            'The client is a leading company in the North American investment market. Our specialists were involved in developing the backend part of the project. The task was to ensure support for the old legacy code, facilitate interaction between old legacy modules and new ones, as well as develop new functionality for the application ',
-                        solution:
-                            'In addition to supporting the monstrous legacy system, our specialists worked on analyzing and evaluating vast amounts of investment data, assessing the usefulness of various financial instruments, implementing new system functionality, and adding modules responsible for security. The project is particularly interesting due to its structure—various tasks were carried out by teams from different countries and time zones, and communication became one of the key challenges. Nevertheless, the team successfully tackled this challenge, gaining invaluable experience working with geographically distrubuted teams across different time zones',
-                    },
-                    tags: [
-                        '.Net Framework',
-                        '.Net Core',
-                        '.Asp Net MVC',
-                        'Asp.Net Core',
-                        'jquery',
-                        'React',
-                        'SMTP',
-                        'ServiceStack',
-                        'SQLKata',
-                        'Snowflake',
-                        'Entity Framework',
-                        'MS SQL Server',
-                    ],
-                    contact: {
-                        title: 'Need fintech software solutions? ',
-                        description:
-                            'We will develop a customized product tailored to the specifics of your work in the fintech sector ',
-                        image: '/images/cases/backend-investment-comp/contact.png',
-                    },
-                },
-            },
-            {
-                block: 'section9',
-                props: {
-                    variant: '1',
-                    subtitle: 'Project highlights',
-                    title: 'Back-end development highlights ',
-                    cards: [
-                        {
-                            title: 'Legacy support ',
-                            description:
-                                'We ensured support for the monstrous legacy system and seamless interaction between old and new modules ',
-                        },
-                        {
-                            title: 'New financial instruments ',
-                            description:
-                                'Modules for evaluating the usefulness of various financial instruments have been developed ',
-                        },
-                        {
-                            title: 'Fault tolerance of the solution ',
-                            description:
-                                'High-load modules for collecting and evaluating various financial information were developed ',
-                        },
-                    ],
-                },
-            },
-            { block: 'section12', props: { image: '/images/cases/backend-investment-comp/image1.png' } },
-            {
-                block: 'section6',
-                props: {
-                    cards: [
-                        { title: 'ASP.Net Core', image: '/images/cases/backend-investment-comp/tech1.png' },
-                        { title: 'PostgreSQL', image: '/images/cases/backend-investment-comp/tech2.png' },
-                        { title: 'TradingView SDK', image: '/images/cases/backend-investment-comp/tech3.png' },
-                        { title: 'Redis', image: '/images/cases/backend-investment-comp/tech4.png' },
-                        { title: 'Angular', image: '/images/cases/backend-investment-comp/tech5.png' },
-                        { title: 'SignalR', image: '/images/cases/backend-investment-comp/tech6.png' },
-                    ],
-                },
-            },
-            { block: 'section8', props: {} },
-            {
-                block: 'section11',
-                props: {
-                    title: 'Redevelopment of the backend part of the application',
-                    description:
-                        'Redeveloping of the backend part of a monstrous application for the largest company in the investment sector ',
-                    services: [{ title: 'Back-end development', href: 'backend-development' }],
-                },
-            },
-        ],
-    },
+
     {
         card: {
             title: 'Product indicators monitoring platform ',

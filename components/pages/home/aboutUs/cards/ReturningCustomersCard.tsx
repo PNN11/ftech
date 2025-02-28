@@ -35,7 +35,7 @@ const ReturningCustomersCard: FC<ReturningCustomersCardProps> = ({ classes }) =>
                             classes={{
                                 reviews: 'hidden',
                                 clutchIcon: 'h-4',
-                                wrapper: 'flex-row-reverse justify-center w-full',
+                                wrapper: 'flex-row-reverse justify-center w-full gap-0',
                             }}
                         />
                     </ReviewWrapper>

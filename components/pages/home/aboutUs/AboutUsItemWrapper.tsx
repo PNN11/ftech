@@ -19,7 +19,7 @@ const AboutUsItemWrapper: FC<AboutUsItemWrapperProps> = ({ children, className, 
         >
             <div
                 className={cn(
-                    'relative z-[1] flex h-full w-full flex-col items-start gap-3.5 px-4.5 py-6 md:px-6',
+                    '2lg:px-6 relative z-[1] flex h-full w-full flex-col items-start gap-3.5 px-4.5 py-6 md:px-6 lg:px-2',
                     classes?.childrenWrapper
                 )}
             >
