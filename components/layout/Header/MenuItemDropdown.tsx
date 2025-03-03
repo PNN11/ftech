@@ -26,6 +26,12 @@ const MenuItemDropdown: FC<MenuItemDropdownProps> = ({ title, children, href }) 
         return () => element?.classList.remove('pointer-events-none')
     }, [pathname])
 
+    useEffect(() => {
+        const handler = () => setIsOpen(false)
+        window.addEventListener('menuClose', handler)
+        return () => window.removeEventListener('menuClose', handler)
+    }, [])
+
     return (
         <div
             onMouseEnter={() => {
