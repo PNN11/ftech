@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...staticPages.map(page => ({
             url: `${baseUrl}${page ? `/${page}` : ''}`,
             lastModified: new Date(),
-            changeFrequency: 'monthly' as MetadataRoute.Sitemap[number]['changeFrequency'],
+            changeFrequency: 'daily' as MetadataRoute.Sitemap[number]['changeFrequency'],
             alternates: {
                 languages: Object.fromEntries(
                     i18nConfig.locales.map(locale => [locale, `${baseUrl}/${locale}/${page}`])
@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...casesPages.map(page => ({
             url: `${baseUrl}/cases/${page}`,
             lastModified: new Date(),
-            changeFrequency: 'monthly' as MetadataRoute.Sitemap[number]['changeFrequency'],
+            changeFrequency: 'daily' as MetadataRoute.Sitemap[number]['changeFrequency'],
             alternates: {
                 languages: Object.fromEntries(
                     i18nConfig.locales.map(locale => [locale, `${baseUrl}/${locale}/cases/${page}`])
@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...servicesPages.map(page => ({
             url: `${baseUrl}/service/${page}`,
             lastModified: new Date(),
-            changeFrequency: 'monthly' as MetadataRoute.Sitemap[number]['changeFrequency'],
+            changeFrequency: 'daily' as MetadataRoute.Sitemap[number]['changeFrequency'],
             alternates: {
                 languages: Object.fromEntries(
                     i18nConfig.locales.map(locale => [locale, `${baseUrl}/${locale}/service/${page}`])
