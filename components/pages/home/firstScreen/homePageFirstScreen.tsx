@@ -14,6 +14,7 @@ import { useInView } from 'react-intersection-observer'
 import PowerButton from './powerButton'
 import FirstScreenCircles from './FirstScreenEllipses'
 import BackgroundBlur from '@/components/ui/wrappers/BackgroundBlur'
+import { CLUTCH_LINK } from '@/lib/constants'
 
 const HomePageFirstScreen: FC = () => {
     const { t } = useTranslation()
@@ -113,7 +114,9 @@ const HomePageFirstScreen: FC = () => {
                     </div>
                     <div className="mb-4 flex flex-col items-center justify-center">
                         <BackgroundBlur>
-                            <ClutchInfo />
+                            <Link href={CLUTCH_LINK} target="_blank" rel="noopener noreferrer">
+                                <ClutchInfo />
+                            </Link>
                         </BackgroundBlur>
                     </div>
                 </div>

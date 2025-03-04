@@ -53,7 +53,9 @@ const MenuItemDropdown: FC<MenuItemDropdownProps> = ({ title, children, href }) 
                     <span>{title}</span>
                     <div className="flex h-6 w-6 items-center justify-center">
                         <ChevronUp
-                            className={cn('rotate-180 text-gray-600 group-hover:lg:rotate-0', { 'rotate-0': isOpen })}
+                            className={cn('rotate-180 text-gray-600 group-hover:lg:rotate-0 dark:text-blue-900', {
+                                'rotate-0': isOpen,
+                            })}
                         />
                     </div>
                 </MenuItem>
