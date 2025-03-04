@@ -50,6 +50,7 @@ const CaseFirstScreen: FC<CaseFirstScreenProps> = ({ description, shortTitle, ti
                 alt=""
                 className="absolute left-0 top-0 h-full object-cover object-[50%_50%]"
                 quality={100}
+                priority
             />
         </section>
     )

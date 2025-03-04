@@ -35,6 +35,7 @@ const OutsourcingFirstScreen: FC<OutsourcingFirstScreenProps> = ({ title, descri
                 alt=""
                 className="absolute left-0 top-0 h-full object-cover"
                 quality={100}
+                priority
             />
             <Image
                 src="/images/services/lines.svg"

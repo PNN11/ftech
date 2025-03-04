@@ -74,6 +74,7 @@ const ServiceFirstScreen: FC<ServiceFirstScreenProps> = ({ title, image, stats }
                 alt=""
                 className="absolute left-0 top-0 h-full object-cover object-[50%_65%]"
                 quality={100}
+                priority
             />
         </section>
     )
